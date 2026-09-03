@@ -11,7 +11,7 @@ window.SAMS_DATA={
         "\"We Used to Be Better\""
       ],
       "links": [
-        "https://samjams.bandcamp.com/album/split-my-pants-emr-and-my-friend-tim",
+        "https://samsbands.bandcamp.com/album/split-my-pants-emr-and-my-friend-tim",
         "https://www.oocities.org/erniesmeterrepair/home.html"
       ],
       "timeline": [
@@ -266,8 +266,8 @@ window.SAMS_DATA={
         "My Friend Tim was Ryan Gee on Guitar / Vocals , Sam Gunnerson Bass / Vocals, Matt Bisel (the Dream Crusher) Guitar / Vocals and Brian Scheel and Will Gunnerson on the Drums"
       ],
       "links": [
-        "https://samjams.bandcamp.com/album/split-my-pants-emr-and-my-friend-tim",
-        "https://samjams.bandcamp.com/album/my-friend-tim-ogre-house-demo"
+        "https://samsbands.bandcamp.com/album/split-my-pants-emr-and-my-friend-tim",
+        "https://samsbands.bandcamp.com/album/my-friend-tim-ogre-house-demo"
       ],
       "timeline": [
         {
@@ -377,7 +377,8 @@ window.SAMS_DATA={
         "Long Division was Ryan Gee on Guitar / Vocals , Sam Gunnerson Bass / Vocals, Jose Ray Guitar / Vocals and Will Gunnerson on the Drums"
       ],
       "links": [
-        "https://samjams.bandcamp.com/album/long-division-5-song-demo"
+        "https://samsbands.bandcamp.com/album/long-division-5-song-demo",
+        "https://samsbands.bandcamp.com/album/long-division-live-at-the-hutch-skate-park"
       ],
       "timeline": [
         {
@@ -583,7 +584,9 @@ window.SAMS_DATA={
         "Monsoon Lazer was from Lawrence Kansas, and active from 2012 to 2013",
         "Monsoon Lazer was Aaron Pillar on Guitar , Sam Gunnerson on Bass, and Will Gunnerson on the drums"
       ],
-      "links": [],
+      "links": [
+        "https://samsbands.bandcamp.com/album/monsoon-lazer"
+      ],
       "timeline": [
         {
           "date": "2012-09-13",
@@ -1444,7 +1447,7 @@ window.SAMS_DATA={
         "Slaw  was Mitch Jones on Guitar / Vocals , Sam Gunnerson Bass / Vocals, and ??? on the Drums"
       ],
       "links": [
-        "https://samjams.bandcamp.com/album/slaw-unreleased"
+        "https://samsbands.bandcamp.com/album/slaw-unreleased"
       ],
       "timeline": [
         {

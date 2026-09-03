@@ -7,6 +7,7 @@ const BANDCAMP_TITLES={
   'split-my-pants-emr-and-my-friend-tim':'Split My Pants — EMR and My Friend Tim',
   'my-friend-tim-ogre-house-demo':'Ogre House Demo',
   'long-division-5-song-demo':'5 Song Demo',
+  'long-division-live-at-the-hutch-skate-park':'LIVE! At the Hutch Skate Park',
   'young-country':'Young Country',
   'waking-up-the-neighborhood-tonight-cassette':'Waking Up the Neighborhood Tonight',
   'free-your-ass-and-your-mind-will-follow':'Free Your Ass and Your Mind Will Follow',
@@ -18,7 +19,7 @@ const BANDCAMP_TITLES={
 // Main/hero photos supplied for the archive update. Weather Is Happening stays without one for now.
 const HERO_IMAGES={
   'emr':'hero-emr.jpg',
-  'my-friend-tim':'hero-my-friend-tim.jpg',
+  'my-friend-tim':'hero-my-friend-tim.png',
   'long-division':'hero-long-division.jpg',
   'monsoon-lazer':'hero-monsoon-lazer.jpg',
   'thunderfuck':'hero-thunderfuck.jpg',
