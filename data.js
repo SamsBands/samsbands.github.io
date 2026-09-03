@@ -62,7 +62,8 @@ window.SAMS_DATA={
           "display": "Jan 6, 2001",
           "event": "Show with Agent 246 + Last Ride Out",
           "venue": "Teen Center",
-          "city": "Hutchinson, KS"
+          "city": "Hutchinson, KS",
+          "flyer": "emr-6.jpeg"
         },
         {
           "date": "2001-01-27",
@@ -216,7 +217,8 @@ window.SAMS_DATA={
           "display": "Apr 12, 2003",
           "event": "\"We Used to Be Better\" CD release show",
           "venue": "City Park",
-          "city": "Manhattan, KS"
+          "city": "Manhattan, KS",
+          "flyer": "emr-4.png"
         },
         {
           "date": "2003-05-10",
@@ -329,21 +331,24 @@ window.SAMS_DATA={
           "display": "Mar 1, 2003",
           "event": "Show with King TP + Schimon's Truth + Desperately Seeking Simon + Hey Rodeo",
           "venue": "Carey Park Homebuilders Shelter",
-          "city": "Hutchinson, KS"
+          "city": "Hutchinson, KS",
+          "flyer": "my-friend-tim-8.png"
         },
         {
           "date": "2003-06-24",
           "display": "Jun 24, 2003",
           "event": "Show with Stellar Frequency + Claiming Haley + Smolder + The Cool Concern + 12 Ton",
           "venue": "Eagles Lodge",
-          "city": "Hutchinson, KS"
+          "city": "Hutchinson, KS",
+          "flyer": "my-friend-tim-7.png"
         },
         {
           "date": "2003-12-06",
           "display": "Dec 6, 2003",
           "event": "Show with King TP + Schimon's Truth + Claiming Haley + 12 Ton + Argyle Trio",
           "venue": "Morgan Elementary",
-          "city": "Hutchinson, KS"
+          "city": "Hutchinson, KS",
+          "flyer": "my-friend-tim-6.png"
         },
         {
           "date": "2004-03-01",
@@ -387,21 +392,24 @@ window.SAMS_DATA={
           "display": "Jan 20, 2006",
           "event": "Show with Paper Airplanes + Davan",
           "venue": "The Jackpot",
-          "city": "Lawrence, KS"
+          "city": "Lawrence, KS",
+          "flyer": "long-division-8.png"
         },
         {
           "date": "2006-02-24",
           "display": "Feb 24, 2006",
           "event": "Show with KTP + Ghost of Graffiti + Accelerate Entropy",
           "venue": "Eagles Lodge",
-          "city": "Hutchinson, KS"
+          "city": "Hutchinson, KS",
+          "flyer": "long-division-10.png"
         },
         {
           "date": "2006-02-28",
           "display": "Feb 28, 2006",
           "event": "Show with The Gunning System",
           "venue": "Eighth Street Taproom",
-          "city": "Lawrence, KS"
+          "city": "Lawrence, KS",
+          "flyer": "long-division-7.png"
         },
         {
           "date": "2006-03-10",
@@ -415,14 +423,16 @@ window.SAMS_DATA={
           "display": "Apr 7, 2005",
           "event": "Show with Ricky Fitts + The Gunshy + Mustangs and Madras and Long Division",
           "venue": "Haunted Kitchen",
-          "city": "Lawrence, KS"
+          "city": "Lawrence, KS",
+          "flyer": "long-division-9.png"
         },
         {
           "date": "2006-06-09",
           "display": "Jun 9, 2006",
           "event": "ICT Fest",
           "venue": "Eagles Lodge",
-          "city": "Wichita, KS"
+          "city": "Wichita, KS",
+          "flyer": "long-division-13.png"
         },
         {
           "date": "2006-06-27",
@@ -457,7 +467,8 @@ window.SAMS_DATA={
           "display": "Jun 7, 2007",
           "event": "ICT Fest",
           "venue": "The Wig Shop",
-          "city": "Wichita, KS"
+          "city": "Wichita, KS",
+          "flyer": "long-division-12.png"
         }
       ],
       "images": [
@@ -607,7 +618,8 @@ window.SAMS_DATA={
           "display": "May 24, 2013",
           "event": "Show with Muscle Worship (LP Release Show) + Truck Or Dead Horse",
           "venue": "The Replay",
-          "city": "Lawrence, KS"
+          "city": "Lawrence, KS",
+          "flyer": "monsoon-lazer-1.png"
         },
         {
           "date": "2013-07-13",
@@ -656,14 +668,16 @@ window.SAMS_DATA={
           "display": "May 19, 2009",
           "event": "Show with Be Kind to your Neighbor + Low Oriole",
           "venue": "135 N Estelle",
-          "city": "Wichita, KS"
+          "city": "Wichita, KS",
+          "flyer": "jabberjosh-3.png"
         },
         {
           "date": "2009-06-12",
           "display": "Jun 12, 2009",
           "event": "ICT FEST",
           "venue": "Eagles Lodge",
-          "city": "Wichita, KS"
+          "city": "Wichita, KS",
+          "flyer": "jabberjosh-4.png"
         },
         {
           "date": "2009-08-04",
@@ -726,63 +740,72 @@ window.SAMS_DATA={
           "display": "Nov 26, 2010",
           "event": "Bass of Spades Tour with The Tanks",
           "venue": "The Replay",
-          "city": "Lawrence, KS"
+          "city": "Lawrence, KS",
+          "flyer": "jabberjosh-16.png"
         },
         {
           "date": "2010-11-27",
           "display": "Nov 27, 2010",
           "event": "Bass of Spades Tour with The Tanks",
           "venue": "",
-          "city": "Omaha, NE"
+          "city": "Omaha, NE",
+          "flyer": "jabberjosh-16.png"
         },
         {
           "date": "2010-11-28",
           "display": "Nov 28, 2010",
           "event": "Bass of Spades Tour with The Tanks",
           "venue": "",
-          "city": "Fargo, ND"
+          "city": "Fargo, ND",
+          "flyer": "jabberjosh-16.png"
         },
         {
           "date": "2010-11-29",
           "display": "Nov 29, 2010",
           "event": "Bass of Spades Tour with The Tanks",
           "venue": "",
-          "city": "Twin Cities, MN"
+          "city": "Twin Cities, MN",
+          "flyer": "jabberjosh-16.png"
         },
         {
           "date": "2010-11-30",
           "display": "Nov 30, 2010",
           "event": "Bass of Spades Tour with The Tanks",
           "venue": "",
-          "city": "Milwaukee, WI"
+          "city": "Milwaukee, WI",
+          "flyer": "jabberjosh-16.png"
         },
         {
           "date": "2010-12-01",
           "display": "Dec 1, 2010",
           "event": "Bass of Spades Tour with The Tanks",
           "venue": "",
-          "city": "Beloit, WI"
+          "city": "Beloit, WI",
+          "flyer": "jabberjosh-16.png"
         },
         {
           "date": "2010-12-02",
           "display": "Dec 2, 2010",
           "event": "Bass of Spades Tour with The Tanks",
           "venue": "",
-          "city": "Chicago, IL"
+          "city": "Chicago, IL",
+          "flyer": "jabberjosh-16.png"
         },
         {
           "date": "2010-12-03",
           "display": "Dec 3, 2010",
           "event": "Bass of Spades Tour with The Tanks",
           "venue": "",
-          "city": "Cedar Falls, IA"
+          "city": "Cedar Falls, IA",
+          "flyer": "jabberjosh-16.png"
         },
         {
           "date": "2010-12-04",
           "display": "Dec 4, 2010",
           "event": "Bass of Spades Tour with The Tanks",
           "venue": "",
-          "city": "Iowa City, IA"
+          "city": "Iowa City, IA",
+          "flyer": "jabberjosh-16.png"
         },
         {
           "date": "2011-04-01",
@@ -859,28 +882,32 @@ window.SAMS_DATA={
           "display": "Jul 27, 2012",
           "event": "ICT Fest",
           "venue": "WSU Shiftspace Gallery",
-          "city": "Wichita, KS"
+          "city": "Wichita, KS",
+          "flyer": "jabberjosh-15.png"
         },
         {
           "date": "2012-09-29",
           "display": "Sep 29, 2012",
           "event": "Show with Ringo Deathstarr + The Photo Atlas",
           "venue": "The Jackpot",
-          "city": "Lawrence, KS"
+          "city": "Lawrence, KS",
+          "flyer": "jabberjosh-11.png"
         },
         {
           "date": "2012-12-31",
           "display": "Dec 31, 2012",
           "event": "New Years Eve Show with The Sluts + Alien Jones",
           "venue": "The Replay",
-          "city": "Lawrence, KS"
+          "city": "Lawrence, KS",
+          "flyer": "jabberjosh-10.png"
         },
         {
           "date": "2013-01-04",
           "display": "Jan 4, 2013",
           "event": "Show with Approach",
           "venue": "The Love Garden",
-          "city": "Lawrence, KS"
+          "city": "Lawrence, KS",
+          "flyer": "jabberjosh-9.png"
         },
         {
           "date": "2013-05-13",
@@ -894,14 +921,16 @@ window.SAMS_DATA={
           "display": "Aug 8, 2013",
           "event": "Mini Tour Kick Off Show with Cricket Wand + Psychic Heat",
           "venue": "The Replay",
-          "city": "Lawrence, KS"
+          "city": "Lawrence, KS",
+          "flyer": "jabberjosh-8.png"
         },
         {
           "date": "2014-07-18",
           "display": "Jul 18, 2014",
           "event": "Farewell Show with Muscle Worship",
           "venue": "The Love Garden",
-          "city": "Lawrence, KS"
+          "city": "Lawrence, KS",
+          "flyer": "jabberjosh-7.png"
         },
         {
           "date": "2016-09-11",
@@ -940,7 +969,456 @@ window.SAMS_DATA={
         "https://gnarlydavidsonlfk.bandcamp.com/album/gnarly-davidson",
         "https://gnarlydavidsonlfk.bandcamp.com/album/jabberjaw-coffin-nail"
       ],
-      "timeline": [],
+      "timeline": [
+        {
+          "date": "2014-04-02",
+          "display": "Apr 2, 2014",
+          "event": "First Show  \"Weird Band Night\"",
+          "venue": "8th Street Taproom",
+          "city": "Lawrence, KS "
+        },
+        {
+          "date": "2014-05-04",
+          "display": "May 4, 2014",
+          "event": "Love Garden 24th Anniversary Show ",
+          "venue": "The Granada",
+          "city": "Lawrence, KS "
+        },
+        {
+          "date": "2014-06-28",
+          "display": "Jun 28, 2014",
+          "event": "Lawrence Field Day Fest",
+          "venue": "The Bottleneck",
+          "city": "Lawrence, KS "
+        },
+        {
+          "date": "2016-09-09",
+          "display": "Sep 9, 2016",
+          "event": "Release of The Tape! and The CD!",
+          "venue": "",
+          "city": ""
+        },
+        {
+          "date": "2014-09-26",
+          "display": "Sep 26, 2014",
+          "event": "Show with Mike Watt & II Sogno del Marinaio",
+          "venue": "The Bottleneck",
+          "city": "Lawrence, KS "
+        },
+        {
+          "date": "2020-09-27",
+          "display": "Sep 27, 2020",
+          "event": "Tape Release Show with Varma Gross",
+          "venue": "Love Garden",
+          "city": "Lawrence, KS ",
+          "flyer": "gnarly-davidson-13.png"
+        },
+        {
+          "date": "2015-01-09",
+          "display": "Jan 9, 2015",
+          "event": "Show with SeaKings + Temp Tats",
+          "venue": "The Replay",
+          "city": "Lawrence, KS "
+        },
+        {
+          "date": "2015-03-13",
+          "display": "Mar 13, 2015",
+          "event": "Show with Psychic Heat + The Sluts",
+          "venue": "The Bottleneck",
+          "city": "Lawrence, KS "
+        },
+        {
+          "date": "2015-04-25",
+          "display": "Apr 25, 2015",
+          "event": "Show with Shitstorm + Heart Attack Man",
+          "venue": "Dag House",
+          "city": "Cleveland, OH ",
+          "flyer": "gnarly-davidson-4.png"
+        },
+        {
+          "date": "2015-05-16",
+          "display": "May 16, 2015",
+          "event": "Spring Into Summer",
+          "venue": "The Replay",
+          "city": "Lawrence, KS "
+        },
+        {
+          "date": "2015-07-18",
+          "display": "Jul 18, 2015",
+          "event": "Bummer Record Release Show",
+          "venue": "Love Garden",
+          "city": "Lawrence, KS "
+        },
+        {
+          "date": "2016-03-17",
+          "display": "Mar 17, 2016",
+          "event": "Show with Mystery Blood + Pallet Town + Information Welfare",
+          "venue": "Tomb of Toons",
+          "city": "Wichita, KS "
+        },
+        {
+          "date": "2016-03-18",
+          "display": "Mar 18, 2016",
+          "event": "Show with Brother Gruesome + Dead Shakes",
+          "venue": "Sound Pony",
+          "city": "Tulsa, OK"
+        },
+        {
+          "date": "2016-03-19",
+          "display": "Mar 19, 2016",
+          "event": "Show with Brother Gruesome + Curse",
+          "venue": "Guildhaul",
+          "city": "Oklahoma City, OK"
+        },
+        {
+          "date": "2016-03-20",
+          "display": "Mar 20, 2016",
+          "event": "Show with Brother Lee and the Leather Jackals + Matt's Fabulous Beach Bods",
+          "venue": "CBGB",
+          "city": "St. Louis, MO "
+        },
+        {
+          "date": "2016-04-22",
+          "display": "Apr 22, 2016",
+          "event": "Tour Kickoff",
+          "venue": "The Replay",
+          "city": "Lawrence, KS",
+          "flyer": "gnarly-davidson-14.png"
+        },
+        {
+          "date": "2016-04-23",
+          "display": "Apr 23, 2016",
+          "event": "Tour",
+          "venue": "Trumpet Blossom",
+          "city": "Iowa City, IA",
+          "flyer": "gnarly-davidson-14.png"
+        },
+        {
+          "date": "2016-04-24",
+          "display": "Apr 24, 2016",
+          "event": "Tour",
+          "venue": "High Dive",
+          "city": "Milwaukee, WI",
+          "flyer": "gnarly-davidson-14.png"
+        },
+        {
+          "date": "2016-04-25",
+          "display": "Apr 25, 2016",
+          "event": "Tour",
+          "venue": "New Dodge",
+          "city": "Detroit, MI",
+          "flyer": "gnarly-davidson-14.png"
+        },
+        {
+          "date": "2016-04-26",
+          "display": "Apr 26, 2016",
+          "event": "Tour",
+          "venue": "Now That's Class",
+          "city": "Cleveland, OH",
+          "flyer": "gnarly-davidson-14.png"
+        },
+        {
+          "date": "2016-04-28",
+          "display": "Apr 28, 2016",
+          "event": "Tour",
+          "venue": "Gooskis",
+          "city": "Pittsburgh, PA",
+          "flyer": "gnarly-davidson-14.png"
+        },
+        {
+          "date": "2016-04-30",
+          "display": "Apr 30, 2016",
+          "event": "Tour",
+          "venue": "???",
+          "city": "Evansville, IN",
+          "flyer": "gnarly-davidson-14.png"
+        },
+        {
+          "date": "2016-05-01",
+          "display": "May 1, 2016",
+          "event": "Tour",
+          "venue": "Lost Cross",
+          "city": "Carbondale, IL",
+          "flyer": "gnarly-davidson-14.png"
+        },
+        {
+          "date": "2016-05-02",
+          "display": "May 2, 2016",
+          "event": "Tour",
+          "venue": "San Loo",
+          "city": "St. Louis",
+          "flyer": "gnarly-davidson-14.png"
+        },
+        {
+          "date": "2016-05-03",
+          "display": "May 3, 2016",
+          "event": "Tour",
+          "venue": "Back Space",
+          "city": "Fayetville, AR",
+          "flyer": "gnarly-davidson-14.png"
+        },
+        {
+          "date": "2016-05-04",
+          "display": "May 4, 2016",
+          "event": "Tour",
+          "venue": "Sound Pony",
+          "city": "Tulsa, OK",
+          "flyer": "gnarly-davidson-14.png"
+        },
+        {
+          "date": "2016-05-05",
+          "display": "May 5, 2016",
+          "event": "Tour",
+          "venue": "Temple of Doom",
+          "city": "Wichita, KS",
+          "flyer": "gnarly-davidson-14.png"
+        },
+        {
+          "date": "2016-05-06",
+          "display": "May 6, 2016",
+          "event": "Tour",
+          "venue": "Blind Tiger",
+          "city": "Kansas City, MO",
+          "flyer": "gnarly-davidson-14.png"
+        },
+        {
+          "date": "2016-05-21",
+          "display": "May 21, 2016",
+          "event": "Show with The Sluts + Young Bull",
+          "venue": "The Replay",
+          "city": "Lawrence, KS "
+        },
+        {
+          "date": "2016-06-05",
+          "display": "Jun 5, 2016",
+          "event": "Riverfest with Black Flag",
+          "venue": "Riverfest",
+          "city": "Wichita, KS "
+        },
+        {
+          "date": "2016-06-10",
+          "display": "Jun 10, 2016",
+          "event": "Show with The Everymen + Varma Cross",
+          "venue": "The Replay",
+          "city": "Lawrence, KS "
+        },
+        {
+          "date": "2016-08-27",
+          "display": "Aug 27, 2016",
+          "event": "Show with Truth Cell + Amenaza + Melting Point of Bronze + More",
+          "venue": "The Bottleneck",
+          "city": "Lawrence, KS "
+        },
+        {
+          "date": "2016-09-11",
+          "display": "Sep 11, 2016",
+          "event": "Final Dag Show with Jabberjosh + Wooly Bear",
+          "venue": "Dag House",
+          "city": "Cleveland, OH "
+        },
+        {
+          "date": "2016-10-31",
+          "display": "Oct 31, 2016",
+          "event": "Halloween Show with Bummer + Raymond",
+          "venue": "The Replay",
+          "city": "Lawrence, KS "
+        },
+        {
+          "date": "2016-11-01",
+          "display": "Nov 1, 2016",
+          "event": "7\" Release of Jabberjaw/ Coffin Nail",
+          "venue": "",
+          "city": ""
+        },
+        {
+          "date": "2017-01-05",
+          "display": "Jan 5, 2017",
+          "event": "Show with Brody Buster Band + The MGD's",
+          "venue": "Knuckleheads",
+          "city": "Kansas City, MK"
+        },
+        {
+          "date": "2017-03-17",
+          "display": "Mar 17, 2017",
+          "event": "Show with Signals Midwest",
+          "venue": "The Jackpot",
+          "city": "Lawrence, KS "
+        },
+        {
+          "date": "2017-04-08",
+          "display": "Apr 8, 2017",
+          "event": "KJHK Farmers Ball",
+          "venue": "The Bottleneck",
+          "city": "Lawrence, KS "
+        },
+        {
+          "date": "2017-05-12",
+          "display": "May 12, 2017",
+          "event": "Show with Shitstorm + Young Bull",
+          "venue": "The Replay",
+          "city": "Lawrence, KS "
+        },
+        {
+          "date": "2017-05-27",
+          "display": "May 27, 2017",
+          "event": "Smokestock: Midwest Stoner Rock Revival",
+          "venue": "All Star Rock Bar",
+          "city": "Kansas City, MO"
+        },
+        {
+          "date": "2017-07-14",
+          "display": "Jul 14, 2017",
+          "event": "Lawrence Field Day Fest",
+          "venue": "The Replay",
+          "city": "Lawrence, KS "
+        },
+        {
+          "date": "2017-07-22",
+          "display": "Jul 22, 2017",
+          "event": "Show with Hyborian and Godmaker!",
+          "venue": "The Replay",
+          "city": "Lawrence, KS "
+        },
+        {
+          "date": "2017-08-09",
+          "display": "Aug 9, 2017",
+          "event": "Show with Orca",
+          "venue": "The Replay",
+          "city": "Lawrence, KS "
+        },
+        {
+          "date": "2017-08-10",
+          "display": "Aug 10, 2017",
+          "event": "Show with Orca",
+          "venue": "Mcpherson City Limits",
+          "city": "Mcpherson, KS "
+        },
+        {
+          "date": "2017-08-11",
+          "display": "Aug 11, 2017",
+          "event": "Show with Orca",
+          "venue": "Kirby's",
+          "city": "Wichita, KS "
+        },
+        {
+          "date": "2017-08-12",
+          "display": "Aug 12, 2017",
+          "event": "Show with Orca",
+          "venue": "The Jump Joint",
+          "city": "Manhattan, KS "
+        },
+        {
+          "date": "2017-09-30",
+          "display": "Sep 30, 2017",
+          "event": "Show with Arch Flash + Highwesthus + La Guerre",
+          "venue": "The Replay",
+          "city": "Lawrence, KS "
+        },
+        {
+          "date": "2017-12-31",
+          "display": "Dec 31, 2017",
+          "event": "New Year's Eve Show",
+          "venue": "The Replay",
+          "city": "Lawrence, KS "
+        },
+        {
+          "date": "2018-03-16",
+          "display": "Mar 16, 2018",
+          "event": "3:16 show VS. Young Bull",
+          "venue": "The Replay",
+          "city": "Lawrence, KS ",
+          "flyer": "gnarly-davidson-12.png"
+        },
+        {
+          "date": "2018-05-11",
+          "display": "May 11, 2018",
+          "event": "TOUR with Boreal Hills + Bloom",
+          "venue": "The Replay",
+          "city": "Lawrence, KS ",
+          "flyer": "gnarly-davidson-9.png"
+        },
+        {
+          "date": "2018-05-12",
+          "display": "May 12, 2018",
+          "event": "TOUR with Boreal Hills + Milk Wave + Mystery Blood",
+          "venue": "Kirby's",
+          "city": "Wichita, KS ",
+          "flyer": "gnarly-davidson-8.png"
+        },
+        {
+          "date": "2018-05-13",
+          "display": "May 13, 2018",
+          "event": "TOUR with Boreal Hills ",
+          "venue": "Soundpony Bar",
+          "city": "Tulsa, OK"
+        },
+        {
+          "date": "2018-05-14",
+          "display": "May 14, 2018",
+          "event": "TOUR with Boreal Hills + Spacetrucker + Shitstorm",
+          "venue": "The Sinkhole",
+          "city": "St. Louis, MO"
+        },
+        {
+          "date": "2018-05-15",
+          "display": "May 15, 2018",
+          "event": "TOUR with Boreal Hills + Nagas",
+          "venue": "PG",
+          "city": "Evansville, Il"
+        },
+        {
+          "date": "2018-05-16",
+          "display": "May 16, 2018",
+          "event": "TOUR with Boreal Hills + DANA",
+          "venue": "Cafe Bourbon Street",
+          "city": "Columbus, OH"
+        },
+        {
+          "date": "2018-05-17",
+          "display": "May 17, 2018",
+          "event": "TOUR with Boreal Hills + Wooly Bear",
+          "venue": "Mahall's",
+          "city": "Cleveland, OH",
+          "flyer": "gnarly-davidson-7.png"
+        },
+        {
+          "date": "2018-05-19",
+          "display": "May 19, 2018",
+          "event": "TOUR with Boreal Hills ",
+          "venue": "The VCR Apartment",
+          "city": "Chicago, IL "
+        },
+        {
+          "date": "2018-05-20",
+          "display": "May 20, 2018",
+          "event": "TOUR with Boreal Hills + Moon Rats",
+          "venue": "High Dive",
+          "city": "Milwaukee, WI",
+          "flyer": "gnarly-davidson-6.png"
+        },
+        {
+          "date": "2018-05-21",
+          "display": "May 21, 2018",
+          "event": "Show with Dos Males, Twichard",
+          "venue": "High Noon Saloon",
+          "city": "Madison, WI"
+        },
+        {
+          "date": "2018-05-26",
+          "display": "May 26, 2018",
+          "event": "Show with Acoustic Guillotine",
+          "venue": "Trumpet Blossom Cafe",
+          "city": "Iowa City, IA"
+        },
+        {
+          "date": "2018-06-01",
+          "display": "Jun 1, 2018",
+          "event": "Senior Recital",
+          "venue": "The Bottleneck",
+          "city": "Lawrence, KS ",
+          "flyer": "gnarly-davidson-3.png"
+        }
+      ],
       "images": [
         "gnarly-davidson-1.png",
         "gnarly-davidson-2.png",
@@ -974,35 +1452,40 @@ window.SAMS_DATA={
           "display": "Oct 13, 2019",
           "event": "First Show with The Well + Bloom",
           "venue": "Replay",
-          "city": "Lawrence, KS"
+          "city": "Lawrence, KS",
+          "flyer": "slaw-2.jpeg"
         },
         {
           "date": "2019-11-08",
           "display": "Nov 8, 2019",
           "event": "Show with Tongue Party + Not Cops + Tokeback Mountain",
           "venue": "Replay",
-          "city": "Lawrence, KS"
+          "city": "Lawrence, KS",
+          "flyer": "slaw-3.jpeg"
         },
         {
           "date": "2019-12-21",
           "display": "Dec 21, 2019",
           "event": "Christmas Show with J.C. & The Nuns + Tallboys + Drude",
           "venue": "Replay",
-          "city": "Lawrence, KS"
+          "city": "Lawrence, KS",
+          "flyer": "slaw-4.jpeg"
         },
         {
           "date": "2020-01-16",
           "display": "Jan 16, 2020",
           "event": "Show with Nerver + Dead Hour Noise",
           "venue": "Replay",
-          "city": "Lawrence, KS"
+          "city": "Lawrence, KS",
+          "flyer": "slaw-5.jpeg"
         },
         {
           "date": "2020-02-13",
           "display": "Feb 13, 2020",
           "event": "Show with Visitor",
           "venue": "Eighth Street Taproom",
-          "city": "Lawrence, KS"
+          "city": "Lawrence, KS",
+          "flyer": "slaw-6.jpeg"
         }
       ],
       "images": [
@@ -1076,6 +1559,7 @@ window.SAMS_DATA={
       "event": "Show with Agent 246 + Last Ride Out",
       "venue": "Teen Center",
       "city": "Hutchinson, KS",
+      "flyer": "emr-6.jpeg",
       "band": "EMR",
       "slug": "emr"
     },
@@ -1310,6 +1794,7 @@ window.SAMS_DATA={
       "event": "Show with King TP + Schimon's Truth + Desperately Seeking Simon + Hey Rodeo",
       "venue": "Carey Park Homebuilders Shelter",
       "city": "Hutchinson, KS",
+      "flyer": "my-friend-tim-8.png",
       "band": "My Friend Tim",
       "slug": "my-friend-tim"
     },
@@ -1328,6 +1813,7 @@ window.SAMS_DATA={
       "event": "\"We Used to Be Better\" CD release show",
       "venue": "City Park",
       "city": "Manhattan, KS",
+      "flyer": "emr-4.png",
       "band": "EMR",
       "slug": "emr"
     },
@@ -1355,6 +1841,7 @@ window.SAMS_DATA={
       "event": "Show with Stellar Frequency + Claiming Haley + Smolder + The Cool Concern + 12 Ton",
       "venue": "Eagles Lodge",
       "city": "Hutchinson, KS",
+      "flyer": "my-friend-tim-7.png",
       "band": "My Friend Tim",
       "slug": "my-friend-tim"
     },
@@ -1373,6 +1860,7 @@ window.SAMS_DATA={
       "event": "Show with King TP + Schimon's Truth + Claiming Haley + 12 Ton + Argyle Trio",
       "venue": "Morgan Elementary",
       "city": "Hutchinson, KS",
+      "flyer": "my-friend-tim-6.png",
       "band": "My Friend Tim",
       "slug": "my-friend-tim"
     },
@@ -1400,6 +1888,7 @@ window.SAMS_DATA={
       "event": "Show with Ricky Fitts + The Gunshy + Mustangs and Madras and Long Division",
       "venue": "Haunted Kitchen",
       "city": "Lawrence, KS",
+      "flyer": "long-division-9.png",
       "band": "Long Division",
       "slug": "long-division"
     },
@@ -1418,6 +1907,7 @@ window.SAMS_DATA={
       "event": "Show with Paper Airplanes + Davan",
       "venue": "The Jackpot",
       "city": "Lawrence, KS",
+      "flyer": "long-division-8.png",
       "band": "Long Division",
       "slug": "long-division"
     },
@@ -1427,6 +1917,7 @@ window.SAMS_DATA={
       "event": "Show with KTP + Ghost of Graffiti + Accelerate Entropy",
       "venue": "Eagles Lodge",
       "city": "Hutchinson, KS",
+      "flyer": "long-division-10.png",
       "band": "Long Division",
       "slug": "long-division"
     },
@@ -1436,6 +1927,7 @@ window.SAMS_DATA={
       "event": "Show with The Gunning System",
       "venue": "Eighth Street Taproom",
       "city": "Lawrence, KS",
+      "flyer": "long-division-7.png",
       "band": "Long Division",
       "slug": "long-division"
     },
@@ -1454,6 +1946,7 @@ window.SAMS_DATA={
       "event": "ICT Fest",
       "venue": "Eagles Lodge",
       "city": "Wichita, KS",
+      "flyer": "long-division-13.png",
       "band": "Long Division",
       "slug": "long-division"
     },
@@ -1508,6 +2001,7 @@ window.SAMS_DATA={
       "event": "ICT Fest",
       "venue": "The Wig Shop",
       "city": "Wichita, KS",
+      "flyer": "long-division-12.png",
       "band": "Long Division",
       "slug": "long-division"
     },
@@ -1598,6 +2092,7 @@ window.SAMS_DATA={
       "event": "Show with Be Kind to your Neighbor + Low Oriole",
       "venue": "135 N Estelle",
       "city": "Wichita, KS",
+      "flyer": "jabberjosh-3.png",
       "band": "JabberJosh",
       "slug": "jabberjosh"
     },
@@ -1607,6 +2102,7 @@ window.SAMS_DATA={
       "event": "ICT FEST",
       "venue": "Eagles Lodge",
       "city": "Wichita, KS",
+      "flyer": "jabberjosh-4.png",
       "band": "JabberJosh",
       "slug": "jabberjosh"
     },
@@ -1688,6 +2184,7 @@ window.SAMS_DATA={
       "event": "Bass of Spades Tour with The Tanks",
       "venue": "The Replay",
       "city": "Lawrence, KS",
+      "flyer": "jabberjosh-16.png",
       "band": "JabberJosh",
       "slug": "jabberjosh"
     },
@@ -1697,6 +2194,7 @@ window.SAMS_DATA={
       "event": "Bass of Spades Tour with The Tanks",
       "venue": "",
       "city": "Omaha, NE",
+      "flyer": "jabberjosh-16.png",
       "band": "JabberJosh",
       "slug": "jabberjosh"
     },
@@ -1706,6 +2204,7 @@ window.SAMS_DATA={
       "event": "Bass of Spades Tour with The Tanks",
       "venue": "",
       "city": "Fargo, ND",
+      "flyer": "jabberjosh-16.png",
       "band": "JabberJosh",
       "slug": "jabberjosh"
     },
@@ -1715,6 +2214,7 @@ window.SAMS_DATA={
       "event": "Bass of Spades Tour with The Tanks",
       "venue": "",
       "city": "Twin Cities, MN",
+      "flyer": "jabberjosh-16.png",
       "band": "JabberJosh",
       "slug": "jabberjosh"
     },
@@ -1724,6 +2224,7 @@ window.SAMS_DATA={
       "event": "Bass of Spades Tour with The Tanks",
       "venue": "",
       "city": "Milwaukee, WI",
+      "flyer": "jabberjosh-16.png",
       "band": "JabberJosh",
       "slug": "jabberjosh"
     },
@@ -1733,6 +2234,7 @@ window.SAMS_DATA={
       "event": "Bass of Spades Tour with The Tanks",
       "venue": "",
       "city": "Beloit, WI",
+      "flyer": "jabberjosh-16.png",
       "band": "JabberJosh",
       "slug": "jabberjosh"
     },
@@ -1742,6 +2244,7 @@ window.SAMS_DATA={
       "event": "Bass of Spades Tour with The Tanks",
       "venue": "",
       "city": "Chicago, IL",
+      "flyer": "jabberjosh-16.png",
       "band": "JabberJosh",
       "slug": "jabberjosh"
     },
@@ -1751,6 +2254,7 @@ window.SAMS_DATA={
       "event": "Bass of Spades Tour with The Tanks",
       "venue": "",
       "city": "Cedar Falls, IA",
+      "flyer": "jabberjosh-16.png",
       "band": "JabberJosh",
       "slug": "jabberjosh"
     },
@@ -1760,6 +2264,7 @@ window.SAMS_DATA={
       "event": "Bass of Spades Tour with The Tanks",
       "venue": "",
       "city": "Iowa City, IA",
+      "flyer": "jabberjosh-16.png",
       "band": "JabberJosh",
       "slug": "jabberjosh"
     },
@@ -1859,6 +2364,7 @@ window.SAMS_DATA={
       "event": "ICT Fest",
       "venue": "WSU Shiftspace Gallery",
       "city": "Wichita, KS",
+      "flyer": "jabberjosh-15.png",
       "band": "JabberJosh",
       "slug": "jabberjosh"
     },
@@ -1877,6 +2383,7 @@ window.SAMS_DATA={
       "event": "Show with Ringo Deathstarr + The Photo Atlas",
       "venue": "The Jackpot",
       "city": "Lawrence, KS",
+      "flyer": "jabberjosh-11.png",
       "band": "JabberJosh",
       "slug": "jabberjosh"
     },
@@ -1913,6 +2420,7 @@ window.SAMS_DATA={
       "event": "New Years Eve Show with The Sluts + Alien Jones",
       "venue": "The Replay",
       "city": "Lawrence, KS",
+      "flyer": "jabberjosh-10.png",
       "band": "JabberJosh",
       "slug": "jabberjosh"
     },
@@ -1922,6 +2430,7 @@ window.SAMS_DATA={
       "event": "Show with Approach",
       "venue": "The Love Garden",
       "city": "Lawrence, KS",
+      "flyer": "jabberjosh-9.png",
       "band": "JabberJosh",
       "slug": "jabberjosh"
     },
@@ -1940,6 +2449,7 @@ window.SAMS_DATA={
       "event": "Show with Muscle Worship (LP Release Show) + Truck Or Dead Horse",
       "venue": "The Replay",
       "city": "Lawrence, KS",
+      "flyer": "monsoon-lazer-1.png",
       "band": "Monsoon Lazer",
       "slug": "monsoon-lazer"
     },
@@ -1958,8 +2468,36 @@ window.SAMS_DATA={
       "event": "Mini Tour Kick Off Show with Cricket Wand + Psychic Heat",
       "venue": "The Replay",
       "city": "Lawrence, KS",
+      "flyer": "jabberjosh-8.png",
       "band": "JabberJosh",
       "slug": "jabberjosh"
+    },
+    {
+      "date": "2014-04-02",
+      "display": "Apr 2, 2014",
+      "event": "First Show  \"Weird Band Night\"",
+      "venue": "8th Street Taproom",
+      "city": "Lawrence, KS ",
+      "band": "Gnarly Davidson",
+      "slug": "gnarly-davidson"
+    },
+    {
+      "date": "2014-05-04",
+      "display": "May 4, 2014",
+      "event": "Love Garden 24th Anniversary Show ",
+      "venue": "The Granada",
+      "city": "Lawrence, KS ",
+      "band": "Gnarly Davidson",
+      "slug": "gnarly-davidson"
+    },
+    {
+      "date": "2014-06-28",
+      "display": "Jun 28, 2014",
+      "event": "Lawrence Field Day Fest",
+      "venue": "The Bottleneck",
+      "city": "Lawrence, KS ",
+      "band": "Gnarly Davidson",
+      "slug": "gnarly-davidson"
     },
     {
       "date": "2014-07-18",
@@ -1967,8 +2505,275 @@ window.SAMS_DATA={
       "event": "Farewell Show with Muscle Worship",
       "venue": "The Love Garden",
       "city": "Lawrence, KS",
+      "flyer": "jabberjosh-7.png",
       "band": "JabberJosh",
       "slug": "jabberjosh"
+    },
+    {
+      "date": "2014-09-26",
+      "display": "Sep 26, 2014",
+      "event": "Show with Mike Watt & II Sogno del Marinaio",
+      "venue": "The Bottleneck",
+      "city": "Lawrence, KS ",
+      "band": "Gnarly Davidson",
+      "slug": "gnarly-davidson"
+    },
+    {
+      "date": "2015-01-09",
+      "display": "Jan 9, 2015",
+      "event": "Show with SeaKings + Temp Tats",
+      "venue": "The Replay",
+      "city": "Lawrence, KS ",
+      "band": "Gnarly Davidson",
+      "slug": "gnarly-davidson"
+    },
+    {
+      "date": "2015-03-13",
+      "display": "Mar 13, 2015",
+      "event": "Show with Psychic Heat + The Sluts",
+      "venue": "The Bottleneck",
+      "city": "Lawrence, KS ",
+      "band": "Gnarly Davidson",
+      "slug": "gnarly-davidson"
+    },
+    {
+      "date": "2015-04-25",
+      "display": "Apr 25, 2015",
+      "event": "Show with Shitstorm + Heart Attack Man",
+      "venue": "Dag House",
+      "city": "Cleveland, OH ",
+      "flyer": "gnarly-davidson-4.png",
+      "band": "Gnarly Davidson",
+      "slug": "gnarly-davidson"
+    },
+    {
+      "date": "2015-05-16",
+      "display": "May 16, 2015",
+      "event": "Spring Into Summer",
+      "venue": "The Replay",
+      "city": "Lawrence, KS ",
+      "band": "Gnarly Davidson",
+      "slug": "gnarly-davidson"
+    },
+    {
+      "date": "2015-07-18",
+      "display": "Jul 18, 2015",
+      "event": "Bummer Record Release Show",
+      "venue": "Love Garden",
+      "city": "Lawrence, KS ",
+      "band": "Gnarly Davidson",
+      "slug": "gnarly-davidson"
+    },
+    {
+      "date": "2016-03-17",
+      "display": "Mar 17, 2016",
+      "event": "Show with Mystery Blood + Pallet Town + Information Welfare",
+      "venue": "Tomb of Toons",
+      "city": "Wichita, KS ",
+      "band": "Gnarly Davidson",
+      "slug": "gnarly-davidson"
+    },
+    {
+      "date": "2016-03-18",
+      "display": "Mar 18, 2016",
+      "event": "Show with Brother Gruesome + Dead Shakes",
+      "venue": "Sound Pony",
+      "city": "Tulsa, OK",
+      "band": "Gnarly Davidson",
+      "slug": "gnarly-davidson"
+    },
+    {
+      "date": "2016-03-19",
+      "display": "Mar 19, 2016",
+      "event": "Show with Brother Gruesome + Curse",
+      "venue": "Guildhaul",
+      "city": "Oklahoma City, OK",
+      "band": "Gnarly Davidson",
+      "slug": "gnarly-davidson"
+    },
+    {
+      "date": "2016-03-20",
+      "display": "Mar 20, 2016",
+      "event": "Show with Brother Lee and the Leather Jackals + Matt's Fabulous Beach Bods",
+      "venue": "CBGB",
+      "city": "St. Louis, MO ",
+      "band": "Gnarly Davidson",
+      "slug": "gnarly-davidson"
+    },
+    {
+      "date": "2016-04-22",
+      "display": "Apr 22, 2016",
+      "event": "Tour Kickoff",
+      "venue": "The Replay",
+      "city": "Lawrence, KS",
+      "flyer": "gnarly-davidson-14.png",
+      "band": "Gnarly Davidson",
+      "slug": "gnarly-davidson"
+    },
+    {
+      "date": "2016-04-23",
+      "display": "Apr 23, 2016",
+      "event": "Tour",
+      "venue": "Trumpet Blossom",
+      "city": "Iowa City, IA",
+      "flyer": "gnarly-davidson-14.png",
+      "band": "Gnarly Davidson",
+      "slug": "gnarly-davidson"
+    },
+    {
+      "date": "2016-04-24",
+      "display": "Apr 24, 2016",
+      "event": "Tour",
+      "venue": "High Dive",
+      "city": "Milwaukee, WI",
+      "flyer": "gnarly-davidson-14.png",
+      "band": "Gnarly Davidson",
+      "slug": "gnarly-davidson"
+    },
+    {
+      "date": "2016-04-25",
+      "display": "Apr 25, 2016",
+      "event": "Tour",
+      "venue": "New Dodge",
+      "city": "Detroit, MI",
+      "flyer": "gnarly-davidson-14.png",
+      "band": "Gnarly Davidson",
+      "slug": "gnarly-davidson"
+    },
+    {
+      "date": "2016-04-26",
+      "display": "Apr 26, 2016",
+      "event": "Tour",
+      "venue": "Now That's Class",
+      "city": "Cleveland, OH",
+      "flyer": "gnarly-davidson-14.png",
+      "band": "Gnarly Davidson",
+      "slug": "gnarly-davidson"
+    },
+    {
+      "date": "2016-04-28",
+      "display": "Apr 28, 2016",
+      "event": "Tour",
+      "venue": "Gooskis",
+      "city": "Pittsburgh, PA",
+      "flyer": "gnarly-davidson-14.png",
+      "band": "Gnarly Davidson",
+      "slug": "gnarly-davidson"
+    },
+    {
+      "date": "2016-04-30",
+      "display": "Apr 30, 2016",
+      "event": "Tour",
+      "venue": "???",
+      "city": "Evansville, IN",
+      "flyer": "gnarly-davidson-14.png",
+      "band": "Gnarly Davidson",
+      "slug": "gnarly-davidson"
+    },
+    {
+      "date": "2016-05-01",
+      "display": "May 1, 2016",
+      "event": "Tour",
+      "venue": "Lost Cross",
+      "city": "Carbondale, IL",
+      "flyer": "gnarly-davidson-14.png",
+      "band": "Gnarly Davidson",
+      "slug": "gnarly-davidson"
+    },
+    {
+      "date": "2016-05-02",
+      "display": "May 2, 2016",
+      "event": "Tour",
+      "venue": "San Loo",
+      "city": "St. Louis",
+      "flyer": "gnarly-davidson-14.png",
+      "band": "Gnarly Davidson",
+      "slug": "gnarly-davidson"
+    },
+    {
+      "date": "2016-05-03",
+      "display": "May 3, 2016",
+      "event": "Tour",
+      "venue": "Back Space",
+      "city": "Fayetville, AR",
+      "flyer": "gnarly-davidson-14.png",
+      "band": "Gnarly Davidson",
+      "slug": "gnarly-davidson"
+    },
+    {
+      "date": "2016-05-04",
+      "display": "May 4, 2016",
+      "event": "Tour",
+      "venue": "Sound Pony",
+      "city": "Tulsa, OK",
+      "flyer": "gnarly-davidson-14.png",
+      "band": "Gnarly Davidson",
+      "slug": "gnarly-davidson"
+    },
+    {
+      "date": "2016-05-05",
+      "display": "May 5, 2016",
+      "event": "Tour",
+      "venue": "Temple of Doom",
+      "city": "Wichita, KS",
+      "flyer": "gnarly-davidson-14.png",
+      "band": "Gnarly Davidson",
+      "slug": "gnarly-davidson"
+    },
+    {
+      "date": "2016-05-06",
+      "display": "May 6, 2016",
+      "event": "Tour",
+      "venue": "Blind Tiger",
+      "city": "Kansas City, MO",
+      "flyer": "gnarly-davidson-14.png",
+      "band": "Gnarly Davidson",
+      "slug": "gnarly-davidson"
+    },
+    {
+      "date": "2016-05-21",
+      "display": "May 21, 2016",
+      "event": "Show with The Sluts + Young Bull",
+      "venue": "The Replay",
+      "city": "Lawrence, KS ",
+      "band": "Gnarly Davidson",
+      "slug": "gnarly-davidson"
+    },
+    {
+      "date": "2016-06-05",
+      "display": "Jun 5, 2016",
+      "event": "Riverfest with Black Flag",
+      "venue": "Riverfest",
+      "city": "Wichita, KS ",
+      "band": "Gnarly Davidson",
+      "slug": "gnarly-davidson"
+    },
+    {
+      "date": "2016-06-10",
+      "display": "Jun 10, 2016",
+      "event": "Show with The Everymen + Varma Cross",
+      "venue": "The Replay",
+      "city": "Lawrence, KS ",
+      "band": "Gnarly Davidson",
+      "slug": "gnarly-davidson"
+    },
+    {
+      "date": "2016-08-27",
+      "display": "Aug 27, 2016",
+      "event": "Show with Truth Cell + Amenaza + Melting Point of Bronze + More",
+      "venue": "The Bottleneck",
+      "city": "Lawrence, KS ",
+      "band": "Gnarly Davidson",
+      "slug": "gnarly-davidson"
+    },
+    {
+      "date": "2016-09-09",
+      "display": "Sep 9, 2016",
+      "event": "Release of The Tape! and The CD!",
+      "venue": "",
+      "city": "",
+      "band": "Gnarly Davidson",
+      "slug": "gnarly-davidson"
     },
     {
       "date": "2016-09-11",
@@ -1980,11 +2785,279 @@ window.SAMS_DATA={
       "slug": "jabberjosh"
     },
     {
+      "date": "2016-09-11",
+      "display": "Sep 11, 2016",
+      "event": "Final Dag Show with Jabberjosh + Wooly Bear",
+      "venue": "Dag House",
+      "city": "Cleveland, OH ",
+      "band": "Gnarly Davidson",
+      "slug": "gnarly-davidson"
+    },
+    {
+      "date": "2016-10-31",
+      "display": "Oct 31, 2016",
+      "event": "Halloween Show with Bummer + Raymond",
+      "venue": "The Replay",
+      "city": "Lawrence, KS ",
+      "band": "Gnarly Davidson",
+      "slug": "gnarly-davidson"
+    },
+    {
+      "date": "2016-11-01",
+      "display": "Nov 1, 2016",
+      "event": "7\" Release of Jabberjaw/ Coffin Nail",
+      "venue": "",
+      "city": "",
+      "band": "Gnarly Davidson",
+      "slug": "gnarly-davidson"
+    },
+    {
+      "date": "2017-01-05",
+      "display": "Jan 5, 2017",
+      "event": "Show with Brody Buster Band + The MGD's",
+      "venue": "Knuckleheads",
+      "city": "Kansas City, MK",
+      "band": "Gnarly Davidson",
+      "slug": "gnarly-davidson"
+    },
+    {
+      "date": "2017-03-17",
+      "display": "Mar 17, 2017",
+      "event": "Show with Signals Midwest",
+      "venue": "The Jackpot",
+      "city": "Lawrence, KS ",
+      "band": "Gnarly Davidson",
+      "slug": "gnarly-davidson"
+    },
+    {
+      "date": "2017-04-08",
+      "display": "Apr 8, 2017",
+      "event": "KJHK Farmers Ball",
+      "venue": "The Bottleneck",
+      "city": "Lawrence, KS ",
+      "band": "Gnarly Davidson",
+      "slug": "gnarly-davidson"
+    },
+    {
+      "date": "2017-05-12",
+      "display": "May 12, 2017",
+      "event": "Show with Shitstorm + Young Bull",
+      "venue": "The Replay",
+      "city": "Lawrence, KS ",
+      "band": "Gnarly Davidson",
+      "slug": "gnarly-davidson"
+    },
+    {
+      "date": "2017-05-27",
+      "display": "May 27, 2017",
+      "event": "Smokestock: Midwest Stoner Rock Revival",
+      "venue": "All Star Rock Bar",
+      "city": "Kansas City, MO",
+      "band": "Gnarly Davidson",
+      "slug": "gnarly-davidson"
+    },
+    {
+      "date": "2017-07-14",
+      "display": "Jul 14, 2017",
+      "event": "Lawrence Field Day Fest",
+      "venue": "The Replay",
+      "city": "Lawrence, KS ",
+      "band": "Gnarly Davidson",
+      "slug": "gnarly-davidson"
+    },
+    {
+      "date": "2017-07-22",
+      "display": "Jul 22, 2017",
+      "event": "Show with Hyborian and Godmaker!",
+      "venue": "The Replay",
+      "city": "Lawrence, KS ",
+      "band": "Gnarly Davidson",
+      "slug": "gnarly-davidson"
+    },
+    {
+      "date": "2017-08-09",
+      "display": "Aug 9, 2017",
+      "event": "Show with Orca",
+      "venue": "The Replay",
+      "city": "Lawrence, KS ",
+      "band": "Gnarly Davidson",
+      "slug": "gnarly-davidson"
+    },
+    {
+      "date": "2017-08-10",
+      "display": "Aug 10, 2017",
+      "event": "Show with Orca",
+      "venue": "Mcpherson City Limits",
+      "city": "Mcpherson, KS ",
+      "band": "Gnarly Davidson",
+      "slug": "gnarly-davidson"
+    },
+    {
+      "date": "2017-08-11",
+      "display": "Aug 11, 2017",
+      "event": "Show with Orca",
+      "venue": "Kirby's",
+      "city": "Wichita, KS ",
+      "band": "Gnarly Davidson",
+      "slug": "gnarly-davidson"
+    },
+    {
+      "date": "2017-08-12",
+      "display": "Aug 12, 2017",
+      "event": "Show with Orca",
+      "venue": "The Jump Joint",
+      "city": "Manhattan, KS ",
+      "band": "Gnarly Davidson",
+      "slug": "gnarly-davidson"
+    },
+    {
+      "date": "2017-09-30",
+      "display": "Sep 30, 2017",
+      "event": "Show with Arch Flash + Highwesthus + La Guerre",
+      "venue": "The Replay",
+      "city": "Lawrence, KS ",
+      "band": "Gnarly Davidson",
+      "slug": "gnarly-davidson"
+    },
+    {
+      "date": "2017-12-31",
+      "display": "Dec 31, 2017",
+      "event": "New Year's Eve Show",
+      "venue": "The Replay",
+      "city": "Lawrence, KS ",
+      "band": "Gnarly Davidson",
+      "slug": "gnarly-davidson"
+    },
+    {
+      "date": "2018-03-16",
+      "display": "Mar 16, 2018",
+      "event": "3:16 show VS. Young Bull",
+      "venue": "The Replay",
+      "city": "Lawrence, KS ",
+      "flyer": "gnarly-davidson-12.png",
+      "band": "Gnarly Davidson",
+      "slug": "gnarly-davidson"
+    },
+    {
+      "date": "2018-05-11",
+      "display": "May 11, 2018",
+      "event": "TOUR with Boreal Hills + Bloom",
+      "venue": "The Replay",
+      "city": "Lawrence, KS ",
+      "flyer": "gnarly-davidson-9.png",
+      "band": "Gnarly Davidson",
+      "slug": "gnarly-davidson"
+    },
+    {
+      "date": "2018-05-12",
+      "display": "May 12, 2018",
+      "event": "TOUR with Boreal Hills + Milk Wave + Mystery Blood",
+      "venue": "Kirby's",
+      "city": "Wichita, KS ",
+      "flyer": "gnarly-davidson-8.png",
+      "band": "Gnarly Davidson",
+      "slug": "gnarly-davidson"
+    },
+    {
+      "date": "2018-05-13",
+      "display": "May 13, 2018",
+      "event": "TOUR with Boreal Hills ",
+      "venue": "Soundpony Bar",
+      "city": "Tulsa, OK",
+      "band": "Gnarly Davidson",
+      "slug": "gnarly-davidson"
+    },
+    {
+      "date": "2018-05-14",
+      "display": "May 14, 2018",
+      "event": "TOUR with Boreal Hills + Spacetrucker + Shitstorm",
+      "venue": "The Sinkhole",
+      "city": "St. Louis, MO",
+      "band": "Gnarly Davidson",
+      "slug": "gnarly-davidson"
+    },
+    {
+      "date": "2018-05-15",
+      "display": "May 15, 2018",
+      "event": "TOUR with Boreal Hills + Nagas",
+      "venue": "PG",
+      "city": "Evansville, Il",
+      "band": "Gnarly Davidson",
+      "slug": "gnarly-davidson"
+    },
+    {
+      "date": "2018-05-16",
+      "display": "May 16, 2018",
+      "event": "TOUR with Boreal Hills + DANA",
+      "venue": "Cafe Bourbon Street",
+      "city": "Columbus, OH",
+      "band": "Gnarly Davidson",
+      "slug": "gnarly-davidson"
+    },
+    {
+      "date": "2018-05-17",
+      "display": "May 17, 2018",
+      "event": "TOUR with Boreal Hills + Wooly Bear",
+      "venue": "Mahall's",
+      "city": "Cleveland, OH",
+      "flyer": "gnarly-davidson-7.png",
+      "band": "Gnarly Davidson",
+      "slug": "gnarly-davidson"
+    },
+    {
+      "date": "2018-05-19",
+      "display": "May 19, 2018",
+      "event": "TOUR with Boreal Hills ",
+      "venue": "The VCR Apartment",
+      "city": "Chicago, IL ",
+      "band": "Gnarly Davidson",
+      "slug": "gnarly-davidson"
+    },
+    {
+      "date": "2018-05-20",
+      "display": "May 20, 2018",
+      "event": "TOUR with Boreal Hills + Moon Rats",
+      "venue": "High Dive",
+      "city": "Milwaukee, WI",
+      "flyer": "gnarly-davidson-6.png",
+      "band": "Gnarly Davidson",
+      "slug": "gnarly-davidson"
+    },
+    {
+      "date": "2018-05-21",
+      "display": "May 21, 2018",
+      "event": "Show with Dos Males, Twichard",
+      "venue": "High Noon Saloon",
+      "city": "Madison, WI",
+      "band": "Gnarly Davidson",
+      "slug": "gnarly-davidson"
+    },
+    {
+      "date": "2018-05-26",
+      "display": "May 26, 2018",
+      "event": "Show with Acoustic Guillotine",
+      "venue": "Trumpet Blossom Cafe",
+      "city": "Iowa City, IA",
+      "band": "Gnarly Davidson",
+      "slug": "gnarly-davidson"
+    },
+    {
+      "date": "2018-06-01",
+      "display": "Jun 1, 2018",
+      "event": "Senior Recital",
+      "venue": "The Bottleneck",
+      "city": "Lawrence, KS ",
+      "flyer": "gnarly-davidson-3.png",
+      "band": "Gnarly Davidson",
+      "slug": "gnarly-davidson"
+    },
+    {
       "date": "2019-10-13",
       "display": "Oct 13, 2019",
       "event": "First Show with The Well + Bloom",
       "venue": "Replay",
       "city": "Lawrence, KS",
+      "flyer": "slaw-2.jpeg",
       "band": "Slaw",
       "slug": "slaw"
     },
@@ -1994,6 +3067,7 @@ window.SAMS_DATA={
       "event": "Show with Tongue Party + Not Cops + Tokeback Mountain",
       "venue": "Replay",
       "city": "Lawrence, KS",
+      "flyer": "slaw-3.jpeg",
       "band": "Slaw",
       "slug": "slaw"
     },
@@ -2003,6 +3077,7 @@ window.SAMS_DATA={
       "event": "Christmas Show with J.C. & The Nuns + Tallboys + Drude",
       "venue": "Replay",
       "city": "Lawrence, KS",
+      "flyer": "slaw-4.jpeg",
       "band": "Slaw",
       "slug": "slaw"
     },
@@ -2012,6 +3087,7 @@ window.SAMS_DATA={
       "event": "Show with Nerver + Dead Hour Noise",
       "venue": "Replay",
       "city": "Lawrence, KS",
+      "flyer": "slaw-5.jpeg",
       "band": "Slaw",
       "slug": "slaw"
     },
@@ -2021,8 +3097,19 @@ window.SAMS_DATA={
       "event": "Show with Visitor",
       "venue": "Eighth Street Taproom",
       "city": "Lawrence, KS",
+      "flyer": "slaw-6.jpeg",
       "band": "Slaw",
       "slug": "slaw"
+    },
+    {
+      "date": "2020-09-27",
+      "display": "Sep 27, 2020",
+      "event": "Tape Release Show with Varma Gross",
+      "venue": "Love Garden",
+      "city": "Lawrence, KS ",
+      "flyer": "gnarly-davidson-13.png",
+      "band": "Gnarly Davidson",
+      "slug": "gnarly-davidson"
     },
     {
       "date": "7/7/2002 - 7/20/2002",
