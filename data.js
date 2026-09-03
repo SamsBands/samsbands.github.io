@@ -1,0 +1,2055 @@
+window.SAMS_DATA={
+  "title": "SamsBands",
+  "subtitle": "An archive of Sam Gunnerson's bands, shows & music",
+  "bands": [
+    {
+      "name": "EMR",
+      "slug": "emr",
+      "intro": [
+        "Ernie's Meter Repair AKA EMR was based out of Pratt Kansas and active from 2000 - 2004",
+        "EMR Was Sam Gunnerson Guitar/Bass/Vocals , Kyle Guitar/Bass/Vocals, Dane Guitar/Bass/Vocals , Zach Guitar/Bass/ Vocals ,  Will Gunnerson on Drums",
+        "\"We Used to Be Better\""
+      ],
+      "links": [
+        "https://samjams.bandcamp.com/album/split-my-pants-emr-and-my-friend-tim",
+        "https://www.oocities.org/erniesmeterrepair/home.html"
+      ],
+      "timeline": [
+        {
+          "date": "2000-09-21",
+          "display": "Sep 21, 2000",
+          "event": "EMR Fails to make the Pratt High School Homecoming Tryouts",
+          "venue": "",
+          "city": ""
+        },
+        {
+          "date": "2000-11-20",
+          "display": "Nov 20, 2000",
+          "event": "EMR Posts \"Hot Damn\" on their website. Predecessor to  \"Hot Shit\"",
+          "venue": "",
+          "city": ""
+        },
+        {
+          "date": "2000-12-08",
+          "display": "Dec 8, 2000",
+          "event": "Show with Agent 246 + Five Finger Faith",
+          "venue": "Teen Center",
+          "city": "Hutchinson, KS"
+        },
+        {
+          "date": "2000-12-16",
+          "display": "Dec 16, 2000",
+          "event": "Show with Agent 246 + Last Ride Out",
+          "venue": "",
+          "city": "Hutchinson, KS"
+        },
+        {
+          "date": "2000-12-27",
+          "display": "Dec 27, 2000",
+          "event": "EMR Talks Shit on PK180 (Hutch Band)",
+          "venue": "",
+          "city": ""
+        },
+        {
+          "date": "2001-01-03",
+          "display": "Jan 3, 2001",
+          "event": "EMR Records \"Demo\"",
+          "venue": "",
+          "city": ""
+        },
+        {
+          "date": "2001-01-06",
+          "display": "Jan 6, 2001",
+          "event": "Show with Agent 246 + Last Ride Out",
+          "venue": "Teen Center",
+          "city": "Hutchinson, KS"
+        },
+        {
+          "date": "2001-01-27",
+          "display": "Jan 27, 2001",
+          "event": "Show with Last Ride Out + Christine + Foraman Magnum",
+          "venue": "????",
+          "city": "Dodge City, KS"
+        },
+        {
+          "date": "2001-07-04",
+          "display": "Jul 4, 2001",
+          "event": "EMR Posts \"Happy 4th of July!!! BLOW YOUR ASS OFF!\"",
+          "venue": "",
+          "city": ""
+        },
+        {
+          "date": "2001-07-21",
+          "display": "Jul 21, 2001",
+          "event": "Prattstock with Pirate Radio + Invalid + No Tomorrow + Last Ride Out + Ryan and Bryan (My Friend Tim?!)",
+          "venue": "Lemon Park",
+          "city": "Pratt, KS"
+        },
+        {
+          "date": "2001-08-13",
+          "display": "Aug 13, 2001",
+          "event": "Zach, Dane and Kyle go to college show with Agent 246",
+          "venue": "Pratt Teen Center",
+          "city": "Pratt, KS"
+        },
+        {
+          "date": "2001-10-20",
+          "display": "Oct 20, 2001",
+          "event": "Local Show",
+          "venue": "Royal Rena Skating Rink",
+          "city": "Pratt, KS"
+        },
+        {
+          "date": "2001-11-03",
+          "display": "Nov 3, 2001",
+          "event": "Local Show",
+          "venue": "Pratt Teen Center",
+          "city": "Pratt, KS"
+        },
+        {
+          "date": "2002-01-10",
+          "display": "Jan 10, 2002",
+          "event": "Local Show",
+          "venue": "Ryan Gee's House",
+          "city": "Hutchinson, KS"
+        },
+        {
+          "date": "2002-02-01",
+          "display": "Feb 1, 2002",
+          "event": "Pratt High School Homecoming Assembly",
+          "venue": "Pratty High School",
+          "city": "Pratt, KS"
+        },
+        {
+          "date": "2002-02-12",
+          "display": "Feb 12, 2002",
+          "event": "EMR Posts about At the Drive In + Osker breaking up",
+          "venue": "",
+          "city": ""
+        },
+        {
+          "date": "2002-02-16",
+          "display": "Feb 16, 2002",
+          "event": "FIRST Wichita show with Last Ride Out + Shake Gently + No Tomorrow + Nowhere Fast",
+          "venue": "Eagles Lodge",
+          "city": "Wichita, KS"
+        },
+        {
+          "date": "2002-04-26",
+          "display": "Apr 26, 2002",
+          "event": "Show with Christine + That Same Day Service (TX)",
+          "venue": "????",
+          "city": "????"
+        },
+        {
+          "date": "2002-04-28",
+          "display": "Apr 28, 2002",
+          "event": "Begin Booking the \"Until the Van Breaksdown\" Tour with My Friend Tim",
+          "venue": "",
+          "city": ""
+        },
+        {
+          "date": "2002-06-03",
+          "display": "Jun 3, 2002",
+          "event": "EMR Stickers go into production",
+          "venue": "",
+          "city": ""
+        },
+        {
+          "date": "2002-06-23",
+          "display": "Jun 23, 2002",
+          "event": "EMR starts Recording \"Split my Pants\" with My Friend Tim",
+          "venue": "",
+          "city": ""
+        },
+        {
+          "date": "2002-07-01",
+          "display": "Jul 1, 2002",
+          "event": "Release \"Split my Pants\" with My Friend Tim",
+          "venue": "",
+          "city": ""
+        },
+        {
+          "date": "7/7/2002 - 7/20/2002",
+          "display": "7/7/2002 - 7/20/2002",
+          "event": "\"Until the Van Breaksdown\" Tour with My Friend Tim and Remembering December",
+          "venue": "????",
+          "city": "????"
+        },
+        {
+          "date": "2002-09-01",
+          "display": "Sep 1, 2002",
+          "event": "Show with the Vanzetti's + Incredible Youth + Hanoi Chevrolet",
+          "venue": "Lee Shiney Art Gallery",
+          "city": "Wichita, KS"
+        },
+        {
+          "date": "2002-10-19",
+          "display": "Oct 19, 2002",
+          "event": "Show with No Tomorrow + Hanoi Chevrolet + My Friend Tim",
+          "venue": "????",
+          "city": "????"
+        },
+        {
+          "date": "2002-11-02",
+          "display": "Nov 2, 2002",
+          "event": "Show with the Vanzetti's (CD Release Show) + Hanoi Chevrolet + Duplicate Copy",
+          "venue": "Lee Shiney Art Gallery",
+          "city": "Wichita, KS"
+        },
+        {
+          "date": "2002-11-23",
+          "display": "Nov 23, 2002",
+          "event": "Show with Wayne Has a Girls Name",
+          "venue": "????",
+          "city": "????"
+        },
+        {
+          "date": "2003-04-05",
+          "display": "Apr 5, 2003",
+          "event": "\"We Used to Be Better\" Wraps up Recording",
+          "venue": "",
+          "city": ""
+        },
+        {
+          "date": "2003-04-12",
+          "display": "Apr 12, 2003",
+          "event": "\"We Used to Be Better\" CD release show",
+          "venue": "City Park",
+          "city": "Manhattan, KS"
+        },
+        {
+          "date": "2003-05-10",
+          "display": "May 10, 2003",
+          "event": "Show",
+          "venue": "Zach's Backyard",
+          "city": "Manhattan, KS"
+        },
+        {
+          "date": "2003-05-12",
+          "display": "May 12, 2003",
+          "event": "Begin Booking the \"Highway High Fives Tour\" With my Friend Tim",
+          "venue": "Midwest",
+          "city": ""
+        },
+        {
+          "date": "2003-07-19",
+          "display": "Jul 19, 2003",
+          "event": "2 Shows for \"Highway High Fives Tour\"",
+          "venue": "???",
+          "city": "???"
+        },
+        {
+          "date": "2004-05-01",
+          "display": "May 1, 2004",
+          "event": "Final Update to the EMR website",
+          "venue": "",
+          "city": ""
+        }
+      ],
+      "images": [
+        "emr-1.png",
+        "emr-2.png",
+        "emr-3.png",
+        "emr-4.png",
+        "emr-5.png",
+        "emr-6.jpeg"
+      ]
+    },
+    {
+      "name": "My Friend Tim",
+      "slug": "my-friend-tim",
+      "intro": [
+        "My Friend Tim was from Kansas City by way of Pratt and Hutchinson, KS and active from 2001 - 2004",
+        "My Friend Tim was Ryan Gee on Guitar / Vocals , Sam Gunnerson Bass / Vocals, Matt Bisel (the Dream Crusher) Guitar / Vocals and Brian Scheel and Will Gunnerson on the Drums"
+      ],
+      "links": [
+        "https://samjams.bandcamp.com/album/split-my-pants-emr-and-my-friend-tim",
+        "https://samjams.bandcamp.com/album/my-friend-tim-ogre-house-demo"
+      ],
+      "timeline": [
+        {
+          "date": "2002-03-23",
+          "display": "Mar 23, 2002",
+          "event": "Show with Last Ride + Nowhere Fast",
+          "venue": "Carey Park Homebuilders Shelter",
+          "city": "Hutchinson, KS"
+        },
+        {
+          "date": "2002-06-06",
+          "display": "Jun 6, 2002",
+          "event": "Dane and Sam from EMR start practicing with My Friend Tim",
+          "venue": "",
+          "city": ""
+        },
+        {
+          "date": "2002-06-17",
+          "display": "Jun 17, 2002",
+          "event": "Matt Bisel announces Remembering December will join EMR and My Friend Tim on Summer Tour",
+          "venue": "",
+          "city": ""
+        },
+        {
+          "date": "2002-06-28",
+          "display": "Jun 28, 2002",
+          "event": "My Friend Tim Starts Recording \"Split my Pants\" with EMR",
+          "venue": "",
+          "city": ""
+        },
+        {
+          "date": "Summer 2002",
+          "display": "Summer 2002",
+          "event": "Release \"Split my Pants\" with EMR",
+          "venue": "",
+          "city": ""
+        },
+        {
+          "date": "2002-07-03",
+          "display": "Jul 3, 2002",
+          "event": "Nowhere Fast Breaks Up",
+          "venue": "",
+          "city": ""
+        },
+        {
+          "date": "7/7/2002 - 7/20/2002",
+          "display": "7/7/2002 - 7/20/2002",
+          "event": "\"Until the Van Breaksdown\" Tour with EMR and Remembering December",
+          "venue": "????",
+          "city": "???"
+        },
+        {
+          "date": "2002-10-19",
+          "display": "Oct 19, 2002",
+          "event": "Show with No Tomorrow + Hanoi Chevrolet + EMR",
+          "venue": "????",
+          "city": "???"
+        },
+        {
+          "date": "2003-03-01",
+          "display": "Mar 1, 2003",
+          "event": "Show with King TP + Schimon's Truth + Desperately Seeking Simon + Hey Rodeo",
+          "venue": "Carey Park Homebuilders Shelter",
+          "city": "Hutchinson, KS"
+        },
+        {
+          "date": "2003-06-24",
+          "display": "Jun 24, 2003",
+          "event": "Show with Stellar Frequency + Claiming Haley + Smolder + The Cool Concern + 12 Ton",
+          "venue": "Eagles Lodge",
+          "city": "Hutchinson, KS"
+        },
+        {
+          "date": "2003-12-06",
+          "display": "Dec 6, 2003",
+          "event": "Show with King TP + Schimon's Truth + Claiming Haley + 12 Ton + Argyle Trio",
+          "venue": "Morgan Elementary",
+          "city": "Hutchinson, KS"
+        },
+        {
+          "date": "2004-03-01",
+          "display": "Mar 1, 2004",
+          "event": "Show with Claiming Haley + Prom Night (Ricky Fitts did NOT play this show)",
+          "venue": "Rice Park Building",
+          "city": "Hutchinson, KS"
+        }
+      ],
+      "images": [
+        "my-friend-tim-1.png",
+        "my-friend-tim-2.jpeg",
+        "my-friend-tim-3.png",
+        "my-friend-tim-4.png",
+        "my-friend-tim-5.png",
+        "my-friend-tim-6.png",
+        "my-friend-tim-7.png",
+        "my-friend-tim-8.png"
+      ]
+    },
+    {
+      "name": "Long Division",
+      "slug": "long-division",
+      "intro": [
+        "Long Division was from Lawrence, Kansas and active from 2005 - 2007",
+        "Long Division was Ryan Gee on Guitar / Vocals , Sam Gunnerson Bass / Vocals, Jose Ray Guitar / Vocals and Will Gunnerson on the Drums"
+      ],
+      "links": [
+        "https://samjams.bandcamp.com/album/long-division-5-song-demo"
+      ],
+      "timeline": [
+        {
+          "date": "2005-12-22",
+          "display": "Dec 22, 2005",
+          "event": "Show with Good Day Generals + Ghost of Graffit + Wolf Economy",
+          "venue": "Homebuilders Shelter",
+          "city": "Hutchinson, KS"
+        },
+        {
+          "date": "2006-01-20",
+          "display": "Jan 20, 2006",
+          "event": "Show with Paper Airplanes + Davan",
+          "venue": "The Jackpot",
+          "city": "Lawrence, KS"
+        },
+        {
+          "date": "2006-02-24",
+          "display": "Feb 24, 2006",
+          "event": "Show with KTP + Ghost of Graffiti + Accelerate Entropy",
+          "venue": "Eagles Lodge",
+          "city": "Hutchinson, KS"
+        },
+        {
+          "date": "2006-02-28",
+          "display": "Feb 28, 2006",
+          "event": "Show with The Gunning System",
+          "venue": "Eighth Street Taproom",
+          "city": "Lawrence, KS"
+        },
+        {
+          "date": "2006-03-10",
+          "display": "Mar 10, 2006",
+          "event": "Show with the Gunshy + This Is My Condition",
+          "venue": "Replay Lounge",
+          "city": "Lawrence, KS"
+        },
+        {
+          "date": "2005-04-07",
+          "display": "Apr 7, 2005",
+          "event": "Show with Ricky Fitts + The Gunshy + Mustangs and Madras and Long Division",
+          "venue": "Haunted Kitchen",
+          "city": "Lawrence, KS"
+        },
+        {
+          "date": "2006-06-09",
+          "display": "Jun 9, 2006",
+          "event": "ICT Fest",
+          "venue": "Eagles Lodge",
+          "city": "Wichita, KS"
+        },
+        {
+          "date": "2006-06-27",
+          "display": "Jun 27, 2006",
+          "event": "Show with Baby Birds Don't Drink Milk + TG Cig",
+          "venue": "The Bottleneck",
+          "city": "Lawrence, KS"
+        },
+        {
+          "date": "2006-06-29",
+          "display": "Jun 29, 2006",
+          "event": "Show with Bring Back the Guns + The Armory",
+          "venue": "The Jackpot",
+          "city": "Lawrence, KS"
+        },
+        {
+          "date": "2006-06-30",
+          "display": "Jun 30, 2006",
+          "event": "Show with This Is My Condition + Cassiopia + Baiowolf + Realicide",
+          "venue": "The Pool Room",
+          "city": "Lawrence, KS"
+        },
+        {
+          "date": "2006-09-01",
+          "display": "Sep 1, 2006",
+          "event": "Show with Paper Airplanes / Baby Birds Don't Drink Milk",
+          "venue": "The Jackpot",
+          "city": "Lawrence, KS"
+        },
+        {
+          "date": "2007-06-07",
+          "display": "Jun 7, 2007",
+          "event": "ICT Fest",
+          "venue": "The Wig Shop",
+          "city": "Wichita, KS"
+        }
+      ],
+      "images": [
+        "long-division-1.jpeg",
+        "long-division-2.jpeg",
+        "long-division-3.png",
+        "long-division-4.png",
+        "long-division-5.png",
+        "long-division-6.png",
+        "long-division-7.png",
+        "long-division-8.png",
+        "long-division-9.png",
+        "long-division-10.png",
+        "long-division-11.jpeg",
+        "long-division-12.png",
+        "long-division-13.png"
+      ]
+    },
+    {
+      "name": "Weather is Happening",
+      "slug": "weather-is-happening",
+      "intro": [
+        "Weather is Happening  was from Wichita,  Kansas and active from 2006 - 2008",
+        "Weather is Happening was Daniel Davis on Guitar / Vocals , Sam Gunnerson Bass , Casey Loren Guitar / Vocals and Joe Ross on the Drums",
+        "*** Sam and Joe were not on these recordings***",
+        "\"Electric Snake Demo\""
+      ],
+      "links": [
+        "https://weatherishappening.bandcamp.com/album/young-country"
+      ],
+      "timeline": [
+        {
+          "date": "2007-03-11",
+          "display": "Mar 11, 2007",
+          "event": "Electric Snake Demo recorded by Torin Anderson",
+          "venue": "",
+          "city": ""
+        },
+        {
+          "date": "2007-06-07",
+          "display": "Jun 7, 2007",
+          "event": "ICT Fest",
+          "venue": "The Wig Shop",
+          "city": "Wichita, KS"
+        },
+        {
+          "date": "2007-07-01",
+          "display": "Jul 1, 2007",
+          "event": "Show",
+          "venue": "B-Side Gallery",
+          "city": "Wichita, KS"
+        },
+        {
+          "date": "2007-08-18",
+          "display": "Aug 18, 2007",
+          "event": "Show wuith Decibully + Evan Miller + STNNNG + The Tanks",
+          "venue": "The Picador",
+          "city": "Iowa City, IA"
+        },
+        {
+          "date": "2007-09-11",
+          "display": "Sep 11, 2007",
+          "event": "Young Country recorded at Flat Black Studios",
+          "venue": "",
+          "city": ""
+        },
+        {
+          "date": "2007-10-05",
+          "display": "Oct 5, 2007",
+          "event": "Show with Black Gasoline + Building Better Bombs + Sad Panda + Traindodge",
+          "venue": "Barleycorns",
+          "city": "Wichita, KS"
+        },
+        {
+          "date": "2007-11-01",
+          "display": "Nov 1, 2007",
+          "event": "TOUR?!",
+          "venue": "",
+          "city": ""
+        },
+        {
+          "date": "2007-11-19",
+          "display": "Nov 19, 2007",
+          "event": "Show with Battlefields + Sleeping in Gethsemane",
+          "venue": "Nutty's",
+          "city": "Sioux Falls, SD"
+        },
+        {
+          "date": "2008-03-04",
+          "display": "Mar 4, 2008",
+          "event": "Show with Neptune + Foul Tip + Dimas Lemus + Lwa/Nimby",
+          "venue": "The Picador",
+          "city": "Iowa City, IA"
+        },
+        {
+          "date": "2008-03-08",
+          "display": "Mar 8, 2008",
+          "event": "INIT Fest with Blinding Light + Battlefields + Building Better Bombs + In the Face of War + More",
+          "venue": "Nutty's North",
+          "city": "Sioux Falls, SD"
+        }
+      ],
+      "images": [
+        "weather-is-happening-1.png",
+        "weather-is-happening-2.png"
+      ]
+    },
+    {
+      "name": "Monsoon Lazer",
+      "slug": "monsoon-lazer",
+      "intro": [
+        "Monsoon Lazer was from Lawrence Kansas, and active from 2012 to 2013",
+        "Monsoon Lazer was Aaron Pillar on Guitar , Sam Gunnerson on Bass, and Will Gunnerson on the drums"
+      ],
+      "links": [],
+      "timeline": [
+        {
+          "date": "2012-09-13",
+          "display": "Sep 13, 2012",
+          "event": "First show",
+          "venue": "The Replay",
+          "city": "Lawrence, KS"
+        },
+        {
+          "date": "2012-10-22",
+          "display": "Oct 22, 2012",
+          "event": "Show with Hospital Ships + Pale Hearts",
+          "venue": "The Bottleneck",
+          "city": "Lawrence, KS"
+        },
+        {
+          "date": "2012-12-21",
+          "display": "Dec 21, 2012",
+          "event": "Show with The Hips",
+          "venue": "The Replay",
+          "city": "Lawrence, KS"
+        },
+        {
+          "date": "2012-12-31",
+          "display": "Dec 31, 2012",
+          "event": "Show with Pale Hearts, Stiff Middle Fingers",
+          "venue": "Frank's North Star Tavern",
+          "city": "Lawrence, KS"
+        },
+        {
+          "date": "2013-05-24",
+          "display": "May 24, 2013",
+          "event": "Show with Muscle Worship (LP Release Show) + Truck Or Dead Horse",
+          "venue": "The Replay",
+          "city": "Lawrence, KS"
+        },
+        {
+          "date": "2013-07-13",
+          "display": "Jul 13, 2013",
+          "event": "Lawrence Field Day",
+          "venue": "The Bottleneck",
+          "city": "Lawrence, KS"
+        }
+      ],
+      "images": [
+        "monsoon-lazer-1.png"
+      ]
+    },
+    {
+      "name": "THUNDERFUCK",
+      "slug": "thunderfuck",
+      "intro": [],
+      "links": [],
+      "timeline": [],
+      "images": [
+        "thunderfuck-1.png",
+        "thunderfuck-2.png",
+        "thunderfuck-3.png",
+        "thunderfuck-4.png",
+        "thunderfuck-5.png",
+        "thunderfuck-6.png",
+        "thunderfuck-7.png",
+        "thunderfuck-8.png"
+      ]
+    },
+    {
+      "name": "JabberJosh",
+      "slug": "jabberjosh",
+      "intro": [
+        "Jabberjosh was Sam, and his brother Will, and they had some birthdays to announce",
+        "\"Waking Up The Neighborhood Tonight!\"",
+        "\"Free Your Ass and Your Mind Will Follow\""
+      ],
+      "links": [
+        "https://jabberjosh.bandcamp.com/album/waking-up-the-neighborhood-tonight-cassette",
+        "https://jabberjosh.bandcamp.com/album/free-your-ass-and-your-mind-will-follow"
+      ],
+      "timeline": [
+        {
+          "date": "2009-05-19",
+          "display": "May 19, 2009",
+          "event": "Show with Be Kind to your Neighbor + Low Oriole",
+          "venue": "135 N Estelle",
+          "city": "Wichita, KS"
+        },
+        {
+          "date": "2009-06-12",
+          "display": "Jun 12, 2009",
+          "event": "ICT FEST",
+          "venue": "Eagles Lodge",
+          "city": "Wichita, KS"
+        },
+        {
+          "date": "2009-08-04",
+          "display": "Aug 4, 2009",
+          "event": "Show with The Men",
+          "venue": "The Bluebird",
+          "city": "Bloomington, IN"
+        },
+        {
+          "date": "2009-09-05",
+          "display": "Sep 5, 2009",
+          "event": "Show with Ad Astra Drumline and the Freakout Ensemble + The Low Red Land",
+          "venue": "Eighth Street Taproom",
+          "city": "Lawrence, KS"
+        },
+        {
+          "date": "2009-12-07",
+          "display": "Dec 7, 2009",
+          "event": "Show with Thundereagle + Runaway Sons",
+          "venue": "Riot Room",
+          "city": "Kansas City, MO"
+        },
+        {
+          "date": "2010-02-20",
+          "display": "Feb 20, 2010",
+          "event": "Show with The Men + Stupid Party + Pregnant + Nightbirds",
+          "venue": "518 Johnson Ave",
+          "city": "Brooklyn, NY"
+        },
+        {
+          "date": "2010-03-24",
+          "display": "Mar 24, 2010",
+          "event": "Show with Big Science + Burger Kingdom + Big City Livin' + Stull",
+          "venue": "The Bottleneck",
+          "city": "Lawrence, KS"
+        },
+        {
+          "date": "2010-05-15",
+          "display": "May 15, 2010",
+          "event": "Show with Fourth of July + Old Canes + Burger Kingdom",
+          "venue": "The Jackpot",
+          "city": "Lawrence, KS"
+        },
+        {
+          "date": "2010-07-30",
+          "display": "Jul 30, 2010",
+          "event": "ICT Fest",
+          "venue": "Eagles Lodge",
+          "city": "Wichita, KS"
+        },
+        {
+          "date": "2010-09-16",
+          "display": "Sep 16, 2010",
+          "event": "Show with Muscle Worship + Low Oriole",
+          "venue": "The Jackpot",
+          "city": "Lawrence, KS"
+        },
+        {
+          "date": "2010-11-26",
+          "display": "Nov 26, 2010",
+          "event": "Bass of Spades Tour with The Tanks",
+          "venue": "The Replay",
+          "city": "Lawrence, KS"
+        },
+        {
+          "date": "2010-11-27",
+          "display": "Nov 27, 2010",
+          "event": "Bass of Spades Tour with The Tanks",
+          "venue": "",
+          "city": "Omaha, NE"
+        },
+        {
+          "date": "2010-11-28",
+          "display": "Nov 28, 2010",
+          "event": "Bass of Spades Tour with The Tanks",
+          "venue": "",
+          "city": "Fargo, ND"
+        },
+        {
+          "date": "2010-11-29",
+          "display": "Nov 29, 2010",
+          "event": "Bass of Spades Tour with The Tanks",
+          "venue": "",
+          "city": "Twin Cities, MN"
+        },
+        {
+          "date": "2010-11-30",
+          "display": "Nov 30, 2010",
+          "event": "Bass of Spades Tour with The Tanks",
+          "venue": "",
+          "city": "Milwaukee, WI"
+        },
+        {
+          "date": "2010-12-01",
+          "display": "Dec 1, 2010",
+          "event": "Bass of Spades Tour with The Tanks",
+          "venue": "",
+          "city": "Beloit, WI"
+        },
+        {
+          "date": "2010-12-02",
+          "display": "Dec 2, 2010",
+          "event": "Bass of Spades Tour with The Tanks",
+          "venue": "",
+          "city": "Chicago, IL"
+        },
+        {
+          "date": "2010-12-03",
+          "display": "Dec 3, 2010",
+          "event": "Bass of Spades Tour with The Tanks",
+          "venue": "",
+          "city": "Cedar Falls, IA"
+        },
+        {
+          "date": "2010-12-04",
+          "display": "Dec 4, 2010",
+          "event": "Bass of Spades Tour with The Tanks",
+          "venue": "",
+          "city": "Iowa City, IA"
+        },
+        {
+          "date": "2011-04-01",
+          "display": "Apr 1, 2011",
+          "event": "Show with STNNNG + Muscle Worship",
+          "venue": "The Replay",
+          "city": "Lawrence, KS"
+        },
+        {
+          "date": "2011-05-21",
+          "display": "May 21, 2011",
+          "event": "Spring Into Summer Festival",
+          "venue": "The Replay",
+          "city": "Lawrence, KS"
+        },
+        {
+          "date": "2011-07-04",
+          "display": "Jul 4, 2011",
+          "event": "Show with Fourth of July + Traveling Junipers",
+          "venue": "The Replay",
+          "city": "Lawrence, KS"
+        },
+        {
+          "date": "2011-08-16",
+          "display": "Aug 16, 2011",
+          "event": "Show with The Men",
+          "venue": "The Replay",
+          "city": "Lawrence, KS"
+        },
+        {
+          "date": "2011-11-11",
+          "display": "Nov 11, 2011",
+          "event": "Eleven Productions Fest + Ricky Fitts + More",
+          "venue": "The Jackpot",
+          "city": "Lawrence, KS"
+        },
+        {
+          "date": "2011-12-02",
+          "display": "Dec 2, 2011",
+          "event": "Show with Mouthbreathers + Der Todesking + Spook Lights + Dry Bonnet",
+          "venue": "The Replay",
+          "city": "Lawrence, KS"
+        },
+        {
+          "date": "2012-02-16",
+          "display": "Feb 16, 2012",
+          "event": "Tour Kick Off Show",
+          "venue": "",
+          "city": "Lawrence, KS"
+        },
+        {
+          "date": "2012-02-24",
+          "display": "Feb 24, 2012",
+          "event": "Show with Signals Midwest + Reverse the Curse + Worship This + Two Hand Fools",
+          "venue": "Now Thats Class",
+          "city": "Cleveland, OH"
+        },
+        {
+          "date": "2012-04-06",
+          "display": "Apr 6, 2012",
+          "event": "Show with Guitar Wolf + The Transistors + The Sluts",
+          "venue": "The Bottleneck",
+          "city": "Lawrence, KS"
+        },
+        {
+          "date": "2012-05-12",
+          "display": "May 12, 2012",
+          "event": "Spring Into Summer Festival",
+          "venue": "???",
+          "city": "Lawrence, KS"
+        },
+        {
+          "date": "2012-07-27",
+          "display": "Jul 27, 2012",
+          "event": "ICT Fest",
+          "venue": "WSU Shiftspace Gallery",
+          "city": "Wichita, KS"
+        },
+        {
+          "date": "2012-09-29",
+          "display": "Sep 29, 2012",
+          "event": "Show with Ringo Deathstarr + The Photo Atlas",
+          "venue": "The Jackpot",
+          "city": "Lawrence, KS"
+        },
+        {
+          "date": "2012-12-31",
+          "display": "Dec 31, 2012",
+          "event": "New Years Eve Show with The Sluts + Alien Jones",
+          "venue": "The Replay",
+          "city": "Lawrence, KS"
+        },
+        {
+          "date": "2013-01-04",
+          "display": "Jan 4, 2013",
+          "event": "Show with Approach",
+          "venue": "The Love Garden",
+          "city": "Lawrence, KS"
+        },
+        {
+          "date": "2013-05-13",
+          "display": "May 13, 2013",
+          "event": "Show with KTP",
+          "venue": "The Replay",
+          "city": "Lawrence, KS"
+        },
+        {
+          "date": "2013-08-08",
+          "display": "Aug 8, 2013",
+          "event": "Mini Tour Kick Off Show with Cricket Wand + Psychic Heat",
+          "venue": "The Replay",
+          "city": "Lawrence, KS"
+        },
+        {
+          "date": "2014-07-18",
+          "display": "Jul 18, 2014",
+          "event": "Farewell Show with Muscle Worship",
+          "venue": "The Love Garden",
+          "city": "Lawrence, KS"
+        },
+        {
+          "date": "2016-09-11",
+          "display": "Sep 11, 2016",
+          "event": "Final Dag Show",
+          "venue": "Dag House",
+          "city": "Cleveland, OH"
+        }
+      ],
+      "images": [
+        "jabberjosh-1.png",
+        "jabberjosh-2.png",
+        "jabberjosh-3.png",
+        "jabberjosh-4.png",
+        "jabberjosh-5.png",
+        "jabberjosh-6.png",
+        "jabberjosh-7.png",
+        "jabberjosh-8.png",
+        "jabberjosh-9.png",
+        "jabberjosh-10.png",
+        "jabberjosh-11.png",
+        "jabberjosh-12.png",
+        "jabberjosh-13.png",
+        "jabberjosh-14.png",
+        "jabberjosh-15.png",
+        "jabberjosh-16.png",
+        "jabberjosh-17.png",
+        "jabberjosh-18.png"
+      ]
+    },
+    {
+      "name": "Gnarly Davidson",
+      "slug": "gnarly-davidson",
+      "intro": [],
+      "links": [
+        "https://gnarlydavidsonlfk.bandcamp.com/album/gnarly-davidson",
+        "https://gnarlydavidsonlfk.bandcamp.com/album/jabberjaw-coffin-nail"
+      ],
+      "timeline": [],
+      "images": [
+        "gnarly-davidson-1.png",
+        "gnarly-davidson-2.png",
+        "gnarly-davidson-3.png",
+        "gnarly-davidson-4.png",
+        "gnarly-davidson-5.png",
+        "gnarly-davidson-6.png",
+        "gnarly-davidson-7.png",
+        "gnarly-davidson-8.png",
+        "gnarly-davidson-9.png",
+        "gnarly-davidson-10.png",
+        "gnarly-davidson-11.png",
+        "gnarly-davidson-12.png",
+        "gnarly-davidson-13.png",
+        "gnarly-davidson-14.png"
+      ]
+    },
+    {
+      "name": "Slaw",
+      "slug": "slaw",
+      "intro": [
+        "Slaw was from Lawrence, Kansas and active from 2019 - 2020",
+        "Slaw  was Mitch Jones on Guitar / Vocals , Sam Gunnerson Bass / Vocals, and ??? on the Drums"
+      ],
+      "links": [
+        "https://samjams.bandcamp.com/album/slaw-unreleased"
+      ],
+      "timeline": [
+        {
+          "date": "2019-10-13",
+          "display": "Oct 13, 2019",
+          "event": "First Show with The Well + Bloom",
+          "venue": "Replay",
+          "city": "Lawrence, KS"
+        },
+        {
+          "date": "2019-11-08",
+          "display": "Nov 8, 2019",
+          "event": "Show with Tongue Party + Not Cops + Tokeback Mountain",
+          "venue": "Replay",
+          "city": "Lawrence, KS"
+        },
+        {
+          "date": "2019-12-21",
+          "display": "Dec 21, 2019",
+          "event": "Christmas Show with J.C. & The Nuns + Tallboys + Drude",
+          "venue": "Replay",
+          "city": "Lawrence, KS"
+        },
+        {
+          "date": "2020-01-16",
+          "display": "Jan 16, 2020",
+          "event": "Show with Nerver + Dead Hour Noise",
+          "venue": "Replay",
+          "city": "Lawrence, KS"
+        },
+        {
+          "date": "2020-02-13",
+          "display": "Feb 13, 2020",
+          "event": "Show with Visitor",
+          "venue": "Eighth Street Taproom",
+          "city": "Lawrence, KS"
+        }
+      ],
+      "images": [
+        "slaw-1.jpeg",
+        "slaw-2.jpeg",
+        "slaw-3.jpeg",
+        "slaw-4.jpeg",
+        "slaw-5.jpeg",
+        "slaw-6.jpeg"
+      ]
+    }
+  ],
+  "timeline": [
+    {
+      "date": "2000-09-21",
+      "display": "Sep 21, 2000",
+      "event": "EMR Fails to make the Pratt High School Homecoming Tryouts",
+      "venue": "",
+      "city": "",
+      "band": "EMR",
+      "slug": "emr"
+    },
+    {
+      "date": "2000-11-20",
+      "display": "Nov 20, 2000",
+      "event": "EMR Posts \"Hot Damn\" on their website. Predecessor to  \"Hot Shit\"",
+      "venue": "",
+      "city": "",
+      "band": "EMR",
+      "slug": "emr"
+    },
+    {
+      "date": "2000-12-08",
+      "display": "Dec 8, 2000",
+      "event": "Show with Agent 246 + Five Finger Faith",
+      "venue": "Teen Center",
+      "city": "Hutchinson, KS",
+      "band": "EMR",
+      "slug": "emr"
+    },
+    {
+      "date": "2000-12-16",
+      "display": "Dec 16, 2000",
+      "event": "Show with Agent 246 + Last Ride Out",
+      "venue": "",
+      "city": "Hutchinson, KS",
+      "band": "EMR",
+      "slug": "emr"
+    },
+    {
+      "date": "2000-12-27",
+      "display": "Dec 27, 2000",
+      "event": "EMR Talks Shit on PK180 (Hutch Band)",
+      "venue": "",
+      "city": "",
+      "band": "EMR",
+      "slug": "emr"
+    },
+    {
+      "date": "2001-01-03",
+      "display": "Jan 3, 2001",
+      "event": "EMR Records \"Demo\"",
+      "venue": "",
+      "city": "",
+      "band": "EMR",
+      "slug": "emr"
+    },
+    {
+      "date": "2001-01-06",
+      "display": "Jan 6, 2001",
+      "event": "Show with Agent 246 + Last Ride Out",
+      "venue": "Teen Center",
+      "city": "Hutchinson, KS",
+      "band": "EMR",
+      "slug": "emr"
+    },
+    {
+      "date": "2001-01-27",
+      "display": "Jan 27, 2001",
+      "event": "Show with Last Ride Out + Christine + Foraman Magnum",
+      "venue": "????",
+      "city": "Dodge City, KS",
+      "band": "EMR",
+      "slug": "emr"
+    },
+    {
+      "date": "2001-07-04",
+      "display": "Jul 4, 2001",
+      "event": "EMR Posts \"Happy 4th of July!!! BLOW YOUR ASS OFF!\"",
+      "venue": "",
+      "city": "",
+      "band": "EMR",
+      "slug": "emr"
+    },
+    {
+      "date": "2001-07-21",
+      "display": "Jul 21, 2001",
+      "event": "Prattstock with Pirate Radio + Invalid + No Tomorrow + Last Ride Out + Ryan and Bryan (My Friend Tim?!)",
+      "venue": "Lemon Park",
+      "city": "Pratt, KS",
+      "band": "EMR",
+      "slug": "emr"
+    },
+    {
+      "date": "2001-08-13",
+      "display": "Aug 13, 2001",
+      "event": "Zach, Dane and Kyle go to college show with Agent 246",
+      "venue": "Pratt Teen Center",
+      "city": "Pratt, KS",
+      "band": "EMR",
+      "slug": "emr"
+    },
+    {
+      "date": "2001-10-20",
+      "display": "Oct 20, 2001",
+      "event": "Local Show",
+      "venue": "Royal Rena Skating Rink",
+      "city": "Pratt, KS",
+      "band": "EMR",
+      "slug": "emr"
+    },
+    {
+      "date": "2001-11-03",
+      "display": "Nov 3, 2001",
+      "event": "Local Show",
+      "venue": "Pratt Teen Center",
+      "city": "Pratt, KS",
+      "band": "EMR",
+      "slug": "emr"
+    },
+    {
+      "date": "2002-01-10",
+      "display": "Jan 10, 2002",
+      "event": "Local Show",
+      "venue": "Ryan Gee's House",
+      "city": "Hutchinson, KS",
+      "band": "EMR",
+      "slug": "emr"
+    },
+    {
+      "date": "2002-02-01",
+      "display": "Feb 1, 2002",
+      "event": "Pratt High School Homecoming Assembly",
+      "venue": "Pratty High School",
+      "city": "Pratt, KS",
+      "band": "EMR",
+      "slug": "emr"
+    },
+    {
+      "date": "2002-02-12",
+      "display": "Feb 12, 2002",
+      "event": "EMR Posts about At the Drive In + Osker breaking up",
+      "venue": "",
+      "city": "",
+      "band": "EMR",
+      "slug": "emr"
+    },
+    {
+      "date": "2002-02-16",
+      "display": "Feb 16, 2002",
+      "event": "FIRST Wichita show with Last Ride Out + Shake Gently + No Tomorrow + Nowhere Fast",
+      "venue": "Eagles Lodge",
+      "city": "Wichita, KS",
+      "band": "EMR",
+      "slug": "emr"
+    },
+    {
+      "date": "2002-03-23",
+      "display": "Mar 23, 2002",
+      "event": "Show with Last Ride + Nowhere Fast",
+      "venue": "Carey Park Homebuilders Shelter",
+      "city": "Hutchinson, KS",
+      "band": "My Friend Tim",
+      "slug": "my-friend-tim"
+    },
+    {
+      "date": "2002-04-26",
+      "display": "Apr 26, 2002",
+      "event": "Show with Christine + That Same Day Service (TX)",
+      "venue": "????",
+      "city": "????",
+      "band": "EMR",
+      "slug": "emr"
+    },
+    {
+      "date": "2002-04-28",
+      "display": "Apr 28, 2002",
+      "event": "Begin Booking the \"Until the Van Breaksdown\" Tour with My Friend Tim",
+      "venue": "",
+      "city": "",
+      "band": "EMR",
+      "slug": "emr"
+    },
+    {
+      "date": "2002-06-03",
+      "display": "Jun 3, 2002",
+      "event": "EMR Stickers go into production",
+      "venue": "",
+      "city": "",
+      "band": "EMR",
+      "slug": "emr"
+    },
+    {
+      "date": "2002-06-06",
+      "display": "Jun 6, 2002",
+      "event": "Dane and Sam from EMR start practicing with My Friend Tim",
+      "venue": "",
+      "city": "",
+      "band": "My Friend Tim",
+      "slug": "my-friend-tim"
+    },
+    {
+      "date": "2002-06-17",
+      "display": "Jun 17, 2002",
+      "event": "Matt Bisel announces Remembering December will join EMR and My Friend Tim on Summer Tour",
+      "venue": "",
+      "city": "",
+      "band": "My Friend Tim",
+      "slug": "my-friend-tim"
+    },
+    {
+      "date": "2002-06-23",
+      "display": "Jun 23, 2002",
+      "event": "EMR starts Recording \"Split my Pants\" with My Friend Tim",
+      "venue": "",
+      "city": "",
+      "band": "EMR",
+      "slug": "emr"
+    },
+    {
+      "date": "2002-06-28",
+      "display": "Jun 28, 2002",
+      "event": "My Friend Tim Starts Recording \"Split my Pants\" with EMR",
+      "venue": "",
+      "city": "",
+      "band": "My Friend Tim",
+      "slug": "my-friend-tim"
+    },
+    {
+      "date": "2002-07-01",
+      "display": "Jul 1, 2002",
+      "event": "Release \"Split my Pants\" with My Friend Tim",
+      "venue": "",
+      "city": "",
+      "band": "EMR",
+      "slug": "emr"
+    },
+    {
+      "date": "2002-07-03",
+      "display": "Jul 3, 2002",
+      "event": "Nowhere Fast Breaks Up",
+      "venue": "",
+      "city": "",
+      "band": "My Friend Tim",
+      "slug": "my-friend-tim"
+    },
+    {
+      "date": "2002-09-01",
+      "display": "Sep 1, 2002",
+      "event": "Show with the Vanzetti's + Incredible Youth + Hanoi Chevrolet",
+      "venue": "Lee Shiney Art Gallery",
+      "city": "Wichita, KS",
+      "band": "EMR",
+      "slug": "emr"
+    },
+    {
+      "date": "2002-10-19",
+      "display": "Oct 19, 2002",
+      "event": "Show with No Tomorrow + Hanoi Chevrolet + My Friend Tim",
+      "venue": "????",
+      "city": "????",
+      "band": "EMR",
+      "slug": "emr"
+    },
+    {
+      "date": "2002-10-19",
+      "display": "Oct 19, 2002",
+      "event": "Show with No Tomorrow + Hanoi Chevrolet + EMR",
+      "venue": "????",
+      "city": "???",
+      "band": "My Friend Tim",
+      "slug": "my-friend-tim"
+    },
+    {
+      "date": "2002-11-02",
+      "display": "Nov 2, 2002",
+      "event": "Show with the Vanzetti's (CD Release Show) + Hanoi Chevrolet + Duplicate Copy",
+      "venue": "Lee Shiney Art Gallery",
+      "city": "Wichita, KS",
+      "band": "EMR",
+      "slug": "emr"
+    },
+    {
+      "date": "2002-11-23",
+      "display": "Nov 23, 2002",
+      "event": "Show with Wayne Has a Girls Name",
+      "venue": "????",
+      "city": "????",
+      "band": "EMR",
+      "slug": "emr"
+    },
+    {
+      "date": "2003-03-01",
+      "display": "Mar 1, 2003",
+      "event": "Show with King TP + Schimon's Truth + Desperately Seeking Simon + Hey Rodeo",
+      "venue": "Carey Park Homebuilders Shelter",
+      "city": "Hutchinson, KS",
+      "band": "My Friend Tim",
+      "slug": "my-friend-tim"
+    },
+    {
+      "date": "2003-04-05",
+      "display": "Apr 5, 2003",
+      "event": "\"We Used to Be Better\" Wraps up Recording",
+      "venue": "",
+      "city": "",
+      "band": "EMR",
+      "slug": "emr"
+    },
+    {
+      "date": "2003-04-12",
+      "display": "Apr 12, 2003",
+      "event": "\"We Used to Be Better\" CD release show",
+      "venue": "City Park",
+      "city": "Manhattan, KS",
+      "band": "EMR",
+      "slug": "emr"
+    },
+    {
+      "date": "2003-05-10",
+      "display": "May 10, 2003",
+      "event": "Show",
+      "venue": "Zach's Backyard",
+      "city": "Manhattan, KS",
+      "band": "EMR",
+      "slug": "emr"
+    },
+    {
+      "date": "2003-05-12",
+      "display": "May 12, 2003",
+      "event": "Begin Booking the \"Highway High Fives Tour\" With my Friend Tim",
+      "venue": "Midwest",
+      "city": "",
+      "band": "EMR",
+      "slug": "emr"
+    },
+    {
+      "date": "2003-06-24",
+      "display": "Jun 24, 2003",
+      "event": "Show with Stellar Frequency + Claiming Haley + Smolder + The Cool Concern + 12 Ton",
+      "venue": "Eagles Lodge",
+      "city": "Hutchinson, KS",
+      "band": "My Friend Tim",
+      "slug": "my-friend-tim"
+    },
+    {
+      "date": "2003-07-19",
+      "display": "Jul 19, 2003",
+      "event": "2 Shows for \"Highway High Fives Tour\"",
+      "venue": "???",
+      "city": "???",
+      "band": "EMR",
+      "slug": "emr"
+    },
+    {
+      "date": "2003-12-06",
+      "display": "Dec 6, 2003",
+      "event": "Show with King TP + Schimon's Truth + Claiming Haley + 12 Ton + Argyle Trio",
+      "venue": "Morgan Elementary",
+      "city": "Hutchinson, KS",
+      "band": "My Friend Tim",
+      "slug": "my-friend-tim"
+    },
+    {
+      "date": "2004-03-01",
+      "display": "Mar 1, 2004",
+      "event": "Show with Claiming Haley + Prom Night (Ricky Fitts did NOT play this show)",
+      "venue": "Rice Park Building",
+      "city": "Hutchinson, KS",
+      "band": "My Friend Tim",
+      "slug": "my-friend-tim"
+    },
+    {
+      "date": "2004-05-01",
+      "display": "May 1, 2004",
+      "event": "Final Update to the EMR website",
+      "venue": "",
+      "city": "",
+      "band": "EMR",
+      "slug": "emr"
+    },
+    {
+      "date": "2005-04-07",
+      "display": "Apr 7, 2005",
+      "event": "Show with Ricky Fitts + The Gunshy + Mustangs and Madras and Long Division",
+      "venue": "Haunted Kitchen",
+      "city": "Lawrence, KS",
+      "band": "Long Division",
+      "slug": "long-division"
+    },
+    {
+      "date": "2005-12-22",
+      "display": "Dec 22, 2005",
+      "event": "Show with Good Day Generals + Ghost of Graffit + Wolf Economy",
+      "venue": "Homebuilders Shelter",
+      "city": "Hutchinson, KS",
+      "band": "Long Division",
+      "slug": "long-division"
+    },
+    {
+      "date": "2006-01-20",
+      "display": "Jan 20, 2006",
+      "event": "Show with Paper Airplanes + Davan",
+      "venue": "The Jackpot",
+      "city": "Lawrence, KS",
+      "band": "Long Division",
+      "slug": "long-division"
+    },
+    {
+      "date": "2006-02-24",
+      "display": "Feb 24, 2006",
+      "event": "Show with KTP + Ghost of Graffiti + Accelerate Entropy",
+      "venue": "Eagles Lodge",
+      "city": "Hutchinson, KS",
+      "band": "Long Division",
+      "slug": "long-division"
+    },
+    {
+      "date": "2006-02-28",
+      "display": "Feb 28, 2006",
+      "event": "Show with The Gunning System",
+      "venue": "Eighth Street Taproom",
+      "city": "Lawrence, KS",
+      "band": "Long Division",
+      "slug": "long-division"
+    },
+    {
+      "date": "2006-03-10",
+      "display": "Mar 10, 2006",
+      "event": "Show with the Gunshy + This Is My Condition",
+      "venue": "Replay Lounge",
+      "city": "Lawrence, KS",
+      "band": "Long Division",
+      "slug": "long-division"
+    },
+    {
+      "date": "2006-06-09",
+      "display": "Jun 9, 2006",
+      "event": "ICT Fest",
+      "venue": "Eagles Lodge",
+      "city": "Wichita, KS",
+      "band": "Long Division",
+      "slug": "long-division"
+    },
+    {
+      "date": "2006-06-27",
+      "display": "Jun 27, 2006",
+      "event": "Show with Baby Birds Don't Drink Milk + TG Cig",
+      "venue": "The Bottleneck",
+      "city": "Lawrence, KS",
+      "band": "Long Division",
+      "slug": "long-division"
+    },
+    {
+      "date": "2006-06-29",
+      "display": "Jun 29, 2006",
+      "event": "Show with Bring Back the Guns + The Armory",
+      "venue": "The Jackpot",
+      "city": "Lawrence, KS",
+      "band": "Long Division",
+      "slug": "long-division"
+    },
+    {
+      "date": "2006-06-30",
+      "display": "Jun 30, 2006",
+      "event": "Show with This Is My Condition + Cassiopia + Baiowolf + Realicide",
+      "venue": "The Pool Room",
+      "city": "Lawrence, KS",
+      "band": "Long Division",
+      "slug": "long-division"
+    },
+    {
+      "date": "2006-09-01",
+      "display": "Sep 1, 2006",
+      "event": "Show with Paper Airplanes / Baby Birds Don't Drink Milk",
+      "venue": "The Jackpot",
+      "city": "Lawrence, KS",
+      "band": "Long Division",
+      "slug": "long-division"
+    },
+    {
+      "date": "2007-03-11",
+      "display": "Mar 11, 2007",
+      "event": "Electric Snake Demo recorded by Torin Anderson",
+      "venue": "",
+      "city": "",
+      "band": "Weather is Happening",
+      "slug": "weather-is-happening"
+    },
+    {
+      "date": "2007-06-07",
+      "display": "Jun 7, 2007",
+      "event": "ICT Fest",
+      "venue": "The Wig Shop",
+      "city": "Wichita, KS",
+      "band": "Long Division",
+      "slug": "long-division"
+    },
+    {
+      "date": "2007-06-07",
+      "display": "Jun 7, 2007",
+      "event": "ICT Fest",
+      "venue": "The Wig Shop",
+      "city": "Wichita, KS",
+      "band": "Weather is Happening",
+      "slug": "weather-is-happening"
+    },
+    {
+      "date": "2007-07-01",
+      "display": "Jul 1, 2007",
+      "event": "Show",
+      "venue": "B-Side Gallery",
+      "city": "Wichita, KS",
+      "band": "Weather is Happening",
+      "slug": "weather-is-happening"
+    },
+    {
+      "date": "2007-08-18",
+      "display": "Aug 18, 2007",
+      "event": "Show wuith Decibully + Evan Miller + STNNNG + The Tanks",
+      "venue": "The Picador",
+      "city": "Iowa City, IA",
+      "band": "Weather is Happening",
+      "slug": "weather-is-happening"
+    },
+    {
+      "date": "2007-09-11",
+      "display": "Sep 11, 2007",
+      "event": "Young Country recorded at Flat Black Studios",
+      "venue": "",
+      "city": "",
+      "band": "Weather is Happening",
+      "slug": "weather-is-happening"
+    },
+    {
+      "date": "2007-10-05",
+      "display": "Oct 5, 2007",
+      "event": "Show with Black Gasoline + Building Better Bombs + Sad Panda + Traindodge",
+      "venue": "Barleycorns",
+      "city": "Wichita, KS",
+      "band": "Weather is Happening",
+      "slug": "weather-is-happening"
+    },
+    {
+      "date": "2007-11-01",
+      "display": "Nov 1, 2007",
+      "event": "TOUR?!",
+      "venue": "",
+      "city": "",
+      "band": "Weather is Happening",
+      "slug": "weather-is-happening"
+    },
+    {
+      "date": "2007-11-19",
+      "display": "Nov 19, 2007",
+      "event": "Show with Battlefields + Sleeping in Gethsemane",
+      "venue": "Nutty's",
+      "city": "Sioux Falls, SD",
+      "band": "Weather is Happening",
+      "slug": "weather-is-happening"
+    },
+    {
+      "date": "2008-03-04",
+      "display": "Mar 4, 2008",
+      "event": "Show with Neptune + Foul Tip + Dimas Lemus + Lwa/Nimby",
+      "venue": "The Picador",
+      "city": "Iowa City, IA",
+      "band": "Weather is Happening",
+      "slug": "weather-is-happening"
+    },
+    {
+      "date": "2008-03-08",
+      "display": "Mar 8, 2008",
+      "event": "INIT Fest with Blinding Light + Battlefields + Building Better Bombs + In the Face of War + More",
+      "venue": "Nutty's North",
+      "city": "Sioux Falls, SD",
+      "band": "Weather is Happening",
+      "slug": "weather-is-happening"
+    },
+    {
+      "date": "2009-05-19",
+      "display": "May 19, 2009",
+      "event": "Show with Be Kind to your Neighbor + Low Oriole",
+      "venue": "135 N Estelle",
+      "city": "Wichita, KS",
+      "band": "JabberJosh",
+      "slug": "jabberjosh"
+    },
+    {
+      "date": "2009-06-12",
+      "display": "Jun 12, 2009",
+      "event": "ICT FEST",
+      "venue": "Eagles Lodge",
+      "city": "Wichita, KS",
+      "band": "JabberJosh",
+      "slug": "jabberjosh"
+    },
+    {
+      "date": "2009-08-04",
+      "display": "Aug 4, 2009",
+      "event": "Show with The Men",
+      "venue": "The Bluebird",
+      "city": "Bloomington, IN",
+      "band": "JabberJosh",
+      "slug": "jabberjosh"
+    },
+    {
+      "date": "2009-09-05",
+      "display": "Sep 5, 2009",
+      "event": "Show with Ad Astra Drumline and the Freakout Ensemble + The Low Red Land",
+      "venue": "Eighth Street Taproom",
+      "city": "Lawrence, KS",
+      "band": "JabberJosh",
+      "slug": "jabberjosh"
+    },
+    {
+      "date": "2009-12-07",
+      "display": "Dec 7, 2009",
+      "event": "Show with Thundereagle + Runaway Sons",
+      "venue": "Riot Room",
+      "city": "Kansas City, MO",
+      "band": "JabberJosh",
+      "slug": "jabberjosh"
+    },
+    {
+      "date": "2010-02-20",
+      "display": "Feb 20, 2010",
+      "event": "Show with The Men + Stupid Party + Pregnant + Nightbirds",
+      "venue": "518 Johnson Ave",
+      "city": "Brooklyn, NY",
+      "band": "JabberJosh",
+      "slug": "jabberjosh"
+    },
+    {
+      "date": "2010-03-24",
+      "display": "Mar 24, 2010",
+      "event": "Show with Big Science + Burger Kingdom + Big City Livin' + Stull",
+      "venue": "The Bottleneck",
+      "city": "Lawrence, KS",
+      "band": "JabberJosh",
+      "slug": "jabberjosh"
+    },
+    {
+      "date": "2010-05-15",
+      "display": "May 15, 2010",
+      "event": "Show with Fourth of July + Old Canes + Burger Kingdom",
+      "venue": "The Jackpot",
+      "city": "Lawrence, KS",
+      "band": "JabberJosh",
+      "slug": "jabberjosh"
+    },
+    {
+      "date": "2010-07-30",
+      "display": "Jul 30, 2010",
+      "event": "ICT Fest",
+      "venue": "Eagles Lodge",
+      "city": "Wichita, KS",
+      "band": "JabberJosh",
+      "slug": "jabberjosh"
+    },
+    {
+      "date": "2010-09-16",
+      "display": "Sep 16, 2010",
+      "event": "Show with Muscle Worship + Low Oriole",
+      "venue": "The Jackpot",
+      "city": "Lawrence, KS",
+      "band": "JabberJosh",
+      "slug": "jabberjosh"
+    },
+    {
+      "date": "2010-11-26",
+      "display": "Nov 26, 2010",
+      "event": "Bass of Spades Tour with The Tanks",
+      "venue": "The Replay",
+      "city": "Lawrence, KS",
+      "band": "JabberJosh",
+      "slug": "jabberjosh"
+    },
+    {
+      "date": "2010-11-27",
+      "display": "Nov 27, 2010",
+      "event": "Bass of Spades Tour with The Tanks",
+      "venue": "",
+      "city": "Omaha, NE",
+      "band": "JabberJosh",
+      "slug": "jabberjosh"
+    },
+    {
+      "date": "2010-11-28",
+      "display": "Nov 28, 2010",
+      "event": "Bass of Spades Tour with The Tanks",
+      "venue": "",
+      "city": "Fargo, ND",
+      "band": "JabberJosh",
+      "slug": "jabberjosh"
+    },
+    {
+      "date": "2010-11-29",
+      "display": "Nov 29, 2010",
+      "event": "Bass of Spades Tour with The Tanks",
+      "venue": "",
+      "city": "Twin Cities, MN",
+      "band": "JabberJosh",
+      "slug": "jabberjosh"
+    },
+    {
+      "date": "2010-11-30",
+      "display": "Nov 30, 2010",
+      "event": "Bass of Spades Tour with The Tanks",
+      "venue": "",
+      "city": "Milwaukee, WI",
+      "band": "JabberJosh",
+      "slug": "jabberjosh"
+    },
+    {
+      "date": "2010-12-01",
+      "display": "Dec 1, 2010",
+      "event": "Bass of Spades Tour with The Tanks",
+      "venue": "",
+      "city": "Beloit, WI",
+      "band": "JabberJosh",
+      "slug": "jabberjosh"
+    },
+    {
+      "date": "2010-12-02",
+      "display": "Dec 2, 2010",
+      "event": "Bass of Spades Tour with The Tanks",
+      "venue": "",
+      "city": "Chicago, IL",
+      "band": "JabberJosh",
+      "slug": "jabberjosh"
+    },
+    {
+      "date": "2010-12-03",
+      "display": "Dec 3, 2010",
+      "event": "Bass of Spades Tour with The Tanks",
+      "venue": "",
+      "city": "Cedar Falls, IA",
+      "band": "JabberJosh",
+      "slug": "jabberjosh"
+    },
+    {
+      "date": "2010-12-04",
+      "display": "Dec 4, 2010",
+      "event": "Bass of Spades Tour with The Tanks",
+      "venue": "",
+      "city": "Iowa City, IA",
+      "band": "JabberJosh",
+      "slug": "jabberjosh"
+    },
+    {
+      "date": "2011-04-01",
+      "display": "Apr 1, 2011",
+      "event": "Show with STNNNG + Muscle Worship",
+      "venue": "The Replay",
+      "city": "Lawrence, KS",
+      "band": "JabberJosh",
+      "slug": "jabberjosh"
+    },
+    {
+      "date": "2011-05-21",
+      "display": "May 21, 2011",
+      "event": "Spring Into Summer Festival",
+      "venue": "The Replay",
+      "city": "Lawrence, KS",
+      "band": "JabberJosh",
+      "slug": "jabberjosh"
+    },
+    {
+      "date": "2011-07-04",
+      "display": "Jul 4, 2011",
+      "event": "Show with Fourth of July + Traveling Junipers",
+      "venue": "The Replay",
+      "city": "Lawrence, KS",
+      "band": "JabberJosh",
+      "slug": "jabberjosh"
+    },
+    {
+      "date": "2011-08-16",
+      "display": "Aug 16, 2011",
+      "event": "Show with The Men",
+      "venue": "The Replay",
+      "city": "Lawrence, KS",
+      "band": "JabberJosh",
+      "slug": "jabberjosh"
+    },
+    {
+      "date": "2011-11-11",
+      "display": "Nov 11, 2011",
+      "event": "Eleven Productions Fest + Ricky Fitts + More",
+      "venue": "The Jackpot",
+      "city": "Lawrence, KS",
+      "band": "JabberJosh",
+      "slug": "jabberjosh"
+    },
+    {
+      "date": "2011-12-02",
+      "display": "Dec 2, 2011",
+      "event": "Show with Mouthbreathers + Der Todesking + Spook Lights + Dry Bonnet",
+      "venue": "The Replay",
+      "city": "Lawrence, KS",
+      "band": "JabberJosh",
+      "slug": "jabberjosh"
+    },
+    {
+      "date": "2012-02-16",
+      "display": "Feb 16, 2012",
+      "event": "Tour Kick Off Show",
+      "venue": "",
+      "city": "Lawrence, KS",
+      "band": "JabberJosh",
+      "slug": "jabberjosh"
+    },
+    {
+      "date": "2012-02-24",
+      "display": "Feb 24, 2012",
+      "event": "Show with Signals Midwest + Reverse the Curse + Worship This + Two Hand Fools",
+      "venue": "Now Thats Class",
+      "city": "Cleveland, OH",
+      "band": "JabberJosh",
+      "slug": "jabberjosh"
+    },
+    {
+      "date": "2012-04-06",
+      "display": "Apr 6, 2012",
+      "event": "Show with Guitar Wolf + The Transistors + The Sluts",
+      "venue": "The Bottleneck",
+      "city": "Lawrence, KS",
+      "band": "JabberJosh",
+      "slug": "jabberjosh"
+    },
+    {
+      "date": "2012-05-12",
+      "display": "May 12, 2012",
+      "event": "Spring Into Summer Festival",
+      "venue": "???",
+      "city": "Lawrence, KS",
+      "band": "JabberJosh",
+      "slug": "jabberjosh"
+    },
+    {
+      "date": "2012-07-27",
+      "display": "Jul 27, 2012",
+      "event": "ICT Fest",
+      "venue": "WSU Shiftspace Gallery",
+      "city": "Wichita, KS",
+      "band": "JabberJosh",
+      "slug": "jabberjosh"
+    },
+    {
+      "date": "2012-09-13",
+      "display": "Sep 13, 2012",
+      "event": "First show",
+      "venue": "The Replay",
+      "city": "Lawrence, KS",
+      "band": "Monsoon Lazer",
+      "slug": "monsoon-lazer"
+    },
+    {
+      "date": "2012-09-29",
+      "display": "Sep 29, 2012",
+      "event": "Show with Ringo Deathstarr + The Photo Atlas",
+      "venue": "The Jackpot",
+      "city": "Lawrence, KS",
+      "band": "JabberJosh",
+      "slug": "jabberjosh"
+    },
+    {
+      "date": "2012-10-22",
+      "display": "Oct 22, 2012",
+      "event": "Show with Hospital Ships + Pale Hearts",
+      "venue": "The Bottleneck",
+      "city": "Lawrence, KS",
+      "band": "Monsoon Lazer",
+      "slug": "monsoon-lazer"
+    },
+    {
+      "date": "2012-12-21",
+      "display": "Dec 21, 2012",
+      "event": "Show with The Hips",
+      "venue": "The Replay",
+      "city": "Lawrence, KS",
+      "band": "Monsoon Lazer",
+      "slug": "monsoon-lazer"
+    },
+    {
+      "date": "2012-12-31",
+      "display": "Dec 31, 2012",
+      "event": "Show with Pale Hearts, Stiff Middle Fingers",
+      "venue": "Frank's North Star Tavern",
+      "city": "Lawrence, KS",
+      "band": "Monsoon Lazer",
+      "slug": "monsoon-lazer"
+    },
+    {
+      "date": "2012-12-31",
+      "display": "Dec 31, 2012",
+      "event": "New Years Eve Show with The Sluts + Alien Jones",
+      "venue": "The Replay",
+      "city": "Lawrence, KS",
+      "band": "JabberJosh",
+      "slug": "jabberjosh"
+    },
+    {
+      "date": "2013-01-04",
+      "display": "Jan 4, 2013",
+      "event": "Show with Approach",
+      "venue": "The Love Garden",
+      "city": "Lawrence, KS",
+      "band": "JabberJosh",
+      "slug": "jabberjosh"
+    },
+    {
+      "date": "2013-05-13",
+      "display": "May 13, 2013",
+      "event": "Show with KTP",
+      "venue": "The Replay",
+      "city": "Lawrence, KS",
+      "band": "JabberJosh",
+      "slug": "jabberjosh"
+    },
+    {
+      "date": "2013-05-24",
+      "display": "May 24, 2013",
+      "event": "Show with Muscle Worship (LP Release Show) + Truck Or Dead Horse",
+      "venue": "The Replay",
+      "city": "Lawrence, KS",
+      "band": "Monsoon Lazer",
+      "slug": "monsoon-lazer"
+    },
+    {
+      "date": "2013-07-13",
+      "display": "Jul 13, 2013",
+      "event": "Lawrence Field Day",
+      "venue": "The Bottleneck",
+      "city": "Lawrence, KS",
+      "band": "Monsoon Lazer",
+      "slug": "monsoon-lazer"
+    },
+    {
+      "date": "2013-08-08",
+      "display": "Aug 8, 2013",
+      "event": "Mini Tour Kick Off Show with Cricket Wand + Psychic Heat",
+      "venue": "The Replay",
+      "city": "Lawrence, KS",
+      "band": "JabberJosh",
+      "slug": "jabberjosh"
+    },
+    {
+      "date": "2014-07-18",
+      "display": "Jul 18, 2014",
+      "event": "Farewell Show with Muscle Worship",
+      "venue": "The Love Garden",
+      "city": "Lawrence, KS",
+      "band": "JabberJosh",
+      "slug": "jabberjosh"
+    },
+    {
+      "date": "2016-09-11",
+      "display": "Sep 11, 2016",
+      "event": "Final Dag Show",
+      "venue": "Dag House",
+      "city": "Cleveland, OH",
+      "band": "JabberJosh",
+      "slug": "jabberjosh"
+    },
+    {
+      "date": "2019-10-13",
+      "display": "Oct 13, 2019",
+      "event": "First Show with The Well + Bloom",
+      "venue": "Replay",
+      "city": "Lawrence, KS",
+      "band": "Slaw",
+      "slug": "slaw"
+    },
+    {
+      "date": "2019-11-08",
+      "display": "Nov 8, 2019",
+      "event": "Show with Tongue Party + Not Cops + Tokeback Mountain",
+      "venue": "Replay",
+      "city": "Lawrence, KS",
+      "band": "Slaw",
+      "slug": "slaw"
+    },
+    {
+      "date": "2019-12-21",
+      "display": "Dec 21, 2019",
+      "event": "Christmas Show with J.C. & The Nuns + Tallboys + Drude",
+      "venue": "Replay",
+      "city": "Lawrence, KS",
+      "band": "Slaw",
+      "slug": "slaw"
+    },
+    {
+      "date": "2020-01-16",
+      "display": "Jan 16, 2020",
+      "event": "Show with Nerver + Dead Hour Noise",
+      "venue": "Replay",
+      "city": "Lawrence, KS",
+      "band": "Slaw",
+      "slug": "slaw"
+    },
+    {
+      "date": "2020-02-13",
+      "display": "Feb 13, 2020",
+      "event": "Show with Visitor",
+      "venue": "Eighth Street Taproom",
+      "city": "Lawrence, KS",
+      "band": "Slaw",
+      "slug": "slaw"
+    },
+    {
+      "date": "7/7/2002 - 7/20/2002",
+      "display": "7/7/2002 - 7/20/2002",
+      "event": "\"Until the Van Breaksdown\" Tour with My Friend Tim and Remembering December",
+      "venue": "????",
+      "city": "????",
+      "band": "EMR",
+      "slug": "emr"
+    },
+    {
+      "date": "7/7/2002 - 7/20/2002",
+      "display": "7/7/2002 - 7/20/2002",
+      "event": "\"Until the Van Breaksdown\" Tour with EMR and Remembering December",
+      "venue": "????",
+      "city": "???",
+      "band": "My Friend Tim",
+      "slug": "my-friend-tim"
+    },
+    {
+      "date": "Summer 2002",
+      "display": "Summer 2002",
+      "event": "Release \"Split my Pants\" with EMR",
+      "venue": "",
+      "city": "",
+      "band": "My Friend Tim",
+      "slug": "my-friend-tim"
+    }
+  ]
+};
