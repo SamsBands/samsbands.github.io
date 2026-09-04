@@ -966,6 +966,62 @@ window.SAMS_DATA={
           "flyer": "jabberjosh-16.png"
         },
         {
+          "date": "2011-02-05",
+          "display": "Feb 5, 2011",
+          "event": "Performing at the Foxy by Proxy Revue",
+          "venue": "The Bottleneck",
+          "city": "Lawrence, KS"
+        },
+        {
+          "date": "2011-02-07",
+          "display": "Feb 7, 2011",
+          "event": "Show with Demeanor + Texas Instruments + Digester",
+          "venue": "Salt Walter Taffy House",
+          "city": "Kansas City, MO"
+        },
+        {
+          "date": "2011-02-17",
+          "display": "Feb 17, 2011",
+          "event": "Mini-Tour with Waxeater",
+          "venue": "624 S. Washington",
+          "city": "Bloomington, IN"
+        },
+        {
+          "date": "2011-02-18",
+          "display": "Feb 18, 2011",
+          "event": "Mini-Tour with Waxeater",
+          "venue": "Cafe Bourbon Street",
+          "city": "Columbus, OH"
+        },
+        {
+          "date": "2011-02-19",
+          "display": "Feb 19, 2011",
+          "event": "Mini-Tour with Waxeater + Girlfight + Old Fears",
+          "venue": "Helter Shelter",
+          "city": "Pittsburgh, PA"
+        },
+        {
+          "date": "2011-02-20",
+          "display": "Feb 20, 2011",
+          "event": "Mini-Tour with Waxeater",
+          "venue": "The Rudyard Kipling",
+          "city": "Louisville, KY"
+        },
+        {
+          "date": "2011-02-21",
+          "display": "Feb 21, 2011",
+          "event": "Show with Segmentation Fault + Datura + Yajirobe",
+          "venue": "Lemp Neighborhood Arts Center",
+          "city": "St. Louis, MO"
+        },
+        {
+          "date": "2011-02-25",
+          "display": "Feb 25, 2011",
+          "event": "Release show with Tangent Arc + The Caves",
+          "venue": "Jackpot Saloon",
+          "city": "Lawrence, KS"
+        },
+        {
           "date": "2011-04-01",
           "display": "Apr 1, 2011",
           "event": "Show with STNNNG + Muscle Worship",
@@ -1093,9 +1149,10 @@ window.SAMS_DATA={
         {
           "date": "2016-09-11",
           "display": "Sep 11, 2016",
-          "event": "Final Dag Show",
+          "event": "JabberJosh Reunion Show with Wooly Bear + Gnarly Davidson",
           "venue": "Dag House",
-          "city": "Cleveland, OH"
+          "city": "Lawrence, KS",
+          "flyer": "jabberjosh-2016-09-11-dag-house.jpg"
         }
       ],
       "images": [
@@ -1148,6 +1205,24 @@ window.SAMS_DATA={
           "date": "October 31, 2013",
           "image": "jabberjosh-dos-hombres.png",
           "url": "https://jabberjosh.bandcamp.com/album/dos-hombres"
+        }
+      ],
+      "videos": [
+        {
+          "title": "JabberJosh Video 1",
+          "url": "https://www.youtube.com/watch?v=d8ijJTRfmi0"
+        },
+        {
+          "title": "JabberJosh Video 2",
+          "url": "https://www.youtube.com/watch?v=sXWfpbpbyqk"
+        },
+        {
+          "title": "JabberJosh Video 3",
+          "url": "https://www.youtube.com/watch?v=jitKeQ4laf8"
+        },
+        {
+          "title": "JabberJosh Video 4",
+          "url": "https://www.youtube.com/watch?v=-kqpOrreshI"
         }
       ]
     },
@@ -1402,9 +1477,10 @@ window.SAMS_DATA={
         {
           "date": "2016-09-11",
           "display": "Sep 11, 2016",
-          "event": "Final Dag Show with Jabberjosh + Wooly Bear",
+          "event": "Show with JabberJosh + Wooly Bear",
           "venue": "Dag House",
-          "city": "Cleveland, OH "
+          "city": "Lawrence, KS",
+          "flyer": "jabberjosh-2016-09-11-dag-house.jpg"
         },
         {
           "date": "2016-10-31",
@@ -2497,6 +2573,78 @@ window.SAMS_DATA={
       "slug": "jabberjosh"
     },
     {
+      "date": "2011-02-05",
+      "display": "Feb 5, 2011",
+      "event": "Performing at the Foxy by Proxy Revue",
+      "venue": "The Bottleneck",
+      "city": "Lawrence, KS",
+      "band": "JabberJosh",
+      "slug": "jabberjosh"
+    },
+    {
+      "date": "2011-02-07",
+      "display": "Feb 7, 2011",
+      "event": "Show with Demeanor + Texas Instruments + Digester",
+      "venue": "Salt Walter Taffy House",
+      "city": "Kansas City, MO",
+      "band": "JabberJosh",
+      "slug": "jabberjosh"
+    },
+    {
+      "date": "2011-02-17",
+      "display": "Feb 17, 2011",
+      "event": "Mini-Tour with Waxeater",
+      "venue": "624 S. Washington",
+      "city": "Bloomington, IN",
+      "band": "JabberJosh",
+      "slug": "jabberjosh"
+    },
+    {
+      "date": "2011-02-18",
+      "display": "Feb 18, 2011",
+      "event": "Mini-Tour with Waxeater",
+      "venue": "Cafe Bourbon Street",
+      "city": "Columbus, OH",
+      "band": "JabberJosh",
+      "slug": "jabberjosh"
+    },
+    {
+      "date": "2011-02-19",
+      "display": "Feb 19, 2011",
+      "event": "Mini-Tour with Waxeater + Girlfight + Old Fears",
+      "venue": "Helter Shelter",
+      "city": "Pittsburgh, PA",
+      "band": "JabberJosh",
+      "slug": "jabberjosh"
+    },
+    {
+      "date": "2011-02-20",
+      "display": "Feb 20, 2011",
+      "event": "Mini-Tour with Waxeater",
+      "venue": "The Rudyard Kipling",
+      "city": "Louisville, KY",
+      "band": "JabberJosh",
+      "slug": "jabberjosh"
+    },
+    {
+      "date": "2011-02-21",
+      "display": "Feb 21, 2011",
+      "event": "Show with Segmentation Fault + Datura + Yajirobe",
+      "venue": "Lemp Neighborhood Arts Center",
+      "city": "St. Louis, MO",
+      "band": "JabberJosh",
+      "slug": "jabberjosh"
+    },
+    {
+      "date": "2011-02-25",
+      "display": "Feb 25, 2011",
+      "event": "Release show with Tangent Arc + The Caves",
+      "venue": "Jackpot Saloon",
+      "city": "Lawrence, KS",
+      "band": "JabberJosh",
+      "slug": "jabberjosh"
+    },
+    {
       "date": "2011-04-01",
       "display": "Apr 1, 2011",
       "event": "Show with STNNNG + Muscle Worship",
@@ -3006,20 +3154,22 @@ window.SAMS_DATA={
     {
       "date": "2016-09-11",
       "display": "Sep 11, 2016",
-      "event": "Final Dag Show",
+      "event": "JabberJosh Reunion Show with Wooly Bear + Gnarly Davidson",
       "venue": "Dag House",
-      "city": "Cleveland, OH",
+      "city": "Lawrence, KS",
       "band": "JabberJosh",
-      "slug": "jabberjosh"
+      "slug": "jabberjosh",
+      "flyer": "jabberjosh-2016-09-11-dag-house.jpg"
     },
     {
       "date": "2016-09-11",
       "display": "Sep 11, 2016",
-      "event": "Final Dag Show with Jabberjosh + Wooly Bear",
+      "event": "Show with JabberJosh + Wooly Bear",
       "venue": "Dag House",
-      "city": "Cleveland, OH ",
+      "city": "Lawrence, KS",
       "band": "Gnarly Davidson",
-      "slug": "gnarly-davidson"
+      "slug": "gnarly-davidson",
+      "flyer": "jabberjosh-2016-09-11-dag-house.jpg"
     },
     {
       "date": "2016-10-31",
