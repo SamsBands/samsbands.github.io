@@ -293,13 +293,9 @@ window.SAMS_DATA={
       "name": "My Friend Tim",
       "slug": "my-friend-tim",
       "intro": [
-        "My Friend Tim was from Kansas City by way of Pratt and Hutchinson, KS and active from 2001 - 2004",
-        "My Friend Tim was Ryan Gee on Guitar / Vocals , Sam Gunnerson Bass / Vocals, Matt Bisel (the Dream Crusher) Guitar / Vocals and Brian Scheel and Will Gunnerson on the Drums"
+        "My Friend Tim was from Kansas City by way of Pratt and Hutchinson, KS and active from 2001–2004."
       ],
-      "links": [
-        "https://samsbands.bandcamp.com/album/split-my-pants-emr-and-my-friend-tim",
-        "https://samsbands.bandcamp.com/album/my-friend-tim-ogre-house-demo"
-      ],
+      "links": [],
       "timeline": [
         {
           "date": "2002-03-23",
@@ -398,20 +394,60 @@ window.SAMS_DATA={
         "my-friend-tim-6.png",
         "my-friend-tim-7.png",
         "my-friend-tim-8.png"
+      ],
+      "members": [
+        [
+          "Ryan Gee",
+          "Guitar / Vocals"
+        ],
+        [
+          "Sam Gunnerson",
+          "Bass / Vocals"
+        ],
+        [
+          "Matt Bisel (the Dream Crusher)",
+          "Guitar / Vocals"
+        ],
+        [
+          "Brian Scheel",
+          "Drums"
+        ],
+        [
+          "Will Gunnerson",
+          "Drums"
+        ]
+      ],
+      "releases": [
+        {
+          "title": "Split My Pants — EMR and My Friend Tim",
+          "date": "June 1, 2002",
+          "image": "emr-split-my-pants.png",
+          "url": "https://samsbands.bandcamp.com/album/split-my-pants-emr-and-my-friend-tim"
+        },
+        {
+          "title": "Ogre House Demos",
+          "date": "April 20, 2003",
+          "image": "hero-my-friend-tim.png",
+          "url": "https://samsbands.bandcamp.com/album/my-friend-tim-ogre-house-demo"
+        }
       ]
     },
     {
       "name": "Long Division",
       "slug": "long-division",
       "intro": [
-        "Long Division was from Lawrence, Kansas and active from 2005 - 2007",
-        "Long Division was Ryan Gee on Guitar / Vocals , Sam Gunnerson Bass / Vocals, Jose Ray Guitar / Vocals and Will Gunnerson on the Drums"
+        "Long Division was from Lawrence, Kansas and active from 2005–2007."
       ],
-      "links": [
-        "https://samsbands.bandcamp.com/album/long-division-5-song-demo",
-        "https://samsbands.bandcamp.com/album/long-division-live-at-the-hutch-skate-park"
-      ],
+      "links": [],
       "timeline": [
+        {
+          "date": "2005-04-07",
+          "display": "Apr 7, 2005",
+          "event": "Show with Ricky Fitts + The Gunshy + Mustangs and Madras and Long Division",
+          "venue": "Haunted Kitchen",
+          "city": "Lawrence, KS",
+          "flyer": "long-division-9.png"
+        },
         {
           "date": "2005-12-22",
           "display": "Dec 22, 2005",
@@ -449,14 +485,6 @@ window.SAMS_DATA={
           "event": "Show with the Gunshy + This Is My Condition",
           "venue": "Replay Lounge",
           "city": "Lawrence, KS"
-        },
-        {
-          "date": "2005-04-07",
-          "display": "Apr 7, 2005",
-          "event": "Show with Ricky Fitts + The Gunshy + Mustangs and Madras and Long Division",
-          "venue": "Haunted Kitchen",
-          "city": "Lawrence, KS",
-          "flyer": "long-division-9.png"
         },
         {
           "date": "2006-06-09",
@@ -501,6 +529,20 @@ window.SAMS_DATA={
           "venue": "The Wig Shop",
           "city": "Wichita, KS",
           "flyer": "long-division-12.png"
+        },
+        {
+          "date": "2007-07-07",
+          "display": "Jul 7, 2007",
+          "event": "Show with Milwaukee Sky Rocket — This show was recorded and later released as LIVE! At the Hutch Skate Park.",
+          "venue": "Hutch Skate Park",
+          "city": "Hutchinson, KS"
+        },
+        {
+          "date": "2007-07-08",
+          "display": "Jul 8, 2007",
+          "event": "Show with Milwaukee Sky Rocket + Concrete Cleaner — Final Long Division show.",
+          "venue": "The Electric Snake",
+          "city": "Wichita, KS"
         }
       ],
       "images": [
@@ -517,6 +559,65 @@ window.SAMS_DATA={
         "long-division-11.jpeg",
         "long-division-12.png",
         "long-division-13.png"
+      ],
+      "members": [
+        [
+          "Ryan Gee",
+          "Guitar / Vocals"
+        ],
+        [
+          "Sam Gunnerson",
+          "Bass / Vocals"
+        ],
+        [
+          "Jose Ray",
+          "Guitar / Vocals"
+        ],
+        [
+          "Will Gunnerson",
+          "Drums"
+        ]
+      ],
+      "releases": [
+        {
+          "title": "5 Song Demo",
+          "date": "sometime in 2006",
+          "image": "long-division-5-song-demo.jpg",
+          "url": "https://samsbands.bandcamp.com/album/long-division-5-song-demo"
+        },
+        {
+          "title": "LIVE! At the Hutch Skate Park",
+          "date": "Recorded July 7, 2007",
+          "dateLabel": "Recorded",
+          "image": "long-division-live-hutch.png",
+          "url": "https://samsbands.bandcamp.com/album/long-division-live-at-the-hutch-skate-park"
+        }
+      ],
+      "videos": [
+        {
+          "title": "Tell Em' Jose (Ryan's Mic Was Off)",
+          "url": "https://www.youtube.com/watch?v=wCsiqC5IS_o"
+        },
+        {
+          "title": "The Arrested Song (Emporia) + Robots, Robots...Robots",
+          "url": "https://www.youtube.com/watch?v=PRlZuwFszro"
+        },
+        {
+          "title": "The Sad Song",
+          "url": "https://www.youtube.com/watch?v=LqCUeHowGOg"
+        },
+        {
+          "title": "The Get Down Syndrome",
+          "url": "https://www.youtube.com/watch?v=r8kqIA7LoRU"
+        },
+        {
+          "title": "MADRE!",
+          "url": "https://www.youtube.com/watch?v=KxqxrNTWKvM"
+        },
+        {
+          "title": "Baba O'Reilly Factor",
+          "url": "https://www.youtube.com/watch?v=ShEgBr4_vBo"
+        }
       ]
     },
     {
@@ -2056,6 +2157,24 @@ window.SAMS_DATA={
       "city": "Wichita, KS",
       "band": "Weather is Happening",
       "slug": "weather-is-happening"
+    },
+    {
+      "date": "2007-07-07",
+      "display": "Jul 7, 2007",
+      "event": "Show with Milwaukee Sky Rocket — This show was recorded and later released as LIVE! At the Hutch Skate Park.",
+      "venue": "Hutch Skate Park",
+      "city": "Hutchinson, KS",
+      "band": "Long Division",
+      "slug": "long-division"
+    },
+    {
+      "date": "2007-07-08",
+      "display": "Jul 8, 2007",
+      "event": "Show with Milwaukee Sky Rocket + Concrete Cleaner — Final Long Division show.",
+      "venue": "The Electric Snake",
+      "city": "Wichita, KS",
+      "band": "Long Division",
+      "slug": "long-division"
     },
     {
       "date": "2007-08-18",
