@@ -61,7 +61,7 @@ const MEDIA={
     merch:['gnarly-davidson-10.png','gnarly-davidson-11.png']
   },
   'slaw':{
-    flyers:['slaw-2.jpeg','slaw-3.jpeg','slaw-4.jpeg','slaw-5.jpeg','slaw-6.jpeg'], live:[], merch:[]
+    flyers:['slaw-2.jpeg','slaw-3.jpeg','slaw-4.jpeg','slaw-5.jpeg','slaw-6.jpeg'], live:['slaw-live-1.jpg','slaw-live-2.jpg','slaw-live-3.jpg','slaw-live-4.jpg','slaw-live-5.jpg','slaw-live-6.jpg'], merch:[]
   }
 };
 
@@ -104,6 +104,10 @@ function membersHtml(b){
   if(!b.members||!b.members.length)return '';
   return `<div class="members"><h2 class="mini-title">Band Members</h2>${b.members.map(m=>`<div class="member"><b>${esc(m[0])}</b><span>${esc(m[1])}</span></div>`).join('')}</div>`;
 }
+function setlistHtml(b){
+  if(!b.setlist||!b.setlist.length)return '';
+  return `<section class="archive-section"><h2 class="section-title">Set List</h2><ol class="setlist">${b.setlist.map(s=>`<li>${esc(s)}</li>`).join('')}</ol></section>`;
+}
 function releasesHtml(b){
   if(!b.releases||!b.releases.length)return '';
   return `<section class="archive-section releases-section"><h2 class="section-title">Releases</h2><div class="releases">${b.releases.map(r=>`<article class="release"><button class="release-art" type="button" data-flyer="images/${esc(r.image)}" data-caption="${esc(b.name+' — '+r.title)}"><img src="images/${esc(r.image)}" alt="${esc(r.title)} artwork"></button><div class="release-copy"><h3>${esc(r.title)}</h3><p>${esc(r.dateLabel||'Released')} ${esc(r.date)}</p>${r.url?`<a class="release-link" href="${esc(r.url)}" target="_blank" rel="noopener">Listen on Bandcamp ↗</a>`:''}</div></article>`).join('')}</div></section>`;
@@ -123,7 +127,7 @@ function bandPage(slug){
   let b=band(slug);if(!b)return bands();
   const hero=HERO_IMAGES[slug];
   const media=MEDIA[slug]||{flyers:[],live:[],merch:[]};
-  app.innerHTML=`<section class="wrap band-page"><a class="back" href="#/bands">← All bands</a>${hero?`<div class="band-hero"><img src="images/${esc(hero)}" alt="${esc(b.name)} main photo"></div>`:''}<div class="band-head"><div class="kicker">Band archive</div><h1>${esc(b.name)}</h1>${b.intro.map(x=>`<p>${esc(x)}</p>`).join('')}${membersHtml(b)}${b.links&&b.links.length?linksHtml(b):''}</div>${releasesHtml(b)}<section class="archive-section"><h2 class="section-title">Timeline</h2>${timelineHtml(b.timeline,slug)}</section>${gallerySection('Flyers',media.flyers,b)}${gallerySection('Live Photos',media.live,b)}${gallerySection('Merch',media.merch,b)}${videosHtml(b)}</section>`;
+  app.innerHTML=`<section class="wrap band-page"><a class="back" href="#/bands">← All bands</a>${hero?`<div class="band-hero"><img src="images/${esc(hero)}" alt="${esc(b.name)} main photo"></div>`:''}<div class="band-head"><div class="kicker">Band archive</div><h1>${esc(b.name)}</h1>${b.intro.map(x=>`<p>${esc(x)}</p>`).join('')}${membersHtml(b)}${b.links&&b.links.length?linksHtml(b):''}</div>${releasesHtml(b)}${setlistHtml(b)}<section class="archive-section"><h2 class="section-title">Timeline</h2>${timelineHtml(b.timeline,slug)}</section>${gallerySection('Flyers',media.flyers,b)}${gallerySection('Live Photos',media.live,b)}${gallerySection('Merch',media.merch,b)}${videosHtml(b)}</section>`;
   bindFlyers();
 }
 function route(){let p=location.hash.slice(1)||'/';if(p==='/')home();else if(p==='/bands')bands();else if(p.startsWith('/band/'))bandPage(p.split('/')[2]);else home()}

@@ -771,7 +771,9 @@ window.SAMS_DATA={
     {
       "name": "THUNDERFUCK",
       "slug": "thunderfuck",
-      "intro": [],
+      "intro": [
+        "THUNDERFUCK was a one night only cover band for Jeff Russell's going away party. The band had been discussed multiple times at Papa John's in Lawrence, KS, but finally came to fruition in January of 2008."
+      ],
       "links": [],
       "timeline": [],
       "images": [
@@ -783,6 +785,32 @@ window.SAMS_DATA={
         "thunderfuck-6.png",
         "thunderfuck-7.png",
         "thunderfuck-8.png"
+      ],
+      "members": [
+        [
+          "Ivan Albers",
+          "Vocals"
+        ],
+        [
+          "Jeff Russell",
+          "Guitar"
+        ],
+        [
+          "Sam Gunnerson",
+          "Bass"
+        ],
+        [
+          "Will Gunnerson",
+          "Drums"
+        ]
+      ],
+      "setlist": [
+        "You've Been....THUNDERFUCKED!",
+        "If You Want Blood — AC/DC",
+        "Sweet Child O' Mine — Guns N' Roses",
+        "Possum Kingdom — The Toadies",
+        "My Own Worst Enemy — Lit",
+        "War Pigs — Black Sabbath"
       ]
     },
     {
@@ -1575,12 +1603,9 @@ window.SAMS_DATA={
       "name": "Slaw",
       "slug": "slaw",
       "intro": [
-        "Slaw was from Lawrence, Kansas and active from 2019 - 2020",
-        "Slaw  was Mitch Jones on Guitar / Vocals , Sam Gunnerson Bass / Vocals, and ??? on the Drums"
+        "Slaw was from Lawrence, Kansas and active from 2019–2020."
       ],
-      "links": [
-        "https://samsbands.bandcamp.com/album/slaw-unreleased"
-      ],
+      "links": [],
       "timeline": [
         {
           "date": "2019-10-13",
@@ -1630,6 +1655,29 @@ window.SAMS_DATA={
         "slaw-4.jpeg",
         "slaw-5.jpeg",
         "slaw-6.jpeg"
+      ],
+      "members": [
+        [
+          "Mitch Jones",
+          "Guitar / Vocals"
+        ],
+        [
+          "Sam Gunnerson",
+          "Bass / Vocals"
+        ],
+        [
+          "Bobby Reeves",
+          "Drums"
+        ]
+      ],
+      "releases": [
+        {
+          "title": "SLAW (Unreleased)",
+          "date": "Unreleased",
+          "dateLabel": "",
+          "image": "slaw-record-cover.jpg",
+          "url": "https://samsbands.bandcamp.com/album/slaw-unreleased"
+        }
       ]
     }
   ],
