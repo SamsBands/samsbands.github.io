@@ -51,12 +51,12 @@ const MEDIA={
     merch:[]
   },
   'jabberjosh':{
-    flyers:['jabberjosh-3.png','jabberjosh-4.png','jabberjosh-6.png','jabberjosh-7.png','jabberjosh-8.png','jabberjosh-9.png','jabberjosh-10.png','jabberjosh-11.png','jabberjosh-12.png','jabberjosh-14.png','jabberjosh-15.png','jabberjosh-16.png'],
+    flyers:['jabberjosh-3.png','jabberjosh-4.png','jabberjosh-6.png','jabberjosh-7.png','jabberjosh-8.png','jabberjosh-9.png','jabberjosh-10.png','jabberjosh-11.png','jabberjosh-12.png','jabberjosh-14.png','jabberjosh-15.png','jabberjosh-16.png','jabberjosh-2016-09-11-dag-house.jpg'],
     live:['jabberjosh-17.png','jabberjosh-18.png'],
     merch:['jabberjosh-1.png','jabberjosh-13.png']
   },
   'gnarly-davidson':{
-    flyers:['gnarly-davidson-1.png','gnarly-davidson-3.png','gnarly-davidson-4.png','gnarly-davidson-6.png','gnarly-davidson-7.png','gnarly-davidson-8.png','gnarly-davidson-9.png','gnarly-davidson-12.png','gnarly-davidson-13.png','gnarly-davidson-14.png'],
+    flyers:['gnarly-davidson-1.png','gnarly-davidson-3.png','gnarly-davidson-4.png','gnarly-davidson-6.png','gnarly-davidson-7.png','gnarly-davidson-8.png','gnarly-davidson-9.png','gnarly-davidson-12.png','gnarly-davidson-13.png','gnarly-davidson-14.png','jabberjosh-2016-09-11-dag-house.jpg'],
     live:[],
     merch:['gnarly-davidson-10.png','gnarly-davidson-11.png']
   },
@@ -121,7 +121,7 @@ function bands(){
 }
 function videosHtml(b){
   if(!b.videos||!b.videos.length)return '';
-  return `<section class="archive-section"><h2 class="section-title">Videos</h2><div class="videos">${b.videos.map(v=>{const id=(v.url.match(/[?&]v=([^&]+)/)||[])[1];return `<article class="video-item"><div class="video-frame"><iframe src="https://www.youtube.com/embed/${esc(id)}" title="${esc(v.title)}" loading="lazy" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe></div><h3>${esc(v.title)}</h3><p>Hutch Skate Park — July 7, 2007</p></article>`}).join('')}</div></section>`;
+  return `<section class="archive-section"><h2 class="section-title">Videos</h2><div class="videos">${b.videos.map(v=>{const id=(v.url.match(/[?&]v=([^&]+)/)||[])[1];return `<article class="video-item"><div class="video-frame"><iframe src="https://www.youtube.com/embed/${esc(id)}" title="${esc(v.title)}" loading="lazy" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe></div><h3>${esc(v.title)}</h3>${b.slug==='long-division'?'<p>Hutch Skate Park — July 7, 2007</p>':''}</article>`}).join('')}</div></section>`;
 }
 function bandPage(slug){
   let b=band(slug);if(!b)return bands();

@@ -1151,7 +1151,7 @@ window.SAMS_DATA={
           "display": "Sep 11, 2016",
           "event": "JabberJosh Reunion Show with Wooly Bear + Gnarly Davidson",
           "venue": "Dag House",
-          "city": "Lawrence, KS",
+          "city": "Cleveland, OH",
           "flyer": "jabberjosh-2016-09-11-dag-house.jpg"
         }
       ],
@@ -1205,6 +1205,12 @@ window.SAMS_DATA={
           "date": "October 31, 2013",
           "image": "jabberjosh-dos-hombres.png",
           "url": "https://jabberjosh.bandcamp.com/album/dos-hombres"
+        },
+        {
+          "title": "Retirement Show Live Recording",
+          "date": "July 18, 2014",
+          "image": "jabberjosh-retirement-show.png",
+          "url": "https://samsbands.bandcamp.com/album/jabberjosh-retirement-show"
         }
       ],
       "videos": [
@@ -1479,7 +1485,7 @@ window.SAMS_DATA={
           "display": "Sep 11, 2016",
           "event": "Show with JabberJosh + Wooly Bear",
           "venue": "Dag House",
-          "city": "Lawrence, KS",
+          "city": "Cleveland, OH",
           "flyer": "jabberjosh-2016-09-11-dag-house.jpg"
         },
         {
@@ -3156,7 +3162,7 @@ window.SAMS_DATA={
       "display": "Sep 11, 2016",
       "event": "JabberJosh Reunion Show with Wooly Bear + Gnarly Davidson",
       "venue": "Dag House",
-      "city": "Lawrence, KS",
+      "city": "Cleveland, OH",
       "band": "JabberJosh",
       "slug": "jabberjosh",
       "flyer": "jabberjosh-2016-09-11-dag-house.jpg"
@@ -3166,7 +3172,7 @@ window.SAMS_DATA={
       "display": "Sep 11, 2016",
       "event": "Show with JabberJosh + Wooly Bear",
       "venue": "Dag House",
-      "city": "Lawrence, KS",
+      "city": "Cleveland, OH",
       "band": "Gnarly Davidson",
       "slug": "gnarly-davidson",
       "flyer": "jabberjosh-2016-09-11-dag-house.jpg"
