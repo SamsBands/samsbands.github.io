@@ -6,14 +6,9 @@ window.SAMS_DATA={
       "name": "EMR",
       "slug": "emr",
       "intro": [
-        "Ernie's Meter Repair AKA EMR was based out of Pratt Kansas and active from 2000 - 2004",
-        "EMR Was Sam Gunnerson Guitar/Bass/Vocals , Kyle Guitar/Bass/Vocals, Dane Guitar/Bass/Vocals , Zach Guitar/Bass/ Vocals ,  Will Gunnerson on Drums",
-        "\"We Used to Be Better\""
+        "Ernie's Meter Repair (AKA EMR) was based out of Pratt, Kansas and active from 2000–2004."
       ],
-      "links": [
-        "https://samsbands.bandcamp.com/album/split-my-pants-emr-and-my-friend-tim",
-        "https://www.oocities.org/erniesmeterrepair/home.html"
-      ],
+      "links": [],
       "timeline": [
         {
           "date": "2000-09-21",
@@ -256,6 +251,42 @@ window.SAMS_DATA={
         "emr-4.png",
         "emr-5.png",
         "emr-6.jpeg"
+      ],
+      "members": [
+        [
+          "Sam Gunnerson",
+          "Guitar / Bass / Vocals"
+        ],
+        [
+          "Kyle",
+          "Guitar / Bass / Vocals"
+        ],
+        [
+          "Dane",
+          "Guitar / Bass / Vocals"
+        ],
+        [
+          "Zach",
+          "Guitar / Bass / Vocals"
+        ],
+        [
+          "Will Gunnerson",
+          "Drums"
+        ]
+      ],
+      "releases": [
+        {
+          "title": "Split My Pants — EMR and My Friend Tim",
+          "date": "June 1, 2002",
+          "image": "emr-split-my-pants.png",
+          "url": "https://samsbands.bandcamp.com/album/split-my-pants-emr-and-my-friend-tim"
+        },
+        {
+          "title": "We Used To Be Better",
+          "date": "April 12, 2003",
+          "image": "emr-we-used-to-be-better.png",
+          "url": ""
+        }
       ]
     },
     {
