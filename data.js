@@ -817,14 +817,9 @@ window.SAMS_DATA={
       "name": "JabberJosh",
       "slug": "jabberjosh",
       "intro": [
-        "Jabberjosh was Sam, and his brother Will, and they had some birthdays to announce",
-        "\"Waking Up The Neighborhood Tonight!\"",
-        "\"Free Your Ass and Your Mind Will Follow\""
+        "Jabberjosh was Sam, and his brother Will, and they had some birthdays to announce"
       ],
-      "links": [
-        "https://jabberjosh.bandcamp.com/album/waking-up-the-neighborhood-tonight-cassette",
-        "https://jabberjosh.bandcamp.com/album/free-your-ass-and-your-mind-will-follow"
-      ],
+      "links": [],
       "timeline": [
         {
           "date": "2009-05-19",
@@ -1122,6 +1117,38 @@ window.SAMS_DATA={
         "jabberjosh-16.png",
         "jabberjosh-17.png",
         "jabberjosh-18.png"
+      ],
+      "releases": [
+        {
+          "title": "Sports is my Favorite",
+          "date": "February 2008",
+          "image": "jabberjosh-sports-is-my-favorite.png",
+          "url": "https://samsbands.bandcamp.com/album/jabberjosh-sports-is-my-favorite"
+        },
+        {
+          "title": "Waking Up the Neighborhood Tonight",
+          "date": "February 12, 2010",
+          "image": "jabberjosh-waking-up-the-neighborhood-tonight.png",
+          "url": "https://jabberjosh.bandcamp.com/album/waking-up-the-neighborhood-tonight-cassette"
+        },
+        {
+          "title": "On Deck - Split with Waxeater",
+          "date": "April 1, 2010",
+          "image": "jabberjosh-on-deck.jpg",
+          "url": "https://samsbands.bandcamp.com/album/jabberjosh-on-deck-split-with-waxeater"
+        },
+        {
+          "title": "Free Your Ass and Your Mind Will Follow",
+          "date": "September 21, 2011",
+          "image": "jabberjosh-free-your-ass.png",
+          "url": "https://jabberjosh.bandcamp.com/album/free-your-ass-and-your-mind-will-follow"
+        },
+        {
+          "title": "Dos Hombres",
+          "date": "October 31, 2013",
+          "image": "jabberjosh-dos-hombres.png",
+          "url": "https://jabberjosh.bandcamp.com/album/dos-hombres"
+        }
       ]
     },
     {
