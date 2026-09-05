@@ -96,7 +96,7 @@ window.openFlyer=openFlyer;
 
 function gallerySection(title,items,b){
   if(!items||!items.length)return '';
-  return `<section class="archive-section"><div class="section-heading"><h2 class="section-title">${esc(title)}</h2><span>${items.length}</span></div><div class="gallery">${items.map(x=>`<button class="gallery-item" type="button" data-flyer="images/${esc(x)}" data-caption="${esc(b.name+' — '+title.replace(/s$/,''))}"><img loading="lazy" src="images/${esc(x)}" alt="${esc(b.name+' '+title.toLowerCase())}"></button>`).join('')}</div></section>`;
+  return `<section class="archive-section"><div class="section-heading"><h2 class="section-title">${esc(title)}</h2><span>${items.length}</span></div><div class="gallery">${items.map(x=>{const showFull=(b.slug==='gnarly-davidson'&&title==='Live Photos'&&x==='gnarly-live.png')||(b.slug==='jabberjosh'&&title==='Merch'&&x==='jabberjosh-sticker.png');return `<button class="gallery-item" type="button" data-flyer="images/${esc(x)}" data-caption="${esc(b.name+' — '+title.replace(/s$/,''))}"${showFull?' style="height:auto;max-width:760px;justify-self:center;"':''}><img loading="lazy" src="images/${esc(x)}" alt="${esc(b.name+' '+title.toLowerCase())}"${showFull?' style="width:100%;height:auto;aspect-ratio:auto;object-fit:contain;display:block;"':''}></button>`}).join('')}</div></section>`;
 }
 
 
