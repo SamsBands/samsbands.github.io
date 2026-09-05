@@ -53,12 +53,12 @@ const MEDIA={
   'jabberjosh':{
     flyers:['jabberjosh-3.png','jabberjosh-4.png','jabberjosh-6.png','jabberjosh-7.png','jabberjosh-8.png','jabberjosh-9.png','jabberjosh-10.png','jabberjosh-11.png','jabberjosh-12.png','jabberjosh-14.png','jabberjosh-15.png','jabberjosh-16.png','jabberjosh-2016-09-11-dag-house.jpg'],
     live:['jabberjosh-17.png','jabberjosh-18.png'],
-    merch:['jabberjosh-1.png','jabberjosh-13.png','jabberjosh-sticker.png']
+    merch:['jabberjosh-sticker.png']
   },
   'gnarly-davidson':{
     flyers:['gnarly-davidson-1.png','gnarly-davidson-3.png','gnarly-davidson-4.png','gnarly-davidson-6.png','gnarly-davidson-7.png','gnarly-davidson-8.png','gnarly-davidson-9.png','gnarly-davidson-12.png','gnarly-davidson-13.png','gnarly-davidson-14.png','jabberjosh-2016-09-11-dag-house.jpg'],
-    live:[],
-    merch:['gnarly-davidson-10.png','gnarly-davidson-11.png','gnarly-merch-1.png','gnarly-merch-2.png','gnarly-merch-blue-tank.png','gnarly-merch-4.png','gnarly-merch-hat.png','gnarly-merch-bag.png','gnarly-merch-stickers.png']
+    live:['gnarly-live.png'],
+    merch:['gnarly-davidson-10.png','gnarly-davidson-11.png','gnarly-merch-1.png','gnarly-merch-2.png','gnarly-merch-blue-tank.png','gnarly-merch-4.png','gnarly-merch-hat.png','gnarly-merch-bag.png','gnarly-merch-stickers.png','gnarly-merch-7.png']
   },
   'slaw':{
     flyers:['slaw-2.jpeg','slaw-3.jpeg','slaw-4.jpeg','slaw-5.jpeg','slaw-6.jpeg'], live:['slaw-live-1.jpg','slaw-live-2.jpg','slaw-live-3.jpg','slaw-live-4.jpg','slaw-live-5.jpg','slaw-live-6.jpg'], merch:[]

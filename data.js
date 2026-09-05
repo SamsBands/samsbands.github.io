@@ -1763,6 +1763,16 @@ window.SAMS_DATA={
           "image": "gnarly-davidson-jabberjaw-coffin-nail.png",
           "url": "https://gnarlydavidsonlfk.bandcamp.com/album/jabberjaw-coffin-nail"
         }
+      ],
+      "videos": [
+        {
+          "title": "Gnarly Davidson Live Video 1",
+          "url": "https://www.youtube.com/watch?v=aBJUzLdePSA"
+        },
+        {
+          "title": "Gnarly Davidson Live Video 2",
+          "url": "https://www.youtube.com/watch?v=Y53JVks6xt4"
+        }
       ]
     },
     {
