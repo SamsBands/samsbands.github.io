@@ -555,8 +555,8 @@ window.SAMS_DATA={
           "flyer": "archive-emr_037.jpg"
         },
         {
-          "date": "2003-03-26",
-          "display": "Mar 26, 2003",
+          "date": "2003-03-01",
+          "display": "Mar 1, 2003",
           "event": "Show with King TP + Schimon's Truth + Desperately Seeking Simon + Hey Rodeo",
           "venue": "Carey Park Homebuilders Shelter",
           "city": "Hutchinson, KS",
@@ -579,11 +579,12 @@ window.SAMS_DATA={
           "flyer": "my-friend-tim-6.png"
         },
         {
-          "date": "2004-03-01",
-          "display": "Mar 1, 2004",
-          "event": "Show with Claiming Haley + Prom Night (Ricky Fitts did NOT play this show)",
+          "date": "2004-03-24",
+          "display": "Mar 24, 2004",
+          "event": "Show with Claiming Haley + Prom Night",
           "venue": "Rice Park Building",
-          "city": "Hutchinson, KS"
+          "city": "Hutchinson, KS",
+          "note": "Ricky Fitts is on the flyer, but did not play."
         }
       ],
       "images": [
@@ -2687,8 +2688,8 @@ window.SAMS_DATA={
       "slug": "emr"
     },
     {
-      "date": "2003-03-26",
-      "display": "Mar 26, 2003",
+      "date": "2003-03-01",
+      "display": "Mar 1, 2003",
       "event": "Show with King TP + Schimon's Truth + Desperately Seeking Simon + Hey Rodeo",
       "venue": "Carey Park Homebuilders Shelter",
       "city": "Hutchinson, KS",
@@ -2763,13 +2764,14 @@ window.SAMS_DATA={
       "slug": "my-friend-tim"
     },
     {
-      "date": "2004-03-01",
-      "display": "Mar 1, 2004",
-      "event": "Show with Claiming Haley + Prom Night (Ricky Fitts did NOT play this show)",
+      "date": "2004-03-24",
+      "display": "Mar 24, 2004",
+      "event": "Show with Claiming Haley + Prom Night",
       "venue": "Rice Park Building",
       "city": "Hutchinson, KS",
       "band": "My Friend Tim",
-      "slug": "my-friend-tim"
+      "slug": "my-friend-tim",
+      "note": "Ricky Fitts is on the flyer, but did not play."
     },
     {
       "date": "2004-05-01",
