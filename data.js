@@ -11,6 +11,22 @@ window.SAMS_DATA={
       "links": [],
       "timeline": [
         {
+          "date": "2000-07-15",
+          "display": "Jul 15, 2000",
+          "event": "Prattstock",
+          "venue": "Centennial Park Stage",
+          "city": "Pratt, KS",
+          "flyer": "archive-emr_003.jpg"
+        },
+        {
+          "date": "2000-08-26",
+          "display": "Aug 26, 2000",
+          "event": "Show with Agent 246",
+          "venue": "Wheeler Carey Park",
+          "city": "Hutchinson, KS",
+          "flyer": "archive-emr_002.jpg"
+        },
+        {
           "date": "2000-09-21",
           "display": "Sep 21, 2000",
           "event": "EMR Fails to make the Pratt High School Homecoming Tryouts",
@@ -25,11 +41,20 @@ window.SAMS_DATA={
           "city": ""
         },
         {
+          "date": "2000-12-02",
+          "display": "Dec 2, 2000",
+          "event": "Show with Invalid",
+          "venue": "PCC Commons Area",
+          "city": "",
+          "flyer": "archive-emr_004.jpg"
+        },
+        {
           "date": "2000-12-08",
           "display": "Dec 8, 2000",
           "event": "Show with Agent 246 + Five Finger Faith",
           "venue": "Teen Center",
-          "city": "Hutchinson, KS"
+          "city": "Hutchinson, KS",
+          "flyer": "archive-emr_007.jpg"
         },
         {
           "date": "2000-12-16",
@@ -58,7 +83,15 @@ window.SAMS_DATA={
           "event": "Show with Agent 246 + Last Ride Out",
           "venue": "Teen Center",
           "city": "Hutchinson, KS",
-          "flyer": "emr-6.jpeg"
+          "flyer": "archive-emr_006.jpg"
+        },
+        {
+          "date": "2001-01-20",
+          "display": "Jan 20, 2001",
+          "event": "Show with Agent 246",
+          "venue": "Suburban Lanes",
+          "city": "Pratt, KS",
+          "flyer": "archive-emr_008.jpg"
         },
         {
           "date": "2001-01-27",
@@ -79,7 +112,8 @@ window.SAMS_DATA={
           "display": "Jul 21, 2001",
           "event": "Prattstock with Pirate Radio + Invalid + No Tomorrow + Last Ride Out + Ryan and Bryan (My Friend Tim?!)",
           "venue": "Lemon Park",
-          "city": "Pratt, KS"
+          "city": "Pratt, KS",
+          "flyer": "archive-emr_011.jpg"
         },
         {
           "date": "2001-08-13",
@@ -100,7 +134,8 @@ window.SAMS_DATA={
           "display": "Nov 3, 2001",
           "event": "Local Show",
           "venue": "Pratt Teen Center",
-          "city": "Pratt, KS"
+          "city": "Pratt, KS",
+          "flyer": "archive-emr_010.jpg"
         },
         {
           "date": "2002-01-10",
@@ -128,14 +163,16 @@ window.SAMS_DATA={
           "display": "Feb 16, 2002",
           "event": "FIRST Wichita show with Last Ride Out + Shake Gently + No Tomorrow + Nowhere Fast",
           "venue": "Eagles Lodge",
-          "city": "Wichita, KS"
+          "city": "Wichita, KS",
+          "flyer": "archive-emr_033.jpg"
         },
         {
           "date": "2002-04-26",
           "display": "Apr 26, 2002",
           "event": "Show with Christine + That Same Day Service (TX)",
-          "venue": "????",
-          "city": "????"
+          "venue": "Hyde Park",
+          "city": "Wichita, KS",
+          "flyer": "archive-emr_034.jpg"
         },
         {
           "date": "2002-04-28",
@@ -166,11 +203,92 @@ window.SAMS_DATA={
           "city": ""
         },
         {
-          "date": "7/7/2002 - 7/20/2002",
-          "display": "7/7/2002 - 7/20/2002",
-          "event": "\"Until the Van Breaksdown\" Tour with My Friend Tim and Remembering December",
-          "venue": "????",
-          "city": "????"
+          "date": "2002-07-08",
+          "display": "Jul 8, 2002",
+          "event": "Until the Van Breaks Down Tour with My Friend Tim + Remembering December",
+          "venue": "Centennial Park",
+          "city": "Pratt, KS",
+          "flyer": "archive-emr_014.jpg"
+        },
+        {
+          "date": "2002-07-09",
+          "display": "Jul 9, 2002",
+          "event": "Until the Van Breaks Down Tour with My Friend Tim + Remembering December",
+          "venue": "Logo's",
+          "city": "Wichita, KS",
+          "flyer": "archive-emr_014.jpg"
+        },
+        {
+          "date": "2002-07-10",
+          "display": "Jul 10, 2002",
+          "event": "Until the Van Breaks Down Tour with My Friend Tim + Remembering December",
+          "venue": "Carey Park Homebuilders Shelter",
+          "city": "Hutchinson, KS",
+          "flyer": "archive-emr_014.jpg"
+        },
+        {
+          "date": "2002-07-11",
+          "display": "Jul 11, 2002",
+          "event": "Until the Van Breaks Down Tour with My Friend Tim + Remembering December + Diversion 4.0",
+          "venue": "",
+          "city": "Lawrence, KS",
+          "flyer": "archive-emr_014.jpg"
+        },
+        {
+          "date": "2002-07-12",
+          "display": "Jul 12, 2002",
+          "event": "Until the Van Breaks Down Tour with My Friend Tim + Remembering December",
+          "venue": "1010 Humboldt St.",
+          "city": "Manhattan, KS",
+          "flyer": "archive-emr_016.jpg"
+        },
+        {
+          "date": "2002-07-13",
+          "display": "Jul 13, 2002",
+          "event": "Until the Van Breaks Down Tour with My Friend Tim + Remembering December",
+          "venue": "Sigma Pi Fraternity",
+          "city": "Emporia, KS",
+          "flyer": "archive-emr_014.jpg"
+        },
+        {
+          "date": "2002-07-14",
+          "display": "Jul 14, 2002",
+          "event": "Until the Van Breaks Down Tour with My Friend Tim + Remembering December",
+          "venue": "House",
+          "city": "Tulsa, OK",
+          "flyer": "archive-emr_014.jpg"
+        },
+        {
+          "date": "2002-07-15",
+          "display": "Jul 15, 2002",
+          "event": "Until the Van Breaks Down Tour with My Friend Tim + Remembering December + Self Denied",
+          "venue": "Buzz Subs",
+          "city": "Norman, OK",
+          "flyer": "archive-emr_017.jpg"
+        },
+        {
+          "date": "2002-07-18",
+          "display": "Jul 18, 2002",
+          "event": "Until the Van Breaks Down Tour with My Friend Tim + Remembering December + Foramen Magnum",
+          "venue": "",
+          "city": "Amarillo, TX",
+          "flyer": "archive-emr_014.jpg"
+        },
+        {
+          "date": "2002-07-19",
+          "display": "Jul 19, 2002",
+          "event": "Until the Van Breaks Down Tour with My Friend Tim + Remembering December + Foramen Magnum",
+          "venue": "",
+          "city": "Amarillo, TX",
+          "flyer": "archive-emr_014.jpg"
+        },
+        {
+          "date": "2002-07-20",
+          "display": "Jul 20, 2002",
+          "event": "End of Tour House Party with My Friend Tim + Remembering December",
+          "venue": "Ryan Gee's House",
+          "city": "Hutchinson, KS",
+          "flyer": "archive-emr_019-01.jpg"
         },
         {
           "date": "2002-09-01",
@@ -183,15 +301,25 @@ window.SAMS_DATA={
           "date": "2002-10-19",
           "display": "Oct 19, 2002",
           "event": "Show with No Tomorrow + Hanoi Chevrolet + My Friend Tim",
-          "venue": "????",
-          "city": "????"
+          "venue": "Lee Shiney Art Gallery",
+          "city": "Wichita, KS",
+          "flyer": "archive-emr_037.jpg"
+        },
+        {
+          "date": "2002-10-26",
+          "display": "Oct 26, 2002",
+          "event": "Stratstock",
+          "venue": "",
+          "city": "",
+          "flyer": "archive-emr_035.jpg"
         },
         {
           "date": "2002-11-02",
           "display": "Nov 2, 2002",
           "event": "Show with the Vanzetti's (CD Release Show) + Hanoi Chevrolet + Duplicate Copy",
           "venue": "Lee Shiney Art Gallery",
-          "city": "Wichita, KS"
+          "city": "Wichita, KS",
+          "flyer": "archive-emr_036.jpg"
         },
         {
           "date": "2002-11-23",
@@ -242,6 +370,13 @@ window.SAMS_DATA={
           "event": "Final Update to the EMR website",
           "venue": "",
           "city": ""
+        },
+        {
+          "date": "7/7/2002 - 7/20/2002",
+          "display": "7/7/2002 - 7/20/2002",
+          "event": "\"Until the Van Breaksdown\" Tour with My Friend Tim and Remembering December",
+          "venue": "????",
+          "city": "????"
         }
       ],
       "images": [
@@ -278,7 +413,7 @@ window.SAMS_DATA={
         {
           "title": "Split My Pants — EMR and My Friend Tim",
           "date": "June 1, 2002",
-          "image": "emr-split-my-pants.png",
+          "image": "archive-emr_013.jpg",
           "url": "https://samsbands.bandcamp.com/album/split-my-pants-emr-and-my-friend-tim"
         },
         {
@@ -326,13 +461,6 @@ window.SAMS_DATA={
           "city": ""
         },
         {
-          "date": "Summer 2002",
-          "display": "Summer 2002",
-          "event": "Release \"Split my Pants\" with EMR",
-          "venue": "",
-          "city": ""
-        },
-        {
           "date": "2002-07-03",
           "display": "Jul 3, 2002",
           "event": "Nowhere Fast Breaks Up",
@@ -340,18 +468,100 @@ window.SAMS_DATA={
           "city": ""
         },
         {
-          "date": "7/7/2002 - 7/20/2002",
-          "display": "7/7/2002 - 7/20/2002",
-          "event": "\"Until the Van Breaksdown\" Tour with EMR and Remembering December",
-          "venue": "????",
-          "city": "???"
+          "date": "2002-07-08",
+          "display": "Jul 8, 2002",
+          "event": "Until the Van Breaks Down Tour with My Friend Tim + Remembering December",
+          "venue": "Centennial Park",
+          "city": "Pratt, KS",
+          "flyer": "archive-emr_014.jpg"
+        },
+        {
+          "date": "2002-07-09",
+          "display": "Jul 9, 2002",
+          "event": "Until the Van Breaks Down Tour with My Friend Tim + Remembering December",
+          "venue": "Logo's",
+          "city": "Wichita, KS",
+          "flyer": "archive-emr_014.jpg"
+        },
+        {
+          "date": "2002-07-10",
+          "display": "Jul 10, 2002",
+          "event": "Until the Van Breaks Down Tour with My Friend Tim + Remembering December",
+          "venue": "Carey Park Homebuilders Shelter",
+          "city": "Hutchinson, KS",
+          "flyer": "archive-emr_014.jpg"
+        },
+        {
+          "date": "2002-07-11",
+          "display": "Jul 11, 2002",
+          "event": "Until the Van Breaks Down Tour with My Friend Tim + Remembering December + Diversion 4.0",
+          "venue": "",
+          "city": "Lawrence, KS",
+          "flyer": "archive-emr_014.jpg"
+        },
+        {
+          "date": "2002-07-12",
+          "display": "Jul 12, 2002",
+          "event": "Until the Van Breaks Down Tour with My Friend Tim + Remembering December",
+          "venue": "1010 Humboldt St.",
+          "city": "Manhattan, KS",
+          "flyer": "archive-emr_016.jpg"
+        },
+        {
+          "date": "2002-07-13",
+          "display": "Jul 13, 2002",
+          "event": "Until the Van Breaks Down Tour with My Friend Tim + Remembering December",
+          "venue": "Sigma Pi Fraternity",
+          "city": "Emporia, KS",
+          "flyer": "archive-emr_014.jpg"
+        },
+        {
+          "date": "2002-07-14",
+          "display": "Jul 14, 2002",
+          "event": "Until the Van Breaks Down Tour with My Friend Tim + Remembering December",
+          "venue": "House",
+          "city": "Tulsa, OK",
+          "flyer": "archive-emr_014.jpg"
+        },
+        {
+          "date": "2002-07-15",
+          "display": "Jul 15, 2002",
+          "event": "Until the Van Breaks Down Tour with My Friend Tim + Remembering December + Self Denied",
+          "venue": "Buzz Subs",
+          "city": "Norman, OK",
+          "flyer": "archive-emr_017.jpg"
+        },
+        {
+          "date": "2002-07-18",
+          "display": "Jul 18, 2002",
+          "event": "Until the Van Breaks Down Tour with My Friend Tim + Remembering December + Foramen Magnum",
+          "venue": "",
+          "city": "Amarillo, TX",
+          "flyer": "archive-emr_014.jpg"
+        },
+        {
+          "date": "2002-07-19",
+          "display": "Jul 19, 2002",
+          "event": "Until the Van Breaks Down Tour with My Friend Tim + Remembering December + Foramen Magnum",
+          "venue": "",
+          "city": "Amarillo, TX",
+          "flyer": "archive-emr_014.jpg"
+        },
+        {
+          "date": "2002-07-20",
+          "display": "Jul 20, 2002",
+          "event": "End of Tour House Party with My Friend Tim + Remembering December",
+          "venue": "Ryan Gee's House",
+          "city": "Hutchinson, KS",
+          "flyer": "archive-emr_019-01.jpg"
         },
         {
           "date": "2002-10-19",
           "display": "Oct 19, 2002",
           "event": "Show with No Tomorrow + Hanoi Chevrolet + EMR",
-          "venue": "????",
-          "city": "???"
+          "venue": "Lee Shiney Art Gallery",
+          "city": "Wichita, KS",
+          "flyer": "archive-emr_037.jpg"
         },
         {
           "date": "2003-03-26",
@@ -383,6 +593,20 @@ window.SAMS_DATA={
           "event": "Show with Claiming Haley + Prom Night (Ricky Fitts did NOT play this show)",
           "venue": "Rice Park Building",
           "city": "Hutchinson, KS"
+        },
+        {
+          "date": "7/7/2002 - 7/20/2002",
+          "display": "7/7/2002 - 7/20/2002",
+          "event": "\"Until the Van Breaksdown\" Tour with EMR and Remembering December",
+          "venue": "????",
+          "city": "???"
+        },
+        {
+          "date": "Summer 2002",
+          "display": "Summer 2002",
+          "event": "Release \"Split my Pants\" with EMR",
+          "venue": "",
+          "city": ""
         }
       ],
       "images": [
@@ -421,7 +645,7 @@ window.SAMS_DATA={
         {
           "title": "Split My Pants — EMR and My Friend Tim",
           "date": "June 1, 2002",
-          "image": "emr-split-my-pants.png",
+          "image": "archive-emr_013.jpg",
           "url": "https://samsbands.bandcamp.com/album/split-my-pants-emr-and-my-friend-tim"
         },
         {
@@ -1859,6 +2083,26 @@ window.SAMS_DATA={
   ],
   "timeline": [
     {
+      "date": "2000-07-15",
+      "display": "Jul 15, 2000",
+      "event": "Prattstock",
+      "venue": "Centennial Park Stage",
+      "city": "Pratt, KS",
+      "flyer": "archive-emr_003.jpg",
+      "band": "EMR",
+      "slug": "emr"
+    },
+    {
+      "date": "2000-08-26",
+      "display": "Aug 26, 2000",
+      "event": "Show with Agent 246",
+      "venue": "Wheeler Carey Park",
+      "city": "Hutchinson, KS",
+      "flyer": "archive-emr_002.jpg",
+      "band": "EMR",
+      "slug": "emr"
+    },
+    {
       "date": "2000-09-21",
       "display": "Sep 21, 2000",
       "event": "EMR Fails to make the Pratt High School Homecoming Tryouts",
@@ -1877,13 +2121,24 @@ window.SAMS_DATA={
       "slug": "emr"
     },
     {
+      "date": "2000-12-02",
+      "display": "Dec 2, 2000",
+      "event": "Show with Invalid",
+      "venue": "PCC Commons Area",
+      "city": "",
+      "flyer": "archive-emr_004.jpg",
+      "band": "EMR",
+      "slug": "emr"
+    },
+    {
       "date": "2000-12-08",
       "display": "Dec 8, 2000",
       "event": "Show with Agent 246 + Five Finger Faith",
       "venue": "Teen Center",
       "city": "Hutchinson, KS",
       "band": "EMR",
-      "slug": "emr"
+      "slug": "emr",
+      "flyer": "archive-emr_007.jpg"
     },
     {
       "date": "2000-12-16",
@@ -1918,7 +2173,17 @@ window.SAMS_DATA={
       "event": "Show with Agent 246 + Last Ride Out",
       "venue": "Teen Center",
       "city": "Hutchinson, KS",
-      "flyer": "emr-6.jpeg",
+      "flyer": "archive-emr_006.jpg",
+      "band": "EMR",
+      "slug": "emr"
+    },
+    {
+      "date": "2001-01-20",
+      "display": "Jan 20, 2001",
+      "event": "Show with Agent 246",
+      "venue": "Suburban Lanes",
+      "city": "Pratt, KS",
+      "flyer": "archive-emr_008.jpg",
       "band": "EMR",
       "slug": "emr"
     },
@@ -1947,7 +2212,8 @@ window.SAMS_DATA={
       "venue": "Lemon Park",
       "city": "Pratt, KS",
       "band": "EMR",
-      "slug": "emr"
+      "slug": "emr",
+      "flyer": "archive-emr_011.jpg"
     },
     {
       "date": "2001-08-13",
@@ -1974,7 +2240,8 @@ window.SAMS_DATA={
       "venue": "Pratt Teen Center",
       "city": "Pratt, KS",
       "band": "EMR",
-      "slug": "emr"
+      "slug": "emr",
+      "flyer": "archive-emr_010.jpg"
     },
     {
       "date": "2002-01-10",
@@ -2010,7 +2277,8 @@ window.SAMS_DATA={
       "venue": "Eagles Lodge",
       "city": "Wichita, KS",
       "band": "EMR",
-      "slug": "emr"
+      "slug": "emr",
+      "flyer": "archive-emr_033.jpg"
     },
     {
       "date": "2002-03-23",
@@ -2025,10 +2293,11 @@ window.SAMS_DATA={
       "date": "2002-04-26",
       "display": "Apr 26, 2002",
       "event": "Show with Christine + That Same Day Service (TX)",
-      "venue": "????",
-      "city": "????",
+      "venue": "Hyde Park",
+      "city": "Wichita, KS",
       "band": "EMR",
-      "slug": "emr"
+      "slug": "emr",
+      "flyer": "archive-emr_034.jpg"
     },
     {
       "date": "2002-04-28",
@@ -2121,6 +2390,226 @@ window.SAMS_DATA={
       "slug": "my-friend-tim"
     },
     {
+      "date": "2002-07-08",
+      "display": "Jul 8, 2002",
+      "event": "Until the Van Breaks Down Tour with My Friend Tim + Remembering December",
+      "venue": "Centennial Park",
+      "city": "Pratt, KS",
+      "flyer": "archive-emr_014.jpg",
+      "band": "EMR",
+      "slug": "emr"
+    },
+    {
+      "date": "2002-07-08",
+      "display": "Jul 8, 2002",
+      "event": "Until the Van Breaks Down Tour with My Friend Tim + Remembering December",
+      "venue": "Centennial Park",
+      "city": "Pratt, KS",
+      "flyer": "archive-emr_014.jpg",
+      "band": "My Friend Tim",
+      "slug": "my-friend-tim"
+    },
+    {
+      "date": "2002-07-09",
+      "display": "Jul 9, 2002",
+      "event": "Until the Van Breaks Down Tour with My Friend Tim + Remembering December",
+      "venue": "Logo's",
+      "city": "Wichita, KS",
+      "flyer": "archive-emr_014.jpg",
+      "band": "EMR",
+      "slug": "emr"
+    },
+    {
+      "date": "2002-07-09",
+      "display": "Jul 9, 2002",
+      "event": "Until the Van Breaks Down Tour with My Friend Tim + Remembering December",
+      "venue": "Logo's",
+      "city": "Wichita, KS",
+      "flyer": "archive-emr_014.jpg",
+      "band": "My Friend Tim",
+      "slug": "my-friend-tim"
+    },
+    {
+      "date": "2002-07-10",
+      "display": "Jul 10, 2002",
+      "event": "Until the Van Breaks Down Tour with My Friend Tim + Remembering December",
+      "venue": "Carey Park Homebuilders Shelter",
+      "city": "Hutchinson, KS",
+      "flyer": "archive-emr_014.jpg",
+      "band": "EMR",
+      "slug": "emr"
+    },
+    {
+      "date": "2002-07-10",
+      "display": "Jul 10, 2002",
+      "event": "Until the Van Breaks Down Tour with My Friend Tim + Remembering December",
+      "venue": "Carey Park Homebuilders Shelter",
+      "city": "Hutchinson, KS",
+      "flyer": "archive-emr_014.jpg",
+      "band": "My Friend Tim",
+      "slug": "my-friend-tim"
+    },
+    {
+      "date": "2002-07-11",
+      "display": "Jul 11, 2002",
+      "event": "Until the Van Breaks Down Tour with My Friend Tim + Remembering December + Diversion 4.0",
+      "venue": "",
+      "city": "Lawrence, KS",
+      "flyer": "archive-emr_014.jpg",
+      "band": "EMR",
+      "slug": "emr"
+    },
+    {
+      "date": "2002-07-11",
+      "display": "Jul 11, 2002",
+      "event": "Until the Van Breaks Down Tour with My Friend Tim + Remembering December + Diversion 4.0",
+      "venue": "",
+      "city": "Lawrence, KS",
+      "flyer": "archive-emr_014.jpg",
+      "band": "My Friend Tim",
+      "slug": "my-friend-tim"
+    },
+    {
+      "date": "2002-07-12",
+      "display": "Jul 12, 2002",
+      "event": "Until the Van Breaks Down Tour with My Friend Tim + Remembering December",
+      "venue": "1010 Humboldt St.",
+      "city": "Manhattan, KS",
+      "flyer": "archive-emr_016.jpg",
+      "band": "EMR",
+      "slug": "emr"
+    },
+    {
+      "date": "2002-07-12",
+      "display": "Jul 12, 2002",
+      "event": "Until the Van Breaks Down Tour with My Friend Tim + Remembering December",
+      "venue": "1010 Humboldt St.",
+      "city": "Manhattan, KS",
+      "flyer": "archive-emr_016.jpg",
+      "band": "My Friend Tim",
+      "slug": "my-friend-tim"
+    },
+    {
+      "date": "2002-07-13",
+      "display": "Jul 13, 2002",
+      "event": "Until the Van Breaks Down Tour with My Friend Tim + Remembering December",
+      "venue": "Sigma Pi Fraternity",
+      "city": "Emporia, KS",
+      "flyer": "archive-emr_014.jpg",
+      "band": "EMR",
+      "slug": "emr"
+    },
+    {
+      "date": "2002-07-13",
+      "display": "Jul 13, 2002",
+      "event": "Until the Van Breaks Down Tour with My Friend Tim + Remembering December",
+      "venue": "Sigma Pi Fraternity",
+      "city": "Emporia, KS",
+      "flyer": "archive-emr_014.jpg",
+      "band": "My Friend Tim",
+      "slug": "my-friend-tim"
+    },
+    {
+      "date": "2002-07-14",
+      "display": "Jul 14, 2002",
+      "event": "Until the Van Breaks Down Tour with My Friend Tim + Remembering December",
+      "venue": "House",
+      "city": "Tulsa, OK",
+      "flyer": "archive-emr_014.jpg",
+      "band": "EMR",
+      "slug": "emr"
+    },
+    {
+      "date": "2002-07-14",
+      "display": "Jul 14, 2002",
+      "event": "Until the Van Breaks Down Tour with My Friend Tim + Remembering December",
+      "venue": "House",
+      "city": "Tulsa, OK",
+      "flyer": "archive-emr_014.jpg",
+      "band": "My Friend Tim",
+      "slug": "my-friend-tim"
+    },
+    {
+      "date": "2002-07-15",
+      "display": "Jul 15, 2002",
+      "event": "Until the Van Breaks Down Tour with My Friend Tim + Remembering December + Self Denied",
+      "venue": "Buzz Subs",
+      "city": "Norman, OK",
+      "flyer": "archive-emr_017.jpg",
+      "band": "EMR",
+      "slug": "emr"
+    },
+    {
+      "date": "2002-07-15",
+      "display": "Jul 15, 2002",
+      "event": "Until the Van Breaks Down Tour with My Friend Tim + Remembering December + Self Denied",
+      "venue": "Buzz Subs",
+      "city": "Norman, OK",
+      "flyer": "archive-emr_017.jpg",
+      "band": "My Friend Tim",
+      "slug": "my-friend-tim"
+    },
+    {
+      "date": "2002-07-18",
+      "display": "Jul 18, 2002",
+      "event": "Until the Van Breaks Down Tour with My Friend Tim + Remembering December + Foramen Magnum",
+      "venue": "",
+      "city": "Amarillo, TX",
+      "flyer": "archive-emr_014.jpg",
+      "band": "EMR",
+      "slug": "emr"
+    },
+    {
+      "date": "2002-07-18",
+      "display": "Jul 18, 2002",
+      "event": "Until the Van Breaks Down Tour with My Friend Tim + Remembering December + Foramen Magnum",
+      "venue": "",
+      "city": "Amarillo, TX",
+      "flyer": "archive-emr_014.jpg",
+      "band": "My Friend Tim",
+      "slug": "my-friend-tim"
+    },
+    {
+      "date": "2002-07-19",
+      "display": "Jul 19, 2002",
+      "event": "Until the Van Breaks Down Tour with My Friend Tim + Remembering December + Foramen Magnum",
+      "venue": "",
+      "city": "Amarillo, TX",
+      "flyer": "archive-emr_014.jpg",
+      "band": "EMR",
+      "slug": "emr"
+    },
+    {
+      "date": "2002-07-19",
+      "display": "Jul 19, 2002",
+      "event": "Until the Van Breaks Down Tour with My Friend Tim + Remembering December + Foramen Magnum",
+      "venue": "",
+      "city": "Amarillo, TX",
+      "flyer": "archive-emr_014.jpg",
+      "band": "My Friend Tim",
+      "slug": "my-friend-tim"
+    },
+    {
+      "date": "2002-07-20",
+      "display": "Jul 20, 2002",
+      "event": "End of Tour House Party with My Friend Tim + Remembering December",
+      "venue": "Ryan Gee's House",
+      "city": "Hutchinson, KS",
+      "flyer": "archive-emr_019-01.jpg",
+      "band": "EMR",
+      "slug": "emr"
+    },
+    {
+      "date": "2002-07-20",
+      "display": "Jul 20, 2002",
+      "event": "End of Tour House Party with My Friend Tim + Remembering December",
+      "venue": "Ryan Gee's House",
+      "city": "Hutchinson, KS",
+      "flyer": "archive-emr_019-01.jpg",
+      "band": "My Friend Tim",
+      "slug": "my-friend-tim"
+    },
+    {
       "date": "2002-09-01",
       "display": "Sep 1, 2002",
       "event": "Show with the Vanzetti's + Incredible Youth + Hanoi Chevrolet",
@@ -2133,19 +2622,31 @@ window.SAMS_DATA={
       "date": "2002-10-19",
       "display": "Oct 19, 2002",
       "event": "Show with No Tomorrow + Hanoi Chevrolet + My Friend Tim",
-      "venue": "????",
-      "city": "????",
+      "venue": "Lee Shiney Art Gallery",
+      "city": "Wichita, KS",
       "band": "EMR",
-      "slug": "emr"
+      "slug": "emr",
+      "flyer": "archive-emr_037.jpg"
     },
     {
       "date": "2002-10-19",
       "display": "Oct 19, 2002",
       "event": "Show with No Tomorrow + Hanoi Chevrolet + EMR",
-      "venue": "????",
-      "city": "???",
+      "venue": "Lee Shiney Art Gallery",
+      "city": "Wichita, KS",
       "band": "My Friend Tim",
-      "slug": "my-friend-tim"
+      "slug": "my-friend-tim",
+      "flyer": "archive-emr_037.jpg"
+    },
+    {
+      "date": "2002-10-26",
+      "display": "Oct 26, 2002",
+      "event": "Stratstock",
+      "venue": "",
+      "city": "",
+      "flyer": "archive-emr_035.jpg",
+      "band": "EMR",
+      "slug": "emr"
     },
     {
       "date": "2002-11-02",
@@ -2154,7 +2655,8 @@ window.SAMS_DATA={
       "venue": "Lee Shiney Art Gallery",
       "city": "Wichita, KS",
       "band": "EMR",
-      "slug": "emr"
+      "slug": "emr",
+      "flyer": "archive-emr_036.jpg"
     },
     {
       "date": "2002-11-23",

@@ -32,10 +32,10 @@ const HERO_IMAGES={
 // Images that are release art, logos, screenshots, or otherwise unclear are intentionally left out.
 const MEDIA={
   'emr':{
-    flyers:['emr-4.png','emr-6.jpeg'], live:[], merch:[]
+    flyers:["archive-emr_002.jpg", "archive-emr_003.jpg", "archive-emr_004.jpg", "archive-emr_005.jpg", "archive-emr_006.jpg", "archive-emr_007.jpg", "archive-emr_008.jpg", "archive-emr_009.jpg", "archive-emr_010.jpg", "archive-emr_011.jpg", "archive-emr_012.jpg", "archive-emr_014.jpg", "archive-emr_015.jpg", "archive-emr_016.jpg", "archive-emr_017.jpg", "archive-emr_018.jpg", "archive-emr_019-01.jpg", "archive-emr_019-02.jpg", "archive-emr_032.jpg", "archive-emr_033.jpg", "archive-emr_034.jpg", "archive-emr_035.jpg", "archive-emr_036.jpg", "archive-emr_037.jpg"], live:[], merch:[]
   },
   'my-friend-tim':{
-    flyers:['my-friend-tim-3.png','my-friend-tim-6.png','my-friend-tim-7.png','my-friend-tim-8.png'],
+    flyers:["archive-emr_014.jpg", "archive-emr_015.jpg", "archive-emr_016.jpg", "archive-emr_017.jpg", "archive-emr_018.jpg", "archive-emr_019-01.jpg", "archive-emr_019-02.jpg", "archive-emr_037.jpg"],
     live:['my-friend-tim-2.jpeg','my-friend-tim-4.png','my-friend-tim-5.png'], merch:[]
   },
   'long-division':{
@@ -96,7 +96,7 @@ window.openFlyer=openFlyer;
 
 function gallerySection(title,items,b){
   if(!items||!items.length)return '';
-  return `<section class="archive-section"><div class="section-heading"><h2 class="section-title">${esc(title)}</h2><span>${items.length}</span></div><div class="gallery">${items.map(x=>{const showFull=(b.slug==='gnarly-davidson'&&title==='Live Photos'&&x==='gnarly-live.png')||(b.slug==='jabberjosh'&&title==='Merch'&&x==='jabberjosh-sticker.png');return `<button class="gallery-item" type="button" data-flyer="images/${esc(x)}" data-caption="${esc(b.name+' — '+title.replace(/s$/,''))}"${showFull?' style="height:auto;max-width:760px;justify-self:center;"':''}><img loading="lazy" src="images/${esc(x)}" alt="${esc(b.name+' '+title.toLowerCase())}"${showFull?' style="width:100%;height:auto;aspect-ratio:auto;object-fit:contain;display:block;"':''}></button>`}).join('')}</div></section>`;
+  return `<section class="archive-section"><div class="section-heading"><h2 class="section-title">${esc(title)}</h2><span>${items.length}</span></div><div class="gallery">${items.map(x=>`<button class="gallery-item" type="button" data-flyer="images/${esc(x)}" data-caption="${esc(b.name+' — '+title.replace(/s$/,''))}"><img loading="lazy" src="images/${esc(x)}" alt="${esc(b.name+' '+title.toLowerCase())}"></button>`).join('')}</div></section>`;
 }
 
 
