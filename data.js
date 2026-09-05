@@ -287,8 +287,7 @@ window.SAMS_DATA={
           "display": "Jul 20, 2002",
           "event": "End of Tour House Party with My Friend Tim + Remembering December",
           "venue": "Ryan Gee's House",
-          "city": "Hutchinson, KS",
-          "flyer": "archive-emr_019-01.jpg"
+          "city": "Hutchinson, KS"
         },
         {
           "date": "2002-09-01",
@@ -370,13 +369,6 @@ window.SAMS_DATA={
           "event": "Final Update to the EMR website",
           "venue": "",
           "city": ""
-        },
-        {
-          "date": "7/7/2002 - 7/20/2002",
-          "display": "7/7/2002 - 7/20/2002",
-          "event": "\"Until the Van Breaksdown\" Tour with My Friend Tim and Remembering December",
-          "venue": "????",
-          "city": "????"
         }
       ],
       "images": [
@@ -552,8 +544,7 @@ window.SAMS_DATA={
           "display": "Jul 20, 2002",
           "event": "End of Tour House Party with My Friend Tim + Remembering December",
           "venue": "Ryan Gee's House",
-          "city": "Hutchinson, KS",
-          "flyer": "archive-emr_019-01.jpg"
+          "city": "Hutchinson, KS"
         },
         {
           "date": "2002-10-19",
@@ -593,13 +584,6 @@ window.SAMS_DATA={
           "event": "Show with Claiming Haley + Prom Night (Ricky Fitts did NOT play this show)",
           "venue": "Rice Park Building",
           "city": "Hutchinson, KS"
-        },
-        {
-          "date": "7/7/2002 - 7/20/2002",
-          "display": "7/7/2002 - 7/20/2002",
-          "event": "\"Until the Van Breaksdown\" Tour with EMR and Remembering December",
-          "venue": "????",
-          "city": "???"
         },
         {
           "date": "Summer 2002",
@@ -934,6 +918,51 @@ window.SAMS_DATA={
       ]
     },
     {
+      "name": "THUNDERFUCK",
+      "slug": "thunderfuck",
+      "intro": [
+        "THUNDERFUCK was a one night only cover band for Jeff Russell's going away party. The band had been discussed multiple times at Papa John's in Lawrence, KS, but finally came to fruition in January of 2008."
+      ],
+      "links": [],
+      "timeline": [],
+      "images": [
+        "thunderfuck-1.png",
+        "thunderfuck-2.png",
+        "thunderfuck-3.png",
+        "thunderfuck-4.png",
+        "thunderfuck-5.png",
+        "thunderfuck-6.png",
+        "thunderfuck-7.png",
+        "thunderfuck-8.png"
+      ],
+      "members": [
+        [
+          "Ivan Albers",
+          "Vocals"
+        ],
+        [
+          "Jeff Russell",
+          "Guitar"
+        ],
+        [
+          "Sam Gunnerson",
+          "Bass"
+        ],
+        [
+          "Will Gunnerson",
+          "Drums"
+        ]
+      ],
+      "setlist": [
+        "You've Been....THUNDERFUCKED!",
+        "If You Want Blood — AC/DC",
+        "Sweet Child O' Mine — Guns N' Roses",
+        "Possum Kingdom — The Toadies",
+        "My Own Worst Enemy — Lit",
+        "War Pigs — Black Sabbath"
+      ]
+    },
+    {
       "name": "Monsoon Lazer",
       "slug": "monsoon-lazer",
       "intro": [
@@ -1022,51 +1051,6 @@ window.SAMS_DATA={
           "title": "Monsoon Lazer Video",
           "url": "https://www.youtube.com/watch?v=d44IBGQOPho"
         }
-      ]
-    },
-    {
-      "name": "THUNDERFUCK",
-      "slug": "thunderfuck",
-      "intro": [
-        "THUNDERFUCK was a one night only cover band for Jeff Russell's going away party. The band had been discussed multiple times at Papa John's in Lawrence, KS, but finally came to fruition in January of 2008."
-      ],
-      "links": [],
-      "timeline": [],
-      "images": [
-        "thunderfuck-1.png",
-        "thunderfuck-2.png",
-        "thunderfuck-3.png",
-        "thunderfuck-4.png",
-        "thunderfuck-5.png",
-        "thunderfuck-6.png",
-        "thunderfuck-7.png",
-        "thunderfuck-8.png"
-      ],
-      "members": [
-        [
-          "Ivan Albers",
-          "Vocals"
-        ],
-        [
-          "Jeff Russell",
-          "Guitar"
-        ],
-        [
-          "Sam Gunnerson",
-          "Bass"
-        ],
-        [
-          "Will Gunnerson",
-          "Drums"
-        ]
-      ],
-      "setlist": [
-        "You've Been....THUNDERFUCKED!",
-        "If You Want Blood — AC/DC",
-        "Sweet Child O' Mine — Guns N' Roses",
-        "Possum Kingdom — The Toadies",
-        "My Own Worst Enemy — Lit",
-        "War Pigs — Black Sabbath"
       ]
     },
     {
@@ -2595,7 +2579,6 @@ window.SAMS_DATA={
       "event": "End of Tour House Party with My Friend Tim + Remembering December",
       "venue": "Ryan Gee's House",
       "city": "Hutchinson, KS",
-      "flyer": "archive-emr_019-01.jpg",
       "band": "EMR",
       "slug": "emr"
     },
@@ -2605,7 +2588,6 @@ window.SAMS_DATA={
       "event": "End of Tour House Party with My Friend Tim + Remembering December",
       "venue": "Ryan Gee's House",
       "city": "Hutchinson, KS",
-      "flyer": "archive-emr_019-01.jpg",
       "band": "My Friend Tim",
       "slug": "my-friend-tim"
     },
