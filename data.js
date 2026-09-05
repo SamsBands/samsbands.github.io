@@ -354,8 +354,8 @@ window.SAMS_DATA={
           "city": "???"
         },
         {
-          "date": "2003-03-01",
-          "display": "Mar 1, 2003",
+          "date": "2003-03-26",
+          "display": "Mar 26, 2003",
           "event": "Show with King TP + Schimon's Truth + Desperately Seeking Simon + Hey Rodeo",
           "venue": "Carey Park Homebuilders Shelter",
           "city": "Hutchinson, KS",
@@ -713,8 +713,7 @@ window.SAMS_DATA={
       "name": "Monsoon Lazer",
       "slug": "monsoon-lazer",
       "intro": [
-        "Monsoon Lazer was from Lawrence Kansas, and active from 2012 to 2013",
-        "Monsoon Lazer was Aaron Pillar on Guitar , Sam Gunnerson on Bass, and Will Gunnerson on the drums"
+        "Monsoon Lazer was from Lawrence Kansas, and active from 2012 to 2013"
       ],
       "links": [
         "https://samsbands.bandcamp.com/album/monsoon-lazer"
@@ -728,8 +727,8 @@ window.SAMS_DATA={
           "city": "Lawrence, KS"
         },
         {
-          "date": "2012-10-22",
-          "display": "Oct 22, 2012",
+          "date": "2012-10-19",
+          "display": "Oct 19, 2012",
           "event": "Show with Hospital Ships + Pale Hearts",
           "venue": "The Bottleneck",
           "city": "Lawrence, KS"
@@ -762,10 +761,45 @@ window.SAMS_DATA={
           "event": "Lawrence Field Day",
           "venue": "The Bottleneck",
           "city": "Lawrence, KS"
+        },
+        {
+          "date": "2013-08-03",
+          "display": "Aug 3, 2013",
+          "event": "Show with Hot and Ugly + The Melting Point of Bronze",
+          "venue": "The Bottleneck",
+          "city": "Lawrence, KS"
         }
       ],
       "images": [
         "monsoon-lazer-1.png"
+      ],
+      "members": [
+        [
+          "Aaron Pillar",
+          "Guitar"
+        ],
+        [
+          "Sam Gunnerson",
+          "Bass"
+        ],
+        [
+          "Will Gunnerson",
+          "Drums"
+        ]
+      ],
+      "releases": [
+        {
+          "title": "Monsoon Lazer",
+          "date": "",
+          "image": "monsoon-lazer-record-cover.png",
+          "url": "https://samsbands.bandcamp.com/album/monsoon-lazer"
+        }
+      ],
+      "videos": [
+        {
+          "title": "Monsoon Lazer Video",
+          "url": "https://www.youtube.com/watch?v=d44IBGQOPho"
+        }
       ]
     },
     {
@@ -1141,7 +1175,7 @@ window.SAMS_DATA={
         {
           "date": "2014-07-18",
           "display": "Jul 18, 2014",
-          "event": "Farewell Show with Muscle Worship",
+          "event": "Retirement Show with Muscle Worship",
           "venue": "The Love Garden",
           "city": "Lawrence, KS",
           "flyer": "jabberjosh-7.png"
@@ -1207,7 +1241,7 @@ window.SAMS_DATA={
           "url": "https://jabberjosh.bandcamp.com/album/dos-hombres"
         },
         {
-          "title": "Retirement Show Live Recording",
+          "title": "Retirement Show - LIVE! From the Love Garden",
           "date": "July 18, 2014",
           "image": "jabberjosh-retirement-show.png",
           "url": "https://samsbands.bandcamp.com/album/jabberjosh-retirement-show"
@@ -1263,8 +1297,8 @@ window.SAMS_DATA={
           "city": "Lawrence, KS "
         },
         {
-          "date": "2016-09-09",
-          "display": "Sep 9, 2016",
+          "date": "2014-09-09",
+          "display": "Sep 9, 2014",
           "event": "Release of The Tape! and The CD!",
           "venue": "",
           "city": ""
@@ -1277,8 +1311,8 @@ window.SAMS_DATA={
           "city": "Lawrence, KS "
         },
         {
-          "date": "2020-09-27",
-          "display": "Sep 27, 2020",
+          "date": "2014-09-27",
+          "display": "Sep 27, 2014",
           "event": "Tape Release Show with Varma Gross",
           "venue": "Love Garden",
           "city": "Lawrence, KS ",
@@ -1706,6 +1740,34 @@ window.SAMS_DATA={
         "gnarly-davidson-12.png",
         "gnarly-davidson-13.png",
         "gnarly-davidson-14.png"
+      ],
+      "members": [
+        [
+          "Mitch Jones",
+          "Guitar / Vocals"
+        ],
+        [
+          "Sam Gunnerson",
+          "Bass / Vocals"
+        ],
+        [
+          "Franklin Fantini",
+          "Drums"
+        ]
+      ],
+      "releases": [
+        {
+          "title": "Gnarly Davidson",
+          "date": "September 9, 2014",
+          "image": "gnarly-davidson-self-titled.png",
+          "url": "https://gnarlydavidsonlfk.bandcamp.com/album/gnarly-davidson"
+        },
+        {
+          "title": "Jabberjaw / Coffin Nail",
+          "date": "November 1, 2016",
+          "image": "gnarly-davidson-jabberjaw-coffin-nail.png",
+          "url": "https://gnarlydavidsonlfk.bandcamp.com/album/jabberjaw-coffin-nail"
+        }
       ]
     },
     {
@@ -2036,6 +2098,24 @@ window.SAMS_DATA={
       "slug": "my-friend-tim"
     },
     {
+      "date": "2002-07-07",
+      "display": "Jul 7–20, 2002",
+      "event": "\"Until the Van Breaksdown\" Tour with My Friend Tim and Remembering December",
+      "venue": "????",
+      "city": "????",
+      "band": "EMR",
+      "slug": "emr"
+    },
+    {
+      "date": "2002-07-07",
+      "display": "Jul 7–20, 2002",
+      "event": "\"Until the Van Breaksdown\" Tour with EMR and Remembering December",
+      "venue": "????",
+      "city": "???",
+      "band": "My Friend Tim",
+      "slug": "my-friend-tim"
+    },
+    {
       "date": "2002-09-01",
       "display": "Sep 1, 2002",
       "event": "Show with the Vanzetti's + Incredible Youth + Hanoi Chevrolet",
@@ -2081,8 +2161,8 @@ window.SAMS_DATA={
       "slug": "emr"
     },
     {
-      "date": "2003-03-01",
-      "display": "Mar 1, 2003",
+      "date": "2003-03-26",
+      "display": "Mar 26, 2003",
       "event": "Show with King TP + Schimon's Truth + Desperately Seeking Simon + Hey Rodeo",
       "venue": "Carey Park Homebuilders Shelter",
       "city": "Hutchinson, KS",
@@ -2770,8 +2850,8 @@ window.SAMS_DATA={
       "slug": "jabberjosh"
     },
     {
-      "date": "2012-10-22",
-      "display": "Oct 22, 2012",
+      "date": "2012-10-19",
+      "display": "Oct 19, 2012",
       "event": "Show with Hospital Ships + Pale Hearts",
       "venue": "The Bottleneck",
       "city": "Lawrence, KS",
@@ -2845,6 +2925,15 @@ window.SAMS_DATA={
       "slug": "monsoon-lazer"
     },
     {
+      "date": "2013-08-03",
+      "display": "Aug 3, 2013",
+      "event": "Show with Hot and Ugly + The Melting Point of Bronze",
+      "venue": "The Bottleneck",
+      "city": "Lawrence, KS",
+      "band": "Monsoon Lazer",
+      "slug": "monsoon-lazer"
+    },
+    {
       "date": "2013-08-08",
       "display": "Aug 8, 2013",
       "event": "Mini Tour Kick Off Show with Cricket Wand + Psychic Heat",
@@ -2884,7 +2973,7 @@ window.SAMS_DATA={
     {
       "date": "2014-07-18",
       "display": "Jul 18, 2014",
-      "event": "Farewell Show with Muscle Worship",
+      "event": "Retirement Show with Muscle Worship",
       "venue": "The Love Garden",
       "city": "Lawrence, KS",
       "flyer": "jabberjosh-7.png",
@@ -2892,11 +2981,30 @@ window.SAMS_DATA={
       "slug": "jabberjosh"
     },
     {
+      "date": "2014-09-09",
+      "display": "Sep 9, 2014",
+      "event": "Release of The Tape! and The CD!",
+      "venue": "",
+      "city": "",
+      "band": "Gnarly Davidson",
+      "slug": "gnarly-davidson"
+    },
+    {
       "date": "2014-09-26",
       "display": "Sep 26, 2014",
       "event": "Show with Mike Watt & II Sogno del Marinaio",
       "venue": "The Bottleneck",
       "city": "Lawrence, KS ",
+      "band": "Gnarly Davidson",
+      "slug": "gnarly-davidson"
+    },
+    {
+      "date": "2014-09-27",
+      "display": "Sep 27, 2014",
+      "event": "Tape Release Show with Varma Gross",
+      "venue": "Love Garden",
+      "city": "Lawrence, KS ",
+      "flyer": "gnarly-davidson-13.png",
       "band": "Gnarly Davidson",
       "slug": "gnarly-davidson"
     },
@@ -3145,15 +3253,6 @@ window.SAMS_DATA={
       "event": "Show with Truth Cell + Amenaza + Melting Point of Bronze + More",
       "venue": "The Bottleneck",
       "city": "Lawrence, KS ",
-      "band": "Gnarly Davidson",
-      "slug": "gnarly-davidson"
-    },
-    {
-      "date": "2016-09-09",
-      "display": "Sep 9, 2016",
-      "event": "Release of The Tape! and The CD!",
-      "venue": "",
-      "city": "",
       "band": "Gnarly Davidson",
       "slug": "gnarly-davidson"
     },
@@ -3484,43 +3583,6 @@ window.SAMS_DATA={
       "flyer": "slaw-6.jpeg",
       "band": "Slaw",
       "slug": "slaw"
-    },
-    {
-      "date": "2020-09-27",
-      "display": "Sep 27, 2020",
-      "event": "Tape Release Show with Varma Gross",
-      "venue": "Love Garden",
-      "city": "Lawrence, KS ",
-      "flyer": "gnarly-davidson-13.png",
-      "band": "Gnarly Davidson",
-      "slug": "gnarly-davidson"
-    },
-    {
-      "date": "7/7/2002 - 7/20/2002",
-      "display": "7/7/2002 - 7/20/2002",
-      "event": "\"Until the Van Breaksdown\" Tour with My Friend Tim and Remembering December",
-      "venue": "????",
-      "city": "????",
-      "band": "EMR",
-      "slug": "emr"
-    },
-    {
-      "date": "7/7/2002 - 7/20/2002",
-      "display": "7/7/2002 - 7/20/2002",
-      "event": "\"Until the Van Breaksdown\" Tour with EMR and Remembering December",
-      "venue": "????",
-      "city": "???",
-      "band": "My Friend Tim",
-      "slug": "my-friend-tim"
-    },
-    {
-      "date": "Summer 2002",
-      "display": "Summer 2002",
-      "event": "Release \"Split my Pants\" with EMR",
-      "venue": "",
-      "city": "",
-      "band": "My Friend Tim",
-      "slug": "my-friend-tim"
     }
   ]
 };

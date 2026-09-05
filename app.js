@@ -110,14 +110,14 @@ function setlistHtml(b){
 }
 function releasesHtml(b){
   if(!b.releases||!b.releases.length)return '';
-  return `<section class="archive-section releases-section"><h2 class="section-title">Releases</h2><div class="releases">${b.releases.map(r=>`<article class="release"><button class="release-art" type="button" data-flyer="images/${esc(r.image)}" data-caption="${esc(b.name+' — '+r.title)}"><img src="images/${esc(r.image)}" alt="${esc(r.title)} artwork"></button><div class="release-copy"><h3>${esc(r.title)}</h3><p>${esc(r.dateLabel||'Released')} ${esc(r.date)}</p>${r.url?`<a class="release-link" href="${esc(r.url)}" target="_blank" rel="noopener">Listen on Bandcamp ↗</a>`:''}</div></article>`).join('')}</div></section>`;
+  return `<section class="archive-section releases-section"><h2 class="section-title">Releases</h2><div class="releases">${b.releases.map(r=>`<article class="release"><button class="release-art" type="button" data-flyer="images/${esc(r.image)}" data-caption="${esc(b.name+' — '+r.title)}"><img src="images/${esc(r.image)}" alt="${esc(r.title)} artwork"></button><div class="release-copy"><h3>${esc(r.title)}</h3>${r.date?`<p>${esc(r.dateLabel||'Released')} ${esc(r.date)}</p>`:''}${r.url?`<a class="release-link" href="${esc(r.url)}" target="_blank" rel="noopener">Listen on Bandcamp ↗</a>`:''}</div></article>`).join('')}</div></section>`;
 }
 function home(){
   app.innerHTML=`<section class="home-hero"><img src="images/hero-home.jpg" alt="Sam Gunnerson performing"><div class="home-hero-shade"></div><div class="home-hero-copy"><div class="kicker">The Sam Gunnerson Archive</div><h1>SAMSBANDS</h1><p>${esc(D.subtitle)}. A living archive built from flyers, recordings, stories and show history.</p></div></section><section class="wrap"><h2 class="section-title">Everything, in order.</h2><div class="filter"><input id="q" placeholder="Search bands, shows, venues, cities…"></div><div id="master">${timelineHtml(D.timeline)}</div></section>`;
   document.getElementById('q').oninput=e=>{let q=e.target.value.toLowerCase();let x=D.timeline.filter(a=>JSON.stringify(a).toLowerCase().includes(q));document.getElementById('master').innerHTML=timelineHtml(x);bindFlyers()};bindFlyers();
 }
 function bands(){
-  app.innerHTML=`<section class="wrap"><div class="band-head"><div class="kicker">The archive</div><h1>THE BANDS</h1><p>Every band gets its own home: story, recordings, flyers and the timeline that belongs to it.</p></div><div class="cards">${D.bands.map(b=>{const hero=HERO_IMAGES[b.slug];return `<a class="card band-card band-${esc(b.slug)}" href="#/band/${b.slug}">${hero?`<img class="card-hero" src="images/${esc(hero)}" alt="${esc(b.name)}">`:''}<h3>${esc(b.name)}</h3></a>`}).join('')}</div></section>`;
+  app.innerHTML=`<section class="wrap"><div class="band-head"><div class="kicker">The archive</div><h1>THE BANDS</h1><p>20+ years of Hot Shit!</p></div><div class="cards">${D.bands.map(b=>{const hero=HERO_IMAGES[b.slug];return `<a class="card band-card band-${esc(b.slug)}" href="#/band/${b.slug}">${hero?`<img class="card-hero" src="images/${esc(hero)}" alt="${esc(b.name)}">`:''}<h3>${esc(b.name)}</h3></a>`}).join('')}</div></section>`;
 }
 function videosHtml(b){
   if(!b.videos||!b.videos.length)return '';
