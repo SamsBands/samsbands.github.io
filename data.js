@@ -584,7 +584,7 @@ window.SAMS_DATA={
           "event": "Show with Claiming Haley + Prom Night (Ricky Fitts did NOT play this show)",
           "venue": "Rice Park Building",
           "city": "Hutchinson, KS"
-        },
+        }
       ],
       "images": [
         "my-friend-tim-1.png",
@@ -647,7 +647,7 @@ window.SAMS_DATA={
           "event": "Show with Ricky Fitts + The Gunshy + Mustangs and Madras and Long Division",
           "venue": "Haunted Kitchen",
           "city": "Lawrence, KS",
-          "flyer": "long-division-9.png"
+          "flyer": "archive-ld_014.jpg"
         },
         {
           "date": "2005-12-22",
@@ -662,7 +662,7 @@ window.SAMS_DATA={
           "event": "Show with Paper Airplanes + Davan",
           "venue": "The Jackpot",
           "city": "Lawrence, KS",
-          "flyer": "long-division-8.png"
+          "flyer": "archive-ld_002.jpg"
         },
         {
           "date": "2006-02-24",
@@ -678,14 +678,31 @@ window.SAMS_DATA={
           "event": "Show with The Gunning System",
           "venue": "Eighth Street Taproom",
           "city": "Lawrence, KS",
-          "flyer": "long-division-7.png"
+          "flyer": "archive-ld_001.jpg"
         },
         {
           "date": "2006-03-10",
           "display": "Mar 10, 2006",
           "event": "Show with the Gunshy + This Is My Condition",
           "venue": "Replay Lounge",
-          "city": "Lawrence, KS"
+          "city": "Lawrence, KS",
+          "flyer": "archive-ld_008.jpg"
+        },
+        {
+          "date": "2006-06-05",
+          "display": "Jun 5, 2006",
+          "event": "Show with Translator Trader + Gwen Stacy",
+          "venue": "The Pool Room",
+          "city": "Lawrence, KS",
+          "flyer": "archive-ld_013.jpg"
+        },
+        {
+          "date": "2006-06-07",
+          "display": "Jun 7, 2006",
+          "event": "Kansas Mutual Aid Legal Defense Fund benefit with Approach w/ DJ SKU + Kelpie + KTP + Morphing Endorphins",
+          "venue": "The Granada",
+          "city": "Lawrence, KS",
+          "flyer": "archive-ld_010.jpg"
         },
         {
           "date": "2006-06-09",
@@ -714,7 +731,16 @@ window.SAMS_DATA={
           "display": "Jun 30, 2006",
           "event": "Show with This Is My Condition + Cassiopia + Baiowolf + Realicide",
           "venue": "The Pool Room",
-          "city": "Lawrence, KS"
+          "city": "Lawrence, KS",
+          "flyer": "archive-ld_012.jpg"
+        },
+        {
+          "date": "2006-08-26",
+          "display": "Aug 26, 2006",
+          "event": "Solidarity! 5th anniversary celebration with Conner + Nothing Else + Eyes Like Headlights + Joe Carr",
+          "venue": "Revolutionary Center and Radical Library",
+          "city": "Lawrence, KS",
+          "flyer": "archive-ld_009-01.jpg"
         },
         {
           "date": "2006-09-01",
@@ -722,6 +748,14 @@ window.SAMS_DATA={
           "event": "Show with Paper Airplanes / Baby Birds Don't Drink Milk",
           "venue": "The Jackpot",
           "city": "Lawrence, KS"
+        },
+        {
+          "date": "2006-09-08",
+          "display": "Sep 8, 2006",
+          "event": "Show with Paper Airplanes + Baby Birds Don't Drink Milk",
+          "venue": "The Jackpot",
+          "city": "Lawrence, KS",
+          "flyer": "archive-ld_006.jpg"
         },
         {
           "date": "2007-06-07",
@@ -752,14 +786,24 @@ window.SAMS_DATA={
         "long-division-3.png",
         "long-division-4.png",
         "long-division-5.png",
-        "long-division-6.png",
-        "long-division-7.png",
-        "long-division-8.png",
-        "long-division-9.png",
         "long-division-10.png",
         "long-division-11.jpeg",
         "long-division-12.png",
-        "long-division-13.png"
+        "long-division-13.png",
+        "archive-ld_001.jpg",
+        "archive-ld_002.jpg",
+        "archive-ld_003.jpg",
+        "archive-ld_006.jpg",
+        "archive-ld_007.jpg",
+        "archive-ld_008.jpg",
+        "archive-ld_009-01.jpg",
+        "archive-ld_009-02.jpg",
+        "archive-ld_010.jpg",
+        "archive-ld_011.jpg",
+        "archive-ld_012.jpg",
+        "archive-ld_013.jpg",
+        "archive-ld_014.jpg",
+        "archive-ld_015.jpg"
       ],
       "members": [
         [
@@ -2742,7 +2786,7 @@ window.SAMS_DATA={
       "event": "Show with Ricky Fitts + The Gunshy + Mustangs and Madras and Long Division",
       "venue": "Haunted Kitchen",
       "city": "Lawrence, KS",
-      "flyer": "long-division-9.png",
+      "flyer": "archive-ld_014.jpg",
       "band": "Long Division",
       "slug": "long-division"
     },
@@ -2761,7 +2805,7 @@ window.SAMS_DATA={
       "event": "Show with Paper Airplanes + Davan",
       "venue": "The Jackpot",
       "city": "Lawrence, KS",
-      "flyer": "long-division-8.png",
+      "flyer": "archive-ld_002.jpg",
       "band": "Long Division",
       "slug": "long-division"
     },
@@ -2781,7 +2825,7 @@ window.SAMS_DATA={
       "event": "Show with The Gunning System",
       "venue": "Eighth Street Taproom",
       "city": "Lawrence, KS",
-      "flyer": "long-division-7.png",
+      "flyer": "archive-ld_001.jpg",
       "band": "Long Division",
       "slug": "long-division"
     },
@@ -2791,6 +2835,27 @@ window.SAMS_DATA={
       "event": "Show with the Gunshy + This Is My Condition",
       "venue": "Replay Lounge",
       "city": "Lawrence, KS",
+      "band": "Long Division",
+      "slug": "long-division",
+      "flyer": "archive-ld_008.jpg"
+    },
+    {
+      "date": "2006-06-05",
+      "display": "Jun 5, 2006",
+      "event": "Show with Translator Trader + Gwen Stacy",
+      "venue": "The Pool Room",
+      "city": "Lawrence, KS",
+      "flyer": "archive-ld_013.jpg",
+      "band": "Long Division",
+      "slug": "long-division"
+    },
+    {
+      "date": "2006-06-07",
+      "display": "Jun 7, 2006",
+      "event": "Kansas Mutual Aid Legal Defense Fund benefit with Approach w/ DJ SKU + Kelpie + KTP + Morphing Endorphins",
+      "venue": "The Granada",
+      "city": "Lawrence, KS",
+      "flyer": "archive-ld_010.jpg",
       "band": "Long Division",
       "slug": "long-division"
     },
@@ -2829,6 +2894,17 @@ window.SAMS_DATA={
       "venue": "The Pool Room",
       "city": "Lawrence, KS",
       "band": "Long Division",
+      "slug": "long-division",
+      "flyer": "archive-ld_012.jpg"
+    },
+    {
+      "date": "2006-08-26",
+      "display": "Aug 26, 2006",
+      "event": "Solidarity! 5th anniversary celebration with Conner + Nothing Else + Eyes Like Headlights + Joe Carr",
+      "venue": "Revolutionary Center and Radical Library",
+      "city": "Lawrence, KS",
+      "flyer": "archive-ld_009-01.jpg",
+      "band": "Long Division",
       "slug": "long-division"
     },
     {
@@ -2837,6 +2913,16 @@ window.SAMS_DATA={
       "event": "Show with Paper Airplanes / Baby Birds Don't Drink Milk",
       "venue": "The Jackpot",
       "city": "Lawrence, KS",
+      "band": "Long Division",
+      "slug": "long-division"
+    },
+    {
+      "date": "2006-09-08",
+      "display": "Sep 8, 2006",
+      "event": "Show with Paper Airplanes + Baby Birds Don't Drink Milk",
+      "venue": "The Jackpot",
+      "city": "Lawrence, KS",
+      "flyer": "archive-ld_006.jpg",
       "band": "Long Division",
       "slug": "long-division"
     },

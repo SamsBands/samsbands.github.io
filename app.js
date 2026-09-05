@@ -39,7 +39,7 @@ const MEDIA={
     live:['my-friend-tim-2.jpeg','my-friend-tim-4.png','my-friend-tim-5.png'], merch:[]
   },
   'long-division':{
-    flyers:['long-division-3.png','long-division-6.png','long-division-7.png','long-division-8.png','long-division-9.png','long-division-10.png','long-division-12.png','long-division-13.png'],
+    flyers:['long-division-3.png','long-division-10.png','long-division-12.png','long-division-13.png','archive-ld_001.jpg','archive-ld_002.jpg','archive-ld_003.jpg','archive-ld_006.jpg','archive-ld_007.jpg','archive-ld_008.jpg','archive-ld_009-01.jpg','archive-ld_009-02.jpg','archive-ld_010.jpg','archive-ld_011.jpg','archive-ld_012.jpg','archive-ld_013.jpg','archive-ld_014.jpg','archive-ld_015.jpg'],
     live:['long-division-4.png','long-division-5.png'],
     merch:['long-division-1.jpeg','long-division-2.jpeg']
   },
@@ -84,7 +84,7 @@ function linksHtml(b){
 function flyerButton(e){return e.flyer?`<button class="flyer-btn" type="button" data-flyer="images/${esc(e.flyer)}" data-caption="${esc(e.display+' — '+e.event)}">View Flyer</button>`:''}
 function timelineHtml(items,bandSlug=''){return '<div class="timeline">'+items.map(e=>`<div class="entry"><div class="date band-${esc(e.slug||bandSlug)}">${esc(e.display)}</div><div><div class="event">${esc(e.event)}</div>${e.venue||e.city?`<div class="meta">${esc([e.venue,e.city].filter(Boolean).join(' · '))}</div>`:''}${flyerButton(e)}</div></div>`).join('')+'</div>'}
 function bindFlyers(){document.querySelectorAll('[data-flyer]').forEach(btn=>btn.onclick=()=>openFlyer(btn.dataset.flyer,btn.dataset.caption));}
-function thumbSrc(filename){return /^archive-emr_/.test(filename)?`images/thumbs/${esc(filename)}`:`images/${esc(filename)}`;}
+function thumbSrc(filename){return /^archive-(?:emr|ld)_/.test(filename)?`images/thumbs/${esc(filename)}`:`images/${esc(filename)}`;}
 function openFlyer(src,caption){
   let old=document.getElementById('flyer-modal');if(old)old.remove();
   let m=document.createElement('div');m.id='flyer-modal';m.className='flyer-modal';
