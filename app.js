@@ -35,7 +35,7 @@ const MEDIA={
     flyers:["archive-emr_002.jpg", "archive-emr_003.jpg", "archive-emr_004.jpg", "archive-emr_005.jpg", "archive-emr_006.jpg", "archive-emr_007.jpg", "archive-emr_008.jpg", "archive-emr_009.jpg", "archive-emr_010.jpg", "archive-emr_011.jpg", "archive-emr_012.jpg", "archive-emr_014.jpg", "archive-emr_015.jpg", "archive-emr_016.jpg", "archive-emr_017.jpg", "archive-emr_018.jpg", "archive-emr_019-02.jpg", "archive-emr_032.jpg", "archive-emr_033.jpg", "archive-emr_034.jpg", "archive-emr_035.jpg", "archive-emr_036.jpg", "archive-emr_037.jpg"], live:[], merch:[]
   },
   'my-friend-tim':{
-    flyers:["archive-emr_014.jpg", "archive-emr_015.jpg", "archive-emr_016.jpg", "archive-emr_017.jpg", "archive-emr_018.jpg", "archive-emr_019-02.jpg", "archive-emr_037.jpg"],
+    flyers:['my-friend-tim-1.png','my-friend-tim-3.png','my-friend-tim-6.png','my-friend-tim-7.png','my-friend-tim-8.png', "archive-emr_014.jpg", "archive-emr_015.jpg", "archive-emr_016.jpg", "archive-emr_017.jpg", "archive-emr_018.jpg", "archive-emr_019-02.jpg", "archive-emr_037.jpg"],
     live:['my-friend-tim-2.jpeg','my-friend-tim-4.png','my-friend-tim-5.png'], merch:[]
   },
   'long-division':{

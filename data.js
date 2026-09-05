@@ -585,13 +585,6 @@ window.SAMS_DATA={
           "venue": "Rice Park Building",
           "city": "Hutchinson, KS"
         },
-        {
-          "date": "Summer 2002",
-          "display": "Summer 2002",
-          "event": "Release \"Split my Pants\" with EMR",
-          "venue": "",
-          "city": ""
-        }
       ],
       "images": [
         "my-friend-tim-1.png",
