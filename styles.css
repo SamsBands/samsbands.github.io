@@ -16,3 +16,9 @@
 
 /* Patch 7: set lists */
 .setlist{margin:0;padding-left:1.5rem;max-width:760px}.setlist li{padding:.55rem .25rem;border-bottom:1px solid rgba(255,255,255,.12);line-height:1.45}.setlist li:last-child{border-bottom:0}
+
+/* Patch 20 cleanup */
+.band-page .band-head>.kicker{color:var(--band-accent,var(--accent))}
+.band-emr{--band-accent:#ffd92f}.band-my-friend-tim{--band-accent:#ff4a4a}.band-long-division{--band-accent:#d8c8a8}.band-weather-is-happening{--band-accent:#d0d0d0}.band-thunderfuck{--band-accent:#ff8a2a}.band-monsoon-lazer{--band-accent:#c6a4ff}.band-jabberjosh{--band-accent:#54d86a}.band-gnarly-davidson{--band-accent:#4f9cff}.band-slaw{--band-accent:#a7ff1a}
+.members{max-width:900px}.member{grid-template-columns:minmax(280px,360px) 1fr}.member b{white-space:nowrap}
+@media(max-width:650px){.member{grid-template-columns:1fr}.member b{white-space:normal}}
