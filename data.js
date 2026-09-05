@@ -715,9 +715,7 @@ window.SAMS_DATA={
       "intro": [
         "Monsoon Lazer was from Lawrence Kansas, and active from 2012 to 2013"
       ],
-      "links": [
-        "https://samsbands.bandcamp.com/album/monsoon-lazer"
-      ],
+      "links": [],
       "timeline": [
         {
           "date": "2012-09-13",
@@ -1270,10 +1268,7 @@ window.SAMS_DATA={
       "name": "Gnarly Davidson",
       "slug": "gnarly-davidson",
       "intro": [],
-      "links": [
-        "https://gnarlydavidsonlfk.bandcamp.com/album/gnarly-davidson",
-        "https://gnarlydavidsonlfk.bandcamp.com/album/jabberjaw-coffin-nail"
-      ],
+      "links": [],
       "timeline": [
         {
           "date": "2014-04-02",
