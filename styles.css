@@ -25,3 +25,6 @@
 .date.band-swanson{color:#8ee8a3}.date.band-be-kind-to-yr-jabberjosh{color:#2fae73}
 .band-card.band-swanson h3{color:#8ee8a3}.band-card.band-be-kind-to-yr-jabberjosh h3{color:#2fae73}
 .band-swanson{--band-accent:#8ee8a3}.band-be-kind-to-yr-jabberjosh{--band-accent:#2fae73}
+
+/* Patch 23: Horse Weapons */
+.date.band-horse-weapons{color:#800020}.band-card.band-horse-weapons h3{color:#800020}.band-horse-weapons{--band-accent:#800020}

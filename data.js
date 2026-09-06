@@ -1661,9 +1661,18 @@ window.SAMS_DATA={
     {
       "name": "Swanson",
       "slug": "swanson",
-      "intro": [],
+      "intro": [
+        "Swanson was JabberJosh + Approach."
+      ],
       "links": [],
       "timeline": [
+        {
+          "date": "2011-08-05",
+          "display": "Aug 5, 2011",
+          "event": "Swanson at The Replay",
+          "venue": "The Replay",
+          "city": "Lawrence, KS"
+        },
         {
           "date": "2011-12-10",
           "display": "Dec 10, 2011",
@@ -1686,7 +1695,12 @@ window.SAMS_DATA={
         "archive-jj_020.jpg"
       ],
       "releases": [],
-      "videos": []
+      "videos": [
+        {
+          "title": "Swanson at The Replay — Aug 5, 2011",
+          "url": "https://www.youtube.com/watch?v=H058np4Ft-E"
+        }
+      ]
     },
     {
       "name": "Be Kind To Yr Jabberjosh",
@@ -1707,6 +1721,21 @@ window.SAMS_DATA={
       ],
       "images": [
         "archive-jj_002.jpg"
+      ],
+      "releases": [],
+      "videos": []
+    },
+    {
+      "name": "Horse Weapons",
+      "slug": "horse-weapons",
+      "intro": [],
+      "links": [],
+      "timeline": [],
+      "members": [
+        ["Daniel Davis", "Guitar"],
+        ["Sam Gunnerson", "Bass"],
+        ["Will Gunnerson", "Drums"],
+        ["Jackson Graham", "Drums"]
       ],
       "releases": [],
       "videos": []
@@ -3649,6 +3678,15 @@ window.SAMS_DATA={
       "city": "Lawrence, KS",
       "band": "JabberJosh",
       "slug": "jabberjosh"
+    },
+    {
+      "date": "2011-08-05",
+      "display": "Aug 5, 2011",
+      "event": "Swanson at The Replay",
+      "venue": "The Replay",
+      "city": "Lawrence, KS",
+      "band": "Swanson",
+      "slug": "swanson"
     },
     {
       "date": "2011-12-10",
