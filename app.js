@@ -88,14 +88,14 @@ function linksHtml(b){
     return `<a href="${esc(u)}" target="_blank" rel="noopener">${esc(label)} ↗</a>`;
   }).join('')+'</div>';
 }
-function isRootAsset(filename){return /^(?:archive-jj_\d{3}\.jpg|horse-weapons-(?:hero|live-1)\.png|jabberjosh-adventure-\d{2}\.png|swanson-live-1\.png|hero-tun\.png|tun-live-[12]\.png)$/i.test(filename)}
+function isRootAsset(filename){return /^(?:archive-jj_\d{3}\.jpg|jabberjosh-adventure-\d{2}\.png|swanson-live-1\.png|tun-live-[12]\.png)$/i.test(filename)}
 function assetPath(filename){return isRootAsset(filename)?esc(filename):`images/${esc(filename)}`}
 function flyerButton(e){return e.flyer?`<button class="flyer-btn" type="button" data-flyer="${assetPath(e.flyer)}" data-caption="${esc(e.display+' — '+e.event)}">View Flyer</button>`:''}
 function timelineHtml(items,bandSlug=''){return '<div class="timeline">'+items.map(e=>`<div class="entry"><div class="date band-${esc(e.slug||bandSlug)}">${esc(e.display)}</div><div><div class="event">${esc(e.event)}</div>${e.venue||e.city?`<div class="meta">${esc([e.venue,e.city].filter(Boolean).join(' · '))}</div>`:''}${flyerButton(e)}</div></div>`).join('')+'</div>'}
 function bindFlyers(){document.querySelectorAll('[data-flyer]').forEach(btn=>btn.onclick=()=>openFlyer(btn.dataset.flyer,btn.dataset.caption));}
 function thumbSrc(filename){
   if(/^archive-jj_\d{3}\.jpg$/i.test(filename)) return `thumb-${esc(filename)}`;
-  if(/^(?:horse-weapons-live-1|jabberjosh-adventure-\d{2}|swanson-live-1|tun-live-[12])\.png$/i.test(filename)) return esc(filename);
+  if(/^(?:jabberjosh-adventure-\d{2}|swanson-live-1|tun-live-[12])\.png$/i.test(filename)) return esc(filename);
   return `images/thumbs/${esc(filename)}`;
 }
 function openFlyer(src,caption){
