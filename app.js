@@ -83,11 +83,12 @@ function linksHtml(b){
     return `<a href="${esc(u)}" target="_blank" rel="noopener">${esc(label)} ↗</a>`;
   }).join('')+'</div>';
 }
-function flyerButton(e){return e.flyer?`<button class="flyer-btn" type="button" data-flyer="images/${esc(e.flyer)}" data-caption="${esc(e.display+' — '+e.event)}">View Flyer</button>`:''}
+function assetPath(filename){return /^archive-jj_\d{3}\.jpg$/i.test(filename)?esc(filename):`images/${esc(filename)}`}
+function flyerButton(e){return e.flyer?`<button class="flyer-btn" type="button" data-flyer="${assetPath(e.flyer)}" data-caption="${esc(e.display+' — '+e.event)}">View Flyer</button>`:''}
 function timelineHtml(items,bandSlug=''){return '<div class="timeline">'+items.map(e=>`<div class="entry"><div class="date band-${esc(e.slug||bandSlug)}">${esc(e.display)}</div><div><div class="event">${esc(e.event)}</div>${e.venue||e.city?`<div class="meta">${esc([e.venue,e.city].filter(Boolean).join(' · '))}</div>`:''}${flyerButton(e)}</div></div>`).join('')+'</div>'}
 function bindFlyers(){document.querySelectorAll('[data-flyer]').forEach(btn=>btn.onclick=()=>openFlyer(btn.dataset.flyer,btn.dataset.caption));}
 function thumbSrc(filename){
-  if(/^archive-jj_\d{3}\.jpg$/i.test(filename)) return `images/thumb-${esc(filename)}`;
+  if(/^archive-jj_\d{3}\.jpg$/i.test(filename)) return `thumb-${esc(filename)}`;
   return `images/thumbs/${esc(filename)}`;
 }
 function openFlyer(src,caption){
@@ -97,7 +98,7 @@ function openFlyer(src,caption){
   const modalImg=m.querySelector('img');
   modalImg.onerror=()=>{
     const name=src.split('/').pop();
-    if(/^archive-jj_\d{3}\.jpg$/i.test(name)){ modalImg.onerror=null; modalImg.src=`images/thumb-${name}`; }
+    if(/^archive-jj_\d{3}\.jpg$/i.test(name)){ modalImg.onerror=null; modalImg.src=`thumb-${name}`; }
   };
   document.body.appendChild(m);
   m.querySelector('.flyer-close').onclick=()=>m.remove();m.querySelector('.flyer-backdrop').onclick=()=>m.remove();
@@ -107,7 +108,7 @@ window.openFlyer=openFlyer;
 
 function gallerySection(title,items,b){
   if(!items||!items.length)return '';
-  return `<section class="archive-section"><div class="section-heading"><h2 class="section-title">${esc(title)}</h2></div><div class="gallery">${items.map(x=>`<button class="gallery-item" type="button" data-flyer="images/${esc(x)}" data-caption="${esc(b.name+' — '+title.replace(/s$/,''))}"><img loading="lazy" decoding="async" src="${thumbSrc(x)}" onerror="this.onerror=null;this.src='images/${esc(x)}'" alt="${esc(b.name+' '+title.toLowerCase())}"></button>`).join('')}</div></section>`;
+  return `<section class="archive-section"><div class="section-heading"><h2 class="section-title">${esc(title)}</h2></div><div class="gallery">${items.map(x=>`<button class="gallery-item" type="button" data-flyer="${assetPath(x)}" data-caption="${esc(b.name+' — '+title.replace(/s$/,''))}"><img loading="lazy" decoding="async" src="${thumbSrc(x)}" onerror="this.onerror=null;this.src='${assetPath(x)}'" alt="${esc(b.name+' '+title.toLowerCase())}"></button>`).join('')}</div></section>`;
 }
 
 
@@ -121,7 +122,7 @@ function setlistHtml(b){
 }
 function releasesHtml(b){
   if(!b.releases||!b.releases.length)return '';
-  return `<section class="archive-section releases-section"><h2 class="section-title">Releases</h2><div class="releases">${b.releases.map(r=>`<article class="release"><button class="release-art" type="button" data-flyer="images/${esc(r.image)}" data-caption="${esc(b.name+' — '+r.title)}"><img loading="lazy" decoding="async" src="${thumbSrc(r.image)}" onerror="this.onerror=null;this.src='images/${esc(r.image)}'" alt="${esc(r.title)} artwork"></button><div class="release-copy"><h3>${esc(r.title)}</h3>${r.date?`<p>${esc(r.dateLabel||'Released')} ${esc(r.date)}</p>`:''}${r.url?`<a class="release-link" href="${esc(r.url)}" target="_blank" rel="noopener">Listen on Bandcamp ↗</a>`:''}</div></article>`).join('')}</div></section>`;
+  return `<section class="archive-section releases-section"><h2 class="section-title">Releases</h2><div class="releases">${b.releases.map(r=>`<article class="release"><button class="release-art" type="button" data-flyer="${assetPath(r.image)}" data-caption="${esc(b.name+' — '+r.title)}"><img loading="lazy" decoding="async" src="${thumbSrc(r.image)}" onerror="this.onerror=null;this.src='${assetPath(r.image)}'" alt="${esc(r.title)} artwork"></button><div class="release-copy"><h3>${esc(r.title)}</h3>${r.date?`<p>${esc(r.dateLabel||'Released')} ${esc(r.date)}</p>`:''}${r.url?`<a class="release-link" href="${esc(r.url)}" target="_blank" rel="noopener">Listen on Bandcamp ↗</a>`:''}</div></article>`).join('')}</div></section>`;
 }
 function home(){
   app.innerHTML=`<section class="home-hero"><img src="images/hero-home.jpg" alt="Sam Gunnerson performing"><div class="home-hero-shade"></div><div class="home-hero-copy"><div class="kicker">The Sam Gunnerson Archive</div><h1>SAMSBANDS</h1><p>${esc(D.subtitle)}. A living archive built from flyers, recordings, stories and show history.</p></div></section><section class="wrap"><h2 class="section-title">Everything, in order.</h2><div class="filter"><input id="q" placeholder="Search bands, shows, venues, cities…"></div><div id="master">${timelineHtml(D.timeline)}</div></section>`;
