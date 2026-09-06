@@ -86,11 +86,19 @@ function linksHtml(b){
 function flyerButton(e){return e.flyer?`<button class="flyer-btn" type="button" data-flyer="images/${esc(e.flyer)}" data-caption="${esc(e.display+' — '+e.event)}">View Flyer</button>`:''}
 function timelineHtml(items,bandSlug=''){return '<div class="timeline">'+items.map(e=>`<div class="entry"><div class="date band-${esc(e.slug||bandSlug)}">${esc(e.display)}</div><div><div class="event">${esc(e.event)}</div>${e.venue||e.city?`<div class="meta">${esc([e.venue,e.city].filter(Boolean).join(' · '))}</div>`:''}${flyerButton(e)}</div></div>`).join('')+'</div>'}
 function bindFlyers(){document.querySelectorAll('[data-flyer]').forEach(btn=>btn.onclick=()=>openFlyer(btn.dataset.flyer,btn.dataset.caption));}
-function thumbSrc(filename){return `images/thumbs/${esc(filename)}`;}
+function thumbSrc(filename){
+  if(/^archive-jj_\d{3}\.jpg$/i.test(filename)) return `images/thumb-${esc(filename)}`;
+  return `images/thumbs/${esc(filename)}`;
+}
 function openFlyer(src,caption){
   let old=document.getElementById('flyer-modal');if(old)old.remove();
   let m=document.createElement('div');m.id='flyer-modal';m.className='flyer-modal';
   m.innerHTML=`<div class="flyer-backdrop"></div><div class="flyer-dialog" role="dialog" aria-modal="true"><button class="flyer-close" aria-label="Close">×</button><img src="${esc(src)}" alt="${esc(caption)}"><div class="flyer-caption">${esc(caption)}</div></div>`;
+  const modalImg=m.querySelector('img');
+  modalImg.onerror=()=>{
+    const name=src.split('/').pop();
+    if(/^archive-jj_\d{3}\.jpg$/i.test(name)){ modalImg.onerror=null; modalImg.src=`images/thumb-${name}`; }
+  };
   document.body.appendChild(m);
   m.querySelector('.flyer-close').onclick=()=>m.remove();m.querySelector('.flyer-backdrop').onclick=()=>m.remove();
   document.addEventListener('keydown',function f(e){if(e.key==='Escape'){m.remove();document.removeEventListener('keydown',f)}});
