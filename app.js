@@ -26,7 +26,8 @@ const HERO_IMAGES={
   'jabberjosh':'hero-jabberjosh.jpg',
   'gnarly-davidson':'hero-gnarly-davidson.jpg',
   'slaw':'hero-slaw.jpg',
-  'horse-weapons':'horse-weapons-hero.png'
+  'horse-weapons':'horse-weapons-hero.png',
+  'tun':'hero-tun.png'
 };
 
 // Existing spreadsheet images, visually sorted into the three archive galleries.
@@ -45,7 +46,7 @@ const MEDIA={
     merch:['long-division-1.jpeg','long-division-2.jpeg']
   },
   'weather-is-happening':{flyers:[],live:[],merch:[]},
-  'monsoon-lazer':{flyers:['monsoon-lazer-1.png'],live:[],merch:[]},
+  'monsoon-lazer':{flyers:['monsoon-lazer-1.png'],live:['jabberjosh-adventure-05.png'],merch:[]},
   'thunderfuck':{
     flyers:[],
     live:['thunderfuck-2.png','thunderfuck-3.png','thunderfuck-4.png','thunderfuck-6.png','thunderfuck-8.png'],
@@ -54,12 +55,13 @@ const MEDIA={
   'jabberjosh':{
     flyers:['archive-jj_001.jpg','archive-jj_003.jpg','archive-jj_004.jpg','archive-jj_005.jpg','archive-jj_006.jpg','archive-jj_007.jpg','archive-jj_008.jpg','archive-jj_009.jpg','archive-jj_010.jpg','archive-jj_014.jpg','archive-jj_017.jpg','archive-jj_018.jpg','archive-jj_019.jpg','archive-jj_023.jpg','archive-jj_025.jpg','archive-jj_026.jpg','archive-jj_029.jpg','archive-jj_030.jpg','archive-jj_032.jpg','archive-jj_033.jpg','archive-jj_034.jpg','archive-jj_035.jpg','archive-jj_036.jpg','archive-jj_037.jpg','archive-jj_038.jpg','archive-jj_039.jpg','archive-jj_041.jpg','archive-jj_042.jpg','archive-jj_043.jpg','archive-jj_044.jpg','archive-jj_045.jpg','archive-jj_046.jpg','archive-jj_047.jpg','jabberjosh-3.png','jabberjosh-4.png','jabberjosh-6.png','jabberjosh-7.png','jabberjosh-8.png','jabberjosh-9.png','jabberjosh-10.png','jabberjosh-11.png','jabberjosh-12.png','jabberjosh-14.png','jabberjosh-15.png','jabberjosh-16.png','jabberjosh-2016-09-11-dag-house.jpg'],
     live:[],
-    adventures:['jabberjosh-adventure-01.png','jabberjosh-adventure-02.png','jabberjosh-adventure-03.png','jabberjosh-adventure-04.png','jabberjosh-adventure-05.png','jabberjosh-adventure-06.png','jabberjosh-adventure-07.png','jabberjosh-adventure-08.png','jabberjosh-adventure-09.png','jabberjosh-adventure-10.png','jabberjosh-adventure-11.png','jabberjosh-adventure-12.png','jabberjosh-adventure-13.png','jabberjosh-adventure-14.png','jabberjosh-adventure-15.png','jabberjosh-adventure-16.png','jabberjosh-adventure-17.png','jabberjosh-adventure-18.png'],
+    adventures:['jabberjosh-adventure-01.png','jabberjosh-adventure-02.png','jabberjosh-adventure-03.png','jabberjosh-adventure-04.png','jabberjosh-adventure-06.png','jabberjosh-adventure-07.png','jabberjosh-adventure-08.png','jabberjosh-adventure-09.png','jabberjosh-adventure-10.png','jabberjosh-adventure-11.png','jabberjosh-adventure-12.png','jabberjosh-adventure-13.png','jabberjosh-adventure-14.png','jabberjosh-adventure-15.png','jabberjosh-adventure-16.png','jabberjosh-adventure-17.png','jabberjosh-adventure-18.png'],
     merch:['jabberjosh-sticker.png']
   },
   'swanson':{flyers:['archive-jj_015.jpg','archive-jj_020.jpg'],live:['swanson-live-1.png'],merch:[]},
   'be-kind-to-yr-jabberjosh':{flyers:['archive-jj_002.jpg'],live:[],merch:[]},
   'horse-weapons':{flyers:[],live:['horse-weapons-live-1.png'],merch:[]},
+  'tun':{flyers:[],live:['tun-live-1.png','tun-live-2.png'],merch:[]},
   'gnarly-davidson':{
     flyers:['gnarly-davidson-1.png','gnarly-davidson-3.png','gnarly-davidson-4.png','gnarly-davidson-6.png','gnarly-davidson-7.png','gnarly-davidson-8.png','gnarly-davidson-9.png','gnarly-davidson-12.png','gnarly-davidson-13.png','gnarly-davidson-14.png','jabberjosh-2016-09-11-dag-house.jpg'],
     live:['gnarly-live.png'],
@@ -86,14 +88,12 @@ function linksHtml(b){
     return `<a href="${esc(u)}" target="_blank" rel="noopener">${esc(label)} ↗</a>`;
   }).join('')+'</div>';
 }
-function isRootAsset(filename){return /^(?:archive-jj_\d{3}\.jpg|horse-weapons-(?:hero|live-1)\.png|jabberjosh-adventure-\d{2}\.png|swanson-live-1\.png)$/i.test(filename)}
-function assetPath(filename){return isRootAsset(filename)?esc(filename):`images/${esc(filename)}`}
+function assetPath(filename){return /^archive-jj_\d{3}\.jpg$/i.test(filename)?esc(filename):`images/${esc(filename)}`}
 function flyerButton(e){return e.flyer?`<button class="flyer-btn" type="button" data-flyer="${assetPath(e.flyer)}" data-caption="${esc(e.display+' — '+e.event)}">View Flyer</button>`:''}
 function timelineHtml(items,bandSlug=''){return '<div class="timeline">'+items.map(e=>`<div class="entry"><div class="date band-${esc(e.slug||bandSlug)}">${esc(e.display)}</div><div><div class="event">${esc(e.event)}</div>${e.venue||e.city?`<div class="meta">${esc([e.venue,e.city].filter(Boolean).join(' · '))}</div>`:''}${flyerButton(e)}</div></div>`).join('')+'</div>'}
 function bindFlyers(){document.querySelectorAll('[data-flyer]').forEach(btn=>btn.onclick=()=>openFlyer(btn.dataset.flyer,btn.dataset.caption));}
 function thumbSrc(filename){
   if(/^archive-jj_\d{3}\.jpg$/i.test(filename)) return `thumb-${esc(filename)}`;
-  if(/^(?:horse-weapons-live-1|jabberjosh-adventure-\d{2}|swanson-live-1)\.png$/i.test(filename)) return esc(filename);
   return `images/thumbs/${esc(filename)}`;
 }
 function openFlyer(src,caption){
@@ -134,17 +134,17 @@ function home(){
   document.getElementById('q').oninput=e=>{let q=e.target.value.toLowerCase();let x=D.timeline.filter(a=>JSON.stringify(a).toLowerCase().includes(q));document.getElementById('master').innerHTML=timelineHtml(x);bindFlyers()};bindFlyers();
 }
 function bands(){
-  app.innerHTML=`<section class="wrap"><div class="band-head"><div class="kicker">The archive</div><h1>THE BANDS</h1><p>20+ years of Hot Shit!</p></div><div class="cards">${D.bands.map(b=>{const hero=HERO_IMAGES[b.slug];return `<a class="card band-card band-${esc(b.slug)}" href="#/band/${b.slug}">${hero?`<img class="card-hero" src="${assetPath(hero)}" alt="${esc(b.name)}">`:''}<h3>${esc(b.name)}</h3></a>`}).join('')}</div></section>`;
+  app.innerHTML=`<section class="wrap"><div class="band-head"><div class="kicker">The archive</div><h1>THE BANDS</h1><p>20+ years of Hot Shit!</p></div><div class="cards">${D.bands.map(b=>{const hero=HERO_IMAGES[b.slug];return `<a class="card band-card band-${esc(b.slug)}" href="#/band/${b.slug}">${hero?`<img class="card-hero" src="images/${esc(hero)}" alt="${esc(b.name)}">`:''}<h3>${esc(b.name)}</h3></a>`}).join('')}</div></section>`;
 }
 function videosHtml(b){
   if(!b.videos||!b.videos.length)return '';
-  return `<section class="archive-section"><h2 class="section-title">Videos</h2><div class="videos">${b.videos.map(v=>{const id=(v.url.match(/[?&]v=([^&]+)/)||[])[1];return `<article class="video-item"><div class="video-frame"><iframe src="https://www.youtube.com/embed/${esc(id)}" title="${esc(v.title)}" loading="lazy" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe></div>${b.slug==='jabberjosh'?'':`<h3>${esc(v.title)}</h3>`}${b.slug==='long-division'?'<p>Hutch Skate Park — July 7, 2007</p>':''}</article>`}).join('')}</div></section>`;
+  return `<section class="archive-section"><h2 class="section-title">Videos</h2><div class="videos">${b.videos.map(v=>{const id=v.url?(v.url.match(/[?&]v=([^&]+)/)||[])[1]:'';const src=v.embed||`https://www.youtube.com/embed/${esc(id)}`;return `<article class="video-item"><div class="video-frame"><iframe src="${esc(src)}" title="${esc(v.title)}" loading="lazy" allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share" allowfullscreen></iframe></div>${b.slug==='jabberjosh'?'':`<h3>${esc(v.title)}</h3>`}${b.slug==='long-division'?'<p>Hutch Skate Park — July 7, 2007</p>':''}</article>`}).join('')}</div></section>`;
 }
 function bandPage(slug){
   let b=band(slug);if(!b)return bands();
   const hero=HERO_IMAGES[slug];
   const media=MEDIA[slug]||{flyers:[],live:[],merch:[]};
-  app.innerHTML=`<section class="wrap band-page band-${esc(slug)}"><a class="back" href="#/bands">← All bands</a>${hero?`<div class="band-hero"><img src="${assetPath(hero)}" alt="${esc(b.name)} main photo"></div>`:''}<div class="band-head"><div class="kicker">Band archive</div><h1>${esc(b.name)}</h1>${b.intro.map(x=>`<p>${esc(x)}</p>`).join('')}${membersHtml(b)}${b.links&&b.links.length?linksHtml(b):''}</div>${releasesHtml(b)}${setlistHtml(b)}${slug==='thunderfuck'?'':`<section class="archive-section"><h2 class="section-title">Timeline</h2>${timelineHtml(b.timeline,slug)}</section>`}${gallerySection('Flyers',media.flyers,b)}${slug==='jabberjosh'?gallerySection('Adventures of JabberJosh',media.adventures||[],b):gallerySection('Live Photos',media.live,b)}${gallerySection('Merch',media.merch,b)}${videosHtml(b)}</section>`;
+  app.innerHTML=`<section class="wrap band-page band-${esc(slug)}"><a class="back" href="#/bands">← All bands</a>${hero?`<div class="band-hero"><img src="images/${esc(hero)}" alt="${esc(b.name)} main photo"></div>`:''}<div class="band-head"><div class="kicker">Band archive</div><h1>${esc(b.name)}</h1>${b.intro.map(x=>`<p>${esc(x)}</p>`).join('')}${membersHtml(b)}${b.links&&b.links.length?linksHtml(b):''}</div>${releasesHtml(b)}${setlistHtml(b)}${slug==='thunderfuck'?'':`<section class="archive-section"><h2 class="section-title">Timeline</h2>${timelineHtml(b.timeline,slug)}</section>`}${gallerySection('Flyers',media.flyers,b)}${slug==='jabberjosh'?gallerySection('Adventures of JabberJosh',media.adventures||[],b):gallerySection('Live Photos',media.live,b)}${gallerySection('Merch',media.merch,b)}${videosHtml(b)}</section>`;
   bindFlyers();
 }
 function route(){let p=location.hash.slice(1)||'/';if(p==='/')home();else if(p==='/bands')bands();else if(p.startsWith('/band/'))bandPage(p.split('/')[2]);else home()}

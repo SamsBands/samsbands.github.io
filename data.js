@@ -1732,10 +1732,22 @@ window.SAMS_DATA={
       "links": [],
       "timeline": [],
       "members": [
-        ["Daniel Davis", "Guitar"],
-        ["Sam Gunnerson", "Bass"],
-        ["Will Gunnerson", "Drums"],
-        ["Jackson Graham", "Drums"]
+        [
+          "Daniel Davis",
+          "Guitar"
+        ],
+        [
+          "Sam Gunnerson",
+          "Bass"
+        ],
+        [
+          "Will Gunnerson",
+          "Drums"
+        ],
+        [
+          "Jackson Graham",
+          "Drums"
+        ]
       ],
       "releases": [],
       "videos": []
@@ -2329,6 +2341,97 @@ window.SAMS_DATA={
           "dateLabel": "",
           "image": "slaw-record-cover.jpg",
           "url": "https://samsbands.bandcamp.com/album/slaw-unreleased"
+        }
+      ]
+    },
+    {
+      "name": "TUN",
+      "slug": "tun",
+      "intro": [
+        "TUN is an Improv Noise Rock 3 piece from Lawrence, Kansas. Sam played bass from Summer 2021 until his final show April 20th, 2023. You can find more about them at their Bandcamp link below."
+      ],
+      "links": [
+        "https://thetun.bandcamp.com/"
+      ],
+      "timeline": [
+        {
+          "date": "2021-06-01",
+          "display": "Summer 2021",
+          "event": "Sam Gunnerson begins playing bass with TUN.",
+          "venue": "",
+          "city": "Lawrence, KS"
+        },
+        {
+          "date": "2021-08-11",
+          "display": "Aug 11, 2021",
+          "event": "TUN rehearsal — later released as the 2021-08-11 Rehearsal Tape.",
+          "venue": "",
+          "city": "Lawrence, KS"
+        },
+        {
+          "date": "2021-12-17",
+          "display": "Dec 17, 2021",
+          "event": "TUN performs; a live recording of the set survives.",
+          "venue": "Replay Lounge",
+          "city": "Lawrence, KS"
+        },
+        {
+          "date": "2022-03-16",
+          "display": "Mar 16, 2022",
+          "event": "Show with CHEW + ZETA + Guest Service",
+          "venue": "Replay Lounge",
+          "city": "Lawrence, KS"
+        },
+        {
+          "date": "2022-11-18",
+          "display": "Nov 18, 2022",
+          "event": "Show with CHEW + Daysleeper",
+          "venue": "Replay Lounge",
+          "city": "Lawrence, KS"
+        },
+        {
+          "date": "2023-04-01",
+          "display": "Apr 1, 2023",
+          "event": "Show with VIN + Drifter + Hollowed",
+          "venue": "Replay Lounge",
+          "city": "Lawrence, KS"
+        },
+        {
+          "date": "2023-04-20",
+          "display": "Apr 20, 2023",
+          "event": "Sam Gunnerson's final show with TUN.",
+          "venue": "",
+          "city": ""
+        }
+      ],
+      "images": [],
+      "members": [
+        [
+          "Craig Comstock",
+          "Guitar / Vocals"
+        ],
+        [
+          "Adrian Proctor",
+          "Drums"
+        ],
+        [
+          "Sam Gunnerson",
+          "Bass — active Summer 2021 – April 20, 2023"
+        ]
+      ],
+      "releases": [],
+      "videos": [
+        {
+          "title": "TUN Live Video 1",
+          "embed": "https://www.facebook.com/plugins/video.php?height=315&href=https%3A%2F%2Fwww.facebook.com%2Freel%2F6084699971576243%2F&show_text=false&width=560&t=0"
+        },
+        {
+          "title": "TUN Live Video 2",
+          "embed": "https://www.facebook.com/plugins/video.php?height=476&href=https%3A%2F%2Fwww.facebook.com%2Freel%2F1113501829320802%2F&show_text=false&width=560&t=0"
+        },
+        {
+          "title": "TUN Live Video 3",
+          "embed": "https://www.facebook.com/plugins/video.php?height=476&href=https%3A%2F%2Fwww.facebook.com%2Freel%2F1902553366759949%2F&show_text=false&width=267&t=0"
         }
       ]
     }
@@ -3642,6 +3745,15 @@ window.SAMS_DATA={
       "slug": "jabberjosh"
     },
     {
+      "date": "2011-08-05",
+      "display": "Aug 5, 2011",
+      "event": "Swanson at The Replay",
+      "venue": "The Replay",
+      "city": "Lawrence, KS",
+      "band": "Swanson",
+      "slug": "swanson"
+    },
+    {
       "date": "2011-08-16",
       "display": "Aug 16, 2011",
       "event": "Show with The Men",
@@ -3678,15 +3790,6 @@ window.SAMS_DATA={
       "city": "Lawrence, KS",
       "band": "JabberJosh",
       "slug": "jabberjosh"
-    },
-    {
-      "date": "2011-08-05",
-      "display": "Aug 5, 2011",
-      "event": "Swanson at The Replay",
-      "venue": "The Replay",
-      "city": "Lawrence, KS",
-      "band": "Swanson",
-      "slug": "swanson"
     },
     {
       "date": "2011-12-10",
@@ -4588,6 +4691,69 @@ window.SAMS_DATA={
       "flyer": "slaw-6.jpeg",
       "band": "Slaw",
       "slug": "slaw"
+    },
+    {
+      "date": "2021-06-01",
+      "display": "Summer 2021",
+      "event": "Sam Gunnerson begins playing bass with TUN.",
+      "venue": "",
+      "city": "Lawrence, KS",
+      "band": "TUN",
+      "slug": "tun"
+    },
+    {
+      "date": "2021-08-11",
+      "display": "Aug 11, 2021",
+      "event": "TUN rehearsal — later released as the 2021-08-11 Rehearsal Tape.",
+      "venue": "",
+      "city": "Lawrence, KS",
+      "band": "TUN",
+      "slug": "tun"
+    },
+    {
+      "date": "2021-12-17",
+      "display": "Dec 17, 2021",
+      "event": "TUN performs; a live recording of the set survives.",
+      "venue": "Replay Lounge",
+      "city": "Lawrence, KS",
+      "band": "TUN",
+      "slug": "tun"
+    },
+    {
+      "date": "2022-03-16",
+      "display": "Mar 16, 2022",
+      "event": "Show with CHEW + ZETA + Guest Service",
+      "venue": "Replay Lounge",
+      "city": "Lawrence, KS",
+      "band": "TUN",
+      "slug": "tun"
+    },
+    {
+      "date": "2022-11-18",
+      "display": "Nov 18, 2022",
+      "event": "Show with CHEW + Daysleeper",
+      "venue": "Replay Lounge",
+      "city": "Lawrence, KS",
+      "band": "TUN",
+      "slug": "tun"
+    },
+    {
+      "date": "2023-04-01",
+      "display": "Apr 1, 2023",
+      "event": "Show with VIN + Drifter + Hollowed",
+      "venue": "Replay Lounge",
+      "city": "Lawrence, KS",
+      "band": "TUN",
+      "slug": "tun"
+    },
+    {
+      "date": "2023-04-20",
+      "display": "Apr 20, 2023",
+      "event": "Sam Gunnerson's final show with TUN.",
+      "venue": "",
+      "city": "",
+      "band": "TUN",
+      "slug": "tun"
     }
   ]
 };
