@@ -84,7 +84,7 @@ function bandcampLabel(u){
 function linksHtml(b){
   if(!b.links.length)return '<div class="notice">Bandcamp / video links can be added as they are discovered.</div>';
   return '<div class="links">'+b.links.map((u,i)=>{
-    let label=/bandcamp/i.test(u)?bandcampLabel(u):/youtube|youtu\.be/i.test(u)?'YouTube':'Link '+(i+1);
+    let label=/bandcamp/i.test(u)?(b.slug==='tun'?'TUN Bandcamp':bandcampLabel(u)):/youtube|youtu\.be/i.test(u)?'YouTube':'Link '+(i+1);
     return `<a href="${esc(u)}" target="_blank" rel="noopener">${esc(label)} ↗</a>`;
   }).join('')+'</div>';
 }

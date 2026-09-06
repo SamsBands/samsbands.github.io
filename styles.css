@@ -28,3 +28,6 @@
 
 /* Patch 23: Horse Weapons */
 .date.band-horse-weapons{color:#800020}.band-card.band-horse-weapons h3{color:#800020}.band-horse-weapons{--band-accent:#800020}
+
+/* Patch 25: TUN dark-gray identity */
+.date.band-tun{color:#555}.band-card.band-tun h3{color:#555}.band-tun{--band-accent:#555}
