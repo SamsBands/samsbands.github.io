@@ -35,7 +35,7 @@ const MEDIA={
     flyers:["archive-emr_002.jpg", "archive-emr_003.jpg", "archive-emr_004.jpg", "archive-emr_005.jpg", "archive-emr_006.jpg", "archive-emr_007.jpg", "archive-emr_008.jpg", "archive-emr_009.jpg", "archive-emr_010.jpg", "archive-emr_011.jpg", "archive-emr_012.jpg", "archive-emr_014.jpg", "archive-emr_015.jpg", "archive-emr_016.jpg", "archive-emr_017.jpg", "archive-emr_018.jpg", "archive-emr_019-02.jpg", "archive-emr_032.jpg", "archive-emr_033.jpg", "archive-emr_034.jpg", "archive-emr_035.jpg", "archive-emr_036.jpg", "archive-emr_037.jpg"], live:[], merch:[]
   },
   'my-friend-tim':{
-    flyers:['my-friend-tim-1.png','my-friend-tim-3.png','my-friend-tim-6.png','my-friend-tim-7.png','my-friend-tim-8.png', "archive-emr_014.jpg", "archive-emr_015.jpg", "archive-emr_016.jpg", "archive-emr_017.jpg", "archive-emr_018.jpg", "archive-emr_019-02.jpg", "archive-emr_037.jpg"],
+    flyers:['my-friend-tim-3.png','my-friend-tim-6.png','my-friend-tim-7.png','my-friend-tim-8.png', "archive-emr_014.jpg", "archive-emr_015.jpg", "archive-emr_016.jpg", "archive-emr_017.jpg", "archive-emr_018.jpg", "archive-emr_019-02.jpg", "archive-emr_037.jpg"],
     live:['my-friend-tim-live-new.png','my-friend-tim-2.jpeg','my-friend-tim-4.png','my-friend-tim-5.png'], merch:[]
   },
   'long-division':{
@@ -51,10 +51,12 @@ const MEDIA={
     merch:[]
   },
   'jabberjosh':{
-    flyers:['jabberjosh-3.png','jabberjosh-4.png','jabberjosh-6.png','jabberjosh-7.png','jabberjosh-8.png','jabberjosh-9.png','jabberjosh-10.png','jabberjosh-11.png','jabberjosh-12.png','jabberjosh-14.png','jabberjosh-15.png','jabberjosh-16.png','jabberjosh-2016-09-11-dag-house.jpg'],
+    flyers:['archive-jj_001.jpg','archive-jj_003.jpg','archive-jj_004.jpg','archive-jj_005.jpg','archive-jj_006.jpg','archive-jj_007.jpg','archive-jj_008.jpg','archive-jj_009.jpg','archive-jj_010.jpg','archive-jj_014.jpg','archive-jj_017.jpg','archive-jj_018.jpg','archive-jj_019.jpg','archive-jj_023.jpg','archive-jj_025.jpg','archive-jj_026.jpg','archive-jj_029.jpg','archive-jj_030.jpg','archive-jj_032.jpg','archive-jj_033.jpg','archive-jj_034.jpg','archive-jj_035.jpg','archive-jj_036.jpg','archive-jj_037.jpg','archive-jj_038.jpg','archive-jj_039.jpg','archive-jj_041.jpg','archive-jj_042.jpg','archive-jj_043.jpg','archive-jj_044.jpg','archive-jj_045.jpg','archive-jj_046.jpg','archive-jj_047.jpg','jabberjosh-3.png','jabberjosh-4.png','jabberjosh-6.png','jabberjosh-7.png','jabberjosh-8.png','jabberjosh-9.png','jabberjosh-10.png','jabberjosh-11.png','jabberjosh-12.png','jabberjosh-14.png','jabberjosh-15.png','jabberjosh-16.png','jabberjosh-2016-09-11-dag-house.jpg'],
     live:['jabberjosh-17.png','jabberjosh-18.png'],
     merch:['jabberjosh-sticker.png']
   },
+  'swanson':{flyers:['archive-jj_015.jpg','archive-jj_020.jpg'],live:[],merch:[]},
+  'be-kind-to-yr-jabberjosh':{flyers:['archive-jj_002.jpg'],live:[],merch:[]},
   'gnarly-davidson':{
     flyers:['gnarly-davidson-1.png','gnarly-davidson-3.png','gnarly-davidson-4.png','gnarly-davidson-6.png','gnarly-davidson-7.png','gnarly-davidson-8.png','gnarly-davidson-9.png','gnarly-davidson-12.png','gnarly-davidson-13.png','gnarly-davidson-14.png','jabberjosh-2016-09-11-dag-house.jpg'],
     live:['gnarly-live.png'],
@@ -82,13 +84,13 @@ function linksHtml(b){
   }).join('')+'</div>';
 }
 function flyerButton(e){return e.flyer?`<button class="flyer-btn" type="button" data-flyer="images/${esc(e.flyer)}" data-caption="${esc(e.display+' — '+e.event)}">View Flyer</button>`:''}
-function timelineHtml(items,bandSlug=''){return '<div class="timeline">'+items.map(e=>`<div class="entry"><div class="date band-${esc(e.slug||bandSlug)}">${esc(e.display)}</div><div><div class="event">${esc(e.event)}</div>${e.venue||e.city?`<div class="meta">${esc([e.venue,e.city].filter(Boolean).join(' · '))}</div>`:''}${e.note?`<div class="meta"><em>${esc(e.note)}</em></div>`:''}${flyerButton(e)}</div></div>`).join('')+'</div>'}
+function timelineHtml(items,bandSlug=''){return '<div class="timeline">'+items.map(e=>`<div class="entry"><div class="date band-${esc(e.slug||bandSlug)}">${esc(e.display)}</div><div><div class="event">${esc(e.event)}</div>${e.venue||e.city?`<div class="meta">${esc([e.venue,e.city].filter(Boolean).join(' · '))}</div>`:''}${flyerButton(e)}</div></div>`).join('')+'</div>'}
 function bindFlyers(){document.querySelectorAll('[data-flyer]').forEach(btn=>btn.onclick=()=>openFlyer(btn.dataset.flyer,btn.dataset.caption));}
 function thumbSrc(filename){return `images/thumbs/${esc(filename)}`;}
 function openFlyer(src,caption){
   let old=document.getElementById('flyer-modal');if(old)old.remove();
   let m=document.createElement('div');m.id='flyer-modal';m.className='flyer-modal';
-  m.innerHTML=`<div class="flyer-backdrop"></div><div class="flyer-dialog" role="dialog" aria-modal="true"><button class="flyer-close" aria-label="Close">×</button><img src="${esc(src)}" onerror="this.onerror=null;this.src='${thumbSrc(src.replace(/^images\//,''))}'" alt="${esc(caption)}"><div class="flyer-caption">${esc(caption)}</div></div>`;
+  m.innerHTML=`<div class="flyer-backdrop"></div><div class="flyer-dialog" role="dialog" aria-modal="true"><button class="flyer-close" aria-label="Close">×</button><img src="${esc(src)}" alt="${esc(caption)}"><div class="flyer-caption">${esc(caption)}</div></div>`;
   document.body.appendChild(m);
   m.querySelector('.flyer-close').onclick=()=>m.remove();m.querySelector('.flyer-backdrop').onclick=()=>m.remove();
   document.addEventListener('keydown',function f(e){if(e.key==='Escape'){m.remove();document.removeEventListener('keydown',f)}});

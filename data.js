@@ -446,13 +446,6 @@ window.SAMS_DATA={
           "city": ""
         },
         {
-          "date": "2002-06-28",
-          "display": "Jun 28, 2002",
-          "event": "My Friend Tim Starts Recording \"Split my Pants\" with EMR",
-          "venue": "",
-          "city": ""
-        },
-        {
           "date": "2002-07-03",
           "display": "Jul 3, 2002",
           "event": "Nowhere Fast Breaks Up",
@@ -581,10 +574,9 @@ window.SAMS_DATA={
         {
           "date": "2004-03-24",
           "display": "Mar 24, 2004",
-          "event": "Show with Claiming Haley + Prom Night",
+          "event": "Show with Claiming Haley + Prom Night — Note: Ricky Fitts is on the flyer, but did not play.",
           "venue": "Rice Park Building",
-          "city": "Hutchinson, KS",
-          "note": "Ricky Fitts is on the flyer, but did not play."
+          "city": "Hutchinson, KS"
         }
       ],
       "images": [
@@ -1100,6 +1092,14 @@ window.SAMS_DATA={
       "links": [],
       "timeline": [
         {
+          "date": "2008-08-02",
+          "display": "Aug 2, 2008",
+          "event": "Show with Echoes of Harper's Ferry + Two Hand Fools + Liverbirds + The Mannix",
+          "venue": "The 5 O’Clock",
+          "city": "Lakewood, OH",
+          "flyer": "archive-jj_001.jpg"
+        },
+        {
           "date": "2009-05-19",
           "display": "May 19, 2009",
           "event": "Show with Be Kind to your Neighbor + Low Oriole",
@@ -1123,18 +1123,43 @@ window.SAMS_DATA={
           "city": "Bloomington, IN"
         },
         {
-          "date": "2009-09-05",
-          "display": "Sep 5, 2009",
-          "event": "Show with Ad Astra Drumline and the Freakout Ensemble + The Low Red Land",
-          "venue": "Eighth Street Taproom",
-          "city": "Lawrence, KS"
-        },
-        {
           "date": "2009-12-07",
           "display": "Dec 7, 2009",
           "event": "Show with Thundereagle + Runaway Sons",
           "venue": "Riot Room",
           "city": "Kansas City, MO"
+        },
+        {
+          "date": "2010-01-08",
+          "display": "Jan 8, 2010",
+          "event": "Show with Mansion + Batholomew + Tres Amigos",
+          "venue": "The Bottleneck",
+          "city": "Lawrence, KS",
+          "flyer": "archive-jj_003.jpg"
+        },
+        {
+          "date": "2010-01-19",
+          "display": "Jan 19, 2010",
+          "event": "Show with Two Hand Fools",
+          "venue": "Duff’s",
+          "city": "Cleveland, OH",
+          "flyer": "archive-jj_004.jpg"
+        },
+        {
+          "date": "2010-01-21",
+          "display": "Jan 21, 2010",
+          "event": "Show with The Boilth",
+          "venue": "The Replay",
+          "city": "Lawrence, KS",
+          "flyer": "archive-jj_005.jpg"
+        },
+        {
+          "date": "2010-02-18",
+          "display": "Feb 18, 2010",
+          "event": "Show with Two Hand Fools + Gunner Son",
+          "venue": "",
+          "city": "Margaretville",
+          "flyer": "archive-jj_037.jpg"
         },
         {
           "date": "2010-02-20",
@@ -1148,7 +1173,16 @@ window.SAMS_DATA={
           "display": "Mar 24, 2010",
           "event": "Show with Big Science + Burger Kingdom + Big City Livin' + Stull",
           "venue": "The Bottleneck",
-          "city": "Lawrence, KS"
+          "city": "Lawrence, KS",
+          "flyer": "archive-jj_033.jpg"
+        },
+        {
+          "date": "2010-04-15",
+          "display": "Apr 15, 2010",
+          "event": "Show with Mouthbreathers + Secondary Modern",
+          "venue": "The Taproom",
+          "city": "Lawrence, KS",
+          "flyer": "archive-jj_006.jpg"
         },
         {
           "date": "2010-05-15",
@@ -1158,11 +1192,35 @@ window.SAMS_DATA={
           "city": "Lawrence, KS"
         },
         {
+          "date": "2010-05-30",
+          "display": "May 30, 2010",
+          "event": "Show with Low Oriole + Weird Wounds",
+          "venue": "The Granada",
+          "city": "Lawrence, KS",
+          "flyer": "archive-jj_007.jpg"
+        },
+        {
+          "date": "2010-07-16",
+          "display": "Jul 16, 2010",
+          "event": "Show with Trophy Wives + Waxeater + Amira",
+          "venue": "Skull Alley",
+          "city": "Louisville, KY",
+          "flyer": "archive-jj_038.jpg"
+        },
+        {
           "date": "2010-07-30",
           "display": "Jul 30, 2010",
           "event": "ICT Fest",
           "venue": "Eagles Lodge",
           "city": "Wichita, KS"
+        },
+        {
+          "date": "2010-08-12",
+          "display": "Aug 12, 2010",
+          "event": "Show with Los Voltage + Acoustic Guillotine",
+          "venue": "Gabe’s",
+          "city": "Iowa City, IA",
+          "flyer": "archive-jj_032.jpg"
         },
         {
           "date": "2010-09-16",
@@ -1172,12 +1230,20 @@ window.SAMS_DATA={
           "city": "Lawrence, KS"
         },
         {
+          "date": "2010-09-17",
+          "display": "Sep 17, 2010",
+          "event": "Show with Muscle Worship + Low Oriole",
+          "venue": "The Jackpot",
+          "city": "Lawrence, KS",
+          "flyer": "archive-jj_044.jpg"
+        },
+        {
           "date": "2010-11-26",
           "display": "Nov 26, 2010",
           "event": "Bass of Spades Tour with The Tanks",
           "venue": "The Replay",
           "city": "Lawrence, KS",
-          "flyer": "jabberjosh-16.png"
+          "flyer": "archive-jj_046.jpg"
         },
         {
           "date": "2010-11-27",
@@ -1233,7 +1299,7 @@ window.SAMS_DATA={
           "event": "Bass of Spades Tour with The Tanks",
           "venue": "",
           "city": "Cedar Falls, IA",
-          "flyer": "jabberjosh-16.png"
+          "flyer": "archive-jj_047.jpg"
         },
         {
           "date": "2010-12-04",
@@ -1314,6 +1380,14 @@ window.SAMS_DATA={
           "city": "Lawrence, KS"
         },
         {
+          "date": "2011-06-22",
+          "display": "Jun 22, 2011",
+          "event": "Show with Waxeater + Police Teeth + Texas Instruments",
+          "venue": "The Jackpot Saloon",
+          "city": "Lawrence, KS",
+          "flyer": "archive-jj_009.jpg"
+        },
+        {
           "date": "2011-07-04",
           "display": "Jul 4, 2011",
           "event": "Show with Fourth of July + Traveling Junipers",
@@ -1325,7 +1399,16 @@ window.SAMS_DATA={
           "display": "Aug 16, 2011",
           "event": "Show with The Men",
           "venue": "The Replay",
-          "city": "Lawrence, KS"
+          "city": "Lawrence, KS",
+          "flyer": "archive-jj_026.jpg"
+        },
+        {
+          "date": "2011-10-18",
+          "display": "Oct 18, 2011",
+          "event": "Show with The Low Forms + Muscle Worship",
+          "venue": "8th Street Taproom",
+          "city": "Lawrence, KS",
+          "flyer": "archive-jj_019.jpg"
         },
         {
           "date": "2011-11-11",
@@ -1356,11 +1439,28 @@ window.SAMS_DATA={
           "city": "Cleveland, OH"
         },
         {
+          "date": "2012-02-29",
+          "display": "Feb 29, 2012",
+          "event": "Show with Male Bondage + Humans + The Classless",
+          "venue": "Basement Show",
+          "city": "Indianapolis, IN",
+          "flyer": "archive-jj_035.jpg"
+        },
+        {
           "date": "2012-04-06",
           "display": "Apr 6, 2012",
           "event": "Show with Guitar Wolf + The Transistors + The Sluts",
           "venue": "The Bottleneck",
-          "city": "Lawrence, KS"
+          "city": "Lawrence, KS",
+          "flyer": "archive-jj_042.jpg"
+        },
+        {
+          "date": "2012-04-17",
+          "display": "Apr 17, 2012",
+          "event": "Show with Money Badger + CS Luxem",
+          "venue": "The Replay",
+          "city": "Lawrence, KS",
+          "flyer": "archive-jj_039.jpg"
         },
         {
           "date": "2012-05-12",
@@ -1368,6 +1468,14 @@ window.SAMS_DATA={
           "event": "Spring Into Summer Festival",
           "venue": "???",
           "city": "Lawrence, KS"
+        },
+        {
+          "date": "2012-07-01",
+          "display": "Jul 1, 2012",
+          "event": "Show with Male Bondage + Ultra Ultra",
+          "venue": "The Replay Lounge",
+          "city": "Lawrence, KS",
+          "flyer": "archive-jj_010.jpg"
         },
         {
           "date": "2012-07-27",
@@ -1386,12 +1494,20 @@ window.SAMS_DATA={
           "flyer": "jabberjosh-11.png"
         },
         {
+          "date": "2012-10-21",
+          "display": "Oct 21, 2012",
+          "event": "Show with Muscle Worship + Police Teeth",
+          "venue": "The Replay Lounge",
+          "city": "Lawrence, KS",
+          "flyer": "archive-jj_041.jpg"
+        },
+        {
           "date": "2012-12-31",
           "display": "Dec 31, 2012",
           "event": "New Years Eve Show with The Sluts + Alien Jones",
           "venue": "The Replay",
           "city": "Lawrence, KS",
-          "flyer": "jabberjosh-10.png"
+          "flyer": "archive-jj_023.jpg"
         },
         {
           "date": "2013-01-04",
@@ -1402,6 +1518,14 @@ window.SAMS_DATA={
           "flyer": "jabberjosh-9.png"
         },
         {
+          "date": "2013-01-12",
+          "display": "Jan 12, 2013",
+          "event": "Show with The Boot Heel + Iron Hug + Swamp Walk",
+          "venue": "Ton’s Motel",
+          "city": "",
+          "flyer": "archive-jj_043.jpg"
+        },
+        {
           "date": "2013-05-13",
           "display": "May 13, 2013",
           "event": "Show with KTP",
@@ -1409,12 +1533,36 @@ window.SAMS_DATA={
           "city": "Lawrence, KS"
         },
         {
+          "date": "2013-05-14",
+          "display": "May 14, 2013",
+          "event": "Show with Long Shadows + Texas Instruments",
+          "venue": "The Taproom",
+          "city": "Lawrence, KS",
+          "flyer": "archive-jj_030.jpg"
+        },
+        {
+          "date": "2013-05-25",
+          "display": "May 25, 2013",
+          "event": "Show with KTP",
+          "venue": "The Replay",
+          "city": "Lawrence, KS",
+          "flyer": "archive-jj_025.jpg"
+        },
+        {
+          "date": "2013-07-21",
+          "display": "Jul 21, 2013",
+          "event": "Show with Buildings",
+          "venue": "The Replay",
+          "city": "Lawrence, KS",
+          "flyer": "archive-jj_017.jpg"
+        },
+        {
           "date": "2013-08-08",
           "display": "Aug 8, 2013",
           "event": "Mini Tour Kick Off Show with Cricket Wand + Psychic Heat",
           "venue": "The Replay",
           "city": "Lawrence, KS",
-          "flyer": "jabberjosh-8.png"
+          "flyer": "archive-jj_029.jpg"
         },
         {
           "date": "2014-07-18",
@@ -1422,7 +1570,7 @@ window.SAMS_DATA={
           "event": "Retirement Show with Muscle Worship",
           "venue": "The Love Garden",
           "city": "Lawrence, KS",
-          "flyer": "jabberjosh-7.png"
+          "flyer": "archive-jj_045.jpg"
         },
         {
           "date": "2016-09-11",
@@ -1509,6 +1657,59 @@ window.SAMS_DATA={
           "url": "https://www.youtube.com/watch?v=-kqpOrreshI"
         }
       ]
+    },
+    {
+      "name": "Swanson",
+      "slug": "swanson",
+      "intro": [],
+      "links": [],
+      "timeline": [
+        {
+          "date": "2011-12-10",
+          "display": "Dec 10, 2011",
+          "event": "Caleb’s B-Day Bash with Mothbreathers + Mansion + Sadie Mae + Jon Benet Ransack",
+          "venue": "The Jackpot",
+          "city": "Lawrence, KS",
+          "flyer": "archive-jj_020.jpg"
+        },
+        {
+          "date": "2012-01-30",
+          "display": "Jan 30, 2012",
+          "event": "Show with Marijuana Deathsquads",
+          "venue": "The Replay",
+          "city": "Lawrence, KS",
+          "flyer": "archive-jj_015.jpg"
+        }
+      ],
+      "images": [
+        "archive-jj_015.jpg",
+        "archive-jj_020.jpg"
+      ],
+      "releases": [],
+      "videos": []
+    },
+    {
+      "name": "Be Kind To Yr Jabberjosh",
+      "slug": "be-kind-to-yr-jabberjosh",
+      "intro": [
+        "A one-off project combining JabberJosh and Be Kind to Yr Neighbor."
+      ],
+      "links": [],
+      "timeline": [
+        {
+          "date": "2009-09-05",
+          "display": "Sep 5, 2009",
+          "event": "Show with Ad Astra Drumline and the Freakout Ensemble + The Low Red Land",
+          "venue": "Eighth Street Taproom",
+          "city": "Lawrence, KS",
+          "flyer": "archive-jj_002.jpg"
+        }
+      ],
+      "images": [
+        "archive-jj_002.jpg"
+      ],
+      "releases": [],
+      "videos": []
     },
     {
       "name": "Gnarly Davidson",
@@ -2158,9 +2359,9 @@ window.SAMS_DATA={
       "event": "Show with Agent 246 + Five Finger Faith",
       "venue": "Teen Center",
       "city": "Hutchinson, KS",
+      "flyer": "archive-emr_007.jpg",
       "band": "EMR",
-      "slug": "emr",
-      "flyer": "archive-emr_007.jpg"
+      "slug": "emr"
     },
     {
       "date": "2000-12-16",
@@ -2233,9 +2434,9 @@ window.SAMS_DATA={
       "event": "Prattstock with Pirate Radio + Invalid + No Tomorrow + Last Ride Out + Ryan and Bryan (My Friend Tim?!)",
       "venue": "Lemon Park",
       "city": "Pratt, KS",
+      "flyer": "archive-emr_011.jpg",
       "band": "EMR",
-      "slug": "emr",
-      "flyer": "archive-emr_011.jpg"
+      "slug": "emr"
     },
     {
       "date": "2001-08-13",
@@ -2261,9 +2462,9 @@ window.SAMS_DATA={
       "event": "Local Show",
       "venue": "Pratt Teen Center",
       "city": "Pratt, KS",
+      "flyer": "archive-emr_010.jpg",
       "band": "EMR",
-      "slug": "emr",
-      "flyer": "archive-emr_010.jpg"
+      "slug": "emr"
     },
     {
       "date": "2002-01-10",
@@ -2298,9 +2499,9 @@ window.SAMS_DATA={
       "event": "FIRST Wichita show with Last Ride Out + Shake Gently + No Tomorrow + Nowhere Fast",
       "venue": "Eagles Lodge",
       "city": "Wichita, KS",
+      "flyer": "archive-emr_033.jpg",
       "band": "EMR",
-      "slug": "emr",
-      "flyer": "archive-emr_033.jpg"
+      "slug": "emr"
     },
     {
       "date": "2002-03-23",
@@ -2317,9 +2518,9 @@ window.SAMS_DATA={
       "event": "Show with Christine + That Same Day Service (TX)",
       "venue": "Hyde Park",
       "city": "Wichita, KS",
+      "flyer": "archive-emr_034.jpg",
       "band": "EMR",
-      "slug": "emr",
-      "flyer": "archive-emr_034.jpg"
+      "slug": "emr"
     },
     {
       "date": "2002-04-28",
@@ -2367,15 +2568,6 @@ window.SAMS_DATA={
       "slug": "emr"
     },
     {
-      "date": "2002-06-28",
-      "display": "Jun 28, 2002",
-      "event": "My Friend Tim Starts Recording \"Split my Pants\" with EMR",
-      "venue": "",
-      "city": "",
-      "band": "My Friend Tim",
-      "slug": "my-friend-tim"
-    },
-    {
       "date": "2002-07-01",
       "display": "Jul 1, 2002",
       "event": "Release \"Split my Pants\" with My Friend Tim",
@@ -2390,24 +2582,6 @@ window.SAMS_DATA={
       "event": "Nowhere Fast Breaks Up",
       "venue": "",
       "city": "",
-      "band": "My Friend Tim",
-      "slug": "my-friend-tim"
-    },
-    {
-      "date": "2002-07-07",
-      "display": "Jul 7–20, 2002",
-      "event": "\"Until the Van Breaksdown\" Tour with My Friend Tim and Remembering December",
-      "venue": "????",
-      "city": "????",
-      "band": "EMR",
-      "slug": "emr"
-    },
-    {
-      "date": "2002-07-07",
-      "display": "Jul 7–20, 2002",
-      "event": "\"Until the Van Breaksdown\" Tour with EMR and Remembering December",
-      "venue": "????",
-      "city": "???",
       "band": "My Friend Tim",
       "slug": "my-friend-tim"
     },
@@ -2644,9 +2818,9 @@ window.SAMS_DATA={
       "event": "Show with No Tomorrow + Hanoi Chevrolet + My Friend Tim",
       "venue": "Lee Shiney Art Gallery",
       "city": "Wichita, KS",
+      "flyer": "archive-emr_037.jpg",
       "band": "EMR",
-      "slug": "emr",
-      "flyer": "archive-emr_037.jpg"
+      "slug": "emr"
     },
     {
       "date": "2002-10-19",
@@ -2654,9 +2828,9 @@ window.SAMS_DATA={
       "event": "Show with No Tomorrow + Hanoi Chevrolet + EMR",
       "venue": "Lee Shiney Art Gallery",
       "city": "Wichita, KS",
+      "flyer": "archive-emr_037.jpg",
       "band": "My Friend Tim",
-      "slug": "my-friend-tim",
-      "flyer": "archive-emr_037.jpg"
+      "slug": "my-friend-tim"
     },
     {
       "date": "2002-10-26",
@@ -2674,9 +2848,9 @@ window.SAMS_DATA={
       "event": "Show with the Vanzetti's (CD Release Show) + Hanoi Chevrolet + Duplicate Copy",
       "venue": "Lee Shiney Art Gallery",
       "city": "Wichita, KS",
+      "flyer": "archive-emr_036.jpg",
       "band": "EMR",
-      "slug": "emr",
-      "flyer": "archive-emr_036.jpg"
+      "slug": "emr"
     },
     {
       "date": "2002-11-23",
@@ -2766,12 +2940,11 @@ window.SAMS_DATA={
     {
       "date": "2004-03-24",
       "display": "Mar 24, 2004",
-      "event": "Show with Claiming Haley + Prom Night",
+      "event": "Show with Claiming Haley + Prom Night — Note: Ricky Fitts is on the flyer, but did not play.",
       "venue": "Rice Park Building",
       "city": "Hutchinson, KS",
       "band": "My Friend Tim",
-      "slug": "my-friend-tim",
-      "note": "Ricky Fitts is on the flyer, but did not play."
+      "slug": "my-friend-tim"
     },
     {
       "date": "2004-05-01",
@@ -2837,9 +3010,9 @@ window.SAMS_DATA={
       "event": "Show with the Gunshy + This Is My Condition",
       "venue": "Replay Lounge",
       "city": "Lawrence, KS",
+      "flyer": "archive-ld_008.jpg",
       "band": "Long Division",
-      "slug": "long-division",
-      "flyer": "archive-ld_008.jpg"
+      "slug": "long-division"
     },
     {
       "date": "2006-06-05",
@@ -2895,9 +3068,9 @@ window.SAMS_DATA={
       "event": "Show with This Is My Condition + Cassiopia + Baiowolf + Realicide",
       "venue": "The Pool Room",
       "city": "Lawrence, KS",
+      "flyer": "archive-ld_012.jpg",
       "band": "Long Division",
-      "slug": "long-division",
-      "flyer": "archive-ld_012.jpg"
+      "slug": "long-division"
     },
     {
       "date": "2006-08-26",
@@ -3047,6 +3220,16 @@ window.SAMS_DATA={
       "slug": "weather-is-happening"
     },
     {
+      "date": "2008-08-02",
+      "display": "Aug 2, 2008",
+      "event": "Show with Echoes of Harper's Ferry + Two Hand Fools + Liverbirds + The Mannix",
+      "venue": "The 5 O’Clock",
+      "city": "Lakewood, OH",
+      "flyer": "archive-jj_001.jpg",
+      "band": "JabberJosh",
+      "slug": "jabberjosh"
+    },
+    {
       "date": "2009-05-19",
       "display": "May 19, 2009",
       "event": "Show with Be Kind to your Neighbor + Low Oriole",
@@ -3081,8 +3264,9 @@ window.SAMS_DATA={
       "event": "Show with Ad Astra Drumline and the Freakout Ensemble + The Low Red Land",
       "venue": "Eighth Street Taproom",
       "city": "Lawrence, KS",
-      "band": "JabberJosh",
-      "slug": "jabberjosh"
+      "flyer": "archive-jj_002.jpg",
+      "band": "Be Kind To Yr Jabberjosh",
+      "slug": "be-kind-to-yr-jabberjosh"
     },
     {
       "date": "2009-12-07",
@@ -3090,6 +3274,46 @@ window.SAMS_DATA={
       "event": "Show with Thundereagle + Runaway Sons",
       "venue": "Riot Room",
       "city": "Kansas City, MO",
+      "band": "JabberJosh",
+      "slug": "jabberjosh"
+    },
+    {
+      "date": "2010-01-08",
+      "display": "Jan 8, 2010",
+      "event": "Show with Mansion + Batholomew + Tres Amigos",
+      "venue": "The Bottleneck",
+      "city": "Lawrence, KS",
+      "flyer": "archive-jj_003.jpg",
+      "band": "JabberJosh",
+      "slug": "jabberjosh"
+    },
+    {
+      "date": "2010-01-19",
+      "display": "Jan 19, 2010",
+      "event": "Show with Two Hand Fools",
+      "venue": "Duff’s",
+      "city": "Cleveland, OH",
+      "flyer": "archive-jj_004.jpg",
+      "band": "JabberJosh",
+      "slug": "jabberjosh"
+    },
+    {
+      "date": "2010-01-21",
+      "display": "Jan 21, 2010",
+      "event": "Show with The Boilth",
+      "venue": "The Replay",
+      "city": "Lawrence, KS",
+      "flyer": "archive-jj_005.jpg",
+      "band": "JabberJosh",
+      "slug": "jabberjosh"
+    },
+    {
+      "date": "2010-02-18",
+      "display": "Feb 18, 2010",
+      "event": "Show with Two Hand Fools + Gunner Son",
+      "venue": "",
+      "city": "Margaretville",
+      "flyer": "archive-jj_037.jpg",
       "band": "JabberJosh",
       "slug": "jabberjosh"
     },
@@ -3108,6 +3332,17 @@ window.SAMS_DATA={
       "event": "Show with Big Science + Burger Kingdom + Big City Livin' + Stull",
       "venue": "The Bottleneck",
       "city": "Lawrence, KS",
+      "flyer": "archive-jj_033.jpg",
+      "band": "JabberJosh",
+      "slug": "jabberjosh"
+    },
+    {
+      "date": "2010-04-15",
+      "display": "Apr 15, 2010",
+      "event": "Show with Mouthbreathers + Secondary Modern",
+      "venue": "The Taproom",
+      "city": "Lawrence, KS",
+      "flyer": "archive-jj_006.jpg",
       "band": "JabberJosh",
       "slug": "jabberjosh"
     },
@@ -3121,11 +3356,41 @@ window.SAMS_DATA={
       "slug": "jabberjosh"
     },
     {
+      "date": "2010-05-30",
+      "display": "May 30, 2010",
+      "event": "Show with Low Oriole + Weird Wounds",
+      "venue": "The Granada",
+      "city": "Lawrence, KS",
+      "flyer": "archive-jj_007.jpg",
+      "band": "JabberJosh",
+      "slug": "jabberjosh"
+    },
+    {
+      "date": "2010-07-16",
+      "display": "Jul 16, 2010",
+      "event": "Show with Trophy Wives + Waxeater + Amira",
+      "venue": "Skull Alley",
+      "city": "Louisville, KY",
+      "flyer": "archive-jj_038.jpg",
+      "band": "JabberJosh",
+      "slug": "jabberjosh"
+    },
+    {
       "date": "2010-07-30",
       "display": "Jul 30, 2010",
       "event": "ICT Fest",
       "venue": "Eagles Lodge",
       "city": "Wichita, KS",
+      "band": "JabberJosh",
+      "slug": "jabberjosh"
+    },
+    {
+      "date": "2010-08-12",
+      "display": "Aug 12, 2010",
+      "event": "Show with Los Voltage + Acoustic Guillotine",
+      "venue": "Gabe’s",
+      "city": "Iowa City, IA",
+      "flyer": "archive-jj_032.jpg",
       "band": "JabberJosh",
       "slug": "jabberjosh"
     },
@@ -3139,12 +3404,22 @@ window.SAMS_DATA={
       "slug": "jabberjosh"
     },
     {
+      "date": "2010-09-17",
+      "display": "Sep 17, 2010",
+      "event": "Show with Muscle Worship + Low Oriole",
+      "venue": "The Jackpot",
+      "city": "Lawrence, KS",
+      "flyer": "archive-jj_044.jpg",
+      "band": "JabberJosh",
+      "slug": "jabberjosh"
+    },
+    {
       "date": "2010-11-26",
       "display": "Nov 26, 2010",
       "event": "Bass of Spades Tour with The Tanks",
       "venue": "The Replay",
       "city": "Lawrence, KS",
-      "flyer": "jabberjosh-16.png",
+      "flyer": "archive-jj_046.jpg",
       "band": "JabberJosh",
       "slug": "jabberjosh"
     },
@@ -3214,7 +3489,7 @@ window.SAMS_DATA={
       "event": "Bass of Spades Tour with The Tanks",
       "venue": "",
       "city": "Cedar Falls, IA",
-      "flyer": "jabberjosh-16.png",
+      "flyer": "archive-jj_047.jpg",
       "band": "JabberJosh",
       "slug": "jabberjosh"
     },
@@ -3319,6 +3594,16 @@ window.SAMS_DATA={
       "slug": "jabberjosh"
     },
     {
+      "date": "2011-06-22",
+      "display": "Jun 22, 2011",
+      "event": "Show with Waxeater + Police Teeth + Texas Instruments",
+      "venue": "The Jackpot Saloon",
+      "city": "Lawrence, KS",
+      "flyer": "archive-jj_009.jpg",
+      "band": "JabberJosh",
+      "slug": "jabberjosh"
+    },
+    {
       "date": "2011-07-04",
       "display": "Jul 4, 2011",
       "event": "Show with Fourth of July + Traveling Junipers",
@@ -3333,6 +3618,17 @@ window.SAMS_DATA={
       "event": "Show with The Men",
       "venue": "The Replay",
       "city": "Lawrence, KS",
+      "flyer": "archive-jj_026.jpg",
+      "band": "JabberJosh",
+      "slug": "jabberjosh"
+    },
+    {
+      "date": "2011-10-18",
+      "display": "Oct 18, 2011",
+      "event": "Show with The Low Forms + Muscle Worship",
+      "venue": "8th Street Taproom",
+      "city": "Lawrence, KS",
+      "flyer": "archive-jj_019.jpg",
       "band": "JabberJosh",
       "slug": "jabberjosh"
     },
@@ -3355,6 +3651,26 @@ window.SAMS_DATA={
       "slug": "jabberjosh"
     },
     {
+      "date": "2011-12-10",
+      "display": "Dec 10, 2011",
+      "event": "Caleb’s B-Day Bash with Mothbreathers + Mansion + Sadie Mae + Jon Benet Ransack",
+      "venue": "The Jackpot",
+      "city": "Lawrence, KS",
+      "flyer": "archive-jj_020.jpg",
+      "band": "Swanson",
+      "slug": "swanson"
+    },
+    {
+      "date": "2012-01-30",
+      "display": "Jan 30, 2012",
+      "event": "Show with Marijuana Deathsquads",
+      "venue": "The Replay",
+      "city": "Lawrence, KS",
+      "flyer": "archive-jj_015.jpg",
+      "band": "Swanson",
+      "slug": "swanson"
+    },
+    {
       "date": "2012-02-16",
       "display": "Feb 16, 2012",
       "event": "Tour Kick Off Show",
@@ -3373,11 +3689,32 @@ window.SAMS_DATA={
       "slug": "jabberjosh"
     },
     {
+      "date": "2012-02-29",
+      "display": "Feb 29, 2012",
+      "event": "Show with Male Bondage + Humans + The Classless",
+      "venue": "Basement Show",
+      "city": "Indianapolis, IN",
+      "flyer": "archive-jj_035.jpg",
+      "band": "JabberJosh",
+      "slug": "jabberjosh"
+    },
+    {
       "date": "2012-04-06",
       "display": "Apr 6, 2012",
       "event": "Show with Guitar Wolf + The Transistors + The Sluts",
       "venue": "The Bottleneck",
       "city": "Lawrence, KS",
+      "flyer": "archive-jj_042.jpg",
+      "band": "JabberJosh",
+      "slug": "jabberjosh"
+    },
+    {
+      "date": "2012-04-17",
+      "display": "Apr 17, 2012",
+      "event": "Show with Money Badger + CS Luxem",
+      "venue": "The Replay",
+      "city": "Lawrence, KS",
+      "flyer": "archive-jj_039.jpg",
       "band": "JabberJosh",
       "slug": "jabberjosh"
     },
@@ -3387,6 +3724,16 @@ window.SAMS_DATA={
       "event": "Spring Into Summer Festival",
       "venue": "???",
       "city": "Lawrence, KS",
+      "band": "JabberJosh",
+      "slug": "jabberjosh"
+    },
+    {
+      "date": "2012-07-01",
+      "display": "Jul 1, 2012",
+      "event": "Show with Male Bondage + Ultra Ultra",
+      "venue": "The Replay Lounge",
+      "city": "Lawrence, KS",
+      "flyer": "archive-jj_010.jpg",
       "band": "JabberJosh",
       "slug": "jabberjosh"
     },
@@ -3429,6 +3776,16 @@ window.SAMS_DATA={
       "slug": "monsoon-lazer"
     },
     {
+      "date": "2012-10-21",
+      "display": "Oct 21, 2012",
+      "event": "Show with Muscle Worship + Police Teeth",
+      "venue": "The Replay Lounge",
+      "city": "Lawrence, KS",
+      "flyer": "archive-jj_041.jpg",
+      "band": "JabberJosh",
+      "slug": "jabberjosh"
+    },
+    {
       "date": "2012-12-21",
       "display": "Dec 21, 2012",
       "event": "Show with The Hips",
@@ -3452,7 +3809,7 @@ window.SAMS_DATA={
       "event": "New Years Eve Show with The Sluts + Alien Jones",
       "venue": "The Replay",
       "city": "Lawrence, KS",
-      "flyer": "jabberjosh-10.png",
+      "flyer": "archive-jj_023.jpg",
       "band": "JabberJosh",
       "slug": "jabberjosh"
     },
@@ -3467,11 +3824,31 @@ window.SAMS_DATA={
       "slug": "jabberjosh"
     },
     {
+      "date": "2013-01-12",
+      "display": "Jan 12, 2013",
+      "event": "Show with The Boot Heel + Iron Hug + Swamp Walk",
+      "venue": "Ton’s Motel",
+      "city": "",
+      "flyer": "archive-jj_043.jpg",
+      "band": "JabberJosh",
+      "slug": "jabberjosh"
+    },
+    {
       "date": "2013-05-13",
       "display": "May 13, 2013",
       "event": "Show with KTP",
       "venue": "The Replay",
       "city": "Lawrence, KS",
+      "band": "JabberJosh",
+      "slug": "jabberjosh"
+    },
+    {
+      "date": "2013-05-14",
+      "display": "May 14, 2013",
+      "event": "Show with Long Shadows + Texas Instruments",
+      "venue": "The Taproom",
+      "city": "Lawrence, KS",
+      "flyer": "archive-jj_030.jpg",
       "band": "JabberJosh",
       "slug": "jabberjosh"
     },
@@ -3486,6 +3863,16 @@ window.SAMS_DATA={
       "slug": "monsoon-lazer"
     },
     {
+      "date": "2013-05-25",
+      "display": "May 25, 2013",
+      "event": "Show with KTP",
+      "venue": "The Replay",
+      "city": "Lawrence, KS",
+      "flyer": "archive-jj_025.jpg",
+      "band": "JabberJosh",
+      "slug": "jabberjosh"
+    },
+    {
       "date": "2013-07-13",
       "display": "Jul 13, 2013",
       "event": "Lawrence Field Day",
@@ -3493,6 +3880,16 @@ window.SAMS_DATA={
       "city": "Lawrence, KS",
       "band": "Monsoon Lazer",
       "slug": "monsoon-lazer"
+    },
+    {
+      "date": "2013-07-21",
+      "display": "Jul 21, 2013",
+      "event": "Show with Buildings",
+      "venue": "The Replay",
+      "city": "Lawrence, KS",
+      "flyer": "archive-jj_017.jpg",
+      "band": "JabberJosh",
+      "slug": "jabberjosh"
     },
     {
       "date": "2013-08-03",
@@ -3509,7 +3906,7 @@ window.SAMS_DATA={
       "event": "Mini Tour Kick Off Show with Cricket Wand + Psychic Heat",
       "venue": "The Replay",
       "city": "Lawrence, KS",
-      "flyer": "jabberjosh-8.png",
+      "flyer": "archive-jj_029.jpg",
       "band": "JabberJosh",
       "slug": "jabberjosh"
     },
@@ -3546,7 +3943,7 @@ window.SAMS_DATA={
       "event": "Retirement Show with Muscle Worship",
       "venue": "The Love Garden",
       "city": "Lawrence, KS",
-      "flyer": "jabberjosh-7.png",
+      "flyer": "archive-jj_045.jpg",
       "band": "JabberJosh",
       "slug": "jabberjosh"
     },
@@ -3832,9 +4229,9 @@ window.SAMS_DATA={
       "event": "JabberJosh Reunion Show with Wooly Bear + Gnarly Davidson",
       "venue": "Dag House",
       "city": "Cleveland, OH",
+      "flyer": "jabberjosh-2016-09-11-dag-house.jpg",
       "band": "JabberJosh",
-      "slug": "jabberjosh",
-      "flyer": "jabberjosh-2016-09-11-dag-house.jpg"
+      "slug": "jabberjosh"
     },
     {
       "date": "2016-09-11",
@@ -3842,9 +4239,9 @@ window.SAMS_DATA={
       "event": "Show with JabberJosh + Wooly Bear",
       "venue": "Dag House",
       "city": "Cleveland, OH",
+      "flyer": "jabberjosh-2016-09-11-dag-house.jpg",
       "band": "Gnarly Davidson",
-      "slug": "gnarly-davidson",
-      "flyer": "jabberjosh-2016-09-11-dag-house.jpg"
+      "slug": "gnarly-davidson"
     },
     {
       "date": "2016-10-31",

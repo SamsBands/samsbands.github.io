@@ -22,3 +22,6 @@
 .band-emr{--band-accent:#ffd92f}.band-my-friend-tim{--band-accent:#ff4a4a}.band-long-division{--band-accent:#d8c8a8}.band-weather-is-happening{--band-accent:#d0d0d0}.band-thunderfuck{--band-accent:#ff8a2a}.band-monsoon-lazer{--band-accent:#c6a4ff}.band-jabberjosh{--band-accent:#54d86a}.band-gnarly-davidson{--band-accent:#4f9cff}.band-slaw{--band-accent:#a7ff1a}
 .members{max-width:900px}.member{grid-template-columns:minmax(280px,360px) 1fr}.member b{white-space:nowrap}
 @media(max-width:650px){.member{grid-template-columns:1fr}.member b{white-space:normal}}
+.date.band-swanson{color:#8ee8a3}.date.band-be-kind-to-yr-jabberjosh{color:#2fae73}
+.band-card.band-swanson h3{color:#8ee8a3}.band-card.band-be-kind-to-yr-jabberjosh h3{color:#2fae73}
+.band-swanson{--band-accent:#8ee8a3}.band-be-kind-to-yr-jabberjosh{--band-accent:#2fae73}
