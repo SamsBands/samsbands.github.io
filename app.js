@@ -26,6 +26,7 @@ const HERO_IMAGES={
   'jabberjosh':'hero-jabberjosh.jpg',
   'gnarly-davidson':'hero-gnarly-davidson.jpg',
   'slaw':'hero-slaw.jpg',
+  'swanson':'swanson-main.png',
   'horse-weapons':'horse-weapons-hero.png',
   'tun':'hero-tun.png'
 };
@@ -46,16 +47,16 @@ const MEDIA={
     merch:['long-division-1.jpeg','long-division-2.jpeg']
   },
   'weather-is-happening':{flyers:[],live:[],merch:[]},
-  'monsoon-lazer':{flyers:['monsoon-lazer-1.png'],live:['jabberjosh-adventure-05.png'],merch:[]},
+  'monsoon-lazer':{flyers:['monsoon-lazer-1.png'],live:['jabberjosh-adventure-05.png','jabberjosh-adventure-07.png'],merch:[]},
   'thunderfuck':{
     flyers:[],
     live:['thunderfuck-2.png','thunderfuck-3.png','thunderfuck-4.png','thunderfuck-6.png','thunderfuck-8.png'],
     merch:[]
   },
   'jabberjosh':{
-    flyers:['archive-jj_001.jpg','archive-jj_003.jpg','archive-jj_004.jpg','archive-jj_005.jpg','archive-jj_006.jpg','archive-jj_007.jpg','archive-jj_008.jpg','archive-jj_009.jpg','archive-jj_010.jpg','archive-jj_014.jpg','archive-jj_017.jpg','archive-jj_018.jpg','archive-jj_019.jpg','archive-jj_023.jpg','archive-jj_025.jpg','archive-jj_026.jpg','archive-jj_029.jpg','archive-jj_030.jpg','archive-jj_032.jpg','archive-jj_033.jpg','archive-jj_034.jpg','archive-jj_035.jpg','archive-jj_036.jpg','archive-jj_037.jpg','archive-jj_038.jpg','archive-jj_039.jpg','archive-jj_041.jpg','archive-jj_042.jpg','archive-jj_043.jpg','archive-jj_044.jpg','archive-jj_045.jpg','archive-jj_046.jpg','archive-jj_047.jpg','jabberjosh-3.png','jabberjosh-4.png','jabberjosh-6.png','jabberjosh-7.png','jabberjosh-8.png','jabberjosh-9.png','jabberjosh-10.png','jabberjosh-11.png','jabberjosh-12.png','jabberjosh-14.png','jabberjosh-15.png','jabberjosh-16.png','jabberjosh-2016-09-11-dag-house.jpg'],
+    flyers:['archive-jj_001.jpg','archive-jj_003.jpg','archive-jj_004.jpg','archive-jj_005.jpg','archive-jj_006.jpg','archive-jj_007.jpg','archive-jj_008.jpg','archive-jj_009.jpg','archive-jj_010.jpg','archive-jj_014.jpg','archive-jj_017.jpg','archive-jj_018.jpg','archive-jj_019.jpg','archive-jj_025.jpg','archive-jj_026.jpg','archive-jj_030.jpg','archive-jj_032.jpg','archive-jj_033.jpg','archive-jj_034.jpg','archive-jj_035.jpg','archive-jj_036.jpg','archive-jj_037.jpg','archive-jj_038.jpg','archive-jj_039.jpg','archive-jj_041.jpg','archive-jj_042.jpg','archive-jj_043.jpg','archive-jj_044.jpg','archive-jj_046.jpg','archive-jj_047.jpg','jabberjosh-3.png','jabberjosh-4.png','jabberjosh-6.png','jabberjosh-7.png','jabberjosh-8.png','jabberjosh-10.png','jabberjosh-12.png','jabberjosh-14.png','jabberjosh-15.png','jabberjosh-16.png','jabberjosh-2016-09-11-dag-house.jpg'],
     live:[],
-    adventures:['jabberjosh-adventure-01.png','jabberjosh-adventure-02.png','jabberjosh-adventure-03.png','jabberjosh-adventure-04.png','jabberjosh-adventure-06.png','jabberjosh-adventure-07.png','jabberjosh-adventure-08.png','jabberjosh-adventure-09.png','jabberjosh-adventure-10.png','jabberjosh-adventure-11.png','jabberjosh-adventure-12.png','jabberjosh-adventure-13.png','jabberjosh-adventure-14.png','jabberjosh-adventure-15.png','jabberjosh-adventure-16.png','jabberjosh-adventure-17.png','jabberjosh-adventure-18.png'],
+    adventures:['jabberjosh-adventure-01.png','jabberjosh-adventure-02.png','jabberjosh-adventure-03.png','jabberjosh-adventure-04.png','jabberjosh-adventure-06.png','jabberjosh-adventure-08.png','jabberjosh-adventure-09.png','jabberjosh-adventure-10.png','jabberjosh-adventure-11.png','jabberjosh-adventure-12.png','jabberjosh-adventure-13.png','jabberjosh-adventure-14.png','jabberjosh-adventure-15.png','jabberjosh-adventure-16.png','jabberjosh-adventure-17.png','jabberjosh-adventure-18.png'],
     merch:['jabberjosh-sticker.png']
   },
   'swanson':{flyers:['archive-jj_015.jpg','archive-jj_020.jpg'],live:['swanson-live-1.png'],merch:[]},
@@ -88,7 +89,7 @@ function linksHtml(b){
     return `<a href="${esc(u)}" target="_blank" rel="noopener">${esc(label)} ↗</a>`;
   }).join('')+'</div>';
 }
-function isRootAsset(filename){return /^(?:archive-jj_\d{3}\.jpg|jabberjosh-adventure-\d{2}\.png|swanson-live-1\.png|tun-live-[12]\.png|horse-weapons-hero\.png|hero-tun\.png)$/i.test(filename)}
+function isRootAsset(filename){return /^(?:archive-jj_\d{3}\.jpg|jabberjosh-adventure-\d{2}\.png|swanson-live-1\.png|swanson-main\.png|tun-live-[12]\.png|horse-weapons-hero\.png|hero-tun\.png)$/i.test(filename)}
 function assetPath(filename){return isRootAsset(filename)?esc(filename):`images/${esc(filename)}`}
 function alternateAssetPath(filename){
   const primary=assetPath(filename);
@@ -122,7 +123,7 @@ window.openFlyer=openFlyer;
 
 function gallerySection(title,items,b){
   if(!items||!items.length)return '';
-  return `<section class="archive-section"><div class="section-heading"><h2 class="section-title">${esc(title)}</h2></div><div class="gallery">${items.map(x=>`<button class="gallery-item" type="button" data-flyer="${assetPath(x)}" data-caption="${esc(b.name+' — '+title.replace(/s$/,''))}"><img loading="lazy" decoding="async" src="${thumbSrc(x)}" data-fallback1="${assetPath(x)}" data-fallback2="${alternateAssetPath(x)}" onerror="if(!this.dataset.tried1){this.dataset.tried1='1';this.src=this.dataset.fallback1}else if(!this.dataset.tried2){this.dataset.tried2='1';this.src=this.dataset.fallback2}else{this.onerror=null}" alt="${esc(b.name+' '+title.toLowerCase())}"></button>`).join('')}</div></section>`;
+  return `<section class="archive-section"><div class="section-heading"><h2 class="section-title">${esc(title)}</h2></div><div class="gallery">${items.map(x=>`<button class="gallery-item" type="button" data-flyer="${assetPath(x)}" data-caption="${esc(b.name+' — '+title.replace(/s$/,''))}"><img loading="lazy" decoding="async" src="${thumbSrc(x)}" style="${x==='jabberjosh-sticker.png'?'object-fit:contain;padding:18px;box-sizing:border-box':''}" data-fallback1="${assetPath(x)}" data-fallback2="${alternateAssetPath(x)}" onerror="if(!this.dataset.tried1){this.dataset.tried1='1';this.src=this.dataset.fallback1}else if(!this.dataset.tried2){this.dataset.tried2='1';this.src=this.dataset.fallback2}else{this.onerror=null}" alt="${esc(b.name+' '+title.toLowerCase())}"></button>`).join('')}</div></section>`;
 }
 
 
