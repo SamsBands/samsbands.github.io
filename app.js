@@ -86,12 +86,14 @@ function linksHtml(b){
     return `<a href="${esc(u)}" target="_blank" rel="noopener">${esc(label)} ↗</a>`;
   }).join('')+'</div>';
 }
-function assetPath(filename){return /^archive-jj_\d{3}\.jpg$/i.test(filename)?esc(filename):`images/${esc(filename)}`}
+function isRootAsset(filename){return /^(?:archive-jj_\d{3}\.jpg|horse-weapons-(?:hero|live-1)\.png|jabberjosh-adventure-\d{2}\.png|swanson-live-1\.png)$/i.test(filename)}
+function assetPath(filename){return isRootAsset(filename)?esc(filename):`images/${esc(filename)}`}
 function flyerButton(e){return e.flyer?`<button class="flyer-btn" type="button" data-flyer="${assetPath(e.flyer)}" data-caption="${esc(e.display+' — '+e.event)}">View Flyer</button>`:''}
 function timelineHtml(items,bandSlug=''){return '<div class="timeline">'+items.map(e=>`<div class="entry"><div class="date band-${esc(e.slug||bandSlug)}">${esc(e.display)}</div><div><div class="event">${esc(e.event)}</div>${e.venue||e.city?`<div class="meta">${esc([e.venue,e.city].filter(Boolean).join(' · '))}</div>`:''}${flyerButton(e)}</div></div>`).join('')+'</div>'}
 function bindFlyers(){document.querySelectorAll('[data-flyer]').forEach(btn=>btn.onclick=()=>openFlyer(btn.dataset.flyer,btn.dataset.caption));}
 function thumbSrc(filename){
   if(/^archive-jj_\d{3}\.jpg$/i.test(filename)) return `thumb-${esc(filename)}`;
+  if(/^(?:horse-weapons-live-1|jabberjosh-adventure-\d{2}|swanson-live-1)\.png$/i.test(filename)) return esc(filename);
   return `images/thumbs/${esc(filename)}`;
 }
 function openFlyer(src,caption){
@@ -132,7 +134,7 @@ function home(){
   document.getElementById('q').oninput=e=>{let q=e.target.value.toLowerCase();let x=D.timeline.filter(a=>JSON.stringify(a).toLowerCase().includes(q));document.getElementById('master').innerHTML=timelineHtml(x);bindFlyers()};bindFlyers();
 }
 function bands(){
-  app.innerHTML=`<section class="wrap"><div class="band-head"><div class="kicker">The archive</div><h1>THE BANDS</h1><p>20+ years of Hot Shit!</p></div><div class="cards">${D.bands.map(b=>{const hero=HERO_IMAGES[b.slug];return `<a class="card band-card band-${esc(b.slug)}" href="#/band/${b.slug}">${hero?`<img class="card-hero" src="images/${esc(hero)}" alt="${esc(b.name)}">`:''}<h3>${esc(b.name)}</h3></a>`}).join('')}</div></section>`;
+  app.innerHTML=`<section class="wrap"><div class="band-head"><div class="kicker">The archive</div><h1>THE BANDS</h1><p>20+ years of Hot Shit!</p></div><div class="cards">${D.bands.map(b=>{const hero=HERO_IMAGES[b.slug];return `<a class="card band-card band-${esc(b.slug)}" href="#/band/${b.slug}">${hero?`<img class="card-hero" src="${assetPath(hero)}" alt="${esc(b.name)}">`:''}<h3>${esc(b.name)}</h3></a>`}).join('')}</div></section>`;
 }
 function videosHtml(b){
   if(!b.videos||!b.videos.length)return '';
@@ -142,7 +144,7 @@ function bandPage(slug){
   let b=band(slug);if(!b)return bands();
   const hero=HERO_IMAGES[slug];
   const media=MEDIA[slug]||{flyers:[],live:[],merch:[]};
-  app.innerHTML=`<section class="wrap band-page band-${esc(slug)}"><a class="back" href="#/bands">← All bands</a>${hero?`<div class="band-hero"><img src="images/${esc(hero)}" alt="${esc(b.name)} main photo"></div>`:''}<div class="band-head"><div class="kicker">Band archive</div><h1>${esc(b.name)}</h1>${b.intro.map(x=>`<p>${esc(x)}</p>`).join('')}${membersHtml(b)}${b.links&&b.links.length?linksHtml(b):''}</div>${releasesHtml(b)}${setlistHtml(b)}${slug==='thunderfuck'?'':`<section class="archive-section"><h2 class="section-title">Timeline</h2>${timelineHtml(b.timeline,slug)}</section>`}${gallerySection('Flyers',media.flyers,b)}${slug==='jabberjosh'?gallerySection('Adventures of JabberJosh',media.adventures||[],b):gallerySection('Live Photos',media.live,b)}${gallerySection('Merch',media.merch,b)}${videosHtml(b)}</section>`;
+  app.innerHTML=`<section class="wrap band-page band-${esc(slug)}"><a class="back" href="#/bands">← All bands</a>${hero?`<div class="band-hero"><img src="${assetPath(hero)}" alt="${esc(b.name)} main photo"></div>`:''}<div class="band-head"><div class="kicker">Band archive</div><h1>${esc(b.name)}</h1>${b.intro.map(x=>`<p>${esc(x)}</p>`).join('')}${membersHtml(b)}${b.links&&b.links.length?linksHtml(b):''}</div>${releasesHtml(b)}${setlistHtml(b)}${slug==='thunderfuck'?'':`<section class="archive-section"><h2 class="section-title">Timeline</h2>${timelineHtml(b.timeline,slug)}</section>`}${gallerySection('Flyers',media.flyers,b)}${slug==='jabberjosh'?gallerySection('Adventures of JabberJosh',media.adventures||[],b):gallerySection('Live Photos',media.live,b)}${gallerySection('Merch',media.merch,b)}${videosHtml(b)}</section>`;
   bindFlyers();
 }
 function route(){let p=location.hash.slice(1)||'/';if(p==='/')home();else if(p==='/bands')bands();else if(p.startsWith('/band/'))bandPage(p.split('/')[2]);else home()}
