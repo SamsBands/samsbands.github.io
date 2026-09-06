@@ -90,6 +90,10 @@ function linksHtml(b){
 }
 function isRootAsset(filename){return /^(?:archive-jj_\d{3}\.jpg|jabberjosh-adventure-\d{2}\.png|swanson-live-1\.png|tun-live-[12]\.png)$/i.test(filename)}
 function assetPath(filename){return isRootAsset(filename)?esc(filename):`images/${esc(filename)}`}
+function alternateAssetPath(filename){
+  const primary=assetPath(filename);
+  return primary.startsWith('images/')?esc(filename):`images/${esc(filename)}`;
+}
 function flyerButton(e){return e.flyer?`<button class="flyer-btn" type="button" data-flyer="${assetPath(e.flyer)}" data-caption="${esc(e.display+' — '+e.event)}">View Flyer</button>`:''}
 function timelineHtml(items,bandSlug=''){return '<div class="timeline">'+items.map(e=>`<div class="entry"><div class="date band-${esc(e.slug||bandSlug)}">${esc(e.display)}</div><div><div class="event">${esc(e.event)}</div>${e.venue||e.city?`<div class="meta">${esc([e.venue,e.city].filter(Boolean).join(' · '))}</div>`:''}${flyerButton(e)}</div></div>`).join('')+'</div>'}
 function bindFlyers(){document.querySelectorAll('[data-flyer]').forEach(btn=>btn.onclick=()=>openFlyer(btn.dataset.flyer,btn.dataset.caption));}
@@ -105,7 +109,10 @@ function openFlyer(src,caption){
   const modalImg=m.querySelector('img');
   modalImg.onerror=()=>{
     const name=src.split('/').pop();
-    if(/^archive-jj_\d{3}\.jpg$/i.test(name)){ modalImg.onerror=null; modalImg.src=`thumb-${name}`; }
+    const alt=src.startsWith('images/')?name:`images/${name}`;
+    if(!modalImg.dataset.altTried){modalImg.dataset.altTried='1';modalImg.src=alt;return;}
+    if(/^archive-jj_\d{3}\.jpg$/i.test(name)){ modalImg.onerror=null; modalImg.src=`thumb-${name}`;return;}
+    modalImg.onerror=null;
   };
   document.body.appendChild(m);
   m.querySelector('.flyer-close').onclick=()=>m.remove();m.querySelector('.flyer-backdrop').onclick=()=>m.remove();
@@ -115,7 +122,7 @@ window.openFlyer=openFlyer;
 
 function gallerySection(title,items,b){
   if(!items||!items.length)return '';
-  return `<section class="archive-section"><div class="section-heading"><h2 class="section-title">${esc(title)}</h2></div><div class="gallery">${items.map(x=>`<button class="gallery-item" type="button" data-flyer="${assetPath(x)}" data-caption="${esc(b.name+' — '+title.replace(/s$/,''))}"><img loading="lazy" decoding="async" src="${thumbSrc(x)}" onerror="this.onerror=null;this.src='${assetPath(x)}'" alt="${esc(b.name+' '+title.toLowerCase())}"></button>`).join('')}</div></section>`;
+  return `<section class="archive-section"><div class="section-heading"><h2 class="section-title">${esc(title)}</h2></div><div class="gallery">${items.map(x=>`<button class="gallery-item" type="button" data-flyer="${assetPath(x)}" data-caption="${esc(b.name+' — '+title.replace(/s$/,''))}"><img loading="lazy" decoding="async" src="${thumbSrc(x)}" data-fallback1="${assetPath(x)}" data-fallback2="${alternateAssetPath(x)}" onerror="if(!this.dataset.tried1){this.dataset.tried1='1';this.src=this.dataset.fallback1}else if(!this.dataset.tried2){this.dataset.tried2='1';this.src=this.dataset.fallback2}else{this.onerror=null}" alt="${esc(b.name+' '+title.toLowerCase())}"></button>`).join('')}</div></section>`;
 }
 
 
@@ -146,7 +153,7 @@ function bandPage(slug){
   let b=band(slug);if(!b)return bands();
   const hero=HERO_IMAGES[slug];
   const media=MEDIA[slug]||{flyers:[],live:[],merch:[]};
-  app.innerHTML=`<section class="wrap band-page band-${esc(slug)}"><a class="back" href="#/bands">← All bands</a>${hero?`<div class="band-hero"><img src="${assetPath(hero)}" alt="${esc(b.name)} main photo"></div>`:''}<div class="band-head"><div class="kicker">Band archive</div><h1>${esc(b.name)}</h1>${b.intro.map(x=>`<p>${esc(x)}</p>`).join('')}${membersHtml(b)}${b.links&&b.links.length?linksHtml(b):''}</div>${releasesHtml(b)}${setlistHtml(b)}${slug==='thunderfuck'?'':`<section class="archive-section"><h2 class="section-title">Timeline</h2>${timelineHtml(b.timeline,slug)}</section>`}${gallerySection('Flyers',media.flyers,b)}${slug==='jabberjosh'?gallerySection('Adventures of JabberJosh',media.adventures||[],b):gallerySection('Live Photos',media.live,b)}${gallerySection('Merch',media.merch,b)}${videosHtml(b)}</section>`;
+  app.innerHTML=`<section class="wrap band-page band-${esc(slug)}"><a class="back" href="#/bands">← All bands</a>${hero?`<div class="band-hero"><img src="${assetPath(hero)}" data-alt-src="${alternateAssetPath(hero)}" onerror="if(this.dataset.altSrc&&this.src!==this.dataset.altSrc){this.onerror=null;this.src=this.dataset.altSrc}" alt="${esc(b.name)} main photo"></div>`:''}<div class="band-head"><div class="kicker">Band archive</div><h1>${esc(b.name)}</h1>${b.intro.map(x=>`<p>${esc(x)}</p>`).join('')}${membersHtml(b)}${b.links&&b.links.length?linksHtml(b):''}</div>${releasesHtml(b)}${setlistHtml(b)}${slug==='thunderfuck'?'':`<section class="archive-section"><h2 class="section-title">Timeline</h2>${timelineHtml(b.timeline,slug)}</section>`}${gallerySection('Flyers',media.flyers,b)}${slug==='jabberjosh'?gallerySection('Adventures of JabberJosh',media.adventures||[],b):gallerySection('Live Photos',media.live,b)}${gallerySection('Merch',media.merch,b)}${videosHtml(b)}</section>`;
   bindFlyers();
 }
 function route(){let p=location.hash.slice(1)||'/';if(p==='/')home();else if(p==='/bands')bands();else if(p.startsWith('/band/'))bandPage(p.split('/')[2]);else home()}
