@@ -3,6 +3,30 @@ const app=document.getElementById('app');
 const esc=s=>String(s??'').replace(/[&<>\"]/g,m=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;','\\':'&#39;'}[m]));
 function band(name){return D.bands.find(b=>b.slug===name)}
 
+const BAND_ORDER=['emr','my-friend-tim','long-division','weather-is-happening','thunderfuck','jabberjosh','swanson','monsoon-lazer','be-kind-to-yr-jabberjosh','horse-weapons','gnarly-davidson','slaw','tun'];
+const BAND_DATES={
+  'emr':'2000–2004',
+  'my-friend-tim':'2002–2004',
+  'long-division':'2005–2007',
+  'weather-is-happening':'2006–2007',
+  'thunderfuck':'January 2008',
+  'jabberjosh':'2008–2014',
+  'swanson':'2011–2012',
+  'monsoon-lazer':'2012–2013',
+  'be-kind-to-yr-jabberjosh':'',
+  'horse-weapons':'',
+  'gnarly-davidson':'2014–2018',
+  'slaw':'2019–2020',
+  'tun':'2021–2023'
+};
+function orderedBands(){
+  const rank=new Map(BAND_ORDER.map((slug,i)=>[slug,i]));
+  return [...D.bands].sort((a,b)=>(rank.get(a.slug)??999)-(rank.get(b.slug)??999));
+}
+function bandDatesHtml(){
+  return `<div class="cards">${orderedBands().map(b=>`<a class="card band-card band-${esc(b.slug)}" href="#/band/${b.slug}"><h3>${esc(b.name)}</h3>${BAND_DATES[b.slug]?`<p>${esc(BAND_DATES[b.slug])}</p>`:''}</a>`).join('')}</div>`;
+}
+
 const BANDCAMP_TITLES={
   'split-my-pants-emr-and-my-friend-tim':'Split My Pants — EMR and My Friend Tim',
   'my-friend-tim-ogre-house-demo':'Ogre House Demo',
@@ -140,11 +164,11 @@ function releasesHtml(b){
   return `<section class="archive-section releases-section"><h2 class="section-title">Releases</h2><div class="releases">${b.releases.map(r=>`<article class="release"><button class="release-art" type="button" data-flyer="${assetPath(r.image)}" data-caption="${esc(b.name+' — '+r.title)}"><img loading="lazy" decoding="async" src="${thumbSrc(r.image)}" onerror="this.onerror=null;this.src='${assetPath(r.image)}'" alt="${esc(r.title)} artwork"></button><div class="release-copy"><h3>${esc(r.title)}</h3>${r.date?`<p>${esc(r.dateLabel||'Released')} ${esc(r.date)}</p>`:''}${r.url?`<a class="release-link" href="${esc(r.url)}" target="_blank" rel="noopener">Listen on Bandcamp ↗</a>`:''}</div></article>`).join('')}</div></section>`;
 }
 function home(){
-  app.innerHTML=`<section class="home-hero"><img src="images/hero-home.jpg" alt="Sam Gunnerson performing"><div class="home-hero-shade"></div><div class="home-hero-copy"><div class="kicker">The Sam Gunnerson Archive</div><h1>SAMSBANDS</h1><p>${esc(D.subtitle)}. A living archive built from flyers, recordings, stories and show history.</p></div></section><section class="wrap"><h2 class="section-title">Everything, in order.</h2><div class="filter"><input id="q" placeholder="Search bands, shows, venues, cities…"></div><div id="master">${timelineHtml(D.timeline)}</div></section>`;
+  app.innerHTML=`<section class="home-hero"><img src="images/hero-home.jpg" alt="Sam Gunnerson performing"><div class="home-hero-shade"></div><div class="home-hero-copy"><div class="kicker">The Sam Gunnerson Archive</div><h1>SAMSBANDS</h1><p>${esc(D.subtitle)}. A living archive built from flyers, recordings, stories and show history.</p></div></section><section class="wrap"><h2 class="section-title">Bands</h2>${bandDatesHtml()}<section class="archive-section"><h2 class="section-title">Everything</h2><div class="filter"><input id="q" placeholder="Search bands, shows, venues, cities…"></div><div id="master">${timelineHtml(D.timeline)}</div></section></section>`;
   document.getElementById('q').oninput=e=>{let q=e.target.value.toLowerCase();let x=D.timeline.filter(a=>JSON.stringify(a).toLowerCase().includes(q));document.getElementById('master').innerHTML=timelineHtml(x);bindFlyers()};bindFlyers();
 }
 function bands(){
-  app.innerHTML=`<section class="wrap"><div class="band-head"><div class="kicker">The archive</div><h1>THE BANDS</h1><p>20+ years of Hot Shit!</p></div><div class="cards">${D.bands.map(b=>{const hero=HERO_IMAGES[b.slug];return `<a class="card band-card band-${esc(b.slug)}" href="#/band/${b.slug}">${hero?`<img class="card-hero" src="${assetPath(hero)}" data-alt-src="${alternateAssetPath(hero)}" onerror="if(this.dataset.altSrc&&this.src!==this.dataset.altSrc){this.onerror=null;this.src=this.dataset.altSrc}" alt="${esc(b.name)}">`:''}<h3>${esc(b.name)}</h3></a>`}).join('')}</div></section>`;
+  app.innerHTML=`<section class="wrap"><div class="band-head"><div class="kicker">The archive</div><h1>THE BANDS</h1><p>20+ years of Hot Shit!</p></div><div class="cards">${orderedBands().map(b=>{const hero=HERO_IMAGES[b.slug];return `<a class="card band-card band-${esc(b.slug)}" href="#/band/${b.slug}">${hero?`<img class="card-hero" src="${assetPath(hero)}" data-alt-src="${alternateAssetPath(hero)}" onerror="if(this.dataset.altSrc&&this.src!==this.dataset.altSrc){this.onerror=null;this.src=this.dataset.altSrc}" alt="${esc(b.name)}">`:''}<h3>${esc(b.name)}</h3>${BAND_DATES[b.slug]?`<p>${esc(BAND_DATES[b.slug])}</p>`:''}</a>`}).join('')}</div></section>`;
 }
 function videosHtml(b){
   if(!b.videos||!b.videos.length)return '';
@@ -154,7 +178,7 @@ function bandPage(slug){
   let b=band(slug);if(!b)return bands();
   const hero=HERO_IMAGES[slug];
   const media=MEDIA[slug]||{flyers:[],live:[],merch:[]};
-  app.innerHTML=`<section class="wrap band-page band-${esc(slug)}"><a class="back" href="#/bands">← All bands</a>${hero?`<div class="band-hero"><img src="${assetPath(hero)}" data-alt-src="${alternateAssetPath(hero)}" onerror="if(this.dataset.altSrc&&this.src!==this.dataset.altSrc){this.onerror=null;this.src=this.dataset.altSrc}" alt="${esc(b.name)} main photo"></div>`:''}<div class="band-head"><div class="kicker">Band archive</div><h1>${esc(b.name)}</h1>${b.intro.map(x=>`<p>${esc(x)}</p>`).join('')}${membersHtml(b)}${b.links&&b.links.length?linksHtml(b):''}</div>${releasesHtml(b)}${setlistHtml(b)}${slug==='thunderfuck'?'':`<section class="archive-section"><h2 class="section-title">Timeline</h2>${timelineHtml(b.timeline,slug)}</section>`}${gallerySection('Flyers',media.flyers,b)}${slug==='jabberjosh'?gallerySection('Adventures of JabberJosh',media.adventures||[],b):gallerySection('Live Photos',media.live,b)}${gallerySection('Merch',media.merch,b)}${videosHtml(b)}</section>`;
+  app.innerHTML=`<section class="wrap band-page band-${esc(slug)}"><a class="back" href="#/bands">← All bands</a>${hero?`<div class="band-hero"><img src="${assetPath(hero)}" data-alt-src="${alternateAssetPath(hero)}" onerror="if(this.dataset.altSrc&&this.src!==this.dataset.altSrc){this.onerror=null;this.src=this.dataset.altSrc}" alt="${esc(b.name)} main photo"></div>`:''}<div class="band-head"><div class="kicker">Band archive</div><h1>${esc(b.name)}</h1>${(slug==='swanson'?["Swanson was JabberJosh + Approach and was active in Lawrence, KS from 2011 to 2012."]:b.intro).map(x=>`<p>${esc(x)}</p>`).join('')}${membersHtml(b)}${b.links&&b.links.length?linksHtml(b):''}</div>${releasesHtml(b)}${setlistHtml(b)}${slug==='thunderfuck'?'':`<section class="archive-section"><h2 class="section-title">Timeline</h2>${timelineHtml(b.timeline,slug)}</section>`}${gallerySection('Flyers',media.flyers,b)}${slug==='jabberjosh'?gallerySection('Adventures of JabberJosh',media.adventures||[],b):gallerySection('Live Photos',media.live,b)}${gallerySection('Merch',media.merch,b)}${videosHtml(b)}</section>`;
   bindFlyers();
 }
 function route(){let p=location.hash.slice(1)||'/';if(p==='/')home();else if(p==='/bands')bands();else if(p.startsWith('/band/'))bandPage(p.split('/')[2]);else home()}
