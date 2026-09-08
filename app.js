@@ -3,7 +3,7 @@ const app=document.getElementById('app');
 const esc=s=>String(s??'').replace(/[&<>\"]/g,m=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;','\\':'&#39;'}[m]));
 function band(name){return D.bands.find(b=>b.slug===name)}
 
-const BAND_ORDER=['emr','my-friend-tim','long-division','weather-is-happening','thunderfuck','jabberjosh','swanson','monsoon-lazer','be-kind-to-yr-jabberjosh','horse-weapons','gnarly-davidson','slaw','tun'];
+const BAND_ORDER=['emr','my-friend-tim','long-division','weather-is-happening','thunderfuck','jabberjosh','be-kind-to-yr-jabberjosh','swanson','monsoon-lazer','horse-weapons','gnarly-davidson','slaw','tun'];
 const BAND_DATES={
   'emr':'2000–2004',
   'my-friend-tim':'2002–2004',
@@ -13,7 +13,7 @@ const BAND_DATES={
   'jabberjosh':'2008–2014',
   'swanson':'2011–2012',
   'monsoon-lazer':'2012–2013',
-  'be-kind-to-yr-jabberjosh':'',
+  'be-kind-to-yr-jabberjosh':'2009',
   'horse-weapons':'',
   'gnarly-davidson':'2014–2018',
   'slaw':'2019–2020',
@@ -23,6 +23,24 @@ function orderedBands(){
   const rank=new Map(BAND_ORDER.map((slug,i)=>[slug,i]));
   return [...D.bands].sort((a,b)=>(rank.get(a.slug)??999)-(rank.get(b.slug)??999));
 }
+// Be Kind To Yr JabberJosh was a one-off ICT Fest project in 2009.
+if(!D.bands.some(b=>b.slug==='be-kind-to-yr-jabberjosh')){
+  D.bands.push({
+    name:'Be Kind To Yr JabberJosh',
+    slug:'be-kind-to-yr-jabberjosh',
+    intro:['A one-off band that played ICT Fest in 2009.'],
+    links:[],
+    members:[['Dan Davis',''],['Ed Bornstein',''],['Pat McPartland',''],['Sam Gunnerson',''],['Will Gunnerson','']],
+    timeline:[{date:'2009-06-11',display:'ICT Fest 2009',event:'One-off show at ICT Fest',venue:'ICT Fest',city:'Wichita, KS'}],
+    releases:[{title:'LIVE! ICT Fest 2009',date:'2009',dateLabel:'',image:'BKTYJJ(1).png',url:'https://samsbands.bandcamp.com/album/be-kind-to-yr-jabberjosh'}],
+    videos:[]
+  });
+}
+if(!D.timeline.some(e=>e.slug==='be-kind-to-yr-jabberjosh')){
+  D.timeline.push({date:'2009-06-11',display:'ICT Fest 2009',event:'Be Kind To Yr JabberJosh — one-off show at ICT Fest',venue:'ICT Fest',city:'Wichita, KS',slug:'be-kind-to-yr-jabberjosh'});
+  D.timeline.sort((a,b)=>String(a.date||'').localeCompare(String(b.date||'')));
+}
+
 function bandDatesHtml(){
   return `<div class="cards">${orderedBands().map(b=>`<a class="card band-card band-${esc(b.slug)}" href="#/band/${b.slug}"><h3>${esc(b.name)}</h3>${BAND_DATES[b.slug]?`<p>${esc(BAND_DATES[b.slug])}</p>`:''}</a>`).join('')}</div>`;
 }
@@ -48,6 +66,7 @@ const HERO_IMAGES={
   'monsoon-lazer':'hero-monsoon-lazer.jpg',
   'thunderfuck':'hero-thunderfuck.jpg',
   'jabberjosh':'hero-jabberjosh.jpg',
+  'be-kind-to-yr-jabberjosh':'BKTYJJ(1).png',
   'gnarly-davidson':'hero-gnarly-davidson.jpg',
   'slaw':'hero-slaw.jpg',
   'swanson':'swanson-main.png',
@@ -78,13 +97,13 @@ const MEDIA={
     merch:[]
   },
   'jabberjosh':{
-    flyers:['archive-jj_001.jpg','archive-jj_003.jpg','archive-jj_004.jpg','archive-jj_005.jpg','archive-jj_006.jpg','archive-jj_007.jpg','archive-jj_008.jpg','archive-jj_009.jpg','archive-jj_010.jpg','archive-jj_014.jpg','archive-jj_017.jpg','archive-jj_018.jpg','archive-jj_019.jpg','archive-jj_025.jpg','archive-jj_026.jpg','archive-jj_030.jpg','archive-jj_032.jpg','archive-jj_033.jpg','archive-jj_034.jpg','archive-jj_035.jpg','archive-jj_036.jpg','archive-jj_037.jpg','archive-jj_038.jpg','archive-jj_039.jpg','archive-jj_041.jpg','archive-jj_042.jpg','archive-jj_043.jpg','archive-jj_044.jpg','archive-jj_046.jpg','archive-jj_047.jpg','jabberjosh-3.png','jabberjosh-4.png','jabberjosh-6.png','jabberjosh-7.png','jabberjosh-8.png','jabberjosh-10.png','jabberjosh-12.png','jabberjosh-14.png','jabberjosh-15.png','jabberjosh-16.png','jabberjosh-2016-09-11-dag-house.jpg'],
+    flyers:['archive-jj_001.jpg','archive-jj_002.jpg','archive-jj_003.jpg','archive-jj_004.jpg','archive-jj_005.jpg','archive-jj_006.jpg','archive-jj_007.jpg','archive-jj_008.jpg','archive-jj_009.jpg','archive-jj_010.jpg','archive-jj_014.jpg','archive-jj_017.jpg','archive-jj_018.jpg','archive-jj_019.jpg','archive-jj_025.jpg','archive-jj_026.jpg','archive-jj_030.jpg','archive-jj_032.jpg','archive-jj_033.jpg','archive-jj_034.jpg','archive-jj_035.jpg','archive-jj_036.jpg','archive-jj_037.jpg','archive-jj_038.jpg','archive-jj_039.jpg','archive-jj_041.jpg','archive-jj_042.jpg','archive-jj_043.jpg','archive-jj_044.jpg','archive-jj_046.jpg','archive-jj_047.jpg','jabberjosh-3.png','jabberjosh-4.png','jabberjosh-6.png','jabberjosh-7.png','jabberjosh-8.png','jabberjosh-10.png','jabberjosh-12.png','jabberjosh-14.png','jabberjosh-15.png','jabberjosh-16.png','jabberjosh-2016-09-11-dag-house.jpg'],
     live:[],
     adventures:['jabberjosh-adventure-01.png','jabberjosh-adventure-02.png','jabberjosh-adventure-03.png','jabberjosh-adventure-04.png','jabberjosh-adventure-06.png','jabberjosh-adventure-08.png','jabberjosh-adventure-09.png','jabberjosh-adventure-10.png','jabberjosh-adventure-11.png','jabberjosh-adventure-12.png','jabberjosh-adventure-13.png','jabberjosh-adventure-14.png','jabberjosh-adventure-15.png','jabberjosh-adventure-16.png','jabberjosh-adventure-17.png','jabberjosh-adventure-18.png'],
     merch:['jabberjosh-sticker.png']
   },
   'swanson':{flyers:['archive-jj_015.jpg','archive-jj_020.jpg'],live:['swanson-live-1.png'],merch:[]},
-  'be-kind-to-yr-jabberjosh':{flyers:['archive-jj_002.jpg'],live:[],merch:[]},
+  'be-kind-to-yr-jabberjosh':{flyers:['BKTYJJ(1).png'],live:[],merch:[]},
   'horse-weapons':{flyers:[],live:['horse-weapons-live-1.png'],merch:[]},
   'gnarly-davidson':{
     flyers:['gnarly-davidson-1.png','gnarly-davidson-3.png','gnarly-davidson-4.png','gnarly-davidson-6.png','gnarly-davidson-7.png','gnarly-davidson-8.png','gnarly-davidson-9.png','gnarly-davidson-12.png','gnarly-davidson-13.png','gnarly-davidson-14.png','jabberjosh-2016-09-11-dag-house.jpg'],
@@ -113,7 +132,7 @@ function linksHtml(b){
     return `<a href="${esc(u)}" target="_blank" rel="noopener">${esc(label)} ↗</a>`;
   }).join('')+'</div>';
 }
-function isRootAsset(filename){return /^(?:archive-jj_\d{3}\.jpg|jabberjosh-adventure-\d{2}\.png|swanson-live-1\.png|swanson-main\.png|tun-live-[12]\.png|horse-weapons-hero\.png|hero-tun\.png)$/i.test(filename)}
+function isRootAsset(filename){return /^(?:archive-jj_\d{3}\.jpg|jabberjosh-adventure-\d{2}\.png|swanson-live-1\.png|swanson-main\.png|tun-live-[12]\.png|horse-weapons-hero\.png|hero-tun\.png|BKTYJJ\(1\)\.png)$/i.test(filename)}
 function assetPath(filename){return isRootAsset(filename)?esc(filename):`images/${esc(filename)}`}
 function alternateAssetPath(filename){
   const primary=assetPath(filename);
@@ -174,6 +193,13 @@ function videosHtml(b){
   if(!b.videos||!b.videos.length)return '';
   return `<section class="archive-section"><h2 class="section-title">Videos</h2><div class="videos">${b.videos.map(v=>{const id=v.url?(v.url.match(/[?&]v=([^&]+)/)||[])[1]:'';const src=v.embed||`https://www.youtube.com/embed/${esc(id)}`;return `<article class="video-item"><div class="video-frame"><iframe src="${esc(src)}" title="${esc(v.title)}" loading="lazy" allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share" allowfullscreen></iframe></div>${b.slug==='jabberjosh'?'':`<h3>${esc(v.title)}</h3>`}${b.slug==='long-division'?'<p>Hutch Skate Park — July 7, 2007</p>':''}</article>`}).join('')}</div></section>`;
 }
+const CUSDIS_APP_ID='';
+function guestbook(){
+  const configured=Boolean(CUSDIS_APP_ID);
+  app.innerHTML=`<section class="wrap"><div class="band-head"><div class="kicker">Leave a memory</div><h1>GUEST BOOK</h1><p>Share a story, memory, or message. Your name is optional, so you can post anonymously.</p></div><section class="archive-section">${configured?`<div id="cusdis_thread" data-host="https://cusdis.com" data-app-id="${esc(CUSDIS_APP_ID)}" data-page-id="samsbands-guestbook" data-page-url="${esc(location.href)}" data-page-title="SamsBands Guest Book"></div>`:`<div class="notice"><b>Guest Book is ready for connection.</b><br>The page is installed; one Cusdis App ID is still needed before visitors can submit permanent entries.</div>`}</section></section>`;
+  if(configured){const sc=document.createElement('script');sc.async=true;sc.defer=true;sc.src='https://cusdis.com/js/cusdis.es.js';document.body.appendChild(sc);}
+}
+
 function bandPage(slug){
   let b=band(slug);if(!b)return bands();
   const hero=HERO_IMAGES[slug];
@@ -181,5 +207,5 @@ function bandPage(slug){
   app.innerHTML=`<section class="wrap band-page band-${esc(slug)}"><a class="back" href="#/bands">← All bands</a>${hero?`<div class="band-hero"><img src="${assetPath(hero)}" data-alt-src="${alternateAssetPath(hero)}" onerror="if(this.dataset.altSrc&&this.src!==this.dataset.altSrc){this.onerror=null;this.src=this.dataset.altSrc}" alt="${esc(b.name)} main photo"></div>`:''}<div class="band-head"><div class="kicker">Band archive</div><h1>${esc(b.name)}</h1>${(slug==='swanson'?["Swanson was JabberJosh + Approach and was active in Lawrence, KS from 2011 to 2012."]:b.intro).map(x=>`<p>${esc(x)}</p>`).join('')}${membersHtml(b)}${b.links&&b.links.length?linksHtml(b):''}</div>${releasesHtml(b)}${setlistHtml(b)}${slug==='thunderfuck'?'':`<section class="archive-section"><h2 class="section-title">Timeline</h2>${timelineHtml(b.timeline,slug)}</section>`}${gallerySection('Flyers',media.flyers,b)}${slug==='jabberjosh'?gallerySection('Adventures of JabberJosh',media.adventures||[],b):gallerySection('Live Photos',media.live,b)}${gallerySection('Merch',media.merch,b)}${videosHtml(b)}</section>`;
   bindFlyers();
 }
-function route(){let p=location.hash.slice(1)||'/';if(p==='/')home();else if(p==='/bands')bands();else if(p.startsWith('/band/'))bandPage(p.split('/')[2]);else home()}
+function route(){let p=location.hash.slice(1)||'/';if(p==='/')home();else if(p==='/bands')bands();else if(p==='/guestbook')guestbook();else if(p.startsWith('/band/'))bandPage(p.split('/')[2]);else home()}
 window.addEventListener('hashchange',route);route();
