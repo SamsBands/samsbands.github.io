@@ -14,7 +14,7 @@ const BAND_DATES={
   'swanson':'2011–2012',
   'monsoon-lazer':'2012–2013',
   'be-kind-to-yr-jabberjosh':'2009',
-  'horse-weapons':'',
+  'horse-weapons':'2011–2012',
   'gnarly-davidson':'2014–2018',
   'slaw':'2019–2020',
   'tun':'2021–2023'
@@ -24,22 +24,32 @@ function orderedBands(){
   return [...D.bands].sort((a,b)=>(rank.get(a.slug)??999)-(rank.get(b.slug)??999));
 }
 // Be Kind To Yr JabberJosh was a one-off ICT Fest project in 2009.
-if(!D.bands.some(b=>b.slug==='be-kind-to-yr-jabberjosh')){
-  D.bands.push({
-    name:'Be Kind To Yr JabberJosh',
-    slug:'be-kind-to-yr-jabberjosh',
-    intro:['A one-off band that played ICT Fest in 2009.'],
-    links:[],
-    members:[['Dan Davis',''],['Ed Bornstein',''],['Pat McPartland',''],['Sam Gunnerson',''],['Will Gunnerson','']],
-    timeline:[{date:'2009-06-11',display:'ICT Fest 2009',event:'One-off show at ICT Fest',venue:'ICT Fest',city:'Wichita, KS'}],
-    releases:[{title:'LIVE! ICT Fest 2009',date:'2009',dateLabel:'',image:'BKTYJJ(1).png',url:'https://samsbands.bandcamp.com/album/be-kind-to-yr-jabberjosh'}],
-    videos:[]
-  });
+let bktyjj=D.bands.find(b=>b.slug==='be-kind-to-yr-jabberjosh');
+if(!bktyjj){
+  bktyjj={slug:'be-kind-to-yr-jabberjosh'};
+  D.bands.push(bktyjj);
 }
-if(!D.timeline.some(e=>e.slug==='be-kind-to-yr-jabberjosh')){
-  D.timeline.push({date:'2009-06-11',display:'ICT Fest 2009',event:'Be Kind To Yr JabberJosh — one-off show at ICT Fest',venue:'ICT Fest',city:'Wichita, KS',slug:'be-kind-to-yr-jabberjosh'});
-  D.timeline.sort((a,b)=>String(a.date||'').localeCompare(String(b.date||'')));
+Object.assign(bktyjj,{
+  name:'Be Kind To Yr JabberJosh',
+  intro:['A one-off project combining JabberJosh and Be Kind to Your Neighbor.'],
+  links:[],
+  members:[['Dan Davis',''],['Ed Bornstein',''],['Pat McPartland',''],['Sam Gunnerson',''],['Will Gunnerson','']],
+  timeline:[{date:'2009-06-11',display:'Jun 11, 2009',event:'ICT Fest',venue:'ICT Fest',city:'Wichita, KS'}],
+  releases:[{title:'LIVE! ICT Fest 2009',date:'2009',dateLabel:'',image:'BKTYJJ(1).png',url:'https://samsbands.bandcamp.com/album/be-kind-to-yr-jabberjosh'}],
+  videos:[]
+});
+// The Sep 5, 2009 Ad Astra / Freakout Ensemble / Low Red Land show was JabberJosh, not this project.
+const jj=D.bands.find(b=>b.slug==='jabberjosh');
+const sep5={date:'2009-09-05',display:'Sep 5, 2009',event:'Show with Ad Astra Drumline and the Freakout Ensemble + The Low Red Land',venue:'',city:''};
+if(jj){
+  jj.timeline=(jj.timeline||[]).filter(e=>e.date!=='2009-09-05' || !/Ad Astra Drumline|Freakout Ensemble|Low Red Land/i.test(e.event||''));
+  jj.timeline.push(sep5);
+  jj.timeline.sort((a,b)=>String(a.date||'').localeCompare(String(b.date||'')));
 }
+D.timeline=(D.timeline||[]).filter(e=>e.slug!=='be-kind-to-yr-jabberjosh' && !(e.date==='2009-09-05' && /Ad Astra Drumline|Freakout Ensemble|Low Red Land/i.test(e.event||'')));
+D.timeline.push({date:'2009-06-11',display:'Jun 11, 2009',event:'Be Kind To Yr JabberJosh — ICT Fest',venue:'ICT Fest',city:'Wichita, KS',slug:'be-kind-to-yr-jabberjosh'});
+D.timeline.push({...sep5,slug:'jabberjosh'});
+D.timeline.sort((a,b)=>String(a.date||'').localeCompare(String(b.date||'')));
 
 function bandDatesHtml(){
   return `<div class="cards">${orderedBands().map(b=>`<a class="card band-card band-${esc(b.slug)}" href="#/band/${b.slug}"><h3>${esc(b.name)}</h3>${BAND_DATES[b.slug]?`<p>${esc(BAND_DATES[b.slug])}</p>`:''}</a>`).join('')}</div>`;
@@ -204,7 +214,7 @@ function bandPage(slug){
   let b=band(slug);if(!b)return bands();
   const hero=HERO_IMAGES[slug];
   const media=MEDIA[slug]||{flyers:[],live:[],merch:[]};
-  app.innerHTML=`<section class="wrap band-page band-${esc(slug)}"><a class="back" href="#/bands">← All bands</a>${hero?`<div class="band-hero"><img src="${assetPath(hero)}" data-alt-src="${alternateAssetPath(hero)}" onerror="if(this.dataset.altSrc&&this.src!==this.dataset.altSrc){this.onerror=null;this.src=this.dataset.altSrc}" alt="${esc(b.name)} main photo"></div>`:''}<div class="band-head"><div class="kicker">Band archive</div><h1>${esc(b.name)}</h1>${(slug==='swanson'?["Swanson was JabberJosh + Approach and was active in Lawrence, KS from 2011 to 2012."]:b.intro).map(x=>`<p>${esc(x)}</p>`).join('')}${membersHtml(b)}${b.links&&b.links.length?linksHtml(b):''}</div>${releasesHtml(b)}${setlistHtml(b)}${slug==='thunderfuck'?'':`<section class="archive-section"><h2 class="section-title">Timeline</h2>${timelineHtml(b.timeline,slug)}</section>`}${gallerySection('Flyers',media.flyers,b)}${slug==='jabberjosh'?gallerySection('Adventures of JabberJosh',media.adventures||[],b):gallerySection('Live Photos',media.live,b)}${gallerySection('Merch',media.merch,b)}${videosHtml(b)}</section>`;
+  app.innerHTML=`<section class="wrap band-page band-${esc(slug)}"><a class="back" href="#/bands">← All bands</a>${hero?`<div class="band-hero"><img src="${assetPath(hero)}" data-alt-src="${alternateAssetPath(hero)}" onerror="if(this.dataset.altSrc&&this.src!==this.dataset.altSrc){this.onerror=null;this.src=this.dataset.altSrc}" alt="${esc(b.name)} main photo"></div>`:''}<div class="band-head"><div class="kicker">Band archive</div><h1>${esc(b.name)}</h1>${(slug==='swanson'?["Swanson was JabberJosh + Approach and was active in Lawrence, KS from 2011 to 2012."]:b.intro).map(x=>`<p>${esc(x)}</p>`).join('')}${membersHtml(b)}${b.links&&b.links.length?linksHtml(b):''}</div>${releasesHtml(b)}${setlistHtml(b)}${slug==='thunderfuck'?'':`<section class="archive-section"><h2 class="section-title">Timeline</h2>${timelineHtml(b.timeline,slug)}</section>`}${slug==='be-kind-to-yr-jabberjosh'?'':gallerySection('Flyers',media.flyers,b)}${slug==='jabberjosh'?gallerySection('Adventures of JabberJosh',media.adventures||[],b):gallerySection('Live Photos',media.live,b)}${gallerySection('Merch',media.merch,b)}${videosHtml(b)}</section>`;
   bindFlyers();
 }
 function route(){let p=location.hash.slice(1)||'/';if(p==='/')home();else if(p==='/bands')bands();else if(p==='/guestbook')guestbook();else if(p.startsWith('/band/'))bandPage(p.split('/')[2]);else home()}
