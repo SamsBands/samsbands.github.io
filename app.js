@@ -167,7 +167,7 @@ function linksHtml(b){
     return `<a href="${esc(u)}" target="_blank" rel="noopener">${esc(label)} ↗</a>`;
   }).join('')+'</div>';
 }
-function isRootAsset(filename){return /^(?:archive-jj_\d{3}\.jpg|jabberjosh-adventure-\d{2}\.png|swanson-live-1\.png|swanson-main\.png|swanson-hero-new\.png|tun-live-[12]\.png|horse-weapons-hero\.png|horse-weapons-live-[2-9]\.png|hero-tun\.png|BKTYJJ\(1\)\.png|weather-is-happening-hero\.png|weather-is-happening-live-[12]\.png|long-division-live-[12]\.png)$/i.test(filename)}
+function isRootAsset(filename){return /^(?:archive-jj_\d{3}\.jpg|jabberjosh-adventure-\d{2}\.png|swanson-live-1\.png|swanson-main\.png|swanson-hero-new\.png|tun-live-[12]\.png|horse-weapons-hero\.png|horse-weapons-live-[2-9]\.png|hero-tun\.png|BKTYJJ\(1\)\.png|weather-is-happening-hero\.png|weather-is-happening-live-[12]\.png|long-division-live-[12]\.png|Young Country\.png)$/i.test(filename)}
 function assetPath(filename){return isRootAsset(filename)?esc(filename):`images/${esc(filename)}`}
 function alternateAssetPath(filename){
   const primary=assetPath(filename);
@@ -178,7 +178,7 @@ function timelineHtml(items,bandSlug=''){return '<div class="timeline">'+items.m
 function bindFlyers(){document.querySelectorAll('[data-flyer]').forEach(btn=>btn.onclick=()=>openFlyer(btn.dataset.flyer,btn.dataset.caption));}
 function thumbSrc(filename){
   if(/^archive-jj_\d{3}\.jpg$/i.test(filename)) return `thumb-${esc(filename)}`;
-  if(/^(?:jabberjosh-adventure-\d{2}|swanson-live-1|swanson-hero-new|tun-live-[12]|weather-is-happening-live-[12]|long-division-live-[12])\.png$/i.test(filename)) return esc(filename);
+  if(/^(?:jabberjosh-adventure-\d{2}|swanson-live-1|swanson-hero-new|tun-live-[12]|weather-is-happening-live-[12]|long-division-live-[12]|Young Country)\.png$/i.test(filename)) return esc(filename);
   return `images/thumbs/${esc(filename)}`;
 }
 function openFlyer(src,caption){
