@@ -51,14 +51,20 @@ D.timeline.push({date:'2009-06-11',display:'Jun 11, 2009',event:'Be Kind To Yr J
 D.timeline.push({...sep5,slug:'jabberjosh'});
 D.timeline.sort((a,b)=>String(a.date||'').localeCompare(String(b.date||'')));
 
+// Gnarly Davidson archive subtext.
+const gd=D.bands.find(b=>b.slug==='gnarly-davidson');
+if(gd){
+  gd.intro=['Gnarly Davidson was from Lawrence, Kansas and active from 2014 - 2018. They had the best merch out of any other band in the world.'];
+}
+
 // Weather Is Happening archive update.
 const wih=D.bands.find(b=>b.slug==='weather-is-happening');
 if(wih){
   wih.name='Weather Is Happening';
   wih.intro=['Weather Is Happening was from Wichita, Kansas and active from 2007–2010.'];
   wih.members=[['Daniel Davis','Guitar / Vocals'],['Sam Gunnerson','Bass'],['Casey Loren','Guitar / Vocals'],['Joe Ross','Drums']];
-  wih.links=['https://weatherishappening.bandcamp.com/album/young-country'];
-  wih.releases=[{title:'Young Country',date:'Oct 1, 2007',dateLabel:'Released',image:'weather-is-happening-hero.png',url:'https://weatherishappening.bandcamp.com/album/young-country'}];
+  wih.links=[];
+  wih.releases=[{title:'Young Country',date:'Oct 1, 2007',dateLabel:'Released',image:'Young Country.png',url:'https://weatherishappening.bandcamp.com/album/young-country'}];
   wih.videos=[{title:'Weather Is Happening Live',url:'https://www.youtube.com/watch?v=6ok6d7kwEYE'}];
   if(!(wih.timeline||[]).some(e=>e.date==='2010'&&/ICT Fest/i.test(e.event||''))){
     wih.timeline=(wih.timeline||[]).concat([{date:'2010',display:'2010',event:'ICT Fest',venue:'ICT Fest',city:'Wichita, KS'}]);
