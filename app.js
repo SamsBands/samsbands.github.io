@@ -58,6 +58,7 @@ if(wih){
   wih.intro=['Weather Is Happening was from Wichita, Kansas and active from 2007–2010.'];
   wih.members=[['Daniel Davis','Guitar / Vocals'],['Sam Gunnerson','Bass'],['Casey Loren','Guitar / Vocals'],['Joe Ross','Drums']];
   wih.links=['https://weatherishappening.bandcamp.com/album/young-country'];
+  wih.releases=[{title:'Young Country',date:'Oct 1, 2007',dateLabel:'Released',image:'weather-is-happening-hero.png',url:'https://weatherishappening.bandcamp.com/album/young-country'}];
   wih.videos=[{title:'Weather Is Happening Live',url:'https://www.youtube.com/watch?v=6ok6d7kwEYE'}];
   if(!(wih.timeline||[]).some(e=>e.date==='2010'&&/ICT Fest/i.test(e.event||''))){
     wih.timeline=(wih.timeline||[]).concat([{date:'2010',display:'2010',event:'ICT Fest',venue:'ICT Fest',city:'Wichita, KS'}]);
@@ -132,7 +133,7 @@ const MEDIA={
   },
   'swanson':{flyers:['archive-jj_015.jpg','archive-jj_020.jpg'],live:['swanson-live-1.png'],merch:[]},
   'be-kind-to-yr-jabberjosh':{flyers:['BKTYJJ(1).png'],live:[],merch:[]},
-  'horse-weapons':{flyers:[],live:['horse-weapons-live-1.png'],merch:[]},
+  'horse-weapons':{flyers:[],live:['horse-weapons-live-1.png','horse-weapons-live-2.png','horse-weapons-live-3.png','horse-weapons-live-4.png','horse-weapons-live-5.png','horse-weapons-live-6.png','horse-weapons-live-7.png','horse-weapons-live-8.png','horse-weapons-live-9.png'],merch:[]},
   'gnarly-davidson':{
     flyers:['gnarly-davidson-1.png','gnarly-davidson-3.png','gnarly-davidson-4.png','gnarly-davidson-6.png','gnarly-davidson-7.png','gnarly-davidson-8.png','gnarly-davidson-9.png','gnarly-davidson-12.png','gnarly-davidson-13.png','gnarly-davidson-14.png','jabberjosh-2016-09-11-dag-house.jpg'],
     live:['gnarly-live.png'],
@@ -160,7 +161,7 @@ function linksHtml(b){
     return `<a href="${esc(u)}" target="_blank" rel="noopener">${esc(label)} ↗</a>`;
   }).join('')+'</div>';
 }
-function isRootAsset(filename){return /^(?:archive-jj_\d{3}\.jpg|jabberjosh-adventure-\d{2}\.png|swanson-live-1\.png|swanson-main\.png|swanson-hero-new\.png|tun-live-[12]\.png|horse-weapons-hero\.png|hero-tun\.png|BKTYJJ\(1\)\.png|weather-is-happening-hero\.png|weather-is-happening-live-[12]\.png|long-division-live-[12]\.png)$/i.test(filename)}
+function isRootAsset(filename){return /^(?:archive-jj_\d{3}\.jpg|jabberjosh-adventure-\d{2}\.png|swanson-live-1\.png|swanson-main\.png|swanson-hero-new\.png|tun-live-[12]\.png|horse-weapons-hero\.png|horse-weapons-live-[2-9]\.png|hero-tun\.png|BKTYJJ\(1\)\.png|weather-is-happening-hero\.png|weather-is-happening-live-[12]\.png|long-division-live-[12]\.png)$/i.test(filename)}
 function assetPath(filename){return isRootAsset(filename)?esc(filename):`images/${esc(filename)}`}
 function alternateAssetPath(filename){
   const primary=assetPath(filename);
