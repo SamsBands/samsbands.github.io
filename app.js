@@ -8,7 +8,7 @@ const BAND_DATES={
   'emr':'2000–2004',
   'my-friend-tim':'2002–2004',
   'long-division':'2005–2007',
-  'weather-is-happening':'2006–2007',
+  'weather-is-happening':'2007–2010',
   'thunderfuck':'January 2008',
   'jabberjosh':'2008–2014',
   'swanson':'2011–2012',
@@ -51,8 +51,25 @@ D.timeline.push({date:'2009-06-11',display:'Jun 11, 2009',event:'Be Kind To Yr J
 D.timeline.push({...sep5,slug:'jabberjosh'});
 D.timeline.sort((a,b)=>String(a.date||'').localeCompare(String(b.date||'')));
 
+// Weather Is Happening archive update.
+const wih=D.bands.find(b=>b.slug==='weather-is-happening');
+if(wih){
+  wih.name='Weather Is Happening';
+  wih.intro=['Weather Is Happening was from Wichita, Kansas and active from 2007–2010.'];
+  wih.members=[['Daniel Davis','Guitar / Vocals'],['Sam Gunnerson','Bass'],['Casey Loren','Guitar / Vocals'],['Joe Ross','Drums']];
+  wih.links=['https://weatherishappening.bandcamp.com/album/young-country'];
+  wih.videos=[{title:'Weather Is Happening Live',url:'https://www.youtube.com/watch?v=6ok6d7kwEYE'}];
+  if(!(wih.timeline||[]).some(e=>e.date==='2010'&&/ICT Fest/i.test(e.event||''))){
+    wih.timeline=(wih.timeline||[]).concat([{date:'2010',display:'2010',event:'ICT Fest',venue:'ICT Fest',city:'Wichita, KS'}]);
+  }
+  wih.timeline.sort((a,b)=>String(a.date||'').localeCompare(String(b.date||'')));
+  D.timeline=D.timeline.filter(e=>!(e.slug==='weather-is-happening'&&e.date==='2010'&&/ICT Fest/i.test(e.event||'')));
+  D.timeline.push({date:'2010',display:'2010',event:'Weather Is Happening — ICT Fest',venue:'ICT Fest',city:'Wichita, KS',slug:'weather-is-happening'});
+  D.timeline.sort((a,b)=>String(a.date||'').localeCompare(String(b.date||'')));
+}
+
 function bandDatesHtml(){
-  return `<div class="cards">${orderedBands().map(b=>`<a class="card band-card band-${esc(b.slug)}" href="#/band/${b.slug}"><h3>${esc(b.name)}</h3>${BAND_DATES[b.slug]?`<p>${esc(BAND_DATES[b.slug])}</p>`:''}</a>`).join('')}</div>`;
+  return `<div class="home-band-list">${orderedBands().map(b=>`<a class="home-band-row" href="#/band/${b.slug}"><span class="home-band-name band-${esc(b.slug)}">${esc(b.name)}</span>${BAND_DATES[b.slug]?`<span class="home-band-years">${esc(BAND_DATES[b.slug])}</span>`:''}</a>`).join('')}</div>`;
 }
 
 const BANDCAMP_TITLES={
@@ -73,13 +90,14 @@ const HERO_IMAGES={
   'emr':'hero-emr.jpg',
   'my-friend-tim':'hero-my-friend-tim.png',
   'long-division':'hero-long-division.jpg',
+  'weather-is-happening':'weather-is-happening-hero.png',
   'monsoon-lazer':'hero-monsoon-lazer.jpg',
   'thunderfuck':'hero-thunderfuck.jpg',
   'jabberjosh':'hero-jabberjosh.jpg',
   'be-kind-to-yr-jabberjosh':'BKTYJJ(1).png',
   'gnarly-davidson':'hero-gnarly-davidson.jpg',
   'slaw':'hero-slaw.jpg',
-  'swanson':'swanson-main.png',
+  'swanson':'swanson-hero-new.png',
   'horse-weapons':'horse-weapons-hero.png',
   'tun':'hero-tun.png'
 };
@@ -96,10 +114,10 @@ const MEDIA={
   },
   'long-division':{
     flyers:['long-division-3.png','long-division-10.png','long-division-12.png','long-division-13.png','archive-ld_001.jpg','archive-ld_002.jpg','archive-ld_003.jpg','archive-ld_006.jpg','archive-ld_007.jpg','archive-ld_008.jpg','archive-ld_009-01.jpg','archive-ld_009-02.jpg','archive-ld_010.jpg','archive-ld_011.jpg','archive-ld_012.jpg','archive-ld_013.jpg','archive-ld_014.jpg','archive-ld_015.jpg'],
-    live:[],
+    live:['long-division-live-1.png','long-division-live-2.png'],
     merch:['long-division-1.jpeg','long-division-2.jpeg']
   },
-  'weather-is-happening':{flyers:[],live:[],merch:[]},
+  'weather-is-happening':{flyers:[],live:['weather-is-happening-live-1.png','weather-is-happening-live-2.png'],merch:[]},
   'monsoon-lazer':{flyers:['monsoon-lazer-1.png'],live:['jabberjosh-adventure-05.png','jabberjosh-adventure-07.png'],merch:[]},
   'thunderfuck':{
     flyers:[],
@@ -142,7 +160,7 @@ function linksHtml(b){
     return `<a href="${esc(u)}" target="_blank" rel="noopener">${esc(label)} ↗</a>`;
   }).join('')+'</div>';
 }
-function isRootAsset(filename){return /^(?:archive-jj_\d{3}\.jpg|jabberjosh-adventure-\d{2}\.png|swanson-live-1\.png|swanson-main\.png|tun-live-[12]\.png|horse-weapons-hero\.png|hero-tun\.png|BKTYJJ\(1\)\.png)$/i.test(filename)}
+function isRootAsset(filename){return /^(?:archive-jj_\d{3}\.jpg|jabberjosh-adventure-\d{2}\.png|swanson-live-1\.png|swanson-main\.png|swanson-hero-new\.png|tun-live-[12]\.png|horse-weapons-hero\.png|hero-tun\.png|BKTYJJ\(1\)\.png|weather-is-happening-hero\.png|weather-is-happening-live-[12]\.png|long-division-live-[12]\.png)$/i.test(filename)}
 function assetPath(filename){return isRootAsset(filename)?esc(filename):`images/${esc(filename)}`}
 function alternateAssetPath(filename){
   const primary=assetPath(filename);
@@ -153,7 +171,7 @@ function timelineHtml(items,bandSlug=''){return '<div class="timeline">'+items.m
 function bindFlyers(){document.querySelectorAll('[data-flyer]').forEach(btn=>btn.onclick=()=>openFlyer(btn.dataset.flyer,btn.dataset.caption));}
 function thumbSrc(filename){
   if(/^archive-jj_\d{3}\.jpg$/i.test(filename)) return `thumb-${esc(filename)}`;
-  if(/^(?:jabberjosh-adventure-\d{2}|swanson-live-1|tun-live-[12])\.png$/i.test(filename)) return esc(filename);
+  if(/^(?:jabberjosh-adventure-\d{2}|swanson-live-1|swanson-hero-new|tun-live-[12]|weather-is-happening-live-[12]|long-division-live-[12])\.png$/i.test(filename)) return esc(filename);
   return `images/thumbs/${esc(filename)}`;
 }
 function openFlyer(src,caption){
@@ -197,7 +215,7 @@ function home(){
   document.getElementById('q').oninput=e=>{let q=e.target.value.toLowerCase();let x=D.timeline.filter(a=>JSON.stringify(a).toLowerCase().includes(q));document.getElementById('master').innerHTML=timelineHtml(x);bindFlyers()};bindFlyers();
 }
 function bands(){
-  app.innerHTML=`<section class="wrap"><div class="band-head"><div class="kicker">The archive</div><h1>THE BANDS</h1><p>20+ years of Hot Shit!</p></div><div class="cards bands-grid">${orderedBands().map(b=>{const hero=HERO_IMAGES[b.slug];return `<a class="card band-card band-${esc(b.slug)}" href="#/band/${b.slug}">${hero?`<img class="card-hero" src="${assetPath(hero)}" data-alt-src="${alternateAssetPath(hero)}" onerror="if(this.dataset.altSrc&&this.src!==this.dataset.altSrc){this.onerror=null;this.src=this.dataset.altSrc}" alt="${esc(b.name)}">`:''}<h3>${esc(b.name)}</h3>${BAND_DATES[b.slug]?`<p>${esc(BAND_DATES[b.slug])}</p>`:''}</a>`}).join('')}</div></section>`;
+  app.innerHTML=`<section class="wrap bands-page-wrap"><div class="band-head"><div class="kicker">The archive</div><h1>THE BANDS</h1><p>20+ years of Hot Shit!</p></div><div class="cards bands-grid">${orderedBands().map(b=>{const hero=HERO_IMAGES[b.slug];return `<a class="card band-card band-${esc(b.slug)}" href="#/band/${b.slug}">${hero?`<img class="card-hero" src="${assetPath(hero)}" data-alt-src="${alternateAssetPath(hero)}" onerror="if(this.dataset.altSrc&&this.src!==this.dataset.altSrc){this.onerror=null;this.src=this.dataset.altSrc}" alt="${esc(b.name)}">`:''}<h3>${esc(b.name)}</h3>${BAND_DATES[b.slug]?`<p>${esc(BAND_DATES[b.slug])}</p>`:''}</a>`}).join('')}</div></section>`;
 }
 function videosHtml(b){
   if(!b.videos||!b.videos.length)return '';
@@ -206,7 +224,7 @@ function videosHtml(b){
 const CUSDIS_APP_ID='641b4409-8380-43a4-8bda-8b5205c35e18';
 function guestbook(){
   const configured=Boolean(CUSDIS_APP_ID);
-  app.innerHTML=`<section class="wrap"><div class="band-head"><div class="kicker">Leave a memory</div><h1>GUEST BOOK</h1><p>Share a story, memory, or message. Your name is optional, so you can post anonymously.</p></div><section class="archive-section">${configured?`<div id="cusdis_thread" data-host="https://cusdis.com" data-app-id="${esc(CUSDIS_APP_ID)}" data-page-id="samsbands-guestbook" data-page-url="${esc(location.href)}" data-page-title="SamsBands Guest Book"></div>`:`<div class="notice"><b>Guest Book is ready for connection.</b><br>The page is installed; one Cusdis App ID is still needed before visitors can submit permanent entries.</div>`}</section></section>`;
+  app.innerHTML=`<section class="wrap guestbook-page"><div class="band-head"><div class="kicker">Leave a memory</div><h1>GUEST BOOK</h1><p>Share a story, memory, or message. Enter your name, or use <b>ANONYMOUS</b> if you’d rather not.</p></div><section class="archive-section guestbook-section">${configured?`<div id="cusdis_thread" data-host="https://cusdis.com" data-app-id="${esc(CUSDIS_APP_ID)}" data-page-id="samsbands-guestbook" data-page-url="${esc(location.href)}" data-page-title="SamsBands Guest Book" data-theme="dark"></div>`:`<div class="notice"><b>Guest Book is ready for connection.</b><br>The page is installed; one Cusdis App ID is still needed before visitors can submit permanent entries.</div>`}</section></section>`;
   if(configured){const sc=document.createElement('script');sc.async=true;sc.defer=true;sc.src='https://cusdis.com/js/cusdis.es.js';document.body.appendChild(sc);}
 }
 
