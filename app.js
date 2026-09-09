@@ -3,7 +3,7 @@ const app=document.getElementById('app');
 const esc=s=>String(s??'').replace(/[&<>\"]/g,m=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;','\\':'&#39;'}[m]));
 function band(name){return D.bands.find(b=>b.slug===name)}
 
-const BAND_ORDER=['emr','my-friend-tim','long-division','weather-is-happening','thunderfuck','jabberjosh','be-kind-to-yr-jabberjosh','swanson','monsoon-lazer','horse-weapons','gnarly-davidson','slaw','tun'];
+const BAND_ORDER=['emr','my-friend-tim','long-division','weather-is-happening','thunderfuck','jabberjosh','be-kind-to-yr-jabberjosh','swanson','horse-weapons','monsoon-lazer','gnarly-davidson','slaw','tun'];
 const BAND_DATES={
   'emr':'2000–2004',
   'my-friend-tim':'2002–2004',
@@ -197,13 +197,13 @@ function home(){
   document.getElementById('q').oninput=e=>{let q=e.target.value.toLowerCase();let x=D.timeline.filter(a=>JSON.stringify(a).toLowerCase().includes(q));document.getElementById('master').innerHTML=timelineHtml(x);bindFlyers()};bindFlyers();
 }
 function bands(){
-  app.innerHTML=`<section class="wrap"><div class="band-head"><div class="kicker">The archive</div><h1>THE BANDS</h1><p>20+ years of Hot Shit!</p></div><div class="cards">${orderedBands().map(b=>{const hero=HERO_IMAGES[b.slug];return `<a class="card band-card band-${esc(b.slug)}" href="#/band/${b.slug}">${hero?`<img class="card-hero" src="${assetPath(hero)}" data-alt-src="${alternateAssetPath(hero)}" onerror="if(this.dataset.altSrc&&this.src!==this.dataset.altSrc){this.onerror=null;this.src=this.dataset.altSrc}" alt="${esc(b.name)}">`:''}<h3>${esc(b.name)}</h3>${BAND_DATES[b.slug]?`<p>${esc(BAND_DATES[b.slug])}</p>`:''}</a>`}).join('')}</div></section>`;
+  app.innerHTML=`<section class="wrap"><div class="band-head"><div class="kicker">The archive</div><h1>THE BANDS</h1><p>20+ years of Hot Shit!</p></div><div class="cards bands-grid">${orderedBands().map(b=>{const hero=HERO_IMAGES[b.slug];return `<a class="card band-card band-${esc(b.slug)}" href="#/band/${b.slug}">${hero?`<img class="card-hero" src="${assetPath(hero)}" data-alt-src="${alternateAssetPath(hero)}" onerror="if(this.dataset.altSrc&&this.src!==this.dataset.altSrc){this.onerror=null;this.src=this.dataset.altSrc}" alt="${esc(b.name)}">`:''}<h3>${esc(b.name)}</h3>${BAND_DATES[b.slug]?`<p>${esc(BAND_DATES[b.slug])}</p>`:''}</a>`}).join('')}</div></section>`;
 }
 function videosHtml(b){
   if(!b.videos||!b.videos.length)return '';
   return `<section class="archive-section"><h2 class="section-title">Videos</h2><div class="videos">${b.videos.map(v=>{const id=v.url?(v.url.match(/[?&]v=([^&]+)/)||[])[1]:'';const src=v.embed||`https://www.youtube.com/embed/${esc(id)}`;return `<article class="video-item"><div class="video-frame"><iframe src="${esc(src)}" title="${esc(v.title)}" loading="lazy" allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share" allowfullscreen></iframe></div>${b.slug==='jabberjosh'?'':`<h3>${esc(v.title)}</h3>`}${b.slug==='long-division'?'<p>Hutch Skate Park — July 7, 2007</p>':''}</article>`}).join('')}</div></section>`;
 }
-const CUSDIS_APP_ID='';
+const CUSDIS_APP_ID='641b4409-8380-43a4-8bda-8b5205c35e18';
 function guestbook(){
   const configured=Boolean(CUSDIS_APP_ID);
   app.innerHTML=`<section class="wrap"><div class="band-head"><div class="kicker">Leave a memory</div><h1>GUEST BOOK</h1><p>Share a story, memory, or message. Your name is optional, so you can post anonymously.</p></div><section class="archive-section">${configured?`<div id="cusdis_thread" data-host="https://cusdis.com" data-app-id="${esc(CUSDIS_APP_ID)}" data-page-id="samsbands-guestbook" data-page-url="${esc(location.href)}" data-page-title="SamsBands Guest Book"></div>`:`<div class="notice"><b>Guest Book is ready for connection.</b><br>The page is installed; one Cusdis App ID is still needed before visitors can submit permanent entries.</div>`}</section></section>`;
