@@ -3,6 +3,82 @@ const app=document.getElementById('app');
 const esc=s=>String(s??'').replace(/[&<>\"]/g,m=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;','\\':'&#39;'}[m]));
 function band(name){return D.bands.find(b=>b.slug===name)}
 
+const BAND_ORDER=['emr','my-friend-tim','long-division','weather-is-happening','thunderfuck','jabberjosh','be-kind-to-yr-jabberjosh','swanson','horse-weapons','monsoon-lazer','gnarly-davidson','slaw','tun'];
+const BAND_DATES={
+  'emr':'2000–2004',
+  'my-friend-tim':'2002–2004',
+  'long-division':'2005–2007',
+  'weather-is-happening':'2007–2010',
+  'thunderfuck':'January 2008',
+  'jabberjosh':'2008–2014',
+  'swanson':'2011–2012',
+  'monsoon-lazer':'2012–2013',
+  'be-kind-to-yr-jabberjosh':'2009',
+  'horse-weapons':'2011–2012',
+  'gnarly-davidson':'2014–2018',
+  'slaw':'2019–2020',
+  'tun':'2021–2023'
+};
+function orderedBands(){
+  const rank=new Map(BAND_ORDER.map((slug,i)=>[slug,i]));
+  return [...D.bands].sort((a,b)=>(rank.get(a.slug)??999)-(rank.get(b.slug)??999));
+}
+// Be Kind To Yr JabberJosh was a one-off ICT Fest project in 2009.
+let bktyjj=D.bands.find(b=>b.slug==='be-kind-to-yr-jabberjosh');
+if(!bktyjj){
+  bktyjj={slug:'be-kind-to-yr-jabberjosh'};
+  D.bands.push(bktyjj);
+}
+Object.assign(bktyjj,{
+  name:'Be Kind To Yr JabberJosh',
+  intro:['A one-off project combining JabberJosh and Be Kind to Your Neighbor.'],
+  links:[],
+  members:[['Dan Davis',''],['Ed Bornstein',''],['Pat McPartland',''],['Sam Gunnerson',''],['Will Gunnerson','']],
+  timeline:[{date:'2009-06-11',display:'Jun 11, 2009',event:'ICT Fest',venue:'ICT Fest',city:'Wichita, KS'}],
+  releases:[{title:'LIVE! ICT Fest 2009',date:'2009',dateLabel:'',image:'BKTYJJ(1).png',url:'https://samsbands.bandcamp.com/album/be-kind-to-yr-jabberjosh'}],
+  videos:[]
+});
+// The Sep 5, 2009 Ad Astra / Freakout Ensemble / Low Red Land show was JabberJosh, not this project.
+const jj=D.bands.find(b=>b.slug==='jabberjosh');
+const sep5={date:'2009-09-05',display:'Sep 5, 2009',event:'Show with Ad Astra Drumline and the Freakout Ensemble + The Low Red Land',venue:'',city:''};
+if(jj){
+  jj.timeline=(jj.timeline||[]).filter(e=>e.date!=='2009-09-05' || !/Ad Astra Drumline|Freakout Ensemble|Low Red Land/i.test(e.event||''));
+  jj.timeline.push(sep5);
+  jj.timeline.sort((a,b)=>String(a.date||'').localeCompare(String(b.date||'')));
+}
+D.timeline=(D.timeline||[]).filter(e=>e.slug!=='be-kind-to-yr-jabberjosh' && !(e.date==='2009-09-05' && /Ad Astra Drumline|Freakout Ensemble|Low Red Land/i.test(e.event||'')));
+D.timeline.push({date:'2009-06-11',display:'Jun 11, 2009',event:'Be Kind To Yr JabberJosh — ICT Fest',venue:'ICT Fest',city:'Wichita, KS',slug:'be-kind-to-yr-jabberjosh'});
+D.timeline.push({...sep5,slug:'jabberjosh'});
+D.timeline.sort((a,b)=>String(a.date||'').localeCompare(String(b.date||'')));
+
+// Gnarly Davidson archive subtext.
+const gd=D.bands.find(b=>b.slug==='gnarly-davidson');
+if(gd){
+  gd.intro=['Gnarly Davidson was from Lawrence, Kansas and active from 2014 - 2018. They had the best merch out of any other band in the world.'];
+}
+
+// Weather Is Happening archive update.
+const wih=D.bands.find(b=>b.slug==='weather-is-happening');
+if(wih){
+  wih.name='Weather Is Happening';
+  wih.intro=['Weather Is Happening was from Wichita, Kansas and active from 2007–2010.'];
+  wih.members=[['Daniel Davis','Guitar / Vocals'],['Sam Gunnerson','Bass'],['Casey Loren','Guitar / Vocals'],['Joe Ross','Drums']];
+  wih.links=[];
+  wih.releases=[{title:'Young Country',date:'Oct 1, 2007',dateLabel:'Released',image:'Young Country.png',url:'https://weatherishappening.bandcamp.com/album/young-country'}];
+  wih.videos=[{title:'Weather Is Happening Live',url:'https://www.youtube.com/watch?v=6ok6d7kwEYE'}];
+  if(!(wih.timeline||[]).some(e=>e.date==='2010'&&/ICT Fest/i.test(e.event||''))){
+    wih.timeline=(wih.timeline||[]).concat([{date:'2010',display:'2010',event:'ICT Fest',venue:'ICT Fest',city:'Wichita, KS'}]);
+  }
+  wih.timeline.sort((a,b)=>String(a.date||'').localeCompare(String(b.date||'')));
+  D.timeline=D.timeline.filter(e=>!(e.slug==='weather-is-happening'&&e.date==='2010'&&/ICT Fest/i.test(e.event||'')));
+  D.timeline.push({date:'2010',display:'2010',event:'Weather Is Happening — ICT Fest',venue:'ICT Fest',city:'Wichita, KS',slug:'weather-is-happening'});
+  D.timeline.sort((a,b)=>String(a.date||'').localeCompare(String(b.date||'')));
+}
+
+function bandDatesHtml(){
+  return `<div class="home-band-list">${orderedBands().map(b=>`<a class="home-band-row" href="#/band/${b.slug}"><span class="home-band-name band-${esc(b.slug)}">${esc(b.name)}</span>${BAND_DATES[b.slug]?`<span class="home-band-years">${esc(BAND_DATES[b.slug])}</span>`:''}</a>`).join('')}</div>`;
+}
+
 const BANDCAMP_TITLES={
   'split-my-pants-emr-and-my-friend-tim':'Split My Pants — EMR and My Friend Tim',
   'my-friend-tim-ogre-house-demo':'Ogre House Demo',
@@ -21,11 +97,14 @@ const HERO_IMAGES={
   'emr':'hero-emr.jpg',
   'my-friend-tim':'hero-my-friend-tim.png',
   'long-division':'hero-long-division.jpg',
+  'weather-is-happening':'weather-is-happening-hero.png',
   'monsoon-lazer':'hero-monsoon-lazer.jpg',
   'thunderfuck':'hero-thunderfuck.jpg',
   'jabberjosh':'hero-jabberjosh.jpg',
+  'be-kind-to-yr-jabberjosh':'BKTYJJ(1).png',
   'gnarly-davidson':'hero-gnarly-davidson.jpg',
   'slaw':'hero-slaw.jpg',
+  'swanson':'swanson-hero-new.png',
   'horse-weapons':'horse-weapons-hero.png',
   'tun':'hero-tun.png'
 };
@@ -42,26 +121,25 @@ const MEDIA={
   },
   'long-division':{
     flyers:['long-division-3.png','long-division-10.png','long-division-12.png','long-division-13.png','archive-ld_001.jpg','archive-ld_002.jpg','archive-ld_003.jpg','archive-ld_006.jpg','archive-ld_007.jpg','archive-ld_008.jpg','archive-ld_009-01.jpg','archive-ld_009-02.jpg','archive-ld_010.jpg','archive-ld_011.jpg','archive-ld_012.jpg','archive-ld_013.jpg','archive-ld_014.jpg','archive-ld_015.jpg'],
-    live:[],
+    live:['long-division-live-1.png','long-division-live-2.png'],
     merch:['long-division-1.jpeg','long-division-2.jpeg']
   },
-  'weather-is-happening':{flyers:[],live:[],merch:[]},
-  'monsoon-lazer':{flyers:['monsoon-lazer-1.png'],live:['jabberjosh-adventure-05.png'],merch:[]},
+  'weather-is-happening':{flyers:[],live:['weather-is-happening-live-1.png','weather-is-happening-live-2.png'],merch:[]},
+  'monsoon-lazer':{flyers:['monsoon-lazer-1.png'],live:['jabberjosh-adventure-05.png','jabberjosh-adventure-07.png'],merch:[]},
   'thunderfuck':{
     flyers:[],
     live:['thunderfuck-2.png','thunderfuck-3.png','thunderfuck-4.png','thunderfuck-6.png','thunderfuck-8.png'],
     merch:[]
   },
   'jabberjosh':{
-    flyers:['archive-jj_001.jpg','archive-jj_003.jpg','archive-jj_004.jpg','archive-jj_005.jpg','archive-jj_006.jpg','archive-jj_007.jpg','archive-jj_008.jpg','archive-jj_009.jpg','archive-jj_010.jpg','archive-jj_014.jpg','archive-jj_017.jpg','archive-jj_018.jpg','archive-jj_019.jpg','archive-jj_023.jpg','archive-jj_025.jpg','archive-jj_026.jpg','archive-jj_029.jpg','archive-jj_030.jpg','archive-jj_032.jpg','archive-jj_033.jpg','archive-jj_034.jpg','archive-jj_035.jpg','archive-jj_036.jpg','archive-jj_037.jpg','archive-jj_038.jpg','archive-jj_039.jpg','archive-jj_041.jpg','archive-jj_042.jpg','archive-jj_043.jpg','archive-jj_044.jpg','archive-jj_045.jpg','archive-jj_046.jpg','archive-jj_047.jpg','jabberjosh-3.png','jabberjosh-4.png','jabberjosh-6.png','jabberjosh-7.png','jabberjosh-8.png','jabberjosh-9.png','jabberjosh-10.png','jabberjosh-11.png','jabberjosh-12.png','jabberjosh-14.png','jabberjosh-15.png','jabberjosh-16.png','jabberjosh-2016-09-11-dag-house.jpg'],
+    flyers:['archive-jj_001.jpg','archive-jj_002.jpg','archive-jj_003.jpg','archive-jj_004.jpg','archive-jj_005.jpg','archive-jj_006.jpg','archive-jj_007.jpg','archive-jj_008.jpg','archive-jj_009.jpg','archive-jj_010.jpg','archive-jj_014.jpg','archive-jj_017.jpg','archive-jj_018.jpg','archive-jj_019.jpg','archive-jj_025.jpg','archive-jj_026.jpg','archive-jj_030.jpg','archive-jj_032.jpg','archive-jj_033.jpg','archive-jj_034.jpg','archive-jj_035.jpg','archive-jj_036.jpg','archive-jj_037.jpg','archive-jj_038.jpg','archive-jj_039.jpg','archive-jj_041.jpg','archive-jj_042.jpg','archive-jj_043.jpg','archive-jj_044.jpg','archive-jj_046.jpg','archive-jj_047.jpg','jabberjosh-3.png','jabberjosh-4.png','jabberjosh-6.png','jabberjosh-7.png','jabberjosh-8.png','jabberjosh-10.png','jabberjosh-12.png','jabberjosh-14.png','jabberjosh-15.png','jabberjosh-16.png','jabberjosh-2016-09-11-dag-house.jpg'],
     live:[],
-    adventures:['jabberjosh-adventure-01.png','jabberjosh-adventure-02.png','jabberjosh-adventure-03.png','jabberjosh-adventure-04.png','jabberjosh-adventure-06.png','jabberjosh-adventure-07.png','jabberjosh-adventure-08.png','jabberjosh-adventure-09.png','jabberjosh-adventure-10.png','jabberjosh-adventure-11.png','jabberjosh-adventure-12.png','jabberjosh-adventure-13.png','jabberjosh-adventure-14.png','jabberjosh-adventure-15.png','jabberjosh-adventure-16.png','jabberjosh-adventure-17.png','jabberjosh-adventure-18.png'],
+    adventures:['jabberjosh-adventure-01.png','jabberjosh-adventure-02.png','jabberjosh-adventure-03.png','jabberjosh-adventure-04.png','jabberjosh-adventure-06.png','jabberjosh-adventure-08.png','jabberjosh-adventure-09.png','jabberjosh-adventure-10.png','jabberjosh-adventure-11.png','jabberjosh-adventure-12.png','jabberjosh-adventure-13.png','jabberjosh-adventure-14.png','jabberjosh-adventure-15.png','jabberjosh-adventure-16.png','jabberjosh-adventure-17.png','jabberjosh-adventure-18.png'],
     merch:['jabberjosh-sticker.png']
   },
   'swanson':{flyers:['archive-jj_015.jpg','archive-jj_020.jpg'],live:['swanson-live-1.png'],merch:[]},
-  'be-kind-to-yr-jabberjosh':{flyers:['archive-jj_002.jpg'],live:[],merch:[]},
-  'horse-weapons':{flyers:[],live:['horse-weapons-live-1.png'],merch:[]},
-  'tun':{flyers:[],live:['tun-live-1.png','tun-live-2.png'],merch:[]},
+  'be-kind-to-yr-jabberjosh':{flyers:['BKTYJJ(1).png'],live:[],merch:[]},
+  'horse-weapons':{flyers:[],live:['horse-weapons-live-1.png','horse-weapons-live-2.png','horse-weapons-live-3.png','horse-weapons-live-4.png','horse-weapons-live-5.png','horse-weapons-live-6.png','horse-weapons-live-7.png','horse-weapons-live-8.png','horse-weapons-live-9.png'],merch:[]},
   'gnarly-davidson':{
     flyers:['gnarly-davidson-1.png','gnarly-davidson-3.png','gnarly-davidson-4.png','gnarly-davidson-6.png','gnarly-davidson-7.png','gnarly-davidson-8.png','gnarly-davidson-9.png','gnarly-davidson-12.png','gnarly-davidson-13.png','gnarly-davidson-14.png','jabberjosh-2016-09-11-dag-house.jpg'],
     live:['gnarly-live.png'],
@@ -69,7 +147,8 @@ const MEDIA={
   },
   'slaw':{
     flyers:['slaw-2.jpeg','slaw-3.jpeg','slaw-4.jpeg','slaw-5.jpeg','slaw-6.jpeg'], live:['slaw-live-1.jpg','slaw-live-2.jpg','slaw-live-3.jpg','slaw-live-4.jpg','slaw-live-5.jpg','slaw-live-6.jpg'], merch:[]
-  }
+  },
+  'tun':{flyers:[],live:['tun-live-1.png','tun-live-2.png'],merch:[]}
 };
 
 function bandcampLabel(u){
@@ -88,13 +167,18 @@ function linksHtml(b){
     return `<a href="${esc(u)}" target="_blank" rel="noopener">${esc(label)} ↗</a>`;
   }).join('')+'</div>';
 }
-function assetPath(filename){if(/^tun-live-[12]\.png$/i.test(filename))return esc(filename);return /^archive-jj_\d{3}\.jpg$/i.test(filename)?esc(filename):`images/${esc(filename)}`}
+function isRootAsset(filename){return /^(?:archive-jj_\d{3}\.jpg|jabberjosh-adventure-\d{2}\.png|swanson-live-1\.png|swanson-main\.png|swanson-hero-new\.png|tun-live-[12]\.png|horse-weapons-hero\.png|horse-weapons-live-[2-9]\.png|hero-tun\.png|BKTYJJ\(1\)\.png|weather-is-happening-hero\.png|weather-is-happening-live-[12]\.png|long-division-live-[12]\.png|Young Country\.png)$/i.test(filename)}
+function assetPath(filename){return isRootAsset(filename)?esc(filename):`images/${esc(filename)}`}
+function alternateAssetPath(filename){
+  const primary=assetPath(filename);
+  return primary.startsWith('images/')?esc(filename):`images/${esc(filename)}`;
+}
 function flyerButton(e){return e.flyer?`<button class="flyer-btn" type="button" data-flyer="${assetPath(e.flyer)}" data-caption="${esc(e.display+' — '+e.event)}">View Flyer</button>`:''}
 function timelineHtml(items,bandSlug=''){return '<div class="timeline">'+items.map(e=>`<div class="entry"><div class="date band-${esc(e.slug||bandSlug)}">${esc(e.display)}</div><div><div class="event">${esc(e.event)}</div>${e.venue||e.city?`<div class="meta">${esc([e.venue,e.city].filter(Boolean).join(' · '))}</div>`:''}${flyerButton(e)}</div></div>`).join('')+'</div>'}
 function bindFlyers(){document.querySelectorAll('[data-flyer]').forEach(btn=>btn.onclick=()=>openFlyer(btn.dataset.flyer,btn.dataset.caption));}
 function thumbSrc(filename){
-  if(/^tun-live-[12]\.png$/i.test(filename)) return esc(filename);
   if(/^archive-jj_\d{3}\.jpg$/i.test(filename)) return `thumb-${esc(filename)}`;
+  if(/^(?:jabberjosh-adventure-\d{2}|swanson-live-1|swanson-hero-new|tun-live-[12]|weather-is-happening-live-[12]|long-division-live-[12]|Young Country)\.png$/i.test(filename)) return esc(filename);
   return `images/thumbs/${esc(filename)}`;
 }
 function openFlyer(src,caption){
@@ -104,7 +188,10 @@ function openFlyer(src,caption){
   const modalImg=m.querySelector('img');
   modalImg.onerror=()=>{
     const name=src.split('/').pop();
-    if(/^archive-jj_\d{3}\.jpg$/i.test(name)){ modalImg.onerror=null; modalImg.src=`thumb-${name}`; }
+    const alt=src.startsWith('images/')?name:`images/${name}`;
+    if(!modalImg.dataset.altTried){modalImg.dataset.altTried='1';modalImg.src=alt;return;}
+    if(/^archive-jj_\d{3}\.jpg$/i.test(name)){ modalImg.onerror=null; modalImg.src=`thumb-${name}`;return;}
+    modalImg.onerror=null;
   };
   document.body.appendChild(m);
   m.querySelector('.flyer-close').onclick=()=>m.remove();m.querySelector('.flyer-backdrop').onclick=()=>m.remove();
@@ -114,7 +201,7 @@ window.openFlyer=openFlyer;
 
 function gallerySection(title,items,b){
   if(!items||!items.length)return '';
-  return `<section class="archive-section"><div class="section-heading"><h2 class="section-title">${esc(title)}</h2></div><div class="gallery">${items.map(x=>`<button class="gallery-item" type="button" data-flyer="${assetPath(x)}" data-caption="${esc(b.name+' — '+title.replace(/s$/,''))}"><img loading="lazy" decoding="async" src="${thumbSrc(x)}" onerror="this.onerror=null;this.src='${assetPath(x)}'" alt="${esc(b.name+' '+title.toLowerCase())}"></button>`).join('')}</div></section>`;
+  return `<section class="archive-section"><div class="section-heading"><h2 class="section-title">${esc(title)}</h2></div><div class="gallery">${items.map(x=>`<button class="gallery-item" type="button" data-flyer="${assetPath(x)}" data-caption="${esc(b.name+' — '+title.replace(/s$/,''))}"><img loading="lazy" decoding="async" src="${thumbSrc(x)}" style="${x==='jabberjosh-sticker.png'?'object-fit:contain;padding:18px;box-sizing:border-box':''}" data-fallback1="${assetPath(x)}" data-fallback2="${alternateAssetPath(x)}" onerror="if(!this.dataset.tried1){this.dataset.tried1='1';this.src=this.dataset.fallback1}else if(!this.dataset.tried2){this.dataset.tried2='1';this.src=this.dataset.fallback2}else{this.onerror=null}" alt="${esc(b.name+' '+title.toLowerCase())}"></button>`).join('')}</div></section>`;
 }
 
 
@@ -131,53 +218,29 @@ function releasesHtml(b){
   return `<section class="archive-section releases-section"><h2 class="section-title">Releases</h2><div class="releases">${b.releases.map(r=>`<article class="release"><button class="release-art" type="button" data-flyer="${assetPath(r.image)}" data-caption="${esc(b.name+' — '+r.title)}"><img loading="lazy" decoding="async" src="${thumbSrc(r.image)}" onerror="this.onerror=null;this.src='${assetPath(r.image)}'" alt="${esc(r.title)} artwork"></button><div class="release-copy"><h3>${esc(r.title)}</h3>${r.date?`<p>${esc(r.dateLabel||'Released')} ${esc(r.date)}</p>`:''}${r.url?`<a class="release-link" href="${esc(r.url)}" target="_blank" rel="noopener">Listen on Bandcamp ↗</a>`:''}</div></article>`).join('')}</div></section>`;
 }
 function home(){
-  app.innerHTML=`<section class="home-hero"><img src="images/hero-home.jpg" alt="Sam Gunnerson performing"><div class="home-hero-shade"></div><div class="home-hero-copy"><div class="kicker">The Sam Gunnerson Archive</div><h1>SAMSBANDS</h1><p>${esc(D.subtitle)}. A living archive built from flyers, recordings, stories and show history.</p></div></section><section class="wrap"><h2 class="section-title">Everything, in order.</h2><div class="filter"><input id="q" placeholder="Search bands, shows, venues, cities…"></div><div id="master">${timelineHtml(D.timeline)}</div></section>`;
+  app.innerHTML=`<section class="home-hero"><img src="images/hero-home.jpg" alt="Sam Gunnerson performing"><div class="home-hero-shade"></div><div class="home-hero-copy"><div class="kicker">The Sam Gunnerson Archive</div><h1>SAMSBANDS</h1><p>${esc(D.subtitle)}. A living archive built from flyers, recordings, stories and show history.</p></div></section><section class="wrap"><h2 class="section-title">Bands</h2>${bandDatesHtml()}<section class="archive-section"><h2 class="section-title">Everything</h2><div class="filter"><input id="q" placeholder="Search bands, shows, venues, cities…"></div><div id="master">${timelineHtml(D.timeline)}</div></section></section>`;
   document.getElementById('q').oninput=e=>{let q=e.target.value.toLowerCase();let x=D.timeline.filter(a=>JSON.stringify(a).toLowerCase().includes(q));document.getElementById('master').innerHTML=timelineHtml(x);bindFlyers()};bindFlyers();
 }
 function bands(){
-  app.innerHTML=`<section class="wrap"><div class="band-head"><div class="kicker">The archive</div><h1>THE BANDS</h1><p>20+ years of Hot Shit!</p></div><div class="cards">${D.bands.map(b=>{const hero=HERO_IMAGES[b.slug];return `<a class="card band-card band-${esc(b.slug)}" href="#/band/${b.slug}">${hero?`<img class="card-hero" src="images/${esc(hero)}" alt="${esc(b.name)}">`:''}<h3>${esc(b.name)}</h3></a>`}).join('')}</div></section>`;
+  app.innerHTML=`<section class="wrap bands-page-wrap"><div class="band-head"><div class="kicker">The archive</div><h1>THE BANDS</h1><p>20+ years of Hot Shit!</p></div><div class="cards bands-grid">${orderedBands().map(b=>{const hero=HERO_IMAGES[b.slug];return `<a class="card band-card band-${esc(b.slug)}" href="#/band/${b.slug}">${hero?`<img class="card-hero" src="${assetPath(hero)}" data-alt-src="${alternateAssetPath(hero)}" onerror="if(this.dataset.altSrc&&this.src!==this.dataset.altSrc){this.onerror=null;this.src=this.dataset.altSrc}" alt="${esc(b.name)}">`:''}<h3>${esc(b.name)}</h3>${BAND_DATES[b.slug]?`<p>${esc(BAND_DATES[b.slug])}</p>`:''}</a>`}).join('')}</div></section>`;
 }
 function videosHtml(b){
   if(!b.videos||!b.videos.length)return '';
-  return `<section class="archive-section"><h2 class="section-title">Videos</h2><div class="videos">${b.videos.map(v=>{const id=v.url?(v.url.match(/[?&]v=([^&]+)/)||[])[1]:'';const src=v.embed||`https://www.youtube.com/embed/${esc(id)}`;return `<article class="video-item"><div class="video-frame"><iframe src="${esc(src)}" title="${esc(v.title)}" loading="lazy" allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share" allowfullscreen></iframe></div>${(b.slug==='jabberjosh'||b.slug==='gnarly-davidson')?'':`<h3>${esc(v.title)}</h3>`}${b.slug==='long-division'?'<p>Hutch Skate Park — July 7, 2007</p>':''}</article>`}).join('')}</div></section>`;
+  return `<section class="archive-section"><h2 class="section-title">Videos</h2><div class="videos">${b.videos.map(v=>{const id=v.url?(v.url.match(/[?&]v=([^&]+)/)||[])[1]:'';const src=v.embed||`https://www.youtube.com/embed/${esc(id)}`;return `<article class="video-item"><div class="video-frame"><iframe src="${esc(src)}" title="${esc(v.title)}" loading="lazy" allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share" allowfullscreen></iframe></div>${b.slug==='jabberjosh'?'':`<h3>${esc(v.title)}</h3>`}${b.slug==='long-division'?'<p>Hutch Skate Park — July 7, 2007</p>':''}</article>`}).join('')}</div></section>`;
 }
+const CUSDIS_APP_ID='641b4409-8380-43a4-8bda-8b5205c35e18';
+function guestbook(){
+  const configured=Boolean(CUSDIS_APP_ID);
+  app.innerHTML=`<section class="wrap guestbook-page"><div class="band-head"><div class="kicker">Leave a memory</div><h1>GUEST BOOK</h1><p>Share a story, memory, or message. Enter your name, or use <b>ANONYMOUS</b> if you’d rather not.</p></div><section class="archive-section guestbook-section">${configured?`<div id="cusdis_thread" data-host="https://cusdis.com" data-app-id="${esc(CUSDIS_APP_ID)}" data-page-id="samsbands-guestbook" data-page-url="${esc(location.href)}" data-page-title="SamsBands Guest Book" data-theme="dark"></div>`:`<div class="notice"><b>Guest Book is ready for connection.</b><br>The page is installed; one Cusdis App ID is still needed before visitors can submit permanent entries.</div>`}</section></section>`;
+  if(configured){const sc=document.createElement('script');sc.async=true;sc.defer=true;sc.src='https://cusdis.com/js/cusdis.es.js';document.body.appendChild(sc);}
+}
+
 function bandPage(slug){
   let b=band(slug);if(!b)return bands();
   const hero=HERO_IMAGES[slug];
   const media=MEDIA[slug]||{flyers:[],live:[],merch:[]};
-  app.innerHTML=`<section class="wrap band-page band-${esc(slug)}"><a class="back" href="#/bands">← All bands</a>${hero?`<div class="band-hero"><img src="${slug==='tun'?esc(hero):`images/${esc(hero)}`}" alt="${esc(b.name)} main photo"></div>`:''}<div class="band-head"><div class="kicker">Band archive</div><h1>${esc(b.name)}</h1>${b.intro.map(x=>`<p>${esc(x)}</p>`).join('')}${membersHtml(b)}${b.links&&b.links.length?linksHtml(b):''}</div>${releasesHtml(b)}${setlistHtml(b)}${slug==='thunderfuck'?'':`<section class="archive-section"><h2 class="section-title">Timeline</h2>${timelineHtml(b.timeline,slug)}</section>`}${gallerySection('Flyers',media.flyers,b)}${slug==='jabberjosh'?gallerySection('Adventures of JabberJosh',media.adventures||[],b):gallerySection('Live Photos',media.live,b)}${gallerySection('Merch',media.merch,b)}${videosHtml(b)}</section>`;
+  app.innerHTML=`<section class="wrap band-page band-${esc(slug)}"><a class="back" href="#/bands">← All bands</a>${hero?`<div class="band-hero"><img src="${assetPath(hero)}" data-alt-src="${alternateAssetPath(hero)}" onerror="if(this.dataset.altSrc&&this.src!==this.dataset.altSrc){this.onerror=null;this.src=this.dataset.altSrc}" alt="${esc(b.name)} main photo"></div>`:''}<div class="band-head"><div class="kicker">Band archive</div><h1>${esc(b.name)}</h1>${(slug==='swanson'?["Swanson was JabberJosh + Approach and was active in Lawrence, KS from 2011 to 2012."]:b.intro).map(x=>`<p>${esc(x)}</p>`).join('')}${membersHtml(b)}${b.links&&b.links.length?linksHtml(b):''}</div>${releasesHtml(b)}${setlistHtml(b)}${slug==='thunderfuck'?'':`<section class="archive-section"><h2 class="section-title">Timeline</h2>${timelineHtml(b.timeline,slug)}</section>`}${slug==='be-kind-to-yr-jabberjosh'?'':gallerySection('Flyers',media.flyers,b)}${slug==='jabberjosh'?gallerySection('Adventures of JabberJosh',media.adventures||[],b):gallerySection('Live Photos',media.live,b)}${gallerySection('Merch',media.merch,b)}${videosHtml(b)}</section>`;
   bindFlyers();
 }
-
-function guestbook(){
-  app.innerHTML=`<section class="wrap guestbook-page">
-    <div class="band-head">
-      <div class="kicker">For Sam</div>
-      <h1>GUEST BOOK</h1>
-      <p>Share a memory, story, or message about Sam.</p>
-    </div>
-    <section class="archive-section guestbook-section">
-      <div id="echothread"
-        data-shortname="SamsBands"
-        data-api-key="woHJqsd0eKsRwt5FzL3gPYF46JCHnSDFVqGa9qADDN4"
-        data-identifier="samsbands-guestbook"
-        data-page-url="https://samsbands.github.io/#/guestbook"
-        data-page-title="SamsBands Guest Book"
-        data-lang="en"
-        data-theme="dark"
-        data-accent-color="#e8353a"
-        data-font-family="inherit"></div>
-    </section>
-  </section>`;
-
-  const old=document.getElementById('echothread-widget-script');
-  if(old) old.remove();
-  const s=document.createElement('script');
-  s.id='echothread-widget-script';
-  s.src='https://cdn.echothread.io/widget.js';
-  s.async=true;
-  document.body.appendChild(s);
-}
-
-function route(){let p=location.hash.slice(1)||'/';if(p==='/')home();else if(p==='/bands')bands();else if(p.startsWith('/band/'))bandPage(p.split('/')[2]);else if(p==='/guestbook')guestbook();else home()}
+function route(){let p=location.hash.slice(1)||'/';if(p==='/')home();else if(p==='/bands')bands();else if(p==='/guestbook')guestbook();else if(p.startsWith('/band/'))bandPage(p.split('/')[2]);else home()}
 window.addEventListener('hashchange',route);route();
