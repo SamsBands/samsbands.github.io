@@ -148,5 +148,36 @@ function bandPage(slug){
   app.innerHTML=`<section class="wrap band-page band-${esc(slug)}"><a class="back" href="#/bands">← All bands</a>${hero?`<div class="band-hero"><img src="${slug==='tun'?esc(hero):`images/${esc(hero)}`}" alt="${esc(b.name)} main photo"></div>`:''}<div class="band-head"><div class="kicker">Band archive</div><h1>${esc(b.name)}</h1>${b.intro.map(x=>`<p>${esc(x)}</p>`).join('')}${membersHtml(b)}${b.links&&b.links.length?linksHtml(b):''}</div>${releasesHtml(b)}${setlistHtml(b)}${slug==='thunderfuck'?'':`<section class="archive-section"><h2 class="section-title">Timeline</h2>${timelineHtml(b.timeline,slug)}</section>`}${gallerySection('Flyers',media.flyers,b)}${slug==='jabberjosh'?gallerySection('Adventures of JabberJosh',media.adventures||[],b):gallerySection('Live Photos',media.live,b)}${gallerySection('Merch',media.merch,b)}${videosHtml(b)}</section>`;
   bindFlyers();
 }
-function route(){let p=location.hash.slice(1)||'/';if(p==='/')home();else if(p==='/bands')bands();else if(p.startsWith('/band/'))bandPage(p.split('/')[2]);else home()}
+
+function guestbook(){
+  app.innerHTML=`<section class="wrap guestbook-page">
+    <div class="band-head">
+      <div class="kicker">For Sam</div>
+      <h1>GUEST BOOK</h1>
+      <p>Share a memory, story, or message about Sam.</p>
+    </div>
+    <section class="archive-section guestbook-section">
+      <div id="echothread"
+        data-shortname="SamsBands"
+        data-api-key="woHJqsd0eKsRwt5FzL3gPYF46JCHnSDFVqGa9qADDN4"
+        data-identifier="samsbands-guestbook"
+        data-page-url="https://samsbands.github.io/#/guestbook"
+        data-page-title="SamsBands Guest Book"
+        data-lang="en"
+        data-theme="dark"
+        data-accent-color="#e8353a"
+        data-font-family="inherit"></div>
+    </section>
+  </section>`;
+
+  const old=document.getElementById('echothread-widget-script');
+  if(old) old.remove();
+  const s=document.createElement('script');
+  s.id='echothread-widget-script';
+  s.src='https://cdn.echothread.io/widget.js';
+  s.async=true;
+  document.body.appendChild(s);
+}
+
+function route(){let p=location.hash.slice(1)||'/';if(p==='/')home();else if(p==='/bands')bands();else if(p.startsWith('/band/'))bandPage(p.split('/')[2]);else if(p==='/guestbook')guestbook();else home()}
 window.addEventListener('hashchange',route);route();
