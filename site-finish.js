@@ -18,7 +18,9 @@
    (jj.timeline||[]).forEach(fix);(D.timeline||[]).filter(e=>e.slug==='jabberjosh').forEach(fix);
 
    jj.releases=(jj.releases||[]).filter(r=>!/Live at Da Bro Haus/i.test(r.title||''));
-   jj.releases.push({title:'Live at Da Bro Haus',date:'February 19, 2010',dateLabel:'Released',image:'',url:'https://samsbands.bandcamp.com/album/live-at-da-bro-haus'});
+   jj.releases.push({title:'Live at Da Bro Haus',date:'February 19, 2010',dateLabel:'Released',image:'assets/JJ2_Bandcamp_1500x1500.png',url:'https://samsbands.bandcamp.com/album/live-at-da-bro-haus'});
+   const releaseOrder={'Sports Is My Favorite':new Date('2008-02-01'),'Waking Up the Neighborhood Tonight':new Date('2010-02-12'),'Live at Da Bro Haus':new Date('2010-02-19'),'On Deck – Split with Waxeater':new Date('2010-04-01'),'On Deck - Split with Waxeater':new Date('2010-04-01'),'Free Your Ass and Your Mind Will Follow':new Date('2011-09-21'),'Dos Hombres':new Date('2013-10-31'),'Retirement Show – LIVE! From the Love Garden':new Date('2014-07-18'),'Retirement Show - LIVE! From the Love Garden':new Date('2014-07-18')};
+   jj.releases.sort((a,b)=>(releaseOrder[a.title]||new Date(a.date||0))-(releaseOrder[b.title]||new Date(b.date||0)));
 
    const tour=[
     ['2010-02-11','Feb 11, 2010','Lawrence, KS'],['2010-02-12','Feb 12, 2010','Wichita, KS'],['2010-02-13','Feb 13, 2010','Omaha, NE'],['2010-02-14','Feb 14, 2010','Iowa City, IA'],['2010-02-15','Feb 15, 2010','Minneapolis, MN'],['2010-02-16','Feb 16, 2010','Milwaukee, WI'],['2010-02-17','Feb 17, 2010','Chicago, IL'],['2010-02-18','Feb 18, 2010','Cleveland, OH'],['2010-02-20','Feb 20, 2010','New York, NY'],['2010-02-21','Feb 21, 2010','New York, NY'],['2010-02-23','Feb 23, 2010','Philadelphia, PA'],['2010-02-24','Feb 24, 2010','Athens, OH'],['2010-02-25','Feb 25, 2010','Cleveland, OH'],['2010-02-26','Feb 26, 2010','Bloomington, IN'],['2010-02-27','Feb 27, 2010','Indianapolis, IN'],['2010-02-28','Feb 28, 2010','Bloomington, IN'],['2010-03-01','Mar 1, 2010','Springfield, MO'],['2010-03-02','Mar 2, 2010','Columbia, MO'],['2010-03-04','Mar 4, 2010','Lawrence, KS']];
@@ -36,7 +38,7 @@
  .band-thunderfuck{--band-accent:#B86A32!important}.date.band-thunderfuck{color:#B86A32!important}.band-card.band-thunderfuck h3{color:#B86A32}.band-card.band-thunderfuck:hover h3{color:#111}
  .band-jabberjosh .video-item h3,.band-gnarly-davidson .video-item h3{display:none}
  .guestbook-page{min-height:760px}.guestbook-page .section-title{margin-bottom:10px}.guestbook-copy{color:#ccc;line-height:1.6;margin:0 0 28px;max-width:760px}#echothread{min-height:560px}
- @media(max-width:650px){.home-hero-copy h1{font-size:clamp(54px,16vw,88px)!important;letter-spacing:-3px}}`;document.head.appendChild(st);
+ @media(max-width:650px){.home-hero-copy h1{font-size:13vw!important;letter-spacing:-2px!important;white-space:nowrap!important;max-width:100%!important}}`;document.head.appendChild(st);
  D.timeline.sort((a,b)=>String(a.date||'').localeCompare(String(b.date||'')));
 
  // EchoThread guest book retained.
