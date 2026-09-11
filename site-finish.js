@@ -38,6 +38,26 @@
  const emr=by('emr');
  if(emr)emr.members=(emr.members||[]).filter(m=>!/^Dane(?:\s|$)/i.test(m[0]||'')).map(m=>/^Kyle(?:\s|$)/i.test(m[0]||'')?['Kyle Jackson',m[1]||'']:/^Zach(?:\s|$)/i.test(m[0]||'')?['Zach Lawson',m[1]||'']:m);
 
+ // Final band text/member edits.
+ const mft=by('my-friend-tim');
+ if(mft){
+   mft.members=(mft.members||[]).filter(m=>!/^Dane Amundson$/i.test(m[0]||''));
+   const brianIndex=mft.members.findIndex(m=>/^Brian Scheel$/i.test(m[0]||''));
+   const dane=['Dane Amundson','Guitar'];
+   if(brianIndex>=0)mft.members.splice(brianIndex,0,dane);
+   else {
+     const mattIndex=mft.members.findIndex(m=>/^Matt Bisel$/i.test(m[0]||''));
+     if(mattIndex>=0)mft.members.splice(mattIndex+1,0,dane);
+     else mft.members.push(dane);
+   }
+ }
+ const ml=by('monsoon-lazer');
+ if(ml&&ml.intro)ml.intro=ml.intro.map(x=>String(x).replace(/2013(?!\.)/g,'2013.'));
+ const sw=by('swanson');
+ if(sw)sw.intro=['Swanson was JabberJosh + Approach and was active in Lawrence, KS from 2011 to 2012.'];
+ const horse=by('horse-weapons');
+ if(horse)horse.intro=['Horse Weapons was from Wichita and Lawrence, KS and was active from 2011 to 2012.'];
+
  // Previous visual fixes retained + slightly smaller mobile homepage SAMSBANDS.
  const gd=by('gnarly-davidson');if(gd)(gd.videos||[]).forEach(v=>v.title='');
  const st=document.createElement('style');st.textContent=`
