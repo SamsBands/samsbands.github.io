@@ -26,6 +26,12 @@
     ['2010-02-11','Feb 11, 2010','Lawrence, KS'],['2010-02-12','Feb 12, 2010','Wichita, KS'],['2010-02-13','Feb 13, 2010','Omaha, NE'],['2010-02-14','Feb 14, 2010','Iowa City, IA'],['2010-02-15','Feb 15, 2010','Minneapolis, MN'],['2010-02-16','Feb 16, 2010','Milwaukee, WI'],['2010-02-17','Feb 17, 2010','Chicago, IL'],['2010-02-18','Feb 18, 2010','Cleveland, OH'],['2010-02-20','Feb 20, 2010','New York, NY'],['2010-02-21','Feb 21, 2010','New York, NY'],['2010-02-23','Feb 23, 2010','Philadelphia, PA'],['2010-02-24','Feb 24, 2010','Athens, OH'],['2010-02-25','Feb 25, 2010','Cleveland, OH'],['2010-02-26','Feb 26, 2010','Bloomington, IN'],['2010-02-27','Feb 27, 2010','Indianapolis, IN'],['2010-02-28','Feb 28, 2010','Bloomington, IN'],['2010-03-01','Mar 1, 2010','Springfield, MO'],['2010-03-02','Mar 2, 2010','Columbia, MO'],['2010-03-04','Mar 4, 2010','Lawrence, KS']];
    for(const [date,display,city] of tour)if(!(jj.timeline||[]).some(e=>e.date===date)){const e={date,display,event:'East Coast Tour',venue:'',city};jj.timeline.push(e);D.timeline.push({...e,event:'JabberJosh — East Coast Tour',slug:'jabberjosh'});}
    jj.timeline.sort((a,b)=>String(a.date||'').localeCompare(String(b.date||'')));
+
+   // JabberJosh TWOR 2012 tour dates from the supplied flyer.
+   const tour2012=[
+    ['2012-02-16','Feb 16, 2012','Lawrence, KS'],['2012-02-17','Feb 17, 2012','Iowa City, IA'],['2012-02-18','Feb 18, 2012','Minneapolis, MN'],['2012-02-19','Feb 19, 2012','Duluth, MN'],['2012-02-20','Feb 20, 2012','Milwaukee, WI'],['2012-02-21','Feb 21, 2012','Chicago, IL'],['2012-02-22','Feb 22, 2012','Detroit, MI'],['2012-02-23','Feb 23, 2012','Cleveland, OH'],['2012-02-24','Feb 24, 2012','Cleveland, OH'],['2012-02-25','Feb 25, 2012','Philadelphia, PA'],['2012-02-26','Feb 26, 2012','New York, NY'],['2012-02-28','Feb 28, 2012','Columbus, OH'],['2012-02-29','Feb 29, 2012','Indianapolis, IN'],['2012-03-01','Mar 1, 2012','Bloomington, IN'],['2012-03-02','Mar 2, 2012','Nashville, TN'],['2012-03-03','Mar 3, 2012','Louisville, KY'],['2012-03-04','Mar 4, 2012','St. Louis, MO']];
+   for(const [date,display,city] of tour2012)if(!(jj.timeline||[]).some(e=>e.date===date)){const e={date,display,event:'TWOR 2012 Tour',venue:'',city};jj.timeline.push(e);D.timeline.push({...e,event:'JabberJosh — TWOR 2012 Tour',slug:'jabberjosh'});}
+   jj.timeline.sort((a,b)=>String(a.date||'').localeCompare(String(b.date||'')));
  }
 
  // EMR members.
