@@ -18,7 +18,7 @@
    (jj.timeline||[]).forEach(fix);(D.timeline||[]).filter(e=>e.slug==='jabberjosh').forEach(fix);
 
    jj.releases=(jj.releases||[]).filter(r=>!/Live at Da Bro Haus/i.test(r.title||''));
-   jj.releases.push({title:'Live at Da Bro Haus',date:'February 19, 2010',dateLabel:'Released',image:'JJ2_Bandcamp_1500x1500.png',url:'https://samsbands.bandcamp.com/album/live-at-da-bro-haus'});
+   jj.releases.push({title:'Live at Da Bro Haus',date:'February 19, 2010',dateLabel:'Released',image:'../JJ2_Bandcamp_1500x1500.png',url:'https://samsbands.bandcamp.com/album/live-at-da-bro-haus'});
    const releaseOrder={'Sports Is My Favorite':new Date('2008-02-01'),'Waking Up the Neighborhood Tonight':new Date('2010-02-12'),'Live at Da Bro Haus':new Date('2010-02-19'),'On Deck – Split with Waxeater':new Date('2010-04-01'),'On Deck - Split with Waxeater':new Date('2010-04-01'),'Free Your Ass and Your Mind Will Follow':new Date('2011-09-21'),'Dos Hombres':new Date('2013-10-31'),'Retirement Show – LIVE! From the Love Garden':new Date('2014-07-18'),'Retirement Show - LIVE! From the Love Garden':new Date('2014-07-18')};
    jj.releases.sort((a,b)=>(releaseOrder[a.title]||new Date(a.date||0))-(releaseOrder[b.title]||new Date(b.date||0)));
 
