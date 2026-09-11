@@ -1,86 +1,45 @@
-// Sept 10 final site-content + Guest Book patch.
+// Sept 11 updates layered onto the finished SAMSBANDS site.
 (function(){
-  const D=window.SAMS_DATA;
-  if(!D) return;
+ const D=window.SAMS_DATA;if(!D)return;
+ const by=s=>(D.bands||[]).find(b=>b.slug===s);
 
-  // Horse Weapons — Oct 28, 2011 BunterICT Halloween Bash.
-  const hw=(D.bands||[]).find(b=>b.slug==='horse-weapons');
-  const show={date:'2011-10-28',display:'Oct 28, 2011',event:'BunterICT Halloween Bash',venue:'The Eagles Lodge',city:'Wichita, KS'};
-  if(hw){
-    hw.timeline=(hw.timeline||[]).filter(e=>!(e.date==='2011-10-28'&&/BunterICT Halloween Bash/i.test(e.event||'')));
-    hw.timeline.push(show);
-    hw.timeline.sort((a,b)=>String(a.date||'').localeCompare(String(b.date||'')));
-  }
-  D.timeline=(D.timeline||[]).filter(e=>!(e.slug==='horse-weapons'&&e.date==='2011-10-28'&&/BunterICT Halloween Bash/i.test(e.event||'')));
-  D.timeline.push({...show,event:'Horse Weapons — BunterICT Halloween Bash',slug:'horse-weapons'});
-  D.timeline.sort((a,b)=>String(a.date||'').localeCompare(String(b.date||'')));
+ // Horse Weapons fix retained.
+ const hw=by('horse-weapons'), hs={date:'2011-10-28',display:'Oct 28, 2011',event:'BunterICT Halloween Bash',venue:'The Eagles Lodge',city:'Wichita, KS'};
+ if(hw){hw.timeline=(hw.timeline||[]).filter(e=>!(e.date===hs.date&&/BunterICT Halloween Bash/i.test(e.event||'')));hw.timeline.push(hs);hw.timeline.sort((a,b)=>String(a.date).localeCompare(String(b.date)));}
+ D.timeline=(D.timeline||[]).filter(e=>!(e.slug==='horse-weapons'&&e.date===hs.date&&/BunterICT Halloween Bash/i.test(e.event||'')));
+ D.timeline.push({...hs,event:'Horse Weapons — BunterICT Halloween Bash',slug:'horse-weapons'});
 
-  // Final small edits.
-  const jj=(D.bands||[]).find(b=>b.slug==='jabberjosh');
-  if(jj){
-    jj.intro=['Jabberjosh was Sam, and his brother Will, and they had some birthdays to announce.'];
-    (jj.videos||[]).forEach(v=>{ v.title=''; });
-  }
+ // JabberJosh.
+ const jj=by('jabberjosh');
+ if(jj){
+   jj.intro=['Jabberjosh was Sam, and his brother Will, and they had some birthdays to announce.'];
+   (jj.videos||[]).forEach(v=>v.title='');
+   const fix=e=>{if(String(e.date||'').startsWith('2018-02')||/Feb/i.test(e.display||''))['event','venue','city','display'].forEach(k=>{if(typeof e[k]==='string')e[k]=e[k].replace(/Gunner Son/g,'Gunnerson')})};
+   (jj.timeline||[]).forEach(fix);(D.timeline||[]).filter(e=>e.slug==='jabberjosh').forEach(fix);
 
-  const gd=(D.bands||[]).find(b=>b.slug==='gnarly-davidson');
-  if(gd){
-    (gd.videos||[]).forEach(v=>{ v.title=''; });
-  }
+   jj.releases=(jj.releases||[]).filter(r=>!/Live at Da Bro Haus/i.test(r.title||''));
+   jj.releases.push({title:'Live at Da Bro Haus',date:'February 19, 2010',dateLabel:'Released',image:'',url:'https://samsbands.bandcamp.com/album/live-at-da-bro-haus'});
 
-  const style=document.createElement('style');
-  style.textContent=`
-    .band-thunderfuck{--band-accent:#B86A32!important}
-    .date.band-thunderfuck{color:#B86A32!important}
-    .band-card.band-thunderfuck h3{color:#B86A32}
-    .band-card.band-thunderfuck:hover h3{color:#111}
-    .band-jabberjosh .video-item h3,
-    .band-gnarly-davidson .video-item h3{display:none}
-    .guestbook-page{min-height:760px}
-    .guestbook-page .section-title{margin-bottom:10px}
-    .guestbook-copy{color:#ccc;line-height:1.6;margin:0 0 28px;max-width:760px}
-    #echothread{min-height:560px}
-  `;
-  document.head.appendChild(style);
+   const tour=[
+    ['2010-02-11','Feb 11, 2010','Lawrence, KS'],['2010-02-12','Feb 12, 2010','Wichita, KS'],['2010-02-13','Feb 13, 2010','Omaha, NE'],['2010-02-14','Feb 14, 2010','Iowa City, IA'],['2010-02-15','Feb 15, 2010','Minneapolis, MN'],['2010-02-16','Feb 16, 2010','Milwaukee, WI'],['2010-02-17','Feb 17, 2010','Chicago, IL'],['2010-02-18','Feb 18, 2010','Cleveland, OH'],['2010-02-20','Feb 20, 2010','New York, NY'],['2010-02-21','Feb 21, 2010','New York, NY'],['2010-02-23','Feb 23, 2010','Philadelphia, PA'],['2010-02-24','Feb 24, 2010','Athens, OH'],['2010-02-25','Feb 25, 2010','Cleveland, OH'],['2010-02-26','Feb 26, 2010','Bloomington, IN'],['2010-02-27','Feb 27, 2010','Indianapolis, IN'],['2010-02-28','Feb 28, 2010','Bloomington, IN'],['2010-03-01','Mar 1, 2010','Springfield, MO'],['2010-03-02','Mar 2, 2010','Columbia, MO'],['2010-03-04','Mar 4, 2010','Lawrence, KS']];
+   for(const [date,display,city] of tour)if(!(jj.timeline||[]).some(e=>e.date===date)){const e={date,display,event:'East Coast Tour',venue:'',city};jj.timeline.push(e);D.timeline.push({...e,event:'JabberJosh — East Coast Tour',slug:'jabberjosh'});}
+   jj.timeline.sort((a,b)=>String(a.date||'').localeCompare(String(b.date||'')));
+ }
 
-  function renderGuestbook(){
-    if(location.hash !== '#/guestbook') return;
-    const app=document.getElementById('app');
-    if(!app) return;
+ // EMR members.
+ const emr=by('emr');
+ if(emr)emr.members=(emr.members||[]).filter(m=>!/^Dane(?:\s|$)/i.test(m[0]||'')).map(m=>/^Kyle(?:\s|$)/i.test(m[0]||'')?['Kyle Jackson',m[1]||'']:/^Zach(?:\s|$)/i.test(m[0]||'')?['Zach Lawson',m[1]||'']:m);
 
-    app.innerHTML=`
-      <section class="wrap guestbook-page">
-        <h1 class="section-title">GUEST BOOK</h1>
-        <p class="guestbook-copy">Share a memory, story, or message about Sam.</p>
-        <div
-          id="echothread"
-          data-shortname="SamsBands"
-          data-api-key="woHJqsd0eKsRwt5FzL3gPYF46JCHnSDFVqGa9qADDN4"
-          data-page-url="https://samsbands.github.io/#/guestbook"
-          data-identifier="samsbands-guestbook"
-          data-page-title="SamsBands Guest Book"
-          data-theme="dark"
-          data-accent-color="#e8353a"
-          data-font="sans"
-        ></div>
-      </section>`;
+ // Previous visual fixes retained + slightly smaller mobile homepage SAMSBANDS.
+ const gd=by('gnarly-davidson');if(gd)(gd.videos||[]).forEach(v=>v.title='');
+ const st=document.createElement('style');st.textContent=`
+ .band-thunderfuck{--band-accent:#B86A32!important}.date.band-thunderfuck{color:#B86A32!important}.band-card.band-thunderfuck h3{color:#B86A32}.band-card.band-thunderfuck:hover h3{color:#111}
+ .band-jabberjosh .video-item h3,.band-gnarly-davidson .video-item h3{display:none}
+ .guestbook-page{min-height:760px}.guestbook-page .section-title{margin-bottom:10px}.guestbook-copy{color:#ccc;line-height:1.6;margin:0 0 28px;max-width:760px}#echothread{min-height:560px}
+ @media(max-width:650px){.home-hero-copy h1{font-size:clamp(54px,16vw,88px)!important;letter-spacing:-3px}}`;document.head.appendChild(st);
+ D.timeline.sort((a,b)=>String(a.date||'').localeCompare(String(b.date||'')));
 
-    if(window.EchoThread && typeof window.EchoThread.bootstrap === 'function'){
-      window.EchoThread.bootstrap();
-      return;
-    }
-
-    if(!document.getElementById('echothread-widget-js')){
-      const s=document.createElement('script');
-      s.id='echothread-widget-js';
-      s.src='https://cdn.echothread.io/widget.js';
-      s.async=true;
-      document.body.appendChild(s);
-    }
-  }
-
-  // Register after app.js's own router so this page wins on hash navigation.
-  setTimeout(()=>{
-    window.addEventListener('hashchange', ()=>setTimeout(renderGuestbook,0));
-    renderGuestbook();
-  },0);
+ // EchoThread guest book retained.
+ function guest(){if(location.hash!=='#/guestbook')return;const a=document.getElementById('app');if(!a)return;a.innerHTML=`<section class="wrap guestbook-page"><h1 class="section-title">GUEST BOOK</h1><p class="guestbook-copy">Share a memory, story, or message about Sam.</p><div id="echothread" data-shortname="SamsBands" data-api-key="woHJqsd0eKsRwt5FzL3gPYF46JCHnSDFVqGa9qADDN4" data-page-url="https://samsbands.github.io/#/guestbook" data-identifier="samsbands-guestbook" data-page-title="SamsBands Guest Book" data-theme="dark" data-accent-color="#e8353a" data-font="sans"></div></section>`;if(window.EchoThread&&typeof window.EchoThread.bootstrap==='function'){window.EchoThread.bootstrap();return}if(!document.getElementById('echothread-widget-js')){const s=document.createElement('script');s.id='echothread-widget-js';s.src='https://cdn.echothread.io/widget.js';s.async=true;document.body.appendChild(s)}}
+ setTimeout(()=>{window.addEventListener('hashchange',()=>setTimeout(guest,0));guest()},0);
 })();
