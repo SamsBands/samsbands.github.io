@@ -63,7 +63,7 @@
  if(gd){
    (gd.videos||[]).forEach(v=>v.title='');
    gd.releases=(gd.releases||[]).filter(r=>!/Gnarly Davidson II/i.test(r.title||''));
-   gd.releases.push({title:'Gnarly Davidson II',date:'September 13, 2026',image:'GD_NEW.png',url:'https://gnarlydavidsonlfk.bandcamp.com/album/gnarly-davidson-ii'});
+   gd.releases.push({title:'Gnarly Davidson II',date:'September 13, 2026',image:'../GD_NEW.png',url:'https://gnarlydavidsonlfk.bandcamp.com/album/gnarly-davidson-ii'});
  }
  const st=document.createElement('style');st.textContent=`
  .band-thunderfuck{--band-accent:#B86A32!important}.date.band-thunderfuck{color:#B86A32!important}.band-card.band-thunderfuck h3{color:#B86A32}.band-card.band-thunderfuck:hover h3{color:#111}
